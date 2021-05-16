@@ -1,20 +1,15 @@
-﻿using EStore_DAL;
-using System;
-using System.Collections.Generic;
+﻿using EStore_DataAccessLayer;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EStore_BLL
 {
     public class ItemBLL
     {
-        ItemDAL itemDAL;
+        ItemAccess itemDAL;
 
         public ItemBLL()
         {
-            itemDAL = new ItemDAL();
+            itemDAL = new ItemAccess();
         }
 
         public DataTable GetAllItems()

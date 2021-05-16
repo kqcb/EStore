@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("EStore-DAL")]
+[assembly: AssemblyTitle("EStore-DataAccessLayer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("EStore-DAL")]
+[assembly: AssemblyProduct("EStore-DataAccessLayer")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1dd8e704-41b0-4d04-9eba-f2fbcfe8fd07")]
+[assembly: Guid("64ed0297-221c-47be-9cd5-83df5f5d1001")]
 
 // Version information for an assembly consists of the following four values:
 //

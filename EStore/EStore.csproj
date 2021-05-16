@@ -76,5 +76,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EStore-BusinessLogicLayer\EStore-BusinessLogicLayer.csproj">
+      <Project>{c756da6d-900e-447a-82ad-9b0dc04c757e}</Project>
+      <Name>EStore-BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EStore-BusinessObjects\EStore-BusinessObjects.csproj">
+      <Project>{d2430b39-41e3-405b-aae1-27c9e6676206}</Project>
+      <Name>EStore-BusinessObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

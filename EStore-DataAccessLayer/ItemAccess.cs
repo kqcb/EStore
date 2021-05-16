@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EStore_DAL
+namespace EStore_DataAccessLayer
 {
-    public class ItemDAL
+    public class ItemAccess
     {
         public DataTable GetAllItems()
         {
