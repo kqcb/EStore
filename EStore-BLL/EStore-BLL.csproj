@@ -7,7 +7,7 @@
     <ProjectGuid>{2A787DC3-1F39-404C-9648-52952A8083FA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>EStore_BLL</RootNamespace>
-    <AssemblyName>EStore_BLL</AssemblyName>
+    <AssemblyName>EStore-BLL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ItemBLL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EStore-DAL\EStore-DAL.csproj">
+      <Project>{1dd8e704-41b0-4d04-9eba-f2fbcfe8fd07}</Project>
+      <Name>EStore-DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
