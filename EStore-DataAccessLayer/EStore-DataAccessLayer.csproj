@@ -63,7 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseConn.cs" />
-    <Compile Include="Context.cs" />
     <Compile Include="ItemAccess.cs" />
     <Compile Include="Mapper\Models\DbSet.cs" />
     <Compile Include="Mapper\Models\ObjectProperties.cs" />

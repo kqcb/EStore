@@ -1,0 +1,8 @@
+﻿using EStore_DataAccessLayer.Mapper.Models;
+
+namespace EStore_BusinessLogicLayer
+{
+    public class ItemServices : DbSet<Item>
+    {
+    }
+}
