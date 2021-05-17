@@ -5,9 +5,10 @@ namespace EStore_DataAccessLayer
 {
     class DatabaseConn
     {
-        public static string conString = ConfigurationManager.ConnectionStrings["conStringEStore-Client"].ToString();
-        public static SqlConnection conn;
-        public static SqlCommand cmd;
-        public static SqlDataAdapter da;
+        public static readonly string ConnectionString = ConfigurationManager.ConnectionStrings["conStringEStore-Client"].ToString();
+        public static SqlConnection Connection;
+        public static SqlCommand Command;
+        public static SqlDataAdapter DataAdapter;
+
     }
 }

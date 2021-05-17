@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using EStoreDataAccess.Utils;
+using EStore_DataAccessLayer.Mapper.Utils;
 
 namespace EStore_DataAccessLayer.Mapper.Models
 {
@@ -21,7 +21,7 @@ namespace EStore_DataAccessLayer.Mapper.Models
             {
                 _sqlConnection.Open();
 
-                SqlCommand cmd = Connection.GetSqlCommand(_sqlConnection, procName);
+                SqlCommand cmd = Connection.GetSqlCommand(procName);
                 SqlDataReader dataReader = cmd.ExecuteReader();
 
 
@@ -51,7 +51,7 @@ namespace EStore_DataAccessLayer.Mapper.Models
             try
             {
                 _sqlConnection.Open();
-                SqlCommand cmd = Connection.GetSqlCommand(_sqlConnection, procName);
+                SqlCommand cmd = Connection.GetSqlCommand( procName);
 
                 cmd.Parameters.AddWithValue($"Id", id);
 
@@ -100,7 +100,7 @@ namespace EStore_DataAccessLayer.Mapper.Models
         {
             _sqlConnection.Open();
 
-            var cmd = Connection.GetSqlCommand(_sqlConnection, procName);
+            var cmd = Connection.GetSqlCommand(procName);
 
             cmd.Parameters.AddWithValue($"{typeof(T).Name}Id", id);
 
@@ -116,7 +116,7 @@ namespace EStore_DataAccessLayer.Mapper.Models
             ObjectProperties objectProperties = new ObjectProperties(typeof(T));
             objectProperties.ActualObject = Convert.ChangeType(item, objectProperties.ObjectType);
 
-            var cmd = Connection.GetSqlCommand(_sqlConnection, procName);
+            var cmd = Connection.GetSqlCommand(procName);
 
 
             objectProperties.ToParametersWithId(cmd.Parameters);
@@ -130,7 +130,7 @@ namespace EStore_DataAccessLayer.Mapper.Models
             ObjectProperties objectProperties = new ObjectProperties(typeof(T));
             objectProperties.ActualObject = Convert.ChangeType(item, objectProperties.ObjectType);
 
-            var cmd = Connection.GetSqlCommand(_sqlConnection, procName);
+            var cmd = Connection.GetSqlCommand(procName);
 
             objectProperties.ToParametersWithId(cmd.Parameters);
             objectProperties.ToOtherParametersWithId(cmd.Parameters);

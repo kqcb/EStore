@@ -14,11 +14,11 @@ namespace EStore_DataAccessLayer
         {
             try
             {
-                using (DatabaseConn.conn = new SqlConnection(DatabaseConn.conString))
+                using (DatabaseConn.Connection = new SqlConnection(DatabaseConn.ConnectionString))
                 {
-                    DatabaseConn.da = new SqlDataAdapter("usp_GetAllItems", DatabaseConn.conn);
+                    DatabaseConn.DataAdapter = new SqlDataAdapter("usp_GetAllItems", DatabaseConn.Connection);
                     DataTable dTable = new DataTable();
-                    DatabaseConn.da.Fill(dTable);
+                    DatabaseConn.DataAdapter.Fill(dTable);
 
                     return dTable;
                 }
