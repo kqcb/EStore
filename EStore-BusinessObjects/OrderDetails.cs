@@ -1,6 +1,6 @@
 ﻿namespace EStore_BusinessObjects
 {
-    class OrderDetails
+    public class OrderDetails
     {
         public int Id { get; set; }
         public Item Item { get; set; }
