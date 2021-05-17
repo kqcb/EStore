@@ -12,6 +12,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <LangVersion>9</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -62,7 +63,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseConn.cs" />
+    <Compile Include="Context.cs" />
     <Compile Include="ItemAccess.cs" />
+    <Compile Include="Mapper\Models\DbSet.cs" />
+    <Compile Include="Mapper\Models\ObjectProperties.cs" />
+    <Compile Include="Mapper\Utils\Connection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
