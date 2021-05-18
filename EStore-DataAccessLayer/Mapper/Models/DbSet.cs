@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Reflection;
+using System.Xml.Linq;
 using EStore_DataAccessLayer.Mapper.Utils;
 
 namespace EStore_DataAccessLayer.Mapper.Models
 {
     public class DbSet<T>
     {
-        private static SqlConnection _sqlConnection;
+        private SqlConnection _sqlConnection;
 
-        public DbSet(string connString = "SEMS")
+        public DbSet(string connString = "conString")
         {
             _sqlConnection ??= Connection.GetSqlConnection(connString);
         }
@@ -17,48 +19,46 @@ namespace EStore_DataAccessLayer.Mapper.Models
 
         public List<T> Read(string procName)
         {
-            try
-            {
-                _sqlConnection.Open();
-
-                SqlCommand cmd = Connection.GetSqlCommand(procName);
-                SqlDataReader dataReader = cmd.ExecuteReader();
-
+            _sqlConnection.Close();
+            _sqlConnection.Open();
+                
+            SqlCommand cmd = Connection.GetSqlCommand(procName ?? $"usp_Read_{typeof(T)}");
+            SqlDataReader dataReader = Connection.GetSqlDataReader(cmd);
 
 
-                List<T> items = Read(dataReader);
+
+            List<T> items = LoadObjects(dataReader);
 
 
-                _sqlConnection.Close();
 
-                return items;
-            }
-            catch (Exception)
-            {
-                return null;
-            }
-            finally
-            {
-                _sqlConnection.Close();
-            }
+            return items;
 
         }
 
+     
+        public List<T> Read()
+        {
+            return Read($"usp_Read_{typeof(T).Name}");
+        }
 
+        public List<T> Read(int id)
+        {
+            return Read($"usp_Read_{typeof(T).Name}", id);
+        }
 
-        public List<T> Read(string procName, int? id)
+        public List<T> Read(string procName, int id)
         {
             try
             {
                 _sqlConnection.Open();
-                SqlCommand cmd = Connection.GetSqlCommand( procName);
+                SqlCommand cmd = Connection.GetSqlCommand(procName); 
 
                 cmd.Parameters.AddWithValue($"Id", id);
 
                 SqlDataReader dataReader = cmd.ExecuteReader();
 
 
-                List<T> items = (List<T>)Read(dataReader);
+                List<T> items = (List<T>)LoadObjects(dataReader);
 
                 if (items.Count < 1)
                 {
@@ -76,11 +76,10 @@ namespace EStore_DataAccessLayer.Mapper.Models
             {
                 _sqlConnection.Close();
             }
-
         }
 
 
-        public List<T> Read(SqlDataReader dataReader)
+        public List<T> LoadObjects(SqlDataReader dataReader)
         {
             List<T> items = new List<T>();
 
@@ -94,13 +93,16 @@ namespace EStore_DataAccessLayer.Mapper.Models
         }
 
 
+        public int Delete(int id)
+        {
+            return Delete($"usp_Delete_{typeof(T).Name}", id);
+        }
 
-
-        public int Delete(string procName, int? id)
+        public int Delete(string? procName, int? id)
         {
             _sqlConnection.Open();
 
-            var cmd = Connection.GetSqlCommand(procName);
+            var cmd = Connection.GetSqlCommand(procName ?? $"usp_Delete_{typeof(T)}");
 
             cmd.Parameters.AddWithValue($"{typeof(T).Name}Id", id);
 
@@ -109,35 +111,45 @@ namespace EStore_DataAccessLayer.Mapper.Models
             _sqlConnection.Close();
 
             return rez;
-        }
 
-        public void Update(string procName, T item)
+        }
+        
+        public void Update(T item)
         {
-            ObjectProperties objectProperties = new ObjectProperties(typeof(T));
+            Update($"usp_Update_{typeof(T).Name}", item);
+        } 
+
+        public void Update(string? procName, T item)
+        {
+            ObjectProperties objectProperties = new (typeof(T));
+            
             objectProperties.ActualObject = Convert.ChangeType(item, objectProperties.ObjectType);
 
-            var cmd = Connection.GetSqlCommand(procName);
+            var cmd = Connection.GetSqlCommand(procName ?? $"usp_Update_{typeof(T)}");
 
 
             objectProperties.ToParametersWithId(cmd.Parameters);
 
             int rez = cmd.ExecuteNonQuery();
         }
-
-        public int Create(string procName, T item)
+        public int Create(T item)
+        {
+            return Create($"usp_Create_{typeof(T).Name}", item);
+        }
+        public int Create(string? procName, T item)
         {
             _sqlConnection.Open();
             ObjectProperties objectProperties = new ObjectProperties(typeof(T));
             objectProperties.ActualObject = Convert.ChangeType(item, objectProperties.ObjectType);
 
-            var cmd = Connection.GetSqlCommand(procName);
+            var cmd = Connection.GetSqlCommand(procName ?? $"usp_Create_{typeof(T)}");
 
             objectProperties.ToParametersWithId(cmd.Parameters);
             objectProperties.ToOtherParametersWithId(cmd.Parameters);
 
 
 
-            int rez = cmd.ExecuteNonQuery();
+            var rez = cmd.ExecuteNonQuery();
             _sqlConnection.Close();
 
             return rez;
@@ -153,9 +165,9 @@ namespace EStore_DataAccessLayer.Mapper.Models
 
             List<ObjectProperties> others = model.GetOtherProperties();
 
-            for (int i = 0; i < others.Count; i++)
+            foreach (var objectProperties in others)
             {
-                model.InitialiseProp(others[i].ObjectType.Name, InitialiseObject(data, others[i].ObjectType, others[i].ObjectType.Name).ActualObject);
+                model.InitialiseProp(objectProperties.ObjectType.Name, InitialiseObject(data, objectProperties.ObjectType, objectProperties.ObjectType.Name).ActualObject);
             }
 
             return (T)(model.ActualObject);
@@ -169,15 +181,12 @@ namespace EStore_DataAccessLayer.Mapper.Models
             List<string> primitiveProps = model.GetPrimitivePropertiesNames();
 
             
-            
 
-            for (int i = 0; i < primitiveProps.Count; i++)
+            foreach (var item in primitiveProps)
             {
-                
-              
                 try
                 {
-                    model.InitialiseProp(primitiveProps[i], data[subObject + primitiveProps[i]]);
+                    model.InitialiseProp(item, data[subObject + item]);
                 }
                 catch (IndexOutOfRangeException)
                 {
