@@ -39,7 +39,7 @@ namespace EStore_DataAccessLayer.Mapper.Models
 
         public List<T> Read(int id)
         {
-            return Read($"usp_Read_{typeof(T).Name}", id);
+            return Read($"usp_{typeof(T).Name}_Read_By_Id", id);
         }
 
         public List<T> Read(string procName, int id)
@@ -91,14 +91,14 @@ namespace EStore_DataAccessLayer.Mapper.Models
 
         public int Delete(int id)
         {
-            return Delete($"usp_Delete_{typeof(T).Name}", id);
+            return Delete($"usp_{typeof(T).Name}_Delete", id);
         }
 
         public int Delete(string? procName, int? id)
         {
             _sqlConnection.Open();
 
-            var cmd = Connection.GetSqlCommand(procName ?? $"usp_Delete_{typeof(T)}");
+            var cmd = Connection.GetSqlCommand(procName ?? $"usp_{typeof(T)}_Delete");
 
             cmd.Parameters.AddWithValue($"{typeof(T).Name}Id", id);
 
@@ -112,7 +112,7 @@ namespace EStore_DataAccessLayer.Mapper.Models
         
         public void Update(T item)
         {
-            Update($"usp_Update_{typeof(T).Name}", item);
+            Update($"usp_{typeof(T).Name}_Update_", item);
         } 
 
         public void Update(string? procName, T item)
@@ -121,7 +121,7 @@ namespace EStore_DataAccessLayer.Mapper.Models
             
             objectProperties.ActualObject = Convert.ChangeType(item, objectProperties.ObjectType);
 
-            var cmd = Connection.GetSqlCommand(procName ?? $"usp_Update_{typeof(T)}");
+            var cmd = Connection.GetSqlCommand(procName ?? $"usp_{typeof(T)}_Update");
 
 
             objectProperties.ToParametersWithId(cmd.Parameters);
@@ -138,7 +138,7 @@ namespace EStore_DataAccessLayer.Mapper.Models
             ObjectProperties objectProperties = new ObjectProperties(typeof(T));
             objectProperties.ActualObject = Convert.ChangeType(item, objectProperties.ObjectType);
 
-            var cmd = Connection.GetSqlCommand(procName ?? $"usp_Create_{typeof(T)}");
+            var cmd = Connection.GetSqlCommand(procName ?? $"usp_{typeof(T)}_Create");
 
             objectProperties.ToParametersWithId(cmd.Parameters);
             objectProperties.ToOtherParametersWithId(cmd.Parameters);
