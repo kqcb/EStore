@@ -6,5 +6,6 @@ namespace EStore_BusinessLogicLayer
 {
     public class UserServices : DbSet<User>
     {
+       
     }
 }
