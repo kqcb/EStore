@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EStore_BusinessLogicLayer;
 
 namespace EStore
 {
@@ -15,6 +16,8 @@ namespace EStore
         public Form1()
         {
             InitializeComponent();
+
+
         }
     }
 }

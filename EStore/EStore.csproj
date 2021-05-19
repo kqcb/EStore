@@ -85,6 +85,10 @@
       <Project>{d2430b39-41e3-405b-aae1-27c9e6676206}</Project>
       <Name>EStore-BusinessObjects</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EStore-DataAccessLayer\EStore-DataAccessLayer.csproj">
+      <Project>{64ed0297-221c-47be-9cd5-83df5f5d1001}</Project>
+      <Name>EStore-DataAccessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

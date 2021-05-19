@@ -9,7 +9,7 @@ namespace EStore_DataAccessLayer.Mapper.Utils
     {
 
         private static SqlConnection _sqlConnection;
-        public static SqlConnection GetSqlConnection(string connectionString = "conStringEStore-Client")
+        public static SqlConnection GetSqlConnection(string connectionString = "EStore-Client")
         {
             return _sqlConnection ??= new SqlConnection(GetConnectionString(connectionString));
         }
@@ -27,17 +27,13 @@ namespace EStore_DataAccessLayer.Mapper.Utils
         {
             try
             {
-                GetSqlConnection().Open();
                 return sqlCommand.ExecuteReader();
             }
             catch (Exception)
             {
                 return null;
             }
-            finally
-            {
-                GetSqlConnection().Close();
-            }
+            
         }
 
         public static SqlDataAdapter GetSqlDataAdapter(string procName)

@@ -11,7 +11,7 @@ namespace EStore_DataAccessLayer.Mapper.Models
     {
         private SqlConnection _sqlConnection;
 
-        public DbSet(string connString = "conString")
+        public DbSet(string connString = "EStore-Client")
         {
             _sqlConnection ??= Connection.GetSqlConnection(connString);
         }
@@ -21,15 +21,11 @@ namespace EStore_DataAccessLayer.Mapper.Models
         {
             _sqlConnection.Close();
             _sqlConnection.Open();
-                
-            SqlCommand cmd = Connection.GetSqlCommand(procName ?? $"usp_Read_{typeof(T)}");
+
+            SqlCommand cmd = Connection.GetSqlCommand(procName);
             SqlDataReader dataReader = Connection.GetSqlDataReader(cmd);
 
-
-
             List<T> items = LoadObjects(dataReader);
-
-
 
             return items;
 
@@ -38,7 +34,7 @@ namespace EStore_DataAccessLayer.Mapper.Models
      
         public List<T> Read()
         {
-            return Read($"usp_Read_{typeof(T).Name}");
+            return Read($"usp_{typeof(T).Name}_Read");
         }
 
         public List<T> Read(int id)
