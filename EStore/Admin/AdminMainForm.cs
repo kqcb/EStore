@@ -1,14 +1,12 @@
 ﻿using System.Windows.Forms;
 
-namespace EStore
+namespace EStore.Admin
 {
-    public partial class Form1 : Form
+    public partial class AdminMainForm : Form
     {
-        public Form1()
+        public AdminMainForm()
         {
             InitializeComponent();
-
-
         }
     }
 }
