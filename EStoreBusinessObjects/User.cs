@@ -10,5 +10,6 @@
         public bool IsAdmin { get; set; }
         public bool IsActive { get; set; }
         public City City { get; set; }
+        public Role Role { get; set; }
     }
 }
