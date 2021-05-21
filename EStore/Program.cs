@@ -16,7 +16,8 @@ namespace EStore
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new Auth.AuthMainForm());
+
         }
     }
 }
