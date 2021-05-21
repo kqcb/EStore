@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel;
 
-namespace EStore.Admin
+namespace EStore
 {
-    partial class AdminMainForm
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -37,9 +37,9 @@ namespace EStore.Admin
             this.btnOrders = new System.Windows.Forms.Button();
             this.btnItem = new System.Windows.Forms.Button();
             this.btnClient = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlTopMenu = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlSideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -124,18 +124,6 @@ namespace EStore.Admin
             this.btnClient.UseVisualStyleBackColor = true;
             this.btnClient.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::EStore.Properties.Resources._72579_5454192_979319_imagei;
-            this.pictureBox1.Location = new System.Drawing.Point(-50, -13);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(545, 173);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // pnlTopMenu
             // 
             this.pnlTopMenu.BackColor = System.Drawing.Color.Navy;
@@ -152,16 +140,29 @@ namespace EStore.Admin
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1623, 908);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // AdminMainForm
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::EStore.Properties.Resources._72579_5454192_979319_imagei;
+            this.pictureBox1.Location = new System.Drawing.Point(-50, -13);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(545, 173);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2147, 1083);
+            this.ClientSize = new System.Drawing.Size(2147, 1094);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlSideMenu);
             this.Controls.Add(this.pnlTopMenu);
-            this.Name = "AdminMainForm";
+            this.Name = "MainForm";
             this.Text = "AdminMainForm";
             this.pnlSideMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

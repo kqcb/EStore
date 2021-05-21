@@ -1,17 +1,22 @@
-﻿using System;
+﻿using EStore_BusinessLogicLayer;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using EStore.Admin;
-using EStore.Client;
-using EStore_BusinessLogicLayer;
 
-namespace EStore
+namespace EStore.Auth
 {
-    public partial class LoginForm : Form
+    public partial class AuthMainForm : Form
     {
-        private UserMainForm _userMainForm;
-        private AdminMainForm _adminMainForm;
         
-        public LoginForm()
+        private EStore.MainForm _adminMainForm;
+
+        public AuthMainForm()
         {
             InitializeComponent();
         }
@@ -29,20 +34,21 @@ namespace EStore
                     MessageBox.Show("Username or password is incorrect");
                 else
                 {
-                    
-                        this.Hide();
+
+                    this.Hide();
                     if (user.Role.Id == 1)
                     {
-                        _adminMainForm = _adminMainForm ?? new AdminMainForm();
+                        _adminMainForm = _adminMainForm ?? new EStore.MainForm();
                         _adminMainForm.Show();
-                    } else if (user.Role.Id == 2)
+                    }
+                    else if (user.Role.Id == 2)
                     {
-                        _userMainForm = _userMainForm ?? new UserMainForm();
-                        _userMainForm.Show(); 
+                        //_userMainForm = _userMainForm ?? new UserMainForm();
+                        //_userMainForm.Show();
                     }
                 }
             }
-            
+
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
@@ -89,5 +95,11 @@ namespace EStore
         {
 
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

@@ -1,10 +1,10 @@
 ﻿using System.Windows.Forms;
 
-namespace EStore.Admin
+namespace EStore
 {
-    public partial class AdminMainForm : Form
+    public partial class MainForm : Form
     {
-        public AdminMainForm()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -20,6 +20,11 @@ namespace EStore.Admin
         }
 
         private void button1_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

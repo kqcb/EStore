@@ -46,34 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\AdminMainForm.cs">
+    <Compile Include="Auth\AuthMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AdminMainForm.Designer.cs">
-      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    <Compile Include="Auth\AuthMainForm.Designer.cs">
+      <DependentUpon>AuthMainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Client\UserMainForm.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Client\UserMainForm.Designer.cs">
-      <DependentUpon>UserMainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoginForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Admin\AdminMainForm.resx">
-      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    <EmbeddedResource Include="Auth\AuthMainForm.resx">
+      <DependentUpon>AuthMainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Client\UserMainForm.resx">
-      <DependentUpon>UserMainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,6 +105,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\72579_5454192_979319_imagei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\" />
+    <Folder Include="Client\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
