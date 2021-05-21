@@ -8,5 +8,10 @@ namespace EStore.Client
         {
             InitializeComponent();
         }
+
+        private void UserMainForm_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
