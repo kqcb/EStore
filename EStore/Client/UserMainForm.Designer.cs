@@ -37,8 +37,8 @@ namespace EStore.Client
             this.btnOrders = new System.Windows.Forms.Button();
             this.btnItem = new System.Windows.Forms.Button();
             this.pnlTopMenu = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlSideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,11 +46,11 @@ namespace EStore.Client
             // pnlSideMenu
             // 
             this.pnlSideMenu.BackColor = System.Drawing.Color.Navy;
+            this.pnlSideMenu.Controls.Add(this.pictureBox1);
             this.pnlSideMenu.Controls.Add(this.btnInvoices);
             this.pnlSideMenu.Controls.Add(this.btnCategory);
             this.pnlSideMenu.Controls.Add(this.btnOrders);
             this.pnlSideMenu.Controls.Add(this.btnItem);
-            this.pnlSideMenu.Controls.Add(this.pictureBox1);
             this.pnlSideMenu.Location = new System.Drawing.Point(17, 12);
             this.pnlSideMenu.Name = "pnlSideMenu";
             this.pnlSideMenu.Size = new System.Drawing.Size(492, 1071);
@@ -116,16 +116,6 @@ namespace EStore.Client
             this.pnlTopMenu.Size = new System.Drawing.Size(1716, 157);
             this.pnlTopMenu.TabIndex = 2;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::EStore.Properties.Resources._72579_5454192_979319_imagei;
-            this.pictureBox1.Location = new System.Drawing.Point(-33, -46);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(545, 203);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -133,6 +123,17 @@ namespace EStore.Client
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1615, 911);
             this.panel1.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::EStore.Properties.Resources._72579_5454192_979319_imagei;
+            this.pictureBox1.Location = new System.Drawing.Point(-38, -16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(545, 173);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // UserMainForm
             // 
@@ -157,8 +158,8 @@ namespace EStore.Client
         private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.Button btnOrders;
         private System.Windows.Forms.Button btnItem;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnlTopMenu;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

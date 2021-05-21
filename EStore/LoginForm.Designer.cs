@@ -46,7 +46,7 @@ namespace EStore
             // buttonLogin
             // 
             this.buttonLogin.Location = new System.Drawing.Point(226, 641);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(5);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(162, 57);
             this.buttonLogin.TabIndex = 3;
@@ -57,7 +57,7 @@ namespace EStore
             // buttonSignUp
             // 
             this.buttonSignUp.Location = new System.Drawing.Point(456, 641);
-            this.buttonSignUp.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonSignUp.Margin = new System.Windows.Forms.Padding(5);
             this.buttonSignUp.Name = "buttonSignUp";
             this.buttonSignUp.Size = new System.Drawing.Size(162, 57);
             this.buttonSignUp.TabIndex = 4;
@@ -78,7 +78,7 @@ namespace EStore
             // textBoxUserName
             // 
             this.textBoxUserName.Location = new System.Drawing.Point(226, 432);
-            this.textBoxUserName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.textBoxUserName.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(392, 38);
             this.textBoxUserName.TabIndex = 1;
@@ -97,7 +97,7 @@ namespace EStore
             // textBoxPassword
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(226, 541);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(392, 38);
             this.textBoxPassword.TabIndex = 2;
@@ -112,7 +112,8 @@ namespace EStore
             this.pictureBox1.Image = global::EStore.Properties.Resources._72579_5454192_979319_imagei;
             this.pictureBox1.Location = new System.Drawing.Point(146, 74);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(565, 226);
+            this.pictureBox1.Size = new System.Drawing.Size(547, 282);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -150,7 +151,7 @@ namespace EStore
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonSignUp);
             this.Controls.Add(this.buttonLogin);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "LoginForm";
             this.Text = "LoginForm";
             this.Load += new System.EventHandler(this.LoginForm_Load);
