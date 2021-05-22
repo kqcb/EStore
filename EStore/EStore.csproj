@@ -109,6 +109,9 @@
     <EmbeddedResource Include="Auth\LoginUserControl.resx">
       <DependentUpon>LoginUserControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Auth\SignUpUserControl.resx">
+      <DependentUpon>SignUpUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

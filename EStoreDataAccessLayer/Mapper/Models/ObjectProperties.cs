@@ -59,7 +59,6 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
             for (int i = 0; i < props.Count; i++)
             {
-
                 sqlParameters.AddWithValue("@" + props[i].Name, props[i].GetValue(ActualObject));
             }
         }

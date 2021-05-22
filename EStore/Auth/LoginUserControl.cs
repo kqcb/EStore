@@ -6,7 +6,8 @@ namespace EStore.Auth
 {
     public partial class LoginUserControl : UserControl
     {
-        private EStore.MainForm _adminMainForm;
+        private EStore.MainForm _mainForm;
+        private SignUpUserControl _signUpUserControl;
         public LoginUserControl()
         {
             InitializeComponent();
@@ -14,11 +15,11 @@ namespace EStore.Auth
         
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(textBoxUserName.Text) || String.IsNullOrEmpty(textBoxPassword.Text))
+            if (String.IsNullOrEmpty(textBoxEmail.Text) || String.IsNullOrEmpty(textBoxPassword.Text))
                 MessageBox.Show("Please fill all the boxes");
             else
             {
-                var user = EStoreContext.Users.Read(textBoxUserName.Text, textBoxPassword.Text);
+                var user = EStoreContext.Users.Read(textBoxEmail.Text, textBoxPassword.Text);
 
                 if (user == null)
                     MessageBox.Show("Username or password is incorrect");
@@ -26,22 +27,19 @@ namespace EStore.Auth
                 {
 
                     this.Hide();
-                    if (user.Role.Id == 1)
-                    {
-                        _adminMainForm ??= new EStore.MainForm(user);
-                        _adminMainForm.Show();
-                    }
-                    else if (user.Role.Id == 2)
-                    {
-                        //_userMainForm = _userMainForm ?? new UserMainForm();
-                        //_userMainForm.Show();
-                    }
+                    _mainForm ??= new MainForm(user);
+                    _mainForm.Show();
+                    
                 }
             }
 
         }
 
         private void LoginUserControl_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void buttonSignUp_Click(object sender, EventArgs e)
         {
         }
     }

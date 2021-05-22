@@ -10,7 +10,8 @@ namespace EStore.Auth
         {
             InitializeComponent();
             
-            panel1.Controls.Add(_loginUserControl ??= new LoginUserControl());
+            //panel1.Controls.Add(_loginUserControl ??= new LoginUserControl());
+            panel1.Controls.Add(_signUpUserControl ??= new SignUpUserControl());
         }
     }
 }

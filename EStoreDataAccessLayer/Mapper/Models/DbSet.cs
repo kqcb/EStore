@@ -9,7 +9,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
     {
         private static SqlConnection _sqlConnection;
 
-        public DbSet(string connString = "conStringEStore-Client")
+        public DbSet(string connString = "EStore-Client")
         {
             _sqlConnection ??= Connection.GetSqlConnection(connString);
         }
@@ -43,9 +43,20 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
         }
 
-
-        public List<T> Read(string procName, int? id)
+        public List<T> Read()
         {
+            return Read($"usp_{typeof(T).Name}_Read");
+        }
+
+        public T Read(int id)
+        {
+            return Read($"usp_{typeof(T).Name}_Read", id);
+        }
+
+
+        public T Read(string procName, int? id)
+        {
+            T item;
             try
             {
                 _sqlConnection.Open();
@@ -55,20 +66,14 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
                 SqlDataReader dataReader = cmd.ExecuteReader();
 
+                item = ((List<T>)Read(dataReader))[0];
 
-                List<T> items = (List<T>)Read(dataReader);
-
-                if (items.Count < 1)
-                {
-                    return null;
-                }
-
-                return items;
+                return item;
 
             }
             catch (Exception)
             {
-                return null;
+                return default(T);
             }
             finally
             {
@@ -90,51 +95,101 @@ namespace EStoreDataAccessLayer.Mapper.Models
             return items;
         }
 
+        public int Delete(int id)
+        {
+            return Delete($"usp_{typeof(T).Name}_Delete", id);
+        }
+
         public int Delete(string procName, int? id)
         {
-            _sqlConnection.Open();
+            try
+            {
+                _sqlConnection.Open();
 
-            var cmd = Connection.GetSqlCommand(procName);
+                var cmd = Connection.GetSqlCommand(procName);
 
-            cmd.Parameters.AddWithValue($"{typeof(T).Name}Id", id);
+                cmd.Parameters.AddWithValue($"{typeof(T).Name}Id", id);
 
-            int rez = cmd.ExecuteNonQuery();
+                int rez = cmd.ExecuteNonQuery();
 
-            _sqlConnection.Close();
+                _sqlConnection.Close();
 
-            return rez;
+                return rez;
+            } catch(Exception)
+            {
+                return -1;
+            }finally
+            {
+                _sqlConnection.Close();
+            }
+        }
+
+        public void Update(T item)
+        {
+            Update($"usp_{typeof(T).Name}_Update", item);
         }
 
         public void Update(string procName, T item)
         {
-            ObjectProperties objectProperties = new ObjectProperties(typeof(T));
-            objectProperties.ActualObject = Convert.ChangeType(item, objectProperties.ObjectType);
+            try
+            {
+                _sqlConnection.Open();
+                ObjectProperties objectProperties = new ObjectProperties(typeof(T));
+                objectProperties.ActualObject = Convert.ChangeType(item, objectProperties.ObjectType);
 
-            var cmd = Connection.GetSqlCommand(procName);
+                var cmd = Connection.GetSqlCommand(procName);
 
 
-            objectProperties.ToParametersWithId(cmd.Parameters);
+                objectProperties.ToParametersWithId(cmd.Parameters);
 
-            int rez = cmd.ExecuteNonQuery();
+                int rez = cmd.ExecuteNonQuery();
+            } catch(Exception)
+            {
+                
+            } finally
+            {
+                _sqlConnection.Close();
+            }
         }
+        
 
         public int Create(string procName, T item)
         {
-            _sqlConnection.Open();
-            ObjectProperties objectProperties = new ObjectProperties(typeof(T));
-            objectProperties.ActualObject = Convert.ChangeType(item, objectProperties.ObjectType);
+            try
+            {
+                _sqlConnection.Open();
+                ObjectProperties objectProperties = new ObjectProperties(typeof(T));
+                objectProperties.ActualObject = Convert.ChangeType(item, objectProperties.ObjectType);
 
-            var cmd = Connection.GetSqlCommand(procName);
+                var cmd = Connection.GetSqlCommand(procName);
 
-            objectProperties.ToParametersWithId(cmd.Parameters);
-            objectProperties.ToOtherParametersWithId(cmd.Parameters);
+                objectProperties.ToParametersWithId(cmd.Parameters);
+                objectProperties.ToOtherParametersWithId(cmd.Parameters);
+
+                cmd.Parameters.RemoveAt("@Id");
+              //  cmd.Parameters.AddWithValue("insertBy", 1);
 
 
 
-            int rez = cmd.ExecuteNonQuery();
-            _sqlConnection.Close();
+                int rez = cmd.ExecuteNonQuery();
+                _sqlConnection.Close();
 
-            return rez;
+                return rez;
+            }
+            catch (Exception e)
+            {
+                var s = e.Message;
+                return 0;
+            }
+            finally
+            {
+                _sqlConnection.Close();
+            }
+        }
+
+        public int Create(T item)
+        {
+            return Create($"usp_{typeof(T).Name}_Insert", item);
         }
 
         public static T LoadObject(SqlDataReader data)
