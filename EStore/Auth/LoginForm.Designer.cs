@@ -71,10 +71,10 @@ namespace EStore.Auth
             // 
             // 
             this.txtEmail.CustomButton.Image = null;
-            this.txtEmail.CustomButton.Location = new System.Drawing.Point(142, 1);
+            this.txtEmail.CustomButton.Location = new System.Drawing.Point(162, 1);
             this.txtEmail.CustomButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtEmail.CustomButton.Name = "";
-            this.txtEmail.CustomButton.Size = new System.Drawing.Size(20, 18);
+            this.txtEmail.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtEmail.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtEmail.CustomButton.TabIndex = 1;
             this.txtEmail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -119,7 +119,7 @@ namespace EStore.Auth
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPassword.MaxLength = 32767;
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PasswordChar = '●';
             this.txtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtPassword.SelectedText = "";
             this.txtPassword.SelectionLength = 0;
@@ -130,6 +130,7 @@ namespace EStore.Auth
             this.txtPassword.TabIndex = 6;
             this.txtPassword.UseSelectable = true;
             this.txtPassword.UseStyleColors = true;
+            this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
@@ -164,7 +165,7 @@ namespace EStore.Auth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(247, 324);
+            this.ClientSize = new System.Drawing.Size(247, 276);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
