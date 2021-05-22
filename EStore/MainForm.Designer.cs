@@ -31,132 +31,97 @@ namespace EStore
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlSideMenu = new System.Windows.Forms.Panel();
-            this.btnOrders = new System.Windows.Forms.Button();
-            this.btnItems = new System.Windows.Forms.Button();
-            this.btnClients = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnlTopMenu = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pnldataGrid = new System.Windows.Forms.Panel();
-            this.pnlSideMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tileClients = new MetroFramework.Controls.MetroTile();
+            this.tileItems = new MetroFramework.Controls.MetroTile();
+            this.tileOrders = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
-            // 
-            // pnlSideMenu
-            // 
-            this.pnlSideMenu.BackColor = System.Drawing.Color.Navy;
-            this.pnlSideMenu.Controls.Add(this.btnOrders);
-            this.pnlSideMenu.Controls.Add(this.btnItems);
-            this.pnlSideMenu.Controls.Add(this.btnClients);
-            this.pnlSideMenu.Controls.Add(this.pictureBox1);
-            this.pnlSideMenu.Location = new System.Drawing.Point(8, 5);
-            this.pnlSideMenu.Margin = new System.Windows.Forms.Padding(1);
-            this.pnlSideMenu.Name = "pnlSideMenu";
-            this.pnlSideMenu.Size = new System.Drawing.Size(181, 531);
-            this.pnlSideMenu.TabIndex = 0;
-            // 
-            // btnOrders
-            // 
-            this.btnOrders.FlatAppearance.BorderSize = 2;
-            this.btnOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOrders.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrders.Location = new System.Drawing.Point(23, 237);
-            this.btnOrders.Margin = new System.Windows.Forms.Padding(1);
-            this.btnOrders.Name = "btnOrders";
-            this.btnOrders.Size = new System.Drawing.Size(125, 36);
-            this.btnOrders.TabIndex = 1;
-            this.btnOrders.Text = "Orders";
-            this.btnOrders.UseVisualStyleBackColor = true;
-            this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
-            // 
-            // btnItems
-            // 
-            this.btnItems.FlatAppearance.BorderSize = 2;
-            this.btnItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnItems.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnItems.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnItems.Location = new System.Drawing.Point(23, 174);
-            this.btnItems.Margin = new System.Windows.Forms.Padding(1);
-            this.btnItems.Name = "btnItems";
-            this.btnItems.Size = new System.Drawing.Size(125, 36);
-            this.btnItems.TabIndex = 1;
-            this.btnItems.Text = "Items";
-            this.btnItems.UseVisualStyleBackColor = true;
-            this.btnItems.Click += new System.EventHandler(this.btnItems_Click);
-            // 
-            // btnClients
-            // 
-            this.btnClients.FlatAppearance.BorderSize = 2;
-            this.btnClients.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClients.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnClients.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClients.Location = new System.Drawing.Point(23, 113);
-            this.btnClients.Margin = new System.Windows.Forms.Padding(1);
-            this.btnClients.Name = "btnClients";
-            this.btnClients.Size = new System.Drawing.Size(125, 36);
-            this.btnClients.TabIndex = 1;
-            this.btnClients.Text = "Clients";
-            this.btnClients.UseVisualStyleBackColor = true;
-            this.btnClients.Click += new System.EventHandler(this.btnClients_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(-19, -5);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 73);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pnlTopMenu
-            // 
-            this.pnlTopMenu.BackColor = System.Drawing.Color.Navy;
-            this.pnlTopMenu.Location = new System.Drawing.Point(187, 5);
-            this.pnlTopMenu.Margin = new System.Windows.Forms.Padding(1);
-            this.pnlTopMenu.Name = "pnlTopMenu";
-            this.pnlTopMenu.Size = new System.Drawing.Size(899, 66);
-            this.pnlTopMenu.TabIndex = 0;
             // 
             // pnldataGrid
             // 
             this.pnldataGrid.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pnldataGrid.Location = new System.Drawing.Point(192, 73);
+            this.pnldataGrid.Location = new System.Drawing.Point(68, 297);
             this.pnldataGrid.Margin = new System.Windows.Forms.Padding(1);
             this.pnldataGrid.Name = "pnldataGrid";
-            this.pnldataGrid.Size = new System.Drawing.Size(903, 463);
+            this.pnldataGrid.Size = new System.Drawing.Size(475, 142);
             this.pnldataGrid.TabIndex = 1;
+            // 
+            // tileClients
+            // 
+            this.tileClients.ActiveControl = null;
+            this.tileClients.BackColor = System.Drawing.Color.Transparent;
+            this.tileClients.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tileClients.Location = new System.Drawing.Point(17, 91);
+            this.tileClients.Name = "tileClients";
+            this.tileClients.Size = new System.Drawing.Size(199, 179);
+            this.tileClients.TabIndex = 2;
+            this.tileClients.Text = "Clients";
+            this.tileClients.TileImage = ((System.Drawing.Image)(resources.GetObject("tileClients.TileImage")));
+            this.tileClients.UseSelectable = true;
+            this.tileClients.UseTileImage = true;
+            this.tileClients.Click += new System.EventHandler(this.tileClients_Click);
+            // 
+            // tileItems
+            // 
+            this.tileItems.ActiveControl = null;
+            this.tileItems.BackColor = System.Drawing.Color.Transparent;
+            this.tileItems.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tileItems.Location = new System.Drawing.Point(253, 91);
+            this.tileItems.Name = "tileItems";
+            this.tileItems.Size = new System.Drawing.Size(199, 179);
+            this.tileItems.Style = MetroFramework.MetroColorStyle.Teal;
+            this.tileItems.TabIndex = 3;
+            this.tileItems.Text = "Items";
+            this.tileItems.TileImage = ((System.Drawing.Image)(resources.GetObject("tileItems.TileImage")));
+            this.tileItems.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tileItems.UseSelectable = true;
+            this.tileItems.UseTileImage = true;
+            this.tileItems.Click += new System.EventHandler(this.tileItems_Click);
+            // 
+            // tileOrders
+            // 
+            this.tileOrders.ActiveControl = null;
+            this.tileOrders.BackColor = System.Drawing.Color.Transparent;
+            this.tileOrders.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tileOrders.Location = new System.Drawing.Point(493, 91);
+            this.tileOrders.Name = "tileOrders";
+            this.tileOrders.Size = new System.Drawing.Size(199, 179);
+            this.tileOrders.Style = MetroFramework.MetroColorStyle.Green;
+            this.tileOrders.TabIndex = 4;
+            this.tileOrders.Text = "Orders";
+            this.tileOrders.TileImage = ((System.Drawing.Image)(resources.GetObject("tileOrders.TileImage")));
+            this.tileOrders.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.tileOrders.UseSelectable = true;
+            this.tileOrders.UseTileImage = true;
+            this.tileOrders.Click += new System.EventHandler(this.tileOrders_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1087, 532);
+            this.ClientSize = new System.Drawing.Size(717, 494);
+            this.Controls.Add(this.tileOrders);
+            this.Controls.Add(this.tileItems);
+            this.Controls.Add(this.tileClients);
             this.Controls.Add(this.pnldataGrid);
-            this.Controls.Add(this.pnlSideMenu);
-            this.Controls.Add(this.pnlTopMenu);
+            this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "MainForm";
-            this.Text = "MainForm";
-            this.pnlSideMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Padding = new System.Windows.Forms.Padding(23, 65, 23, 22);
+            this.Style = MetroFramework.MetroColorStyle.Teal;
+            this.Text = "EStore";
             this.ResumeLayout(false);
 
         }
 
-        private System.Windows.Forms.Button btnClients;
-        private System.Windows.Forms.Button btnItems;
-
         #endregion
-
-        private System.Windows.Forms.Panel pnlSideMenu;
-        private System.Windows.Forms.Panel pnlTopMenu;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnCategory;
-        private System.Windows.Forms.Button btnOrders;
         private System.Windows.Forms.Button btnItem;
         private System.Windows.Forms.Button btnClient;
         private System.Windows.Forms.Panel pnldataGrid;
+        private MetroFramework.Controls.MetroTile tileClients;
+        private MetroFramework.Controls.MetroTile tileItems;
+        private MetroFramework.Controls.MetroTile tileOrders;
     }
 }
