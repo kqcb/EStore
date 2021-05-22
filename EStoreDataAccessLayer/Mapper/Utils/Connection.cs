@@ -9,7 +9,7 @@ namespace EStoreDataAccessLayer.Mapper.Utils
     {
 
         private static SqlConnection _sqlConnection;
-        public static SqlConnection GetSqlConnection(string connectionString = "conStringEStore-Client")
+        public static SqlConnection GetSqlConnection(string connectionString = "EStore-Client")
         {
             return _sqlConnection ??= new SqlConnection(GetConnectionString(connectionString));
         }
