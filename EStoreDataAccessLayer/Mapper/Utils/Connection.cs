@@ -9,7 +9,7 @@ namespace EStoreDataAccessLayer.Mapper.Utils
     {
 
         private static SqlConnection _sqlConnection;
-        public static SqlConnection GetSqlConnection(string connectionString = "conStringEStore-Client")
+        public static SqlConnection GetSqlConnection(string connectionString = "EStore-Client")
         {
             return _sqlConnection ??= new SqlConnection(GetConnectionString(connectionString));
         }
@@ -45,30 +45,7 @@ namespace EStoreDataAccessLayer.Mapper.Utils
             return new (procName, GetSqlConnection());
         }
         
-        public static DataTable FillDataTable(string procName)
-        {
-            
-            try
-            {
-                GetSqlConnection().Open();
-                
-                var adapter = GetSqlDataAdapter(procName);
-                var datatable = new DataTable();
-                
-                adapter.Fill(datatable);
-
-                return datatable;
-            }
-            catch (Exception)
-            {
-                return null;
-            }
-            finally
-            {
-                GetSqlConnection().Close();
-            }
-            
-        }
+       
 
         public static  string GetConnectionString(string connectionString)
         {
