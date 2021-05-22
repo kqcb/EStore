@@ -1,32 +1,50 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
+using EStore.UserControls;
+using EStoreBusinessObjects;
 
 namespace EStore
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        private ClientsUserControl _clientsUserControl;
+        private ItemsUserControl _itemsUserControl;
+        private InvoicesUserControl _invoicesUserControl;
+        private OrdersUserControl _ordersUserControl;
+        private MainUserControl _mainUserControl;
+        private User _user;
+        public MainForm(User user)
         {
+            _user = user;
             InitializeComponent();
+            panel1.Controls.Add(_mainUserControl ?? new MainUserControl(_user));
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
 
+        private void btnClients_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            panel1.Controls.Add(_clientsUserControl ??= new ClientsUserControl(_user));
         }
 
-        private void pictureBox1_Click(object sender, System.EventArgs e)
+        private void btnItems_Click(object sender, EventArgs e)
         {
-
+            panel1.Controls.Clear();
+            panel1.Controls.Add(_itemsUserControl ??= new ItemsUserControl(_user));
         }
 
-        private void button1_Click(object sender, System.EventArgs e)
-        {
+       
 
+        private void btnOrders_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            panel1.Controls.Add(_ordersUserControl ??= new OrdersUserControl(_user));
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnInvoices_Click(object sender, EventArgs e)
         {
-
+            panel1.Controls.Clear();
+            panel1.Controls.Add(_invoicesUserControl ??= new InvoicesUserControl(_user));
         }
     }
 }
