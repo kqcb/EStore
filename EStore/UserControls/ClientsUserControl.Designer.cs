@@ -1,15 +1,15 @@
 ﻿using System.ComponentModel;
 
-namespace EStore.Auth
+namespace EStore.UserControls
 {
-    partial class AuthMainForm
+    partial class ClientsUserControl
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -23,7 +23,7 @@ namespace EStore.Auth
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -31,28 +31,16 @@ namespace EStore.Auth
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(-3, 1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(816, 451);
-            this.panel1.TabIndex = 0;
-            // 
-            // AuthMainForm
+            // ClientsUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
-            this.Name = "AuthMainForm";
-            this.Text = "AuthMainForm";
+            this.BackColor = System.Drawing.Color.White;
+            this.Name = "ClientsUserControl";
             this.ResumeLayout(false);
         }
-
-        private System.Windows.Forms.Panel panel1;
 
         #endregion
     }

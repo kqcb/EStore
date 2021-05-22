@@ -32,7 +32,6 @@ namespace EStore
         private void InitializeComponent()
         {
             this.pnlSideMenu = new System.Windows.Forms.Panel();
-            this.btnInvoices = new System.Windows.Forms.Button();
             this.btnOrders = new System.Windows.Forms.Button();
             this.btnItems = new System.Windows.Forms.Button();
             this.btnClients = new System.Windows.Forms.Button();
@@ -46,7 +45,6 @@ namespace EStore
             // pnlSideMenu
             // 
             this.pnlSideMenu.BackColor = System.Drawing.Color.Navy;
-            this.pnlSideMenu.Controls.Add(this.btnInvoices);
             this.pnlSideMenu.Controls.Add(this.btnOrders);
             this.pnlSideMenu.Controls.Add(this.btnItems);
             this.pnlSideMenu.Controls.Add(this.btnClients);
@@ -57,28 +55,13 @@ namespace EStore
             this.pnlSideMenu.Size = new System.Drawing.Size(272, 691);
             this.pnlSideMenu.TabIndex = 0;
             // 
-            // btnInvoices
-            // 
-            this.btnInvoices.FlatAppearance.BorderSize = 2;
-            this.btnInvoices.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInvoices.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnInvoices.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInvoices.Location = new System.Drawing.Point(10, 471);
-            this.btnInvoices.Margin = new System.Windows.Forms.Padding(2);
-            this.btnInvoices.Name = "btnInvoices";
-            this.btnInvoices.Size = new System.Drawing.Size(187, 55);
-            this.btnInvoices.TabIndex = 1;
-            this.btnInvoices.Text = "Invoices";
-            this.btnInvoices.UseVisualStyleBackColor = true;
-            this.btnInvoices.Click += new System.EventHandler(this.btnInvoices_Click);
-            // 
             // btnOrders
             // 
             this.btnOrders.FlatAppearance.BorderSize = 2;
             this.btnOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrders.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrders.Location = new System.Drawing.Point(10, 372);
+            this.btnOrders.Location = new System.Drawing.Point(34, 364);
             this.btnOrders.Margin = new System.Windows.Forms.Padding(2);
             this.btnOrders.Name = "btnOrders";
             this.btnOrders.Size = new System.Drawing.Size(187, 55);
@@ -93,7 +76,7 @@ namespace EStore
             this.btnItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnItems.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnItems.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnItems.Location = new System.Drawing.Point(10, 275);
+            this.btnItems.Location = new System.Drawing.Point(34, 267);
             this.btnItems.Margin = new System.Windows.Forms.Padding(2);
             this.btnItems.Name = "btnItems";
             this.btnItems.Size = new System.Drawing.Size(187, 55);
@@ -108,7 +91,7 @@ namespace EStore
             this.btnClients.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClients.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnClients.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClients.Location = new System.Drawing.Point(10, 182);
+            this.btnClients.Location = new System.Drawing.Point(34, 174);
             this.btnClients.Margin = new System.Windows.Forms.Padding(2);
             this.btnClients.Name = "btnClients";
             this.btnClients.Size = new System.Drawing.Size(187, 55);
@@ -169,7 +152,6 @@ namespace EStore
         private System.Windows.Forms.Panel pnlSideMenu;
         private System.Windows.Forms.Panel pnlTopMenu;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnInvoices;
         private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.Button btnOrders;
         private System.Windows.Forms.Button btnItem;
