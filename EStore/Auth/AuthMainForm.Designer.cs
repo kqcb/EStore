@@ -37,19 +37,22 @@ namespace EStore.Auth
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(-3, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(816, 451);
+            this.panel1.Size = new System.Drawing.Size(725, 361);
             this.panel1.TabIndex = 0;
             // 
             // AuthMainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(700, 357);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AuthMainForm";
             this.Text = "AuthMainForm";
             this.ResumeLayout(false);
+
         }
 
         private System.Windows.Forms.Panel panel1;
