@@ -19,21 +19,28 @@ namespace EStore.ItemsView
         {
             InitializeComponent();
             this.item = item;
+            ShowData(item);
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             Item temp = new Item();
+            temp.Id = item.Id;
             temp.Name = txtName.Text;
             temp.Description = txtDescription.Text;
             temp.IsActive = rbActive.Checked ? true : false;
-            temp.Quantity = int.Parse(txtQuantity.Text);
+            temp.Brand = new Brand()
+            {
+                Id = 1
+            };
             temp.UnitPrice = double.Parse(txtUnitPrice.Text);
+
+            EStoreContext.Items.Update(temp);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            EStoreContext.Items.Delete("usp_Item_Delete", item.Id);
+            EStoreContext.Items.Delete(item.Id);
             this.Close();
         }
 
@@ -43,7 +50,7 @@ namespace EStore.ItemsView
             txtDescription.Text = item.Description;
             rbActive.Checked = item.IsActive ? true : false;
             rbInactive.Checked = item.IsActive ? false : true;
-            txtQuantity.Text = item.Quantity.ToString();
+            //txtQuantity.Text = item.Quantity.ToString();
             txtUnitPrice.Text = item.UnitPrice.ToString();
         }
     }

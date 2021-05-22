@@ -26,8 +26,8 @@ namespace EStore.UserControls
         private void dgItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int itemId = Convert.ToInt32(dgItems.Rows[e.RowIndex].Cells[0].Value.ToString());
-            Item item = EStoreContext.Items.Read("usp_Item_Read", itemId);
-            new ItemsView.ItemDetails(item);
+            Item item = EStoreContext.Items.Read(itemId);
+            new ItemsView.ItemDetails(item).Show();
         }
 
         private void CheckForAdmin(bool isAdmin)

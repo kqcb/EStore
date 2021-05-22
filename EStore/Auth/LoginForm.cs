@@ -4,17 +4,13 @@ using System.Windows.Forms;
 
 namespace EStore.Auth
 {
-    public partial class AuthMainForm : Form
+    public partial class LoginForm : Form
     {
-        private LoginUserControl _loginUserControl;
-        private SignUpUserControl _signUpUserControl;
+        private SignupForm _signupForm;
         private MainForm _mainForm;
-        public AuthMainForm()
+        public LoginForm()
         {
             InitializeComponent();
-            
-            panel1.Controls.Add(_loginUserControl ??= new LoginUserControl());
-            //panel1.Controls.Add(_signUpUserControl ??= new SignUpUserControl());
         }
 
         private void buttonLogin_Click(object sender, System.EventArgs e)
@@ -40,7 +36,9 @@ namespace EStore.Auth
 
         private void buttonSignUp_Click(object sender, System.EventArgs e)
         {
-            panel1.Controls.Add(_signUpUserControl ??= new SignUpUserControl());
+            this.Hide();
+            _signupForm ??= new SignupForm();
+            _signupForm.Show();
         }
     }
 }

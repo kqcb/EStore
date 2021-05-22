@@ -52,7 +52,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
         public T Read(int id)
         {
-            return Read($"usp_{typeof(T).Name}_Read", id);
+            return Read($"usp_{typeof(T).Name}_Read_By_Id", id);
         }
 
 
@@ -64,7 +64,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
                 _sqlConnection.Open();
                 SqlCommand cmd = Connection.GetSqlCommand( procName);
 
-                cmd.Parameters.AddWithValue($"Id", id);
+                cmd.Parameters.AddWithValue($"id", id);
 
                 SqlDataReader dataReader = cmd.ExecuteReader();
 
@@ -73,7 +73,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
                 return item;
 
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return default(T);
             }
@@ -110,7 +110,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
                 var cmd = Connection.GetSqlCommand(procName);
 
-                cmd.Parameters.AddWithValue($"{typeof(T).Name}Id", id);
+                cmd.Parameters.AddWithValue($"Id", id);
 
                 int rez = cmd.ExecuteNonQuery();
 
@@ -143,11 +143,14 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
 
                 objectProperties.ToParametersWithId(cmd.Parameters);
+                objectProperties.ToOtherParametersWithId(cmd.Parameters);
+                cmd.Parameters.AddWithValue("lud", DateTime.Now.ToShortDateString());
+                cmd.Parameters.AddWithValue("lub", 1);
 
                 int rez = cmd.ExecuteNonQuery();
-            } catch(Exception)
+            } catch(Exception e)
             {
-                
+                var s = e.Message;
             } finally
             {
                 _sqlConnection.Close();
@@ -169,7 +172,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
                 objectProperties.ToOtherParametersWithId(cmd.Parameters);
 
                 cmd.Parameters.RemoveAt("@Id");
-              //  cmd.Parameters.AddWithValue("insertBy", 1);
+                cmd.Parameters.AddWithValue("insertBy", 1);
 
 
 

@@ -25,10 +25,13 @@ namespace EStore.ItemsView
             item.Name = txtName.Text;
             item.Description = txtDescription.Text;
             item.IsActive = rbActive.Checked ? true : false;
-            item.Quantity = int.Parse(txtQuantity.Text);
+            item.Brand = new Brand()
+            {
+                Id = 1
+            };
             item.UnitPrice = double.Parse(txtUnitPrice.Text);
 
-            EStoreContext.Items.Create("usp_Item_Create", item);
+            EStoreContext.Items.Create(item);
         }
     }
 }
