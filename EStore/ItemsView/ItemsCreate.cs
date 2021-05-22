@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EStoreBusinessLogicLayer;
+using EStoreBusinessObjects;
 
 namespace EStore.ItemsView
 {
@@ -15,6 +17,18 @@ namespace EStore.ItemsView
         public ItemsCreate()
         {
             InitializeComponent();
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            Item item = new Item();
+            item.Name = txtName.Text;
+            item.Description = txtDescription.Text;
+            item.IsActive = rbActive.Checked ? true : false;
+            item.Quantity = int.Parse(txtQuantity.Text);
+            item.UnitPrice = double.Parse(txtUnitPrice.Text);
+
+            EStoreContext.Items.Create("usp_Item_Create", item);
         }
     }
 }

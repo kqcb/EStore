@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data;
 using System.Windows.Forms;
 using EStoreBusinessLogicLayer;
 using EStoreBusinessObjects;
@@ -13,6 +15,7 @@ namespace EStore.UserControls
             _user = user;
             InitializeComponent();
             CheckForAdmin(true);
+            ShowData();
         }
 
         private void btnCreate_Click(object sender, System.EventArgs e)
@@ -34,5 +37,10 @@ namespace EStore.UserControls
                 btnCreate.Visible = false;
             }
         }
-    }
+
+        private void ShowData()
+        {
+            DataTable itemTable = EStoreContext.Items.FillDataTable();
+            dgItems.DataSource = itemTable;
+        }
 }

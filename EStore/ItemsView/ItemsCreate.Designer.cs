@@ -31,7 +31,6 @@ namespace EStore.ItemsView
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
-            this.txtIsActive = new System.Windows.Forms.TextBox();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.txtUnitPrice = new System.Windows.Forms.TextBox();
@@ -41,6 +40,8 @@ namespace EStore.ItemsView
             this.label8 = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
             this.lblItemName = new System.Windows.Forms.Label();
+            this.rbActive = new System.Windows.Forms.RadioButton();
+            this.rbInactive = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -61,13 +62,7 @@ namespace EStore.ItemsView
             this.btnCreate.TabIndex = 23;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
-            // 
-            // txtIsActive
-            // 
-            this.txtIsActive.Location = new System.Drawing.Point(244, 301);
-            this.txtIsActive.Name = "txtIsActive";
-            this.txtIsActive.Size = new System.Drawing.Size(100, 20);
-            this.txtIsActive.TabIndex = 22;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // txtQuantity
             // 
@@ -142,13 +137,34 @@ namespace EStore.ItemsView
             this.lblItemName.TabIndex = 13;
             this.lblItemName.Text = "Name:";
             // 
+            // rbActive
+            // 
+            this.rbActive.AutoSize = true;
+            this.rbActive.Location = new System.Drawing.Point(244, 300);
+            this.rbActive.Name = "rbActive";
+            this.rbActive.Size = new System.Drawing.Size(55, 17);
+            this.rbActive.TabIndex = 24;
+            this.rbActive.Text = "Active";
+            this.rbActive.UseVisualStyleBackColor = true;
+            // 
+            // rbInactive
+            // 
+            this.rbInactive.AutoSize = true;
+            this.rbInactive.Location = new System.Drawing.Point(335, 300);
+            this.rbInactive.Name = "rbInactive";
+            this.rbInactive.Size = new System.Drawing.Size(63, 17);
+            this.rbInactive.TabIndex = 25;
+            this.rbInactive.Text = "Inactive";
+            this.rbInactive.UseVisualStyleBackColor = true;
+            // 
             // ItemsCreate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(580, 405);
+            this.Controls.Add(this.rbInactive);
+            this.Controls.Add(this.rbActive);
             this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.txtIsActive);
             this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.txtUnitPrice);
@@ -170,7 +186,6 @@ namespace EStore.ItemsView
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCreate;
-        private System.Windows.Forms.TextBox txtIsActive;
         private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.TextBox txtUnitPrice;
@@ -180,5 +195,7 @@ namespace EStore.ItemsView
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Label lblItemName;
+        private System.Windows.Forms.RadioButton rbActive;
+        private System.Windows.Forms.RadioButton rbInactive;
     }
 }
