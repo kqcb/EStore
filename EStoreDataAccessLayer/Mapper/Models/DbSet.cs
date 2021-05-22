@@ -48,6 +48,11 @@ namespace EStoreDataAccessLayer.Mapper.Models
             return Read($"usp_{typeof(T).Name}_Read");
         }
 
+        public T Read(int id)
+        {
+            return Read($"usp_{typeof(T).Name}_Read", id);
+        }
+
 
         public T Read(string procName, int? id)
         {
@@ -90,6 +95,11 @@ namespace EStoreDataAccessLayer.Mapper.Models
             return items;
         }
 
+        public int Delete(int id)
+        {
+            return Delete($"usp_{typeof(T).Name}_Delete", id);
+        }
+
         public int Delete(string procName, int? id)
         {
             try
@@ -114,6 +124,11 @@ namespace EStoreDataAccessLayer.Mapper.Models
             }
         }
 
+        public void Update(T item)
+        {
+            Update($"usp_{typeof(T).Name}_Update", item);
+        }
+
         public void Update(string procName, T item)
         {
             try
@@ -136,6 +151,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
                 _sqlConnection.Close();
             }
         }
+        
 
         public int Create(string procName, T item)
         {
