@@ -36,7 +36,6 @@ namespace EStore.Auth
             this.lablePassword = new System.Windows.Forms.Label();
             this.textBoxUserName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonSignUp = new System.Windows.Forms.Button();
             this.buttonLogin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -44,7 +43,7 @@ namespace EStore.Auth
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Navy;
-            this.panel2.Location = new System.Drawing.Point(250, 802);
+            this.panel2.Location = new System.Drawing.Point(1, 841);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(852, 87);
             this.panel2.TabIndex = 11;
@@ -52,7 +51,7 @@ namespace EStore.Auth
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
-            this.panel1.Location = new System.Drawing.Point(250, -36);
+            this.panel1.Location = new System.Drawing.Point(1, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(852, 87);
             this.panel1.TabIndex = 12;
@@ -63,7 +62,7 @@ namespace EStore.Auth
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BackgroundImage = global::EStore.Properties.Resources._72579_5454192_979319_imagei;
             this.pictureBox1.Image = global::EStore.Properties.Resources._72579_5454192_979319_imagei;
-            this.pictureBox1.Location = new System.Drawing.Point(398, 39);
+            this.pictureBox1.Location = new System.Drawing.Point(149, 78);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(547, 282);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -72,7 +71,7 @@ namespace EStore.Auth
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(478, 506);
+            this.textBoxPassword.Location = new System.Drawing.Point(229, 545);
             this.textBoxPassword.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(392, 38);
@@ -81,7 +80,7 @@ namespace EStore.Auth
             // 
             // lablePassword
             // 
-            this.lablePassword.Location = new System.Drawing.Point(594, 465);
+            this.lablePassword.Location = new System.Drawing.Point(345, 504);
             this.lablePassword.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lablePassword.Name = "lablePassword";
             this.lablePassword.Size = new System.Drawing.Size(178, 36);
@@ -90,7 +89,7 @@ namespace EStore.Auth
             // 
             // textBoxUserName
             // 
-            this.textBoxUserName.Location = new System.Drawing.Point(478, 397);
+            this.textBoxUserName.Location = new System.Drawing.Point(229, 436);
             this.textBoxUserName.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(392, 38);
@@ -98,26 +97,16 @@ namespace EStore.Auth
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(594, 346);
+            this.label1.Location = new System.Drawing.Point(345, 385);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(178, 36);
             this.label1.TabIndex = 7;
             this.label1.Text = "Username";
             // 
-            // buttonSignUp
-            // 
-            this.buttonSignUp.Location = new System.Drawing.Point(708, 606);
-            this.buttonSignUp.Margin = new System.Windows.Forms.Padding(5);
-            this.buttonSignUp.Name = "buttonSignUp";
-            this.buttonSignUp.Size = new System.Drawing.Size(162, 57);
-            this.buttonSignUp.TabIndex = 13;
-            this.buttonSignUp.Text = "Sign-up";
-            this.buttonSignUp.UseVisualStyleBackColor = true;
-            // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(478, 606);
+            this.buttonLogin.Location = new System.Drawing.Point(333, 644);
             this.buttonLogin.Margin = new System.Windows.Forms.Padding(5);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(162, 57);
@@ -126,11 +115,11 @@ namespace EStore.Auth
             this.buttonLogin.UseVisualStyleBackColor = true;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
-            // MainForm
+            // AuthMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1104, 888);
+            this.ClientSize = new System.Drawing.Size(854, 926);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -138,9 +127,8 @@ namespace EStore.Auth
             this.Controls.Add(this.lablePassword);
             this.Controls.Add(this.textBoxUserName);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.buttonSignUp);
             this.Controls.Add(this.buttonLogin);
-            this.Name = "MainForm";
+            this.Name = "AuthMainForm";
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -158,7 +146,6 @@ namespace EStore.Auth
         private System.Windows.Forms.Label lablePassword;
         private System.Windows.Forms.TextBox textBoxUserName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonSignUp;
         private System.Windows.Forms.Button buttonLogin;
     }
 }
