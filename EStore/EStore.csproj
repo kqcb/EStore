@@ -191,7 +191,7 @@
     <EmbeddedResource Include="UserControls\ClientsUserControl.resx">
       <DependentUpon>ClientsUserControl.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
+
     <EmbeddedResource Include="UserControls\InvoicesUserControl.resx">
       <DependentUpon>InvoicesUserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,16 +206,14 @@
     <None Include="Properties\DataSources\EStoreBusinessObjects.OrderDetails.datasource" />
     <None Include="Properties\DataSources\EStoreBusinessObjects.Role.datasource" />
     <None Include="Properties\DataSources\EStoreBusinessObjects.User.datasource" />
-=======
-<<<<<<< HEAD
+
     <EmbeddedResource Include="UserControls\OrdersUserControl.resx">
       <DependentUpon>OrdersUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\EStoreBusinessObjects.Order.datasource" />
-=======
+
     <None Include="Properties\DataSources\EStoreBusinessObjects.User.datasource" />
->>>>>>> be3ebe61fbd6700d1c90d661d22ea4f56e938099
->>>>>>> development
+
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -32,9 +32,9 @@ namespace EStore.UserControls
         {
             if(!isAdmin)
             {
-                btnCreate.Visible = false;
-                btnEdit.Visible = false;
-                btnDelete.Visible = false;
+                //btnCreate.Visible = false;
+                //btnEdit.Visible = false;
+                //btnDelete.Visible = false;
             }
         }
 
