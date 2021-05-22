@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EStore
+namespace EStore.Profile
 {
-    public partial class Form1 : Form
+    public partial class ProfileMainForm : Form
     {
-        public Form1()
+        public ProfileMainForm()
         {
             InitializeComponent();
         }

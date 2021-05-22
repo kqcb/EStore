@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,14 +47,74 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Auth\AuthMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Auth\AuthMainForm.Designer.cs">
+      <DependentUpon>AuthMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\LoginUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Auth\LoginUserControl.Designer.cs">
+      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\SignUpUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Auth\SignUpUserControl.Designer.cs">
+      <DependentUpon>SignUpUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\ClientsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ClientsUserControl.Designer.cs">
+      <DependentUpon>ClientsUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InvoicesUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\InvoicesUserControl.Designer.cs">
+      <DependentUpon>InvoicesUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ItemsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ItemsUserControl.Designer.cs">
+      <DependentUpon>ItemsUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MainUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MainUserControl.Designer.cs">
+      <DependentUpon>MainUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\OrdersUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\OrdersUserControl.Designer.cs">
+      <DependentUpon>OrdersUserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Auth\AuthMainForm.resx">
+      <DependentUpon>AuthMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth\LoginUserControl.resx">
+      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth\SignUpUserControl.resx">
+      <DependentUpon>SignUpUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +123,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\ClientsUserControl.resx">
+      <DependentUpon>ClientsUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +140,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EStoreBusinessLogicLayer\EStoreBusinessLogicLayer.csproj">
+      <Project>{c756da6d-900e-447a-82ad-9b0dc04c757e}</Project>
+      <Name>EStoreBusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EStoreBusinessObjects\EStoreBusinessObjects.csproj">
+      <Project>{d2430b39-41e3-405b-aae1-27c9e6676206}</Project>
+      <Name>EStoreBusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EStoreDataAccessLayer\EStoreDataAccessLayer.csproj">
+      <Project>{64ed0297-221c-47be-9cd5-83df5f5d1001}</Project>
+      <Name>EStoreDataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\72579_5454192_979319_imagei.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
