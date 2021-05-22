@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace EStore.Auth
 {
-    public partial class LoginForm : Form
+    public partial class LoginForm : MetroFramework.Forms.MetroForm
     {
         private SignupForm _signupForm;
         private MainForm _mainForm;
@@ -13,13 +13,20 @@ namespace EStore.Auth
             InitializeComponent();
         }
 
-        private void buttonLogin_Click(object sender, System.EventArgs e)
+        private void btnSignup_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(textBoxEmail.Text) || String.IsNullOrEmpty(textBoxPassword.Text))
+            this.Hide();
+            _signupForm ??= new SignupForm();
+            _signupForm.Show();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtEmail.Text) || String.IsNullOrEmpty(txtPassword.Text))
                 MessageBox.Show("Please fill all the boxes");
             else
             {
-                var user = EStoreContext.Users.Read(textBoxEmail.Text, textBoxPassword.Text);
+                var user = EStoreContext.Users.Read(txtEmail.Text, txtPassword.Text);
 
                 if (user == null)
                     MessageBox.Show("Username or password is incorrect");
@@ -32,13 +39,6 @@ namespace EStore.Auth
 
                 }
             }
-        }
-
-        private void buttonSignUp_Click(object sender, System.EventArgs e)
-        {
-            this.Hide();
-            _signupForm ??= new SignupForm();
-            _signupForm.Show();
         }
     }
 }
