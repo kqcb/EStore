@@ -184,7 +184,6 @@ namespace EStore.Auth
             this.Size = new System.Drawing.Size(502, 664);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         private System.Windows.Forms.Button buttonSignUp;
