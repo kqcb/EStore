@@ -32,20 +32,10 @@ namespace EStore
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.pnldataGrid = new System.Windows.Forms.Panel();
             this.tileClients = new MetroFramework.Controls.MetroTile();
             this.tileItems = new MetroFramework.Controls.MetroTile();
             this.tileOrders = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
-            // 
-            // pnldataGrid
-            // 
-            this.pnldataGrid.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pnldataGrid.Location = new System.Drawing.Point(68, 297);
-            this.pnldataGrid.Margin = new System.Windows.Forms.Padding(1);
-            this.pnldataGrid.Name = "pnldataGrid";
-            this.pnldataGrid.Size = new System.Drawing.Size(475, 142);
-            this.pnldataGrid.TabIndex = 1;
             // 
             // tileClients
             // 
@@ -100,11 +90,10 @@ namespace EStore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 494);
+            this.ClientSize = new System.Drawing.Size(717, 324);
             this.Controls.Add(this.tileOrders);
             this.Controls.Add(this.tileItems);
             this.Controls.Add(this.tileClients);
-            this.Controls.Add(this.pnldataGrid);
             this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "MainForm";
@@ -119,7 +108,6 @@ namespace EStore
         private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.Button btnItem;
         private System.Windows.Forms.Button btnClient;
-        private System.Windows.Forms.Panel pnldataGrid;
         private MetroFramework.Controls.MetroTile tileClients;
         private MetroFramework.Controls.MetroTile tileItems;
         private MetroFramework.Controls.MetroTile tileOrders;

@@ -7,41 +7,26 @@ namespace EStore
 {
     public partial class MainForm : MetroFramework.Forms.MetroForm
     {
-        private ClientsUserControl _clientsUserControl;
-        private ItemsUserControl _itemsUserControl;
-        private InvoicesUserControl _invoicesUserControl;
-        private OrdersUserControl _ordersUserControl;
-        private MainUserControl _mainUserControl;
         private User _user;
         public MainForm(User user)
         {
             _user = user;
             InitializeComponent();
-            pnldataGrid.Controls.Add(_mainUserControl ?? new MainUserControl(_user));
         }
-
-        //private void btnInvoices_Click(object sender, EventArgs e)
-        //{
-        //    pnldataGrid.Controls.Clear();
-        //    pnldataGrid.Controls.Add(_invoicesUserControl ??= new InvoicesUserControl(_user));
-        //}
 
         private void tileClients_Click(object sender, EventArgs e)
         {
-            pnldataGrid.Controls.Clear();
-            pnldataGrid.Controls.Add(_clientsUserControl ??= new ClientsUserControl(_user));
+            new ClientsView.MainClientsView(_user).Show();
         }
 
         private void tileItems_Click(object sender, EventArgs e)
         {
-            pnldataGrid.Controls.Clear();
-            pnldataGrid.Controls.Add(_itemsUserControl ??= new ItemsUserControl(_user));
+            new ItemsView.MainItemsView(_user).Show();
         }
 
         private void tileOrders_Click(object sender, EventArgs e)
         {
-            pnldataGrid.Controls.Clear();
-            pnldataGrid.Controls.Add(_ordersUserControl ??= new OrdersUserControl(_user));
+            new OrdersView.MainOrdersView(_user).Show();
         }
     }
 }

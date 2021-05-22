@@ -1,16 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Windows.Forms;
-using EStoreBusinessLogicLayer;
+﻿using EStoreBusinessLogicLayer;
 using EStoreBusinessObjects;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
-namespace EStore.UserControls
+namespace EStore.ItemsView
 {
-    public partial class ItemsUserControl : UserControl
+    public partial class MainItemsView : MetroFramework.Forms.MetroForm
     {
         private User _user;
-        public ItemsUserControl(User user)
+        public MainItemsView(User user)
         {
             _user = user;
             InitializeComponent();
@@ -18,12 +23,12 @@ namespace EStore.UserControls
             ShowData();
         }
 
-        private void btnCreate_Click(object sender, System.EventArgs e)
+        private void tileCreate_Click(object sender, EventArgs e)
         {
             new ItemsView.ItemsCreate().Show();
         }
 
-        private void dgItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgItems_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int itemId = Convert.ToInt32(dgItems.Rows[e.RowIndex].Cells[0].Value.ToString());
             Item item = EStoreContext.Items.Read(itemId);
@@ -34,7 +39,7 @@ namespace EStore.UserControls
         {
             if (!isAdmin)
             {
-                btnCreate.Visible = false;
+                tileCreate.Visible = false;
             }
         }
 
