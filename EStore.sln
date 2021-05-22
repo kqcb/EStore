@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStore", "EStore\EStore.csproj", "{2ADBA982-0012-46AE-A136-4C46CAC42ED3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStore-DataAccessLayer", "EStore-DataAccessLayer\EStore-DataAccessLayer.csproj", "{64ED0297-221C-47BE-9CD5-83DF5F5D1001}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreDataAccessLayer", "EStoreDataAccessLayer\EStoreDataAccessLayer.csproj", "{64ED0297-221C-47BE-9CD5-83DF5F5D1001}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStore-BusinessObjects", "EStore-BusinessObjects\EStore-BusinessObjects.csproj", "{D2430B39-41E3-405B-AAE1-27C9E6676206}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreBusinessObjects", "EStoreBusinessObjects\EStoreBusinessObjects.csproj", "{D2430B39-41E3-405B-AAE1-27C9E6676206}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStore-BusinessLogicLayer", "EStore-BusinessLogicLayer\EStore-BusinessLogicLayer.csproj", "{C756DA6D-900E-447A-82AD-9B0DC04C757E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EStoreBusinessLogicLayer", "EStoreBusinessLogicLayer\EStoreBusinessLogicLayer.csproj", "{C756DA6D-900E-447A-82AD-9B0DC04C757E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,6 +1,6 @@
-﻿namespace EStore_BusinessObjects
+﻿namespace EStoreBusinessObjects
 {
-    public class City
+    public class Role
     {
         public int Id { get; set; }
         public string Name { get; set; }

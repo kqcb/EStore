@@ -90,17 +90,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EStore-BusinessLogicLayer\EStore-BusinessLogicLayer.csproj">
+    <ProjectReference Include="..\EStoreBusinessLogicLayer\EStoreBusinessLogicLayer.csproj">
       <Project>{c756da6d-900e-447a-82ad-9b0dc04c757e}</Project>
-      <Name>EStore-BusinessLogicLayer</Name>
+      <Name>EStoreBusinessLogicLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EStore-BusinessObjects\EStore-BusinessObjects.csproj">
+    <ProjectReference Include="..\EStoreBusinessObjects\EStoreBusinessObjects.csproj">
       <Project>{d2430b39-41e3-405b-aae1-27c9e6676206}</Project>
-      <Name>EStore-BusinessObjects</Name>
+      <Name>EStoreBusinessObjects</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EStore-DataAccessLayer\EStore-DataAccessLayer.csproj">
+    <ProjectReference Include="..\EStoreDataAccessLayer\EStoreDataAccessLayer.csproj">
       <Project>{64ed0297-221c-47be-9cd5-83df5f5d1001}</Project>
-      <Name>EStore-DataAccessLayer</Name>
+      <Name>EStoreDataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
