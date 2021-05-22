@@ -37,9 +37,9 @@ namespace EStore
             this.btnClients = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlTopMenu = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnldataGrid = new System.Windows.Forms.Panel();
             this.pnlSideMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSideMenu
@@ -49,10 +49,10 @@ namespace EStore
             this.pnlSideMenu.Controls.Add(this.btnItems);
             this.pnlSideMenu.Controls.Add(this.btnClients);
             this.pnlSideMenu.Controls.Add(this.pictureBox1);
-            this.pnlSideMenu.Location = new System.Drawing.Point(12, 8);
-            this.pnlSideMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlSideMenu.Location = new System.Drawing.Point(8, 5);
+            this.pnlSideMenu.Margin = new System.Windows.Forms.Padding(1);
             this.pnlSideMenu.Name = "pnlSideMenu";
-            this.pnlSideMenu.Size = new System.Drawing.Size(272, 691);
+            this.pnlSideMenu.Size = new System.Drawing.Size(181, 531);
             this.pnlSideMenu.TabIndex = 0;
             // 
             // btnOrders
@@ -61,10 +61,10 @@ namespace EStore
             this.btnOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrders.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrders.Location = new System.Drawing.Point(34, 364);
-            this.btnOrders.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOrders.Location = new System.Drawing.Point(23, 237);
+            this.btnOrders.Margin = new System.Windows.Forms.Padding(1);
             this.btnOrders.Name = "btnOrders";
-            this.btnOrders.Size = new System.Drawing.Size(187, 55);
+            this.btnOrders.Size = new System.Drawing.Size(125, 36);
             this.btnOrders.TabIndex = 1;
             this.btnOrders.Text = "Orders";
             this.btnOrders.UseVisualStyleBackColor = true;
@@ -76,10 +76,10 @@ namespace EStore
             this.btnItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnItems.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnItems.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnItems.Location = new System.Drawing.Point(34, 267);
-            this.btnItems.Margin = new System.Windows.Forms.Padding(2);
+            this.btnItems.Location = new System.Drawing.Point(23, 174);
+            this.btnItems.Margin = new System.Windows.Forms.Padding(1);
             this.btnItems.Name = "btnItems";
-            this.btnItems.Size = new System.Drawing.Size(187, 55);
+            this.btnItems.Size = new System.Drawing.Size(125, 36);
             this.btnItems.TabIndex = 1;
             this.btnItems.Text = "Items";
             this.btnItems.UseVisualStyleBackColor = true;
@@ -91,10 +91,10 @@ namespace EStore
             this.btnClients.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClients.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnClients.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClients.Location = new System.Drawing.Point(34, 174);
-            this.btnClients.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClients.Location = new System.Drawing.Point(23, 113);
+            this.btnClients.Margin = new System.Windows.Forms.Padding(1);
             this.btnClients.Name = "btnClients";
-            this.btnClients.Size = new System.Drawing.Size(187, 55);
+            this.btnClients.Size = new System.Drawing.Size(125, 36);
             this.btnClients.TabIndex = 1;
             this.btnClients.Text = "Clients";
             this.btnClients.UseVisualStyleBackColor = true;
@@ -102,10 +102,10 @@ namespace EStore
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(-28, -8);
+            this.pictureBox1.Location = new System.Drawing.Point(-19, -5);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(307, 112);
+            this.pictureBox1.Size = new System.Drawing.Size(205, 73);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -113,35 +113,36 @@ namespace EStore
             // pnlTopMenu
             // 
             this.pnlTopMenu.BackColor = System.Drawing.Color.Navy;
-            this.pnlTopMenu.Location = new System.Drawing.Point(281, 8);
-            this.pnlTopMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlTopMenu.Location = new System.Drawing.Point(187, 5);
+            this.pnlTopMenu.Margin = new System.Windows.Forms.Padding(1);
             this.pnlTopMenu.Name = "pnlTopMenu";
-            this.pnlTopMenu.Size = new System.Drawing.Size(920, 101);
+            this.pnlTopMenu.Size = new System.Drawing.Size(899, 66);
             this.pnlTopMenu.TabIndex = 0;
             // 
-            // panel1
+            // pnldataGrid
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel1.Location = new System.Drawing.Point(288, 113);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(913, 586);
-            this.panel1.TabIndex = 1;
+            this.pnldataGrid.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnldataGrid.Location = new System.Drawing.Point(192, 73);
+            this.pnldataGrid.Margin = new System.Windows.Forms.Padding(1);
+            this.pnldataGrid.Name = "pnldataGrid";
+            this.pnldataGrid.Size = new System.Drawing.Size(903, 463);
+            this.pnldataGrid.TabIndex = 1;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1195, 698);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1087, 532);
+            this.Controls.Add(this.pnldataGrid);
             this.Controls.Add(this.pnlSideMenu);
             this.Controls.Add(this.pnlTopMenu);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.pnlSideMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         private System.Windows.Forms.Button btnClients;
@@ -156,6 +157,6 @@ namespace EStore
         private System.Windows.Forms.Button btnOrders;
         private System.Windows.Forms.Button btnItem;
         private System.Windows.Forms.Button btnClient;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnldataGrid;
     }
 }

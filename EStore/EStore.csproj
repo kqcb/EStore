@@ -65,6 +65,18 @@
     <Compile Include="Auth\SignUpUserControl.Designer.cs">
       <DependentUpon>SignUpUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="ItemsView\ItemDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemsView\ItemDetails.Designer.cs">
+      <DependentUpon>ItemDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsView\ItemsCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemsView\ItemsCreate.Designer.cs">
+      <DependentUpon>ItemsCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +121,12 @@
     <EmbeddedResource Include="Auth\LoginUserControl.resx">
       <DependentUpon>LoginUserControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ItemsView\ItemDetails.resx">
+      <DependentUpon>ItemDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsView\ItemsCreate.resx">
+      <DependentUpon>ItemsCreate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +143,20 @@
     <EmbeddedResource Include="UserControls\ClientsUserControl.resx">
       <DependentUpon>ClientsUserControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\InvoicesUserControl.resx">
+      <DependentUpon>InvoicesUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ItemsUserControl.resx">
+      <DependentUpon>ItemsUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\EStoreBusinessObjects.Brand.datasource" />
+    <None Include="Properties\DataSources\EStoreBusinessObjects.Category.datasource" />
+    <None Include="Properties\DataSources\EStoreBusinessObjects.City.datasource" />
+    <None Include="Properties\DataSources\EStoreBusinessObjects.Item.datasource" />
+    <None Include="Properties\DataSources\EStoreBusinessObjects.Order.datasource" />
+    <None Include="Properties\DataSources\EStoreBusinessObjects.OrderDetails.datasource" />
+    <None Include="Properties\DataSources\EStoreBusinessObjects.Role.datasource" />
+    <None Include="Properties\DataSources\EStoreBusinessObjects.User.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -155,5 +187,6 @@
   <ItemGroup>
     <None Include="Resources\72579_5454192_979319_imagei.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

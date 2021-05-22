@@ -1,4 +1,6 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
+using EStoreBusinessLogicLayer;
 using EStoreBusinessObjects;
 
 namespace EStore.UserControls
@@ -10,6 +12,27 @@ namespace EStore.UserControls
         {
             _user = user;
             InitializeComponent();
+            CheckForAdmin(true);
+        }
+
+        private void btnCreate_Click(object sender, System.EventArgs e)
+        {
+            new ItemsView.ItemsCreate().Show();
+        }
+
+        private void dgItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int itemId = Convert.ToInt32(dgItems.Rows[e.RowIndex].Cells[0].Value.ToString());
+            Item item = EStoreContext.Items.Read("usp_Item_Read", itemId)[0];
+            new ItemsView.ItemDetails(item);
+        }
+
+        private void CheckForAdmin(bool isAdmin)
+        {
+            if (!isAdmin)
+            {
+                btnCreate.Visible = false;
+            }
         }
     }
 }
