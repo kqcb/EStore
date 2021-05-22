@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using EStoreDataAccessLayer.Mapper.Utils;
 
@@ -32,8 +33,9 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
                 return items;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                var s = e.Message;
                 return null;
             }
             finally
@@ -191,6 +193,35 @@ namespace EStoreDataAccessLayer.Mapper.Models
         {
             return Create($"usp_{typeof(T).Name}_Insert", item);
         }
+
+        public DataTable FillDataTable()
+        {
+            return FillDataTable($"usp_{typeof(T).Name}_Read");
+        }
+         public DataTable FillDataTable(string procName)
+         {
+                    
+                try
+                {
+                    Connection.GetSqlConnection().Open();
+                    
+                    var adapter = Connection.GetSqlDataAdapter(procName);
+                    var datatable = new DataTable();
+                    
+                    adapter.Fill(datatable);
+    
+                    return datatable;
+                }
+                catch (Exception)
+                {
+                    return null;
+                }
+                finally
+                {
+                    Connection.GetSqlConnection().Close();
+                }
+                
+         }
 
         public static T LoadObject(SqlDataReader data)
         {

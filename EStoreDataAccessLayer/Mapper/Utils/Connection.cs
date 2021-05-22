@@ -45,30 +45,7 @@ namespace EStoreDataAccessLayer.Mapper.Utils
             return new (procName, GetSqlConnection());
         }
         
-        public static DataTable FillDataTable(string procName)
-        {
-            
-            try
-            {
-                GetSqlConnection().Open();
-                
-                var adapter = GetSqlDataAdapter(procName);
-                var datatable = new DataTable();
-                
-                adapter.Fill(datatable);
-
-                return datatable;
-            }
-            catch (Exception)
-            {
-                return null;
-            }
-            finally
-            {
-                GetSqlConnection().Close();
-            }
-            
-        }
+       
 
         public static  string GetConnectionString(string connectionString)
         {
