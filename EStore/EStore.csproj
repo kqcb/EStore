@@ -83,8 +83,50 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrdersView\DeleteOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdersView\DeleteOrders.Designer.cs">
+      <DependentUpon>DeleteOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersView\OrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdersView\OrderDetails.Designer.cs">
+      <DependentUpon>OrderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersView\OrdersCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdersView\OrdersCreate.Designer.cs">
+      <DependentUpon>OrdersCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersView\UpdateOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdersView\UpdateOrders.Designer.cs">
+      <DependentUpon>UpdateOrders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\ClientsForm\CreateClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\ClientsForm\CreateClients.Designer.cs">
+      <DependentUpon>CreateClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ClientsForm\DeleteClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\ClientsForm\DeleteClients.Designer.cs">
+      <DependentUpon>DeleteClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ClientsForm\UpdateClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\ClientsForm\UpdateClients.Designer.cs">
+      <DependentUpon>UpdateClients.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ClientsUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -130,6 +172,12 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrdersView\DeleteOrders.resx">
+      <DependentUpon>DeleteOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersView\OrderDetails.resx">
+      <DependentUpon>OrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -143,6 +191,7 @@
     <EmbeddedResource Include="UserControls\ClientsUserControl.resx">
       <DependentUpon>ClientsUserControl.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="UserControls\InvoicesUserControl.resx">
       <DependentUpon>InvoicesUserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +206,16 @@
     <None Include="Properties\DataSources\EStoreBusinessObjects.OrderDetails.datasource" />
     <None Include="Properties\DataSources\EStoreBusinessObjects.Role.datasource" />
     <None Include="Properties\DataSources\EStoreBusinessObjects.User.datasource" />
+=======
+<<<<<<< HEAD
+    <EmbeddedResource Include="UserControls\OrdersUserControl.resx">
+      <DependentUpon>OrdersUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\EStoreBusinessObjects.Order.datasource" />
+=======
+    <None Include="Properties\DataSources\EStoreBusinessObjects.User.datasource" />
+>>>>>>> be3ebe61fbd6700d1c90d661d22ea4f56e938099
+>>>>>>> development
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
