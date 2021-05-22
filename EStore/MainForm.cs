@@ -17,34 +17,34 @@ namespace EStore
         {
             _user = user;
             InitializeComponent();
-            panel1.Controls.Add(_mainUserControl ?? new MainUserControl(_user));
+            pnldataGrid.Controls.Add(_mainUserControl ?? new MainUserControl(_user));
         }
 
 
         private void btnClients_Click(object sender, EventArgs e)
         {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(_clientsUserControl ??= new ClientsUserControl(_user));
+            pnldataGrid.Controls.Clear();
+            pnldataGrid.Controls.Add(_clientsUserControl ??= new ClientsUserControl(_user));
         }
 
         private void btnItems_Click(object sender, EventArgs e)
         {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(_itemsUserControl ??= new ItemsUserControl(_user));
+            pnldataGrid.Controls.Clear();
+            pnldataGrid.Controls.Add(_itemsUserControl ??= new ItemsUserControl(_user));
         }
 
        
 
         private void btnOrders_Click(object sender, EventArgs e)
         {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(_ordersUserControl ??= new OrdersUserControl(_user));
+            pnldataGrid.Controls.Clear();
+            pnldataGrid.Controls.Add(_ordersUserControl ??= new OrdersUserControl(_user));
         }
 
         private void btnInvoices_Click(object sender, EventArgs e)
         {
-            panel1.Controls.Clear();
-            panel1.Controls.Add(_invoicesUserControl ??= new InvoicesUserControl(_user));
+            pnldataGrid.Controls.Clear();
+            pnldataGrid.Controls.Add(_invoicesUserControl ??= new InvoicesUserControl(_user));
         }
     }
 }
