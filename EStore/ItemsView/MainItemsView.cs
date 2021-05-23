@@ -15,8 +15,10 @@ namespace EStore.ItemsView
     public partial class MainItemsView : MetroFramework.Forms.MetroForm
     {
         private User _user;
+        private static List<Item> _selectedItems;
         public MainItemsView(User user)
         {
+            _selectedItems = new List<Item>();
             _user = user;
             InitializeComponent();
             CheckForAdmin(true);
@@ -68,7 +70,40 @@ namespace EStore.ItemsView
             {
                 dgItems.CurrentCell.Value ??= false;
                 dgItems.CurrentCell.Value = !(bool)dgItems.CurrentCell.Value;
+
+                    int itemId = Convert.ToInt32(dgItems.Rows[e.RowIndex].Cells[1].Value.ToString());
+                    Item item = EStoreContext.Items.Read(itemId);
+                if ((bool)dgItems.CurrentCell.Value)
+                {
+
+                    AddToList(item);
+                }
+                else
+                    RemovFromList(item);
+             
+
             }
+        }
+
+        private void AddToList(Item item)
+        {
+            var itm = _selectedItems.FirstOrDefault(f => f.Id == item.Id);
+
+            if (itm is null)
+                _selectedItems.Add(item);
+        }
+
+        private void RemovFromList(Item item)
+        {
+            var itm = _selectedItems.FirstOrDefault(f => f.Id == item.Id);
+
+            if (itm is not null)
+                _selectedItems.Remove(itm);
+        }
+
+        private void tileCart_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
