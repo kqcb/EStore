@@ -224,11 +224,12 @@ namespace EStore.ItemsView
             this.txtName.UseStyleColors = true;
             this.txtName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtName.Click += new System.EventHandler(this.txtName_Click);
             // 
             // htmlLabel5
             // 
             this.htmlLabel5.AutoScroll = true;
-            this.htmlLabel5.AutoScrollMinSize = new System.Drawing.Size(198, 40);
+            this.htmlLabel5.AutoScrollMinSize = new System.Drawing.Size(182, 41);
             this.htmlLabel5.AutoSize = false;
             this.htmlLabel5.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel5.Location = new System.Drawing.Point(26, 80);

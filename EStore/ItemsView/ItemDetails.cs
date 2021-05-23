@@ -57,5 +57,10 @@ namespace EStore.ItemsView
         {
 
         }
+
+        private void txtName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

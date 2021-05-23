@@ -25,10 +25,10 @@ namespace EStore.OrdersView
         private void ShowData(Order order)
         {
             txbDate.Text = order.OrderDate.ToString();
-            txbStreet.Text = order.Street;
+            txbQuantity.Text = order.;
             radioIsPaid.Checked = order.IsPaid ? true : false;
             radioNotPaid.Checked = order.IsPaid ? false : true;
-            cmbCity.Text = order.City.ToString();
+            txbPrice.Text = order.OrderDetails;
         }
 
         private void OrdersDetails_Load(object sender, EventArgs e)
@@ -36,20 +36,26 @@ namespace EStore.OrdersView
 
         }
 
-        private void tileDelete_Click(object sender, EventArgs e)
+
+        private void tileDelete_Click_1(object sender, EventArgs e)
         {
             EStoreContext.Orders.Delete(order.Id);
             this.Close();
         }
 
-        private void tileEdit_Click(object sender, EventArgs e)
+        private void tileEdit_Click_1(object sender, EventArgs e)
         {
-            Order temp = new Order();
-            temp.OrderDate = order.OrderDate;
-            temp.Street = txbStreet.Text ;
+            OrderDetails temp = new OrderDetails();
+            temp.Quantity =  ;
             temp.IsPaid = radioIsPaid.Checked ? true : false;
-            temp.City = order.City;
+            temp.
             EStoreContext.Orders.Update(temp);
-        }   
+            this.Close();
+        }
+
+        private void txbCity_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
