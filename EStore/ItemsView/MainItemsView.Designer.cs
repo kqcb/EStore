@@ -96,6 +96,7 @@ namespace EStore.ItemsView
             this.dgItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgItems.Size = new System.Drawing.Size(566, 362);
             this.dgItems.TabIndex = 9;
+            this.dgItems.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgItems_CellClick);
             this.dgItems.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgItems_CellDoubleClick);
             // 
             // MainItemsView

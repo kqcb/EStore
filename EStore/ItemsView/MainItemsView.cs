@@ -20,6 +20,9 @@ namespace EStore.ItemsView
             _user = user;
             InitializeComponent();
             CheckForAdmin(true);
+      
+      
+          
             ShowData();
         }
 
@@ -30,7 +33,7 @@ namespace EStore.ItemsView
 
         private void dgItems_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            int itemId = Convert.ToInt32(dgItems.Rows[e.RowIndex].Cells[0].Value.ToString());
+            int itemId = Convert.ToInt32(dgItems.Rows[e.RowIndex].Cells[1].Value.ToString());
             Item item = EStoreContext.Items.Read(itemId);
             new ItemsView.ItemDetails(item).Show();
         }
@@ -47,6 +50,25 @@ namespace EStore.ItemsView
         {
             DataTable itemTable = EStoreContext.Items.FillDataTable();
             dgItems.DataSource = itemTable;
+
+            DataGridViewCheckBoxColumn chx = new();
+            chx.TrueValue = true;
+            chx.FalseValue = false;
+            
+            chx.Width = 100;
+            dgItems.Columns.Add(chx);
+
+            dgItems.Columns[dgItems.ColumnCount - 1].Name = "Add to Cart";
+            
+        }
+
+        private void dgItems_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+           if (dgItems.CurrentCell.ColumnIndex == 0)
+            {
+                dgItems.CurrentCell.Value ??= false;
+                dgItems.CurrentCell.Value = !(bool)dgItems.CurrentCell.Value;
+            }
         }
     }
 }
