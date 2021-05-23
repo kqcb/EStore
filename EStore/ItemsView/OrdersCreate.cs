@@ -1,4 +1,5 @@
-﻿using EStoreBusinessObjects;
+﻿using EStoreBusinessLogicLayer;
+using EStoreBusinessObjects;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,11 +16,16 @@ namespace EStore.OrdersView
     {
         private List<Item> _items;
         private User _user;
+        private List<City> _cities;
         public OrdersCreate(List<Item> items, User user)
         {
             InitializeComponent();
             _items = items;
             _user = user;
+
+            _cities = EStoreContext.Cities.Read();
+            for (int i = 0; i < _cities.Count; i++)
+                metroComboBoxCities.Items.Add(_cities[i].Name);
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
@@ -31,16 +37,22 @@ namespace EStore.OrdersView
                 {
                     Item = _items[i],
                     Price = _items[i].UnitPrice,
+                    Quantity = 1,
+                    Discount = 0
 
                 });
             }
             Order order = new Order()
             {
-                City = _city,
+                City = _cities[metroComboBoxCities.SelectedIndex],
                 User = _user,
+            };
 
+            EStoreContext.Orders.Create(order);
 
-               
+            for (int i = 0; i < orderDetails.Count; i++)
+            {
+                EStoreContext.OrdersDetails.Create(orderDetails[i]);
             }
         }
     }

@@ -32,7 +32,7 @@ namespace EStore.OrdersView
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.metroComboBoxCities = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
@@ -85,15 +85,15 @@ namespace EStore.OrdersView
             this.metroLabel1.Size = new System.Drawing.Size(0, 0);
             this.metroLabel1.TabIndex = 3;
             // 
-            // metroComboBox1
+            // metroComboBoxCities
             // 
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 24;
-            this.metroComboBox1.Location = new System.Drawing.Point(34, 102);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(163, 30);
-            this.metroComboBox1.TabIndex = 4;
-            this.metroComboBox1.UseSelectable = true;
+            this.metroComboBoxCities.FormattingEnabled = true;
+            this.metroComboBoxCities.ItemHeight = 24;
+            this.metroComboBoxCities.Location = new System.Drawing.Point(34, 102);
+            this.metroComboBoxCities.Name = "metroComboBoxCities";
+            this.metroComboBoxCities.Size = new System.Drawing.Size(163, 30);
+            this.metroComboBoxCities.TabIndex = 4;
+            this.metroComboBoxCities.UseSelectable = true;
             // 
             // metroLabel2
             // 
@@ -120,7 +120,7 @@ namespace EStore.OrdersView
             this.ClientSize = new System.Drawing.Size(246, 400);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
-            this.Controls.Add(this.metroComboBox1);
+            this.Controls.Add(this.metroComboBoxCities);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroTextBox1);
             this.Controls.Add(this.metroButton1);
@@ -139,7 +139,7 @@ namespace EStore.OrdersView
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroComboBox metroComboBoxCities;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel3;
     }
