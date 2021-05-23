@@ -1,4 +1,5 @@
-﻿using EStoreBusinessObjects;
+﻿using EStore.OrdersView;
+using EStoreBusinessObjects;
 using FastMember;
 using System;
 using System.Collections.Generic;
@@ -12,14 +13,16 @@ using System.Windows.Forms;
 
 namespace EStore.ItemsView
 {
-    public partial class Cart : MetroFramework.Forms.MetroForm
+    public partial class CartView : MetroFramework.Forms.MetroForm
     {
         private List<Item> _items;
-        public Cart(List<Item> items)
+        private User _user;
+        public CartView(User user, List<Item> items)
         {
-            _items = items;
             InitializeComponent();
-            Show();
+            _items = items;
+            _user = user;
+            Display();
         }
 
         public DataTable ToDataTable()
@@ -33,12 +36,21 @@ namespace EStore.ItemsView
 
         }
 
-        public void Show()
+        public void Display()
         {
             metroGridSelectedItems.DataSource = ToDataTable();
             
         }
-             
 
+        private void tileMakeOrder_Click(object sender, EventArgs e)
+        {
+            new OrdersCreate(_items, _user).Show();
+        }
+
+        private void tileGoBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new MainItemsView(_user).Show();
+        }
     }
 }
