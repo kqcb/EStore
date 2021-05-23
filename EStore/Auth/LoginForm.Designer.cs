@@ -138,9 +138,9 @@ namespace EStore.Auth
             // 
             this.btnLogin.BackColor = System.Drawing.Color.White;
             this.btnLogin.Highlight = true;
-            this.btnLogin.Location = new System.Drawing.Point(136, 199);
+            this.btnLogin.Location = new System.Drawing.Point(132, 208);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(78, 43);
+            this.btnLogin.Size = new System.Drawing.Size(82, 43);
             this.btnLogin.Style = MetroFramework.MetroColorStyle.Teal;
             this.btnLogin.TabIndex = 7;
             this.btnLogin.Text = "Login";
@@ -151,9 +151,9 @@ namespace EStore.Auth
             // 
             this.btnSignup.BackColor = System.Drawing.Color.White;
             this.btnSignup.Highlight = true;
-            this.btnSignup.Location = new System.Drawing.Point(24, 199);
+            this.btnSignup.Location = new System.Drawing.Point(28, 208);
             this.btnSignup.Name = "btnSignup";
-            this.btnSignup.Size = new System.Drawing.Size(88, 43);
+            this.btnSignup.Size = new System.Drawing.Size(84, 43);
             this.btnSignup.Style = MetroFramework.MetroColorStyle.Pink;
             this.btnSignup.TabIndex = 8;
             this.btnSignup.Text = "Sign up";

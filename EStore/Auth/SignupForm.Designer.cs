@@ -244,9 +244,9 @@ namespace EStore.Auth
             // 
             this.btnBack.BackColor = System.Drawing.Color.White;
             this.btnBack.Highlight = true;
-            this.btnBack.Location = new System.Drawing.Point(28, 376);
+            this.btnBack.Location = new System.Drawing.Point(28, 386);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(88, 43);
+            this.btnBack.Size = new System.Drawing.Size(84, 43);
             this.btnBack.Style = MetroFramework.MetroColorStyle.Pink;
             this.btnBack.TabIndex = 39;
             this.btnBack.Text = "Back";
@@ -258,9 +258,9 @@ namespace EStore.Auth
             // 
             this.btnRegister.BackColor = System.Drawing.Color.White;
             this.btnRegister.Highlight = true;
-            this.btnRegister.Location = new System.Drawing.Point(136, 376);
+            this.btnRegister.Location = new System.Drawing.Point(131, 386);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(78, 43);
+            this.btnRegister.Size = new System.Drawing.Size(83, 43);
             this.btnRegister.Style = MetroFramework.MetroColorStyle.Teal;
             this.btnRegister.TabIndex = 38;
             this.btnRegister.Text = "Register";
