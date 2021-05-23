@@ -78,10 +78,12 @@ namespace EStore.OrdersView
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgOrders.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgOrders.RowHeadersWidth = 102;
             this.dgOrders.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgOrders.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgOrders.Size = new System.Drawing.Size(566, 362);
             this.dgOrders.TabIndex = 11;
+            this.dgOrders.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgOrders_CellContentClick);
             this.dgOrders.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgOrders_CellDoubleClick);
             // 
             // tileCreate
@@ -94,13 +96,12 @@ namespace EStore.OrdersView
             this.tileCreate.TabIndex = 10;
             this.tileCreate.Text = "Create";
             this.tileCreate.UseSelectable = true;
-            this.tileCreate.UseStyleColors = true;
             this.tileCreate.UseTileImage = true;
             this.tileCreate.Click += new System.EventHandler(this.tileCreate_Click);
             // 
             // MainOrdersView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 450);
             this.Controls.Add(this.dgOrders);

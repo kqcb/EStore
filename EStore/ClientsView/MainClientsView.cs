@@ -48,5 +48,10 @@ namespace EStore.ClientsView
             User user = EStoreContext.Users.Read(clientId);
             new ClientsView.ClientsDetails(user).Show();
         }
+
+        private void dgClients_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

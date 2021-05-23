@@ -226,6 +226,35 @@ namespace EStoreDataAccessLayer.Mapper.Models
                 
          }
 
+        public DataTable FillDataTable(string procName, int id)
+        {
+
+            try
+            {
+                Connection.GetSqlConnection().Open();
+                var cmd = Connection.GetSqlCommand(procName);
+
+
+                cmd.Parameters.AddWithValue("Id", id);
+                var adapter = Connection.GetSqlDataAdapter(cmd);
+
+                var datatable = new DataTable();
+
+                adapter.Fill(datatable);
+
+                return datatable;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            finally
+            {
+                Connection.GetSqlConnection().Close();
+            }
+
+        }
+
         public static T LoadObject(SqlDataReader data)
         {
             ObjectProperties model = InitialiseObject(data, typeof(T));

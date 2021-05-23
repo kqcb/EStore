@@ -39,7 +39,6 @@ namespace EStore
             // 
             // tileClients
             // 
-            this.tileClients.ActiveControl = null;
             this.tileClients.BackColor = System.Drawing.Color.Transparent;
             this.tileClients.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tileClients.Location = new System.Drawing.Point(17, 91);
@@ -48,13 +47,11 @@ namespace EStore
             this.tileClients.TabIndex = 2;
             this.tileClients.Text = "Clients";
             this.tileClients.TileImage = ((System.Drawing.Image)(resources.GetObject("tileClients.TileImage")));
-            this.tileClients.UseSelectable = true;
             this.tileClients.UseTileImage = true;
             this.tileClients.Click += new System.EventHandler(this.tileClients_Click);
             // 
             // tileItems
             // 
-            this.tileItems.ActiveControl = null;
             this.tileItems.BackColor = System.Drawing.Color.Transparent;
             this.tileItems.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tileItems.Location = new System.Drawing.Point(253, 91);
@@ -65,13 +62,11 @@ namespace EStore
             this.tileItems.Text = "Items";
             this.tileItems.TileImage = ((System.Drawing.Image)(resources.GetObject("tileItems.TileImage")));
             this.tileItems.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.tileItems.UseSelectable = true;
             this.tileItems.UseTileImage = true;
             this.tileItems.Click += new System.EventHandler(this.tileItems_Click);
             // 
             // tileOrders
             // 
-            this.tileOrders.ActiveControl = null;
             this.tileOrders.BackColor = System.Drawing.Color.Transparent;
             this.tileOrders.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tileOrders.Location = new System.Drawing.Point(493, 91);
@@ -82,15 +77,14 @@ namespace EStore
             this.tileOrders.Text = "Orders";
             this.tileOrders.TileImage = ((System.Drawing.Image)(resources.GetObject("tileOrders.TileImage")));
             this.tileOrders.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.tileOrders.UseSelectable = true;
             this.tileOrders.UseTileImage = true;
             this.tileOrders.Click += new System.EventHandler(this.tileOrders_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 324);
+            this.ClientSize = new System.Drawing.Size(711, 310);
             this.Controls.Add(this.tileOrders);
             this.Controls.Add(this.tileItems);
             this.Controls.Add(this.tileClients);

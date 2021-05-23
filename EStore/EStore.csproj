@@ -229,6 +229,8 @@
   <ItemGroup>
     <None Include="Resources\72579_5454192_979319_imagei.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
