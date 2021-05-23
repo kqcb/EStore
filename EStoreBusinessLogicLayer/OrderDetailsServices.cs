@@ -1,8 +1,9 @@
-﻿using EStoreDataAccessLayer.Mapper.Models;
+﻿using EStoreBusinessObjects;
+using EStoreDataAccessLayer.Mapper.Models;
 
 namespace EStoreBusinessLogicLayer
 {
-    public class OrderDetailsServices : DbSet<OrderDetailsServices>
+    public class OrderDetailsServices : DbSet<OrderDetails>
     {
     }
 }

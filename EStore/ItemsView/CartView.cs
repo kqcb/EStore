@@ -16,10 +16,12 @@ namespace EStore.ItemsView
     public partial class CartView : MetroFramework.Forms.MetroForm
     {
         private List<Item> _items;
-        public CartView(List<Item> items)
+        private User _user;
+        public CartView(User user, List<Item> items)
         {
             InitializeComponent();
             _items = items;
+            _user = user;
             Display();
         }
 
@@ -42,7 +44,7 @@ namespace EStore.ItemsView
 
         private void tileMakeOrder_Click(object sender, EventArgs e)
         {
-            new OrdersCreate(_items).Show();
+            new OrdersCreate(_items, _user).Show();
         }
     }
 }

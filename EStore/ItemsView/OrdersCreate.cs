@@ -52,7 +52,7 @@ namespace EStore.OrdersView
 
             for (int i = 0; i < orderDetails.Count; i++)
             {
-                EStoreContext.OrdersDetails.Create(orderDetails[i]);
+                EStoreContext.OrderDetails.Create(orderDetails[i]);
             }
         }
     }
