@@ -36,11 +36,6 @@ namespace EStore.OrdersView
 
         }
 
-        private void metroTextBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tileDelete_Click(object sender, EventArgs e)
         {
             EStoreContext.Orders.Delete(order.Id);
