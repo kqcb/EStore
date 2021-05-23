@@ -52,5 +52,10 @@ namespace EStore.ItemsView
             radioInactive.Checked = item.IsActive ? false : true;
             txtUnitPrice.Text = item.UnitPrice.ToString();
         }
+
+        private void ItemDetails_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

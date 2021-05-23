@@ -33,7 +33,6 @@ namespace EStore.OrdersView
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
@@ -87,38 +86,28 @@ namespace EStore.OrdersView
             // metroComboBox1
             // 
             this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
+            this.metroComboBox1.ItemHeight = 24;
             this.metroComboBox1.Location = new System.Drawing.Point(34, 102);
             this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(163, 29);
+            this.metroComboBox1.Size = new System.Drawing.Size(163, 30);
             this.metroComboBox1.TabIndex = 4;
             this.metroComboBox1.UseSelectable = true;
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(34, 80);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(31, 19);
-            this.metroLabel2.TabIndex = 5;
-            this.metroLabel2.Text = "City";
             // 
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.Location = new System.Drawing.Point(34, 151);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(40, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(40, 20);
             this.metroLabel3.TabIndex = 6;
             this.metroLabel3.Text = "Road";
             // 
             // OrdersCreate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(246, 400);
             this.Controls.Add(this.metroLabel3);
-            this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroComboBox1);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroTextBox1);
@@ -139,7 +128,6 @@ namespace EStore.OrdersView
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroComboBox metroComboBox1;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel3;
     }
 }

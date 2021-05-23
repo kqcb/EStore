@@ -38,8 +38,8 @@ namespace EStore.OrdersView
 
         private void ShowData()
         {
-            DataTable itemTable = EStoreContext.Orders.FillDataTable();
-            dgOrders.DataSource = itemTable;
+                DataTable itemTable = EStoreContext.Orders.FillDataTable();
+                dgOrders.DataSource = itemTable;
         }
 
         private void dgOrders_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

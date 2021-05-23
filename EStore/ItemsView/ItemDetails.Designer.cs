@@ -48,14 +48,14 @@ namespace EStore.ItemsView
             this.lblItem.AutoSize = true;
             this.lblItem.Location = new System.Drawing.Point(266, 26);
             this.lblItem.Name = "lblItem";
-            this.lblItem.Size = new System.Drawing.Size(36, 14);
+            this.lblItem.Size = new System.Drawing.Size(91, 36);
             this.lblItem.TabIndex = 0;
             this.lblItem.Text = "label1";
             // 
             // htmlLabel3
             // 
             this.htmlLabel3.AutoScroll = true;
-            this.htmlLabel3.AutoScrollMinSize = new System.Drawing.Size(51, 23);
+            this.htmlLabel3.AutoScrollMinSize = new System.Drawing.Size(112, 41);
             this.htmlLabel3.AutoSize = false;
             this.htmlLabel3.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel3.Location = new System.Drawing.Point(26, 209);
@@ -67,7 +67,7 @@ namespace EStore.ItemsView
             // htmlLabel2
             // 
             this.htmlLabel2.AutoScroll = true;
-            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(67, 23);
+            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(148, 41);
             this.htmlLabel2.AutoSize = false;
             this.htmlLabel2.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel2.Location = new System.Drawing.Point(26, 259);
@@ -81,7 +81,7 @@ namespace EStore.ItemsView
             this.radioActive.AutoSize = true;
             this.radioActive.Location = new System.Drawing.Point(26, 238);
             this.radioActive.Name = "radioActive";
-            this.radioActive.Size = new System.Drawing.Size(56, 15);
+            this.radioActive.Size = new System.Drawing.Size(58, 17);
             this.radioActive.TabIndex = 51;
             this.radioActive.Text = "Active";
             this.radioActive.UseSelectable = true;
@@ -106,7 +106,7 @@ namespace EStore.ItemsView
             this.radioInactive.AutoSize = true;
             this.radioInactive.Location = new System.Drawing.Point(105, 238);
             this.radioInactive.Name = "radioInactive";
-            this.radioInactive.Size = new System.Drawing.Size(64, 15);
+            this.radioInactive.Size = new System.Drawing.Size(67, 17);
             this.radioInactive.TabIndex = 52;
             this.radioInactive.Text = "Inactive";
             this.radioInactive.UseSelectable = true;
@@ -182,7 +182,7 @@ namespace EStore.ItemsView
             // htmlLabel1
             // 
             this.htmlLabel1.AutoScroll = true;
-            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(58, 23);
+            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(128, 41);
             this.htmlLabel1.AutoSize = false;
             this.htmlLabel1.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel1.Location = new System.Drawing.Point(26, 145);
@@ -228,7 +228,7 @@ namespace EStore.ItemsView
             // htmlLabel5
             // 
             this.htmlLabel5.AutoScroll = true;
-            this.htmlLabel5.AutoScrollMinSize = new System.Drawing.Size(86, 22);
+            this.htmlLabel5.AutoScrollMinSize = new System.Drawing.Size(198, 40);
             this.htmlLabel5.AutoSize = false;
             this.htmlLabel5.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel5.Location = new System.Drawing.Point(26, 80);
@@ -247,11 +247,12 @@ namespace EStore.ItemsView
             this.tileDelete.TabIndex = 55;
             this.tileDelete.Text = "Delete";
             this.tileDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tileDelete.UseSelectable = true;
             this.tileDelete.Click += new System.EventHandler(this.tileDelete_Click);
             // 
             // ItemDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(233, 427);
             this.Controls.Add(this.tileDelete);
@@ -270,6 +271,7 @@ namespace EStore.ItemsView
             this.Name = "ItemDetails";
             this.Padding = new System.Windows.Forms.Padding(23, 65, 23, 22);
             this.Text = "ItemDetails";
+            this.Load += new System.EventHandler(this.ItemDetails_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
