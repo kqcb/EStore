@@ -1,0 +1,44 @@
+﻿using EStoreBusinessObjects;
+using FastMember;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace EStore.ItemsView
+{
+    public partial class Cart : MetroFramework.Forms.MetroForm
+    {
+        private List<Item> _items;
+        public Cart(List<Item> items)
+        {
+            _items = items;
+            InitializeComponent();
+            Show();
+        }
+
+        public DataTable ToDataTable()
+        {
+            DataTable dataTable = new DataTable();
+            var reader = ObjectReader.Create(_items);
+
+            dataTable.Load(reader);
+
+            return dataTable;
+
+        }
+
+        public void Show()
+        {
+            metroGridSelectedItems.DataSource = ToDataTable();
+            
+        }
+             
+
+    }
+}

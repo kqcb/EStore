@@ -15,11 +15,16 @@ namespace EStore.ItemsView
     public partial class MainItemsView : MetroFramework.Forms.MetroForm
     {
         private User _user;
+        private static List<Item> _selectedItems;
         public MainItemsView(User user)
         {
+            _selectedItems = new List<Item>();
             _user = user;
             InitializeComponent();
             CheckForAdmin(true);
+      
+      
+          
             ShowData();
         }
 
@@ -30,7 +35,7 @@ namespace EStore.ItemsView
 
         private void dgItems_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            int itemId = Convert.ToInt32(dgItems.Rows[e.RowIndex].Cells[0].Value.ToString());
+            int itemId = Convert.ToInt32(dgItems.Rows[e.RowIndex].Cells[1].Value.ToString());
             Item item = EStoreContext.Items.Read(itemId);
             new ItemsView.ItemDetails(item).Show();
         }
@@ -47,6 +52,58 @@ namespace EStore.ItemsView
         {
             DataTable itemTable = EStoreContext.Items.FillDataTable();
             dgItems.DataSource = itemTable;
+
+            DataGridViewCheckBoxColumn chx = new();
+            chx.TrueValue = true;
+            chx.FalseValue = false;
+            
+            chx.Width = 100;
+            dgItems.Columns.Add(chx);
+
+            dgItems.Columns[dgItems.ColumnCount - 1].Name = "Add to Cart";
+            
+        }
+
+        private void dgItems_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+           if (dgItems.CurrentCell.ColumnIndex == 0)
+            {
+                dgItems.CurrentCell.Value ??= false;
+                dgItems.CurrentCell.Value = !(bool)dgItems.CurrentCell.Value;
+
+                    int itemId = Convert.ToInt32(dgItems.Rows[e.RowIndex].Cells[1].Value.ToString());
+                    Item item = EStoreContext.Items.Read(itemId);
+                if ((bool)dgItems.CurrentCell.Value)
+                {
+
+                    AddToList(item);
+                }
+                else
+                    RemovFromList(item);
+             
+
+            }
+        }
+
+        private void AddToList(Item item)
+        {
+            var itm = _selectedItems.FirstOrDefault(f => f.Id == item.Id);
+
+            if (itm is null)
+                _selectedItems.Add(item);
+        }
+
+        private void RemovFromList(Item item)
+        {
+            var itm = _selectedItems.FirstOrDefault(f => f.Id == item.Id);
+
+            if (itm is not null)
+                _selectedItems.Remove(itm);
+        }
+
+        private void tileCart_Click(object sender, EventArgs e)
+        {
+            new Cart(_selectedItems).Show();
         }
     }
 }

@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FastMember, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastMember.1.5.0\lib\net461\FastMember.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -85,6 +88,12 @@
     </Compile>
     <Compile Include="ClientsView\MainClientsView.Designer.cs">
       <DependentUpon>MainClientsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsView\Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemsView\Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
     </Compile>
     <Compile Include="ItemsView\ItemDetails.cs">
       <SubType>Form</SubType>
@@ -144,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientsView\MainClientsView.resx">
       <DependentUpon>MainClientsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsView\Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ItemsView\ItemDetails.resx">
       <DependentUpon>ItemDetails.cs</DependentUpon>
