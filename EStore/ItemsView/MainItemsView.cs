@@ -103,7 +103,7 @@ namespace EStore.ItemsView
 
         private void tileCart_Click(object sender, EventArgs e)
         {
-            new Cart(_selectedItems).Show();
+            new CartView(_selectedItems).Show();
         }
     }
 }

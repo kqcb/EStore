@@ -1,7 +1,7 @@
 ﻿
 namespace EStore.ItemsView
 {
-    partial class Cart
+    partial class CartView
     {
         /// <summary>
         /// Required designer variable.

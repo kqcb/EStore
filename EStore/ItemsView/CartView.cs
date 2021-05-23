@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace EStore.ItemsView
 {
-    public partial class Cart : MetroFramework.Forms.MetroForm
+    public partial class CartView : MetroFramework.Forms.MetroForm
     {
         private List<Item> _items;
-        public Cart(List<Item> items)
+        public CartView(List<Item> items)
         {
             InitializeComponent();
             _items = items;
