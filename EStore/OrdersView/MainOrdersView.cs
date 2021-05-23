@@ -48,5 +48,10 @@ namespace EStore.OrdersView
             Order order = EStoreContext.Orders.Read(orderId);
             new OrdersView.OrdersDetails(order).Show();
         }
+
+        private void dgOrders_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -44,6 +44,11 @@ namespace EStoreDataAccessLayer.Mapper.Utils
         { 
             return new (procName, GetSqlConnection());
         }
+
+        public static SqlDataAdapter GetSqlDataAdapter(SqlCommand cmd)
+        {
+            return new(cmd);
+        }
         
        
 

@@ -42,7 +42,7 @@ namespace EStore.Auth
             // htmlLabel1
             // 
             this.htmlLabel1.AutoScroll = true;
-            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(61, 23);
+            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(137, 41);
             this.htmlLabel1.AutoSize = false;
             this.htmlLabel1.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel1.Location = new System.Drawing.Point(28, 68);
@@ -55,7 +55,7 @@ namespace EStore.Auth
             // htmlLabel2
             // 
             this.htmlLabel2.AutoScroll = true;
-            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(59, 23);
+            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(131, 41);
             this.htmlLabel2.AutoSize = false;
             this.htmlLabel2.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel2.Location = new System.Drawing.Point(28, 135);
@@ -163,9 +163,9 @@ namespace EStore.Auth
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(247, 276);
+            this.ClientSize = new System.Drawing.Size(247, 264);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);

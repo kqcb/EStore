@@ -247,7 +247,6 @@ namespace EStore.ItemsView
             this.tileDelete.TabIndex = 55;
             this.tileDelete.Text = "Delete";
             this.tileDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.tileDelete.UseSelectable = true;
             this.tileDelete.Click += new System.EventHandler(this.tileDelete_Click);
             // 
             // ItemDetails
