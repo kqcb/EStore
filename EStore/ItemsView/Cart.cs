@@ -17,9 +17,9 @@ namespace EStore.ItemsView
         private List<Item> _items;
         public Cart(List<Item> items)
         {
-            _items = items;
             InitializeComponent();
-            Show();
+            _items = items;
+            Display();
         }
 
         public DataTable ToDataTable()
@@ -33,7 +33,7 @@ namespace EStore.ItemsView
 
         }
 
-        public void Show()
+        public void Display()
         {
             metroGridSelectedItems.DataSource = ToDataTable();
             
