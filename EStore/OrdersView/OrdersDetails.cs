@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace EStore.OrdersView
 {
-    public partial class OrdersDetails : Form
+    public partial class OrdersDetails : MetroFramework.Forms.MetroForm
     {
         public OrdersDetails(Order order)
         {

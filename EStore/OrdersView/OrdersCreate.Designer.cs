@@ -29,10 +29,20 @@ namespace EStore.OrdersView
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // OrdersCreate
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(233, 427);
+            this.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Name = "OrdersCreate";
+            this.Padding = new System.Windows.Forms.Padding(17, 65, 17, 22);
             this.Text = "OrdersCreate";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -29,173 +29,237 @@ namespace EStore.ItemsView
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnCreate = new System.Windows.Forms.Button();
-            this.txtQuantity = new System.Windows.Forms.TextBox();
-            this.txtDescription = new System.Windows.Forms.TextBox();
-            this.txtUnitPrice = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lbl = new System.Windows.Forms.Label();
-            this.lblItemName = new System.Windows.Forms.Label();
-            this.rbActive = new System.Windows.Forms.RadioButton();
-            this.rbInactive = new System.Windows.Forms.RadioButton();
+            this.txtName = new MetroFramework.Controls.MetroTextBox();
+            this.htmlLabel5 = new MetroFramework.Drawing.Html.HtmlLabel();
+            this.txtUnitPrice = new MetroFramework.Controls.MetroTextBox();
+            this.htmlLabel1 = new MetroFramework.Drawing.Html.HtmlLabel();
+            this.txtDescription = new MetroFramework.Controls.MetroTextBox();
+            this.htmlLabel2 = new MetroFramework.Drawing.Html.HtmlLabel();
+            this.radioActive = new MetroFramework.Controls.MetroRadioButton();
+            this.radioInactive = new MetroFramework.Controls.MetroRadioButton();
+            this.tileCreate = new MetroFramework.Controls.MetroTile();
+            this.htmlLabel3 = new MetroFramework.Drawing.Html.HtmlLabel();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(213, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Create Item";
-            // 
-            // btnCreate
-            // 
-            this.btnCreate.Location = new System.Drawing.Point(242, 338);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(102, 35);
-            this.btnCreate.TabIndex = 23;
-            this.btnCreate.Text = "Create";
-            this.btnCreate.UseVisualStyleBackColor = true;
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
-            // 
-            // txtQuantity
-            // 
-            this.txtQuantity.Location = new System.Drawing.Point(244, 248);
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(100, 20);
-            this.txtQuantity.TabIndex = 21;
-            // 
-            // txtDescription
-            // 
-            this.txtDescription.Location = new System.Drawing.Point(244, 196);
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(100, 20);
-            this.txtDescription.TabIndex = 20;
-            // 
-            // txtUnitPrice
-            // 
-            this.txtUnitPrice.Location = new System.Drawing.Point(244, 140);
-            this.txtUnitPrice.Name = "txtUnitPrice";
-            this.txtUnitPrice.Size = new System.Drawing.Size(100, 20);
-            this.txtUnitPrice.TabIndex = 19;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(244, 91);
+            // 
+            // 
+            // 
+            this.txtName.CustomButton.Image = null;
+            this.txtName.CustomButton.Location = new System.Drawing.Point(166, 1);
+            this.txtName.CustomButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtName.CustomButton.Name = "";
+            this.txtName.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtName.CustomButton.TabIndex = 1;
+            this.txtName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtName.CustomButton.UseSelectable = true;
+            this.txtName.CustomButton.Visible = false;
+            this.txtName.Lines = new string[0];
+            this.txtName.Location = new System.Drawing.Point(18, 111);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtName.MaxLength = 32767;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 20);
-            this.txtName.TabIndex = 18;
+            this.txtName.PasswordChar = '\0';
+            this.txtName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtName.SelectedText = "";
+            this.txtName.SelectionLength = 0;
+            this.txtName.SelectionStart = 0;
+            this.txtName.ShortcutsEnabled = true;
+            this.txtName.Size = new System.Drawing.Size(192, 27);
+            this.txtName.Style = MetroFramework.MetroColorStyle.Pink;
+            this.txtName.TabIndex = 35;
+            this.txtName.UseSelectable = true;
+            this.txtName.UseStyleColors = true;
+            this.txtName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // label6
+            // htmlLabel5
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(134, 304);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 13);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Is Active:";
+            this.htmlLabel5.AutoScroll = true;
+            this.htmlLabel5.AutoScrollMinSize = new System.Drawing.Size(86, 22);
+            this.htmlLabel5.AutoSize = false;
+            this.htmlLabel5.BackColor = System.Drawing.SystemColors.Window;
+            this.htmlLabel5.Location = new System.Drawing.Point(18, 79);
+            this.htmlLabel5.Name = "htmlLabel5";
+            this.htmlLabel5.Size = new System.Drawing.Size(87, 25);
+            this.htmlLabel5.TabIndex = 34;
+            this.htmlLabel5.Text = "Product name";
             // 
-            // label7
+            // txtUnitPrice
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(134, 251);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 13);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Quantity:";
             // 
-            // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(134, 199);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 13);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Description:";
             // 
-            // lbl
+            this.txtUnitPrice.CustomButton.Image = null;
+            this.txtUnitPrice.CustomButton.Location = new System.Drawing.Point(166, 1);
+            this.txtUnitPrice.CustomButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtUnitPrice.CustomButton.Name = "";
+            this.txtUnitPrice.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtUnitPrice.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtUnitPrice.CustomButton.TabIndex = 1;
+            this.txtUnitPrice.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtUnitPrice.CustomButton.UseSelectable = true;
+            this.txtUnitPrice.CustomButton.Visible = false;
+            this.txtUnitPrice.Lines = new string[0];
+            this.txtUnitPrice.Location = new System.Drawing.Point(18, 175);
+            this.txtUnitPrice.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtUnitPrice.MaxLength = 32767;
+            this.txtUnitPrice.Name = "txtUnitPrice";
+            this.txtUnitPrice.PasswordChar = '\0';
+            this.txtUnitPrice.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtUnitPrice.SelectedText = "";
+            this.txtUnitPrice.SelectionLength = 0;
+            this.txtUnitPrice.SelectionStart = 0;
+            this.txtUnitPrice.ShortcutsEnabled = true;
+            this.txtUnitPrice.Size = new System.Drawing.Size(192, 27);
+            this.txtUnitPrice.Style = MetroFramework.MetroColorStyle.Pink;
+            this.txtUnitPrice.TabIndex = 37;
+            this.txtUnitPrice.UseSelectable = true;
+            this.txtUnitPrice.UseStyleColors = true;
+            this.txtUnitPrice.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtUnitPrice.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(134, 147);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(50, 13);
-            this.lbl.TabIndex = 14;
-            this.lbl.Text = "UnitPrice";
+            // htmlLabel1
             // 
-            // lblItemName
+            this.htmlLabel1.AutoScroll = true;
+            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(58, 23);
+            this.htmlLabel1.AutoSize = false;
+            this.htmlLabel1.BackColor = System.Drawing.SystemColors.Window;
+            this.htmlLabel1.Location = new System.Drawing.Point(18, 144);
+            this.htmlLabel1.Name = "htmlLabel1";
+            this.htmlLabel1.Size = new System.Drawing.Size(87, 25);
+            this.htmlLabel1.TabIndex = 36;
+            this.htmlLabel1.Text = "Unit price";
             // 
-            this.lblItemName.AutoSize = true;
-            this.lblItemName.Location = new System.Drawing.Point(134, 94);
-            this.lblItemName.Name = "lblItemName";
-            this.lblItemName.Size = new System.Drawing.Size(38, 13);
-            this.lblItemName.TabIndex = 13;
-            this.lblItemName.Text = "Name:";
+            // txtDescription
             // 
-            // rbActive
             // 
-            this.rbActive.AutoSize = true;
-            this.rbActive.Location = new System.Drawing.Point(244, 300);
-            this.rbActive.Name = "rbActive";
-            this.rbActive.Size = new System.Drawing.Size(55, 17);
-            this.rbActive.TabIndex = 24;
-            this.rbActive.Text = "Active";
-            this.rbActive.UseVisualStyleBackColor = true;
             // 
-            // rbInactive
             // 
-            this.rbInactive.AutoSize = true;
-            this.rbInactive.Location = new System.Drawing.Point(335, 300);
-            this.rbInactive.Name = "rbInactive";
-            this.rbInactive.Size = new System.Drawing.Size(63, 17);
-            this.rbInactive.TabIndex = 25;
-            this.rbInactive.Text = "Inactive";
-            this.rbInactive.UseVisualStyleBackColor = true;
+            this.txtDescription.CustomButton.Image = null;
+            this.txtDescription.CustomButton.Location = new System.Drawing.Point(166, 1);
+            this.txtDescription.CustomButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtDescription.CustomButton.Name = "";
+            this.txtDescription.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtDescription.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtDescription.CustomButton.TabIndex = 1;
+            this.txtDescription.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtDescription.CustomButton.UseSelectable = true;
+            this.txtDescription.CustomButton.Visible = false;
+            this.txtDescription.Lines = new string[0];
+            this.txtDescription.Location = new System.Drawing.Point(18, 291);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtDescription.MaxLength = 32767;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.PasswordChar = '\0';
+            this.txtDescription.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtDescription.SelectedText = "";
+            this.txtDescription.SelectionLength = 0;
+            this.txtDescription.SelectionStart = 0;
+            this.txtDescription.ShortcutsEnabled = true;
+            this.txtDescription.Size = new System.Drawing.Size(192, 27);
+            this.txtDescription.Style = MetroFramework.MetroColorStyle.Pink;
+            this.txtDescription.TabIndex = 39;
+            this.txtDescription.UseSelectable = true;
+            this.txtDescription.UseStyleColors = true;
+            this.txtDescription.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtDescription.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // htmlLabel2
+            // 
+            this.htmlLabel2.AutoScroll = true;
+            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(67, 23);
+            this.htmlLabel2.AutoSize = false;
+            this.htmlLabel2.BackColor = System.Drawing.SystemColors.Window;
+            this.htmlLabel2.Location = new System.Drawing.Point(18, 258);
+            this.htmlLabel2.Name = "htmlLabel2";
+            this.htmlLabel2.Size = new System.Drawing.Size(106, 27);
+            this.htmlLabel2.TabIndex = 38;
+            this.htmlLabel2.Text = "Description";
+            // 
+            // radioActive
+            // 
+            this.radioActive.AutoSize = true;
+            this.radioActive.Location = new System.Drawing.Point(18, 237);
+            this.radioActive.Name = "radioActive";
+            this.radioActive.Size = new System.Drawing.Size(56, 15);
+            this.radioActive.TabIndex = 40;
+            this.radioActive.Text = "Active";
+            this.radioActive.UseSelectable = true;
+            // 
+            // radioInactive
+            // 
+            this.radioInactive.AutoSize = true;
+            this.radioInactive.Location = new System.Drawing.Point(97, 237);
+            this.radioInactive.Name = "radioInactive";
+            this.radioInactive.Size = new System.Drawing.Size(64, 15);
+            this.radioInactive.TabIndex = 41;
+            this.radioInactive.Text = "Inactive";
+            this.radioInactive.UseSelectable = true;
+            // 
+            // tileCreate
+            // 
+            this.tileCreate.ActiveControl = null;
+            this.tileCreate.Location = new System.Drawing.Point(52, 336);
+            this.tileCreate.Name = "tileCreate";
+            this.tileCreate.Size = new System.Drawing.Size(122, 47);
+            this.tileCreate.Style = MetroFramework.MetroColorStyle.Green;
+            this.tileCreate.TabIndex = 43;
+            this.tileCreate.Text = "Create";
+            this.tileCreate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tileCreate.UseSelectable = true;
+            this.tileCreate.UseStyleColors = true;
+            this.tileCreate.UseTileImage = true;
+            // 
+            // htmlLabel3
+            // 
+            this.htmlLabel3.AutoScroll = true;
+            this.htmlLabel3.AutoScrollMinSize = new System.Drawing.Size(51, 23);
+            this.htmlLabel3.AutoSize = false;
+            this.htmlLabel3.BackColor = System.Drawing.SystemColors.Window;
+            this.htmlLabel3.Location = new System.Drawing.Point(18, 208);
+            this.htmlLabel3.Name = "htmlLabel3";
+            this.htmlLabel3.Size = new System.Drawing.Size(75, 23);
+            this.htmlLabel3.TabIndex = 44;
+            this.htmlLabel3.Text = "Is active";
             // 
             // ItemsCreate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 405);
-            this.Controls.Add(this.rbInactive);
-            this.Controls.Add(this.rbActive);
-            this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.txtQuantity);
+            this.ClientSize = new System.Drawing.Size(233, 427);
+            this.Controls.Add(this.htmlLabel3);
+            this.Controls.Add(this.htmlLabel2);
+            this.Controls.Add(this.radioActive);
+            this.Controls.Add(this.tileCreate);
+            this.Controls.Add(this.radioInactive);
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.txtUnitPrice);
+            this.Controls.Add(this.htmlLabel1);
             this.Controls.Add(this.txtName);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.lbl);
-            this.Controls.Add(this.lblItemName);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.htmlLabel5);
+            this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ItemsCreate";
-            this.Text = "ItemsCreate";
+            this.Padding = new System.Windows.Forms.Padding(24, 65, 24, 22);
+            this.Style = MetroFramework.MetroColorStyle.Teal;
+            this.Text = "Items";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnCreate;
-        private System.Windows.Forms.TextBox txtQuantity;
-        private System.Windows.Forms.TextBox txtDescription;
-        private System.Windows.Forms.TextBox txtUnitPrice;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lbl;
-        private System.Windows.Forms.Label lblItemName;
-        private System.Windows.Forms.RadioButton rbActive;
-        private System.Windows.Forms.RadioButton rbInactive;
+        private MetroFramework.Controls.MetroTextBox txtName;
+        private MetroFramework.Drawing.Html.HtmlLabel htmlLabel5;
+        private MetroFramework.Controls.MetroTextBox txtUnitPrice;
+        private MetroFramework.Drawing.Html.HtmlLabel htmlLabel1;
+        private MetroFramework.Controls.MetroTextBox txtDescription;
+        private MetroFramework.Drawing.Html.HtmlLabel htmlLabel2;
+        private MetroFramework.Controls.MetroRadioButton radioActive;
+        private MetroFramework.Controls.MetroRadioButton radioInactive;
+        private MetroFramework.Controls.MetroTile tileCreate;
+        private MetroFramework.Drawing.Html.HtmlLabel htmlLabel3;
     }
 }

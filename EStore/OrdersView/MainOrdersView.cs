@@ -28,12 +28,6 @@ namespace EStore.OrdersView
             new OrdersView.OrdersCreate().Show();
         }
 
-        private void dgOrders_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int orderId = Convert.ToInt32(dgOrders.Rows[e.RowIndex].Cells[0].Value.ToString());
-            Order order = EStoreContext.Orders.Read(orderId);
-            new OrdersView.OrdersDetails(order).Show();
-        }
         private void CheckForAdmin(bool isAdmin)
         {
             if (!isAdmin)
@@ -46,6 +40,13 @@ namespace EStore.OrdersView
         {
             DataTable itemTable = EStoreContext.Orders.FillDataTable();
             dgOrders.DataSource = itemTable;
+        }
+
+        private void dgOrders_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int orderId = Convert.ToInt32(dgOrders.Rows[e.RowIndex].Cells[0].Value.ToString());
+            Order order = EStoreContext.Orders.Read(orderId);
+            new OrdersView.OrdersDetails(order).Show();
         }
     }
 }

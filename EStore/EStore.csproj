@@ -136,6 +136,12 @@
     <EmbeddedResource Include="Auth\SignupForm.resx">
       <DependentUpon>SignupForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClientsView\ClientsCreate.resx">
+      <DependentUpon>ClientsCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsView\ClientsDetails.resx">
+      <DependentUpon>ClientsDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientsView\MainClientsView.resx">
       <DependentUpon>MainClientsView.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +159,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OrdersView\MainOrdersView.resx">
       <DependentUpon>MainOrdersView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersView\OrdersCreate.resx">
+      <DependentUpon>OrdersCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersView\OrdersDetails.resx">
+      <DependentUpon>OrdersDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

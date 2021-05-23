@@ -28,13 +28,6 @@ namespace EStore.ClientsView
             new ClientsView.ClientsCreate().Show();
         }
 
-        private void dgClients_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int clientId = Convert.ToInt32(dgClients.Rows[e.RowIndex].Cells[0].Value.ToString());
-            User user = EStoreContext.Users.Read(clientId);
-            new ClientsView.ClientsDetails(user).Show();
-        }
-
         private void CheckForAdmin(bool isAdmin)
         {
             if (!isAdmin)
@@ -47,6 +40,13 @@ namespace EStore.ClientsView
         {
             DataTable itemTable = EStoreContext.Users.FillDataTable();
             dgClients.DataSource = itemTable;
+        }
+
+        private void dgClients_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int clientId = Convert.ToInt32(dgClients.Rows[e.RowIndex].Cells[0].Value.ToString());
+            User user = EStoreContext.Users.Read(clientId);
+            new ClientsView.ClientsDetails(user).Show();
         }
     }
 }

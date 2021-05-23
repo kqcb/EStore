@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EStoreBusinessObjects;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,7 @@ using System.Windows.Forms;
 
 namespace EStore.OrdersView
 {
-    public partial class OrdersCreate : Form
+    public partial class OrdersCreate : MetroFramework.Forms.MetroForm
     {
         public OrdersCreate()
         {

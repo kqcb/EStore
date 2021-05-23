@@ -82,7 +82,7 @@ namespace EStore.ClientsView
             this.dgClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgClients.Size = new System.Drawing.Size(566, 362);
             this.dgClients.TabIndex = 11;
-            this.dgClients.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgClients_CellContentClick);
+            this.dgClients.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgClients_CellDoubleClick);
             // 
             // tileCreate
             // 

@@ -30,163 +30,246 @@ namespace EStore.ItemsView
         private void InitializeComponent()
         {
             this.lblItem = new System.Windows.Forms.Label();
-            this.lblItemName = new System.Windows.Forms.Label();
-            this.lbl = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtUnitPrice = new System.Windows.Forms.TextBox();
-            this.txtDescription = new System.Windows.Forms.TextBox();
-            this.txtQuantity = new System.Windows.Forms.TextBox();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.rbInactive = new System.Windows.Forms.RadioButton();
-            this.rbActive = new System.Windows.Forms.RadioButton();
+            this.htmlLabel3 = new MetroFramework.Drawing.Html.HtmlLabel();
+            this.htmlLabel2 = new MetroFramework.Drawing.Html.HtmlLabel();
+            this.radioActive = new MetroFramework.Controls.MetroRadioButton();
+            this.tileEdit = new MetroFramework.Controls.MetroTile();
+            this.radioInactive = new MetroFramework.Controls.MetroRadioButton();
+            this.txtDescription = new MetroFramework.Controls.MetroTextBox();
+            this.txtUnitPrice = new MetroFramework.Controls.MetroTextBox();
+            this.htmlLabel1 = new MetroFramework.Drawing.Html.HtmlLabel();
+            this.txtName = new MetroFramework.Controls.MetroTextBox();
+            this.htmlLabel5 = new MetroFramework.Drawing.Html.HtmlLabel();
+            this.tileDelete = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
             // lblItem
             // 
             this.lblItem.AutoSize = true;
-            this.lblItem.Location = new System.Drawing.Point(228, 24);
+            this.lblItem.Location = new System.Drawing.Point(266, 26);
             this.lblItem.Name = "lblItem";
-            this.lblItem.Size = new System.Drawing.Size(35, 13);
+            this.lblItem.Size = new System.Drawing.Size(36, 14);
             this.lblItem.TabIndex = 0;
             this.lblItem.Text = "label1";
             // 
-            // lblItemName
+            // htmlLabel3
             // 
-            this.lblItemName.AutoSize = true;
-            this.lblItemName.Location = new System.Drawing.Point(108, 73);
-            this.lblItemName.Name = "lblItemName";
-            this.lblItemName.Size = new System.Drawing.Size(38, 13);
-            this.lblItemName.TabIndex = 1;
-            this.lblItemName.Text = "Name:";
+            this.htmlLabel3.AutoScroll = true;
+            this.htmlLabel3.AutoScrollMinSize = new System.Drawing.Size(51, 23);
+            this.htmlLabel3.AutoSize = false;
+            this.htmlLabel3.BackColor = System.Drawing.SystemColors.Window;
+            this.htmlLabel3.Location = new System.Drawing.Point(26, 209);
+            this.htmlLabel3.Name = "htmlLabel3";
+            this.htmlLabel3.Size = new System.Drawing.Size(75, 23);
+            this.htmlLabel3.TabIndex = 54;
+            this.htmlLabel3.Text = "Is active";
             // 
-            // lbl
+            // htmlLabel2
             // 
-            this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(108, 126);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(50, 13);
-            this.lbl.TabIndex = 2;
-            this.lbl.Text = "UnitPrice";
+            this.htmlLabel2.AutoScroll = true;
+            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(67, 23);
+            this.htmlLabel2.AutoSize = false;
+            this.htmlLabel2.BackColor = System.Drawing.SystemColors.Window;
+            this.htmlLabel2.Location = new System.Drawing.Point(26, 259);
+            this.htmlLabel2.Name = "htmlLabel2";
+            this.htmlLabel2.Size = new System.Drawing.Size(106, 27);
+            this.htmlLabel2.TabIndex = 49;
+            this.htmlLabel2.Text = "Description";
             // 
-            // label4
+            // radioActive
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(108, 178);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Description:";
+            this.radioActive.AutoSize = true;
+            this.radioActive.Location = new System.Drawing.Point(26, 238);
+            this.radioActive.Name = "radioActive";
+            this.radioActive.Size = new System.Drawing.Size(56, 15);
+            this.radioActive.TabIndex = 51;
+            this.radioActive.Text = "Active";
+            this.radioActive.UseSelectable = true;
             // 
-            // label5
+            // tileEdit
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(108, 230);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Quantity:";
+            this.tileEdit.ActiveControl = null;
+            this.tileEdit.Location = new System.Drawing.Point(128, 337);
+            this.tileEdit.Name = "tileEdit";
+            this.tileEdit.Size = new System.Drawing.Size(90, 36);
+            this.tileEdit.Style = MetroFramework.MetroColorStyle.Green;
+            this.tileEdit.TabIndex = 53;
+            this.tileEdit.Text = "Edit";
+            this.tileEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tileEdit.UseSelectable = true;
+            this.tileEdit.UseStyleColors = true;
+            this.tileEdit.UseTileImage = true;
+            this.tileEdit.Click += new System.EventHandler(this.tileEdit_Click);
             // 
-            // label6
+            // radioInactive
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(108, 283);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Is Active:";
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(218, 70);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 20);
-            this.txtName.TabIndex = 6;
-            // 
-            // txtUnitPrice
-            // 
-            this.txtUnitPrice.Location = new System.Drawing.Point(218, 119);
-            this.txtUnitPrice.Name = "txtUnitPrice";
-            this.txtUnitPrice.Size = new System.Drawing.Size(100, 20);
-            this.txtUnitPrice.TabIndex = 7;
+            this.radioInactive.AutoSize = true;
+            this.radioInactive.Location = new System.Drawing.Point(105, 238);
+            this.radioInactive.Name = "radioInactive";
+            this.radioInactive.Size = new System.Drawing.Size(64, 15);
+            this.radioInactive.TabIndex = 52;
+            this.radioInactive.Text = "Inactive";
+            this.radioInactive.UseSelectable = true;
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(218, 175);
+            // 
+            // 
+            // 
+            this.txtDescription.CustomButton.Image = null;
+            this.txtDescription.CustomButton.Location = new System.Drawing.Point(166, 1);
+            this.txtDescription.CustomButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtDescription.CustomButton.Name = "";
+            this.txtDescription.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtDescription.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtDescription.CustomButton.TabIndex = 1;
+            this.txtDescription.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtDescription.CustomButton.UseSelectable = true;
+            this.txtDescription.CustomButton.Visible = false;
+            this.txtDescription.Lines = new string[0];
+            this.txtDescription.Location = new System.Drawing.Point(26, 292);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtDescription.MaxLength = 32767;
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(100, 20);
-            this.txtDescription.TabIndex = 8;
+            this.txtDescription.PasswordChar = '\0';
+            this.txtDescription.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtDescription.SelectedText = "";
+            this.txtDescription.SelectionLength = 0;
+            this.txtDescription.SelectionStart = 0;
+            this.txtDescription.ShortcutsEnabled = true;
+            this.txtDescription.Size = new System.Drawing.Size(192, 27);
+            this.txtDescription.Style = MetroFramework.MetroColorStyle.Pink;
+            this.txtDescription.TabIndex = 50;
+            this.txtDescription.UseSelectable = true;
+            this.txtDescription.UseStyleColors = true;
+            this.txtDescription.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtDescription.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // txtQuantity
+            // txtUnitPrice
             // 
-            this.txtQuantity.Location = new System.Drawing.Point(218, 227);
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(100, 20);
-            this.txtQuantity.TabIndex = 9;
             // 
-            // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(298, 326);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(102, 35);
-            this.btnSave.TabIndex = 11;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnDelete
+            this.txtUnitPrice.CustomButton.Image = null;
+            this.txtUnitPrice.CustomButton.Location = new System.Drawing.Point(166, 1);
+            this.txtUnitPrice.CustomButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtUnitPrice.CustomButton.Name = "";
+            this.txtUnitPrice.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtUnitPrice.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtUnitPrice.CustomButton.TabIndex = 1;
+            this.txtUnitPrice.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtUnitPrice.CustomButton.UseSelectable = true;
+            this.txtUnitPrice.CustomButton.Visible = false;
+            this.txtUnitPrice.Lines = new string[0];
+            this.txtUnitPrice.Location = new System.Drawing.Point(26, 176);
+            this.txtUnitPrice.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtUnitPrice.MaxLength = 32767;
+            this.txtUnitPrice.Name = "txtUnitPrice";
+            this.txtUnitPrice.PasswordChar = '\0';
+            this.txtUnitPrice.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtUnitPrice.SelectedText = "";
+            this.txtUnitPrice.SelectionLength = 0;
+            this.txtUnitPrice.SelectionStart = 0;
+            this.txtUnitPrice.ShortcutsEnabled = true;
+            this.txtUnitPrice.Size = new System.Drawing.Size(192, 27);
+            this.txtUnitPrice.Style = MetroFramework.MetroColorStyle.Pink;
+            this.txtUnitPrice.TabIndex = 48;
+            this.txtUnitPrice.UseSelectable = true;
+            this.txtUnitPrice.UseStyleColors = true;
+            this.txtUnitPrice.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtUnitPrice.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            this.btnDelete.Location = new System.Drawing.Point(111, 326);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(116, 35);
-            this.btnDelete.TabIndex = 12;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // htmlLabel1
             // 
-            // rbInactive
+            this.htmlLabel1.AutoScroll = true;
+            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(58, 23);
+            this.htmlLabel1.AutoSize = false;
+            this.htmlLabel1.BackColor = System.Drawing.SystemColors.Window;
+            this.htmlLabel1.Location = new System.Drawing.Point(26, 145);
+            this.htmlLabel1.Name = "htmlLabel1";
+            this.htmlLabel1.Size = new System.Drawing.Size(87, 25);
+            this.htmlLabel1.TabIndex = 47;
+            this.htmlLabel1.Text = "Unit price";
             // 
-            this.rbInactive.AutoSize = true;
-            this.rbInactive.Location = new System.Drawing.Point(309, 279);
-            this.rbInactive.Name = "rbInactive";
-            this.rbInactive.Size = new System.Drawing.Size(63, 17);
-            this.rbInactive.TabIndex = 27;
-            this.rbInactive.Text = "Inactive";
-            this.rbInactive.UseVisualStyleBackColor = true;
+            // txtName
             // 
-            // rbActive
             // 
-            this.rbActive.AutoSize = true;
-            this.rbActive.Location = new System.Drawing.Point(218, 279);
-            this.rbActive.Name = "rbActive";
-            this.rbActive.Size = new System.Drawing.Size(55, 17);
-            this.rbActive.TabIndex = 26;
-            this.rbActive.Text = "Active";
-            this.rbActive.UseVisualStyleBackColor = true;
+            // 
+            // 
+            this.txtName.CustomButton.Image = null;
+            this.txtName.CustomButton.Location = new System.Drawing.Point(166, 1);
+            this.txtName.CustomButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtName.CustomButton.Name = "";
+            this.txtName.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtName.CustomButton.TabIndex = 1;
+            this.txtName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtName.CustomButton.UseSelectable = true;
+            this.txtName.CustomButton.Visible = false;
+            this.txtName.Lines = new string[0];
+            this.txtName.Location = new System.Drawing.Point(26, 112);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtName.MaxLength = 32767;
+            this.txtName.Name = "txtName";
+            this.txtName.PasswordChar = '\0';
+            this.txtName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtName.SelectedText = "";
+            this.txtName.SelectionLength = 0;
+            this.txtName.SelectionStart = 0;
+            this.txtName.ShortcutsEnabled = true;
+            this.txtName.Size = new System.Drawing.Size(192, 27);
+            this.txtName.Style = MetroFramework.MetroColorStyle.Pink;
+            this.txtName.TabIndex = 46;
+            this.txtName.UseSelectable = true;
+            this.txtName.UseStyleColors = true;
+            this.txtName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // htmlLabel5
+            // 
+            this.htmlLabel5.AutoScroll = true;
+            this.htmlLabel5.AutoScrollMinSize = new System.Drawing.Size(86, 22);
+            this.htmlLabel5.AutoSize = false;
+            this.htmlLabel5.BackColor = System.Drawing.SystemColors.Window;
+            this.htmlLabel5.Location = new System.Drawing.Point(26, 80);
+            this.htmlLabel5.Name = "htmlLabel5";
+            this.htmlLabel5.Size = new System.Drawing.Size(87, 25);
+            this.htmlLabel5.TabIndex = 45;
+            this.htmlLabel5.Text = "Product name";
+            // 
+            // tileDelete
+            // 
+            this.tileDelete.ActiveControl = null;
+            this.tileDelete.Location = new System.Drawing.Point(26, 337);
+            this.tileDelete.Name = "tileDelete";
+            this.tileDelete.Size = new System.Drawing.Size(87, 36);
+            this.tileDelete.Style = MetroFramework.MetroColorStyle.Red;
+            this.tileDelete.TabIndex = 55;
+            this.tileDelete.Text = "Delete";
+            this.tileDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tileDelete.UseSelectable = true;
+            this.tileDelete.Click += new System.EventHandler(this.tileDelete_Click);
             // 
             // ItemDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(543, 385);
-            this.Controls.Add(this.rbInactive);
-            this.Controls.Add(this.rbActive);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.txtQuantity);
+            this.ClientSize = new System.Drawing.Size(233, 427);
+            this.Controls.Add(this.tileDelete);
+            this.Controls.Add(this.htmlLabel3);
+            this.Controls.Add(this.htmlLabel2);
+            this.Controls.Add(this.radioActive);
+            this.Controls.Add(this.tileEdit);
+            this.Controls.Add(this.radioInactive);
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.txtUnitPrice);
+            this.Controls.Add(this.htmlLabel1);
             this.Controls.Add(this.txtName);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.lbl);
-            this.Controls.Add(this.lblItemName);
+            this.Controls.Add(this.htmlLabel5);
             this.Controls.Add(this.lblItem);
+            this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ItemDetails";
+            this.Padding = new System.Windows.Forms.Padding(23, 65, 23, 22);
             this.Text = "ItemDetails";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -196,18 +279,16 @@ namespace EStore.ItemsView
         #endregion
 
         private System.Windows.Forms.Label lblItem;
-        private System.Windows.Forms.Label lblItemName;
-        private System.Windows.Forms.Label lbl;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtUnitPrice;
-        private System.Windows.Forms.TextBox txtDescription;
-        private System.Windows.Forms.TextBox txtQuantity;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.RadioButton rbInactive;
-        private System.Windows.Forms.RadioButton rbActive;
+        private MetroFramework.Drawing.Html.HtmlLabel htmlLabel3;
+        private MetroFramework.Drawing.Html.HtmlLabel htmlLabel2;
+        private MetroFramework.Controls.MetroRadioButton radioActive;
+        private MetroFramework.Controls.MetroTile tileEdit;
+        private MetroFramework.Controls.MetroRadioButton radioInactive;
+        private MetroFramework.Controls.MetroTextBox txtDescription;
+        private MetroFramework.Controls.MetroTextBox txtUnitPrice;
+        private MetroFramework.Drawing.Html.HtmlLabel htmlLabel1;
+        private MetroFramework.Controls.MetroTextBox txtName;
+        private MetroFramework.Drawing.Html.HtmlLabel htmlLabel5;
+        private MetroFramework.Controls.MetroTile tileDelete;
     }
 }

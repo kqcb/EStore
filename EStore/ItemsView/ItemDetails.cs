@@ -12,7 +12,7 @@ using EStoreBusinessObjects;
 
 namespace EStore.ItemsView
 {
-    public partial class ItemDetails : Form
+    public partial class ItemDetails : MetroFramework.Forms.MetroForm
     {
         Item item;
         public ItemDetails(Item item)
@@ -22,13 +22,19 @@ namespace EStore.ItemsView
             ShowData(item);
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void tileDelete_Click(object sender, EventArgs e)
+        {
+            EStoreContext.Items.Delete(item.Id);
+            this.Close();
+        }
+
+        private void tileEdit_Click(object sender, EventArgs e)
         {
             Item temp = new Item();
             temp.Id = item.Id;
             temp.Name = txtName.Text;
             temp.Description = txtDescription.Text;
-            temp.IsActive = rbActive.Checked ? true : false;
+            temp.IsActive = radioActive.Checked ? true : false;
             temp.Brand = new Brand()
             {
                 Id = 1
@@ -38,19 +44,12 @@ namespace EStore.ItemsView
             EStoreContext.Items.Update(temp);
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            EStoreContext.Items.Delete(item.Id);
-            this.Close();
-        }
-
         private void ShowData(Item item)
         {
             txtName.Text = item.Name;
             txtDescription.Text = item.Description;
-            rbActive.Checked = item.IsActive ? true : false;
-            rbInactive.Checked = item.IsActive ? false : true;
-            //txtQuantity.Text = item.Quantity.ToString();
+            radioActive.Checked = item.IsActive ? true : false;
+            radioInactive.Checked = item.IsActive ? false : true;
             txtUnitPrice.Text = item.UnitPrice.ToString();
         }
     }

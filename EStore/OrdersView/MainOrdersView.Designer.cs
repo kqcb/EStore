@@ -82,7 +82,7 @@ namespace EStore.OrdersView
             this.dgOrders.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgOrders.Size = new System.Drawing.Size(566, 362);
             this.dgOrders.TabIndex = 11;
-            this.dgOrders.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgOrders_CellContentClick);
+            this.dgOrders.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgOrders_CellDoubleClick);
             // 
             // tileCreate
             // 
