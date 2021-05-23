@@ -46,5 +46,11 @@ namespace EStore.ItemsView
         {
             new OrdersCreate(_items, _user).Show();
         }
+
+        private void tileGoBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new MainItemsView(_user).Show();
+        }
     }
 }
