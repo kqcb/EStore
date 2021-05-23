@@ -33,7 +33,6 @@ namespace EStore.OrdersView
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgOrders = new MetroFramework.Controls.MetroGrid();
-            this.tileCreate = new MetroFramework.Controls.MetroTile();
             ((System.ComponentModel.ISupportInitialize)(this.dgOrders)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,26 +85,12 @@ namespace EStore.OrdersView
             this.dgOrders.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgOrders_CellContentClick);
             this.dgOrders.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgOrders_CellDoubleClick);
             // 
-            // tileCreate
-            // 
-            this.tileCreate.ActiveControl = null;
-            this.tileCreate.Location = new System.Drawing.Point(463, 40);
-            this.tileCreate.Name = "tileCreate";
-            this.tileCreate.Size = new System.Drawing.Size(105, 44);
-            this.tileCreate.Style = MetroFramework.MetroColorStyle.Green;
-            this.tileCreate.TabIndex = 10;
-            this.tileCreate.Text = "Create";
-            this.tileCreate.UseSelectable = true;
-            this.tileCreate.UseTileImage = true;
-            this.tileCreate.Click += new System.EventHandler(this.tileCreate_Click);
-            // 
             // MainOrdersView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 450);
             this.Controls.Add(this.dgOrders);
-            this.Controls.Add(this.tileCreate);
             this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "MainOrdersView";
             this.Padding = new System.Windows.Forms.Padding(23, 65, 23, 22);
@@ -119,6 +104,5 @@ namespace EStore.OrdersView
         #endregion
 
         private MetroFramework.Controls.MetroGrid dgOrders;
-        private MetroFramework.Controls.MetroTile tileCreate;
     }
 }

@@ -27,5 +27,10 @@ namespace EStore
         {
             new OrdersView.MainOrdersView(_user).Show();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

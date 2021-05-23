@@ -30,16 +30,16 @@ namespace EStore.OrdersView
 
         private void CheckForAdmin(bool isAdmin)
         {
-            if (!isAdmin)
-            {
-                tileCreate.Visible = false;
-            }
+            //if (!isAdmin)
+            //{
+            //    tileCreate.Visible = false;
+            //}
         }
 
         private void ShowData()
         {
-            DataTable itemTable = EStoreContext.Orders.FillDataTable();
-            dgOrders.DataSource = itemTable;
+                DataTable itemTable = EStoreContext.Orders.FillDataTable();
+                dgOrders.DataSource = itemTable;
         }
 
         private void dgOrders_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

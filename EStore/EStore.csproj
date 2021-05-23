@@ -125,12 +125,14 @@
     <Compile Include="OrdersView\MainOrdersView.Designer.cs">
       <DependentUpon>MainOrdersView.cs</DependentUpon>
     </Compile>
+
     <Compile Include="ItemsView\OrdersCreate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ItemsView\OrdersCreate.Designer.cs">
       <DependentUpon>OrdersCreate.cs</DependentUpon>
     </Compile>
+
     <Compile Include="OrdersView\OrdersDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +174,7 @@
     <EmbeddedResource Include="OrdersView\MainOrdersView.resx">
       <DependentUpon>MainOrdersView.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="ItemsView\OrdersCreate.resx">
       <DependentUpon>OrdersCreate.cs</DependentUpon>
     </EmbeddedResource>
