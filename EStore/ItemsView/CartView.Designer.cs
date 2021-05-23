@@ -41,12 +41,13 @@ namespace EStore.ItemsView
             // 
             this.tileMakeOrder.ActiveControl = null;
             this.tileMakeOrder.Location = new System.Drawing.Point(876, 459);
-            this.tileMakeOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tileMakeOrder.Margin = new System.Windows.Forms.Padding(4);
             this.tileMakeOrder.Name = "tileMakeOrder";
             this.tileMakeOrder.Size = new System.Drawing.Size(141, 55);
             this.tileMakeOrder.TabIndex = 1;
             this.tileMakeOrder.Text = "Make Order";
             this.tileMakeOrder.UseSelectable = true;
+            this.tileMakeOrder.Click += new System.EventHandler(this.tileMakeOrder_Click);
             // 
             // metroGridSelectedItems
             // 
@@ -93,15 +94,15 @@ namespace EStore.ItemsView
             this.metroGridSelectedItems.Size = new System.Drawing.Size(987, 323);
             this.metroGridSelectedItems.TabIndex = 2;
             // 
-            // Cart
+            // CartView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.metroGridSelectedItems);
             this.Controls.Add(this.tileMakeOrder);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Cart";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "CartView";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Text = "Cart";
             ((System.ComponentModel.ISupportInitialize)(this.metroGridSelectedItems)).EndInit();

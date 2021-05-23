@@ -38,7 +38,10 @@ namespace EStore.ItemsView
             metroGridSelectedItems.DataSource = ToDataTable();
             
         }
-             
 
+        private void tileMakeOrder_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
