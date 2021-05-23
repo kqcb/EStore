@@ -32,7 +32,7 @@ namespace EStore.OrdersView
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.metroComboBoxCities = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
@@ -45,6 +45,7 @@ namespace EStore.OrdersView
             this.metroButton1.TabIndex = 0;
             this.metroButton1.Text = "Make Order";
             this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // metroTextBox1
             // 
@@ -84,22 +85,22 @@ namespace EStore.OrdersView
             this.metroLabel1.Size = new System.Drawing.Size(0, 0);
             this.metroLabel1.TabIndex = 3;
             // 
-            // metroComboBox1
+            // metroComboBoxCities
             // 
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Location = new System.Drawing.Point(34, 102);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(163, 29);
-            this.metroComboBox1.TabIndex = 4;
-            this.metroComboBox1.UseSelectable = true;
+            this.metroComboBoxCities.FormattingEnabled = true;
+            this.metroComboBoxCities.ItemHeight = 24;
+            this.metroComboBoxCities.Location = new System.Drawing.Point(34, 102);
+            this.metroComboBoxCities.Name = "metroComboBoxCities";
+            this.metroComboBoxCities.Size = new System.Drawing.Size(163, 30);
+            this.metroComboBoxCities.TabIndex = 4;
+            this.metroComboBoxCities.UseSelectable = true;
             // 
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.Location = new System.Drawing.Point(34, 80);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(31, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(32, 20);
             this.metroLabel2.TabIndex = 5;
             this.metroLabel2.Text = "City";
             // 
@@ -108,18 +109,18 @@ namespace EStore.OrdersView
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.Location = new System.Drawing.Point(34, 151);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(40, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(40, 20);
             this.metroLabel3.TabIndex = 6;
             this.metroLabel3.Text = "Road";
             // 
             // OrdersCreate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(246, 400);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
-            this.Controls.Add(this.metroComboBox1);
+            this.Controls.Add(this.metroComboBoxCities);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroTextBox1);
             this.Controls.Add(this.metroButton1);
@@ -138,7 +139,7 @@ namespace EStore.OrdersView
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroComboBox metroComboBoxCities;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel3;
     }
