@@ -1,4 +1,5 @@
-﻿using EStoreBusinessObjects;
+﻿using EStore.OrdersView;
+using EStoreBusinessObjects;
 using FastMember;
 using System;
 using System.Collections.Generic;
@@ -41,7 +42,7 @@ namespace EStore.ItemsView
 
         private void tileMakeOrder_Click(object sender, EventArgs e)
         {
-
+            new OrdersCreate(_items).Show();
         }
     }
 }
