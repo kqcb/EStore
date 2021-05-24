@@ -25,7 +25,7 @@ namespace EStore.OrdersView
 
         private void tileCreate_Click(object sender, EventArgs e)
         {
-            new OrdersView.OrdersCreate().Show();
+           // new OrdersView.OrdersCreate().Show();
         }
 
         private void CheckForAdmin(bool isAdmin)
