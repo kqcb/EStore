@@ -106,5 +106,10 @@ namespace EStore.ItemsView
             this.Hide();
             new CartView(_user, _selectedItems).Show();
         }
+
+        private void dgItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

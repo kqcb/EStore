@@ -25,10 +25,11 @@ namespace EStore.OrdersView
         private void ShowData(Order order)
         {
             txbDate.Text = order.OrderDate.ToString();
-            txbQuantity.Text = order.;
+            //txbQuantity.Text = order.;
             radioIsPaid.Checked = order.IsPaid ? true : false;
             radioNotPaid.Checked = order.IsPaid ? false : true;
-            txbPrice.Text = order.OrderDetails;
+            //txbPrice.Text = order.OrderDetails;
+
         }
 
         private void OrdersDetails_Load(object sender, EventArgs e)
@@ -46,10 +47,10 @@ namespace EStore.OrdersView
         private void tileEdit_Click_1(object sender, EventArgs e)
         {
             OrderDetails temp = new OrderDetails();
-            temp.Quantity =  ;
-            temp.IsPaid = radioIsPaid.Checked ? true : false;
-            temp.
-            EStoreContext.Orders.Update(temp);
+            //temp.Quantity = quant  ;
+           // temp.IsPaid = radioIsPaid.Checked ? true : false;
+           // temp.
+           // EStoreContext.Orders.Update(temp);
             this.Close();
         }
 

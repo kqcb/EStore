@@ -42,7 +42,7 @@ namespace EStore.Auth
             // htmlLabel1
             // 
             this.htmlLabel1.AutoScroll = true;
-            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(137, 41);
+            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(70, 25);
             this.htmlLabel1.AutoSize = false;
             this.htmlLabel1.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel1.Location = new System.Drawing.Point(28, 68);
@@ -55,7 +55,7 @@ namespace EStore.Auth
             // htmlLabel2
             // 
             this.htmlLabel2.AutoScroll = true;
-            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(131, 41);
+            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(68, 25);
             this.htmlLabel2.AutoSize = false;
             this.htmlLabel2.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel2.Location = new System.Drawing.Point(28, 135);
@@ -98,6 +98,7 @@ namespace EStore.Auth
             this.txtEmail.UseStyleColors = true;
             this.txtEmail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtEmail.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
             // 
             // txtPassword
             // 
@@ -163,7 +164,7 @@ namespace EStore.Auth
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(247, 264);
             this.Controls.Add(this.btnSignup);

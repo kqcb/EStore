@@ -40,5 +40,10 @@ namespace EStore.Auth
                 }
             }
         }
+
+        private void txtEmail_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

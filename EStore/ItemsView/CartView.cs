@@ -52,5 +52,15 @@ namespace EStore.ItemsView
             this.Hide();
             new MainItemsView(_user).Show();
         }
+
+        private void metroGridSelectedItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void CartView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

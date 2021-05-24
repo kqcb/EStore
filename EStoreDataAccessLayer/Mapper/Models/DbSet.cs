@@ -73,7 +73,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
                 return item;
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return default(T);
             }

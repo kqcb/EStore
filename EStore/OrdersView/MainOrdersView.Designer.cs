@@ -87,7 +87,7 @@ namespace EStore.OrdersView
             // 
             // MainOrdersView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 450);
             this.Controls.Add(this.dgOrders);
@@ -96,6 +96,7 @@ namespace EStore.OrdersView
             this.Padding = new System.Windows.Forms.Padding(23, 65, 23, 22);
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Orders";
+            this.Load += new System.EventHandler(this.MainOrdersView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgOrders)).EndInit();
             this.ResumeLayout(false);
 

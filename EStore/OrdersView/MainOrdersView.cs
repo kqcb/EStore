@@ -53,5 +53,10 @@ namespace EStore.OrdersView
         {
 
         }
+
+        private void MainOrdersView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

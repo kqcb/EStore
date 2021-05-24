@@ -18,5 +18,10 @@ namespace EStore.ItemsView
         {
             InitializeComponent();
         }
+
+        private void ItemsCreate_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

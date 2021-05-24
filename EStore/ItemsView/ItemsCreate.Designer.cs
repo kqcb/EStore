@@ -78,7 +78,7 @@ namespace EStore.ItemsView
             // htmlLabel5
             // 
             this.htmlLabel5.AutoScroll = true;
-            this.htmlLabel5.AutoScrollMinSize = new System.Drawing.Size(86, 22);
+            this.htmlLabel5.AutoScrollMinSize = new System.Drawing.Size(93, 25);
             this.htmlLabel5.AutoSize = false;
             this.htmlLabel5.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel5.Location = new System.Drawing.Point(18, 79);
@@ -124,7 +124,7 @@ namespace EStore.ItemsView
             // htmlLabel1
             // 
             this.htmlLabel1.AutoScroll = true;
-            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(58, 23);
+            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(67, 25);
             this.htmlLabel1.AutoSize = false;
             this.htmlLabel1.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel1.Location = new System.Drawing.Point(18, 144);
@@ -170,7 +170,7 @@ namespace EStore.ItemsView
             // htmlLabel2
             // 
             this.htmlLabel2.AutoScroll = true;
-            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(67, 23);
+            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(76, 25);
             this.htmlLabel2.AutoSize = false;
             this.htmlLabel2.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel2.Location = new System.Drawing.Point(18, 258);
@@ -184,7 +184,7 @@ namespace EStore.ItemsView
             this.radioActive.AutoSize = true;
             this.radioActive.Location = new System.Drawing.Point(18, 237);
             this.radioActive.Name = "radioActive";
-            this.radioActive.Size = new System.Drawing.Size(56, 15);
+            this.radioActive.Size = new System.Drawing.Size(58, 17);
             this.radioActive.TabIndex = 40;
             this.radioActive.Text = "Active";
             this.radioActive.UseSelectable = true;
@@ -194,7 +194,7 @@ namespace EStore.ItemsView
             this.radioInactive.AutoSize = true;
             this.radioInactive.Location = new System.Drawing.Point(97, 237);
             this.radioInactive.Name = "radioInactive";
-            this.radioInactive.Size = new System.Drawing.Size(64, 15);
+            this.radioInactive.Size = new System.Drawing.Size(67, 17);
             this.radioInactive.TabIndex = 41;
             this.radioInactive.Text = "Inactive";
             this.radioInactive.UseSelectable = true;
@@ -216,7 +216,7 @@ namespace EStore.ItemsView
             // htmlLabel3
             // 
             this.htmlLabel3.AutoScroll = true;
-            this.htmlLabel3.AutoScrollMinSize = new System.Drawing.Size(51, 23);
+            this.htmlLabel3.AutoScrollMinSize = new System.Drawing.Size(61, 25);
             this.htmlLabel3.AutoSize = false;
             this.htmlLabel3.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel3.Location = new System.Drawing.Point(18, 208);
@@ -227,7 +227,7 @@ namespace EStore.ItemsView
             // 
             // ItemsCreate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(233, 427);
             this.Controls.Add(this.htmlLabel3);
@@ -245,6 +245,7 @@ namespace EStore.ItemsView
             this.Padding = new System.Windows.Forms.Padding(24, 65, 24, 22);
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = "Items";
+            this.Load += new System.EventHandler(this.ItemsCreate_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

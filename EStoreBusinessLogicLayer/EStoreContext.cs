@@ -14,8 +14,8 @@ namespace EStoreBusinessLogicLayer
         public static OrderServices Orders { get; set; } = new();
 
       
-        public OrderDetailsServices OrderDetails { get; set; } = new();
-        public RoleServices RoleServices { get; set; } = new();
+      //  public OrderDetailsServices OrderDetails { get; set; } = new();
+       // public RoleServices RoleServices { get; set; } = new();
 
         public static OrderDetailsServices OrderDetails { get; set; } = new();
         public static RoleServices RoleServices { get; set; } = new();

@@ -39,7 +39,7 @@ namespace EStore.ItemsView
             {
                 Id = 1
             };
-            temp.UnitPrice = double.Parse(txtUnitPrice.Text);
+            temp.UnitPrice = decimal.Parse(txtUnitPrice.Text);
 
             EStoreContext.Items.Update(temp);
         }
