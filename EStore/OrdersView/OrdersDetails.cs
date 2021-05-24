@@ -15,21 +15,27 @@ namespace EStore.OrdersView
     public partial class OrdersDetails : MetroFramework.Forms.MetroForm
     {
         Order order;
+      
         public OrdersDetails(Order order)
         {
             InitializeComponent();
             this.order = order;
-            ShowData(order);
+            ShowData();
         }
 
-        private void ShowData(Order order)
+        private void ShowData()
         {
-            txbDate.Text = order.OrderDate.ToString();
-            //txbQuantity.Text = order.;
+            dgItems.DataSource = EStoreContext.OrderDetails.FillDataTableByOrderId(order.Id);
+            txbCity.Text = order.City.Name;
+            txbDate.Text = order.OrderDate.ToShortDateString();
+            decimal total = 0;
+            var list = EStoreContext.OrderDetails.ReadByOrderId(order.Id);
+            list.ForEach(or => total+=or.Price);
+            txbPrice.Text = total.ToString();
             radioIsPaid.Checked = order.IsPaid ? true : false;
             radioNotPaid.Checked = order.IsPaid ? false : true;
-            //txbPrice.Text = order.OrderDetails;
-
+            txbStreet.Text = order.Street;
+           
         }
 
         private void OrdersDetails_Load(object sender, EventArgs e)
@@ -37,7 +43,7 @@ namespace EStore.OrdersView
 
         }
 
-
+        
         private void tileDelete_Click_1(object sender, EventArgs e)
         {
             EStoreContext.Orders.Delete(order.Id);
@@ -47,10 +53,6 @@ namespace EStore.OrdersView
         private void tileEdit_Click_1(object sender, EventArgs e)
         {
             OrderDetails temp = new OrderDetails();
-            //temp.Quantity = quant  ;
-           // temp.IsPaid = radioIsPaid.Checked ? true : false;
-           // temp.
-           // EStoreContext.Orders.Update(temp);
             this.Close();
         }
 
@@ -58,5 +60,6 @@ namespace EStore.OrdersView
         {
 
         }
+
     }
 }
