@@ -1,19 +1,20 @@
 ﻿
 using EStoreBusinessObjects;
+using EStoreDataAccessLayer;
 
 namespace EStoreBusinessLogicLayer
 {
     public class EStoreContext 
     {
 
-        public static CityServices Cities { get; set; } = new();
-        public static BrandServices Brands { get; set; }=  new();
-        public static CategoryServices Categories { get; set; } = new();
-        public static UserServices Users { get; set; } = new UserServices();
-        public static ItemServices Items { get; set; } = new();
-        public static OrderServices Orders { get; set; } = new();
-        public static OrderDetailsServices OrderDetails { get; set; } = new();
-        public static RoleServices RoleServices { get; set; } = new();
+        public static CityDbSet Cities { get; set; } = new();
+        public static BrandDbSet Brands { get; set; }=  new();
+        public static CategoryDbSet Categories { get; set; } = new();
+        public static UserDbSet Users { get; set; } = new UserDbSet();
+        public static ItemDbSet Items { get; set; } = new();
+        public static OrderDbSet Orders { get; set; } = new();
+        public static OrderDetailsDbSet OrderDetails { get; set; } = new();
+        public static RoleDbSet RoleDbSet { get; set; } = new();
 
 
 
