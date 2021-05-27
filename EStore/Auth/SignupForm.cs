@@ -61,7 +61,7 @@ namespace EStore.Auth
                     City = _cities[cityIndex],
                     Role = new Role()
                     {
-                        Id = 1
+                        Id = 2
                     }
                 };
                 EStoreContext.Users.Create(user);
