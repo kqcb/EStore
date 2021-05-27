@@ -4,7 +4,7 @@ using EStoreDataAccessLayer.Mapper.Utils;
 
 namespace EStoreBusinessLogicLayer
 {
-    public class OrderServices : DbSet<Order>
+    public class OrderServices : Services<Order>
     {
        
     }

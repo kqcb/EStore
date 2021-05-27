@@ -4,7 +4,7 @@ using EStoreDataAccessLayer.Mapper.Models;
 
 namespace EStoreBusinessLogicLayer
 {
-    public class CategoryServices : DbSet<Category>
+    public class CategoryServices : Services<Category>
     {
        
 

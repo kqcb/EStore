@@ -246,7 +246,6 @@ namespace EStore.ItemsView
             this.Padding = new System.Windows.Forms.Padding(24, 65, 24, 22);
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = "Items";
-            this.Load += new System.EventHandler(this.ItemsCreate_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
         }

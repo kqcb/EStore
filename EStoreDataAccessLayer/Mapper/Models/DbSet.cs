@@ -172,7 +172,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
                 objectProperties.ToOtherParametersWithId(cmd.Parameters);
 
                 cmd.Parameters.RemoveAt("@Id");
-                cmd.Parameters.AddWithValue("insertBy", 1);
+                cmd.Parameters.AddWithValue("@insertBy", 1);
 
 
 
