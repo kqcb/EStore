@@ -110,5 +110,11 @@ namespace EStore.ItemsView
         {
 
         }
+
+        private void tileBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new MainForm(_user);
+        }
     }
 }

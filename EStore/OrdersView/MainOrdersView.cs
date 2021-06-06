@@ -59,5 +59,11 @@ namespace EStore.OrdersView
         {
 
         }
+
+        private void tileBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new MainForm(_user);
+        }
     }
 }

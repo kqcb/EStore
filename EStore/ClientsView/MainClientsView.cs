@@ -15,6 +15,7 @@ namespace EStore.ClientsView
     public partial class MainClientsView : MetroFramework.Forms.MetroForm
     {
         private User _user;
+
         public MainClientsView(User user)
         {
             _user = user;
@@ -53,6 +54,12 @@ namespace EStore.ClientsView
         private void dgClients_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void tileBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new MainForm(_user);
         }
     }
 }
