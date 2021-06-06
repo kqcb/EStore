@@ -11,6 +11,7 @@ namespace EStore
         {
             _user = user;
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void tileClients_Click(object sender, EventArgs e)

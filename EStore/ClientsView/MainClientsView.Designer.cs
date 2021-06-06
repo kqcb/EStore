@@ -42,6 +42,7 @@ namespace EStore.ClientsView
             this.dgClients.AllowUserToAddRows = false;
             this.dgClients.AllowUserToDeleteRows = false;
             this.dgClients.AllowUserToResizeRows = false;
+            this.dgClients.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgClients.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgClients.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgClients.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -66,7 +67,7 @@ namespace EStore.ClientsView
             this.dgClients.EnableHeadersVisualStyles = false;
             this.dgClients.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dgClients.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgClients.Location = new System.Drawing.Point(0, 88);
+            this.dgClients.Location = new System.Drawing.Point(23, 101);
             this.dgClients.Name = "dgClients";
             this.dgClients.ReadOnly = true;
             this.dgClients.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -81,7 +82,7 @@ namespace EStore.ClientsView
             this.dgClients.RowHeadersWidth = 102;
             this.dgClients.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgClients.Size = new System.Drawing.Size(566, 362);
+            this.dgClients.Size = new System.Drawing.Size(521, 327);
             this.dgClients.TabIndex = 11;
             this.dgClients.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgClients_CellContentClick);
             this.dgClients.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgClients_CellDoubleClick);
@@ -89,6 +90,7 @@ namespace EStore.ClientsView
             // tileCreate
             // 
             this.tileCreate.ActiveControl = null;
+            this.tileCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tileCreate.Location = new System.Drawing.Point(461, 38);
             this.tileCreate.Name = "tileCreate";
             this.tileCreate.Size = new System.Drawing.Size(105, 44);
@@ -102,7 +104,7 @@ namespace EStore.ClientsView
             // 
             // MainClientsView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 450);
             this.Controls.Add(this.dgClients);

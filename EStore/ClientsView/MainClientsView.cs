@@ -19,6 +19,7 @@ namespace EStore.ClientsView
         {
             _user = user;
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             CheckForAdmin(true);
             ShowData();
         }
