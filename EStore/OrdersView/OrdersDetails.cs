@@ -25,12 +25,12 @@ namespace EStore.OrdersView
 
         private void ShowData()
         {
-            dgItems.DataSource = EStoreContext.OrderDetails.FillDataTableByOrderId(order.Id);
+            //dgItems.DataSource = EStoreContext.OrderDetails.FillDataTableByOrderId(order.Id);
             txbCity.Text = order.City.Name;
             txbDate.Text = order.OrderDate.ToShortDateString();
             decimal total = 0;
-            var list = EStoreContext.OrderDetails.ReadByOrderId(order.Id);
-            list.ForEach(or => total+=or.Price);
+            //var list = EStoreContext.OrderDetails.ReadByOrderId(order.Id);
+           // list.ForEach(or => total+=or.Price);
             txbPrice.Text = total.ToString();
             radioIsPaid.Checked = order.IsPaid ? true : false;
             radioNotPaid.Checked = order.IsPaid ? false : true;

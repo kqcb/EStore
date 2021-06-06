@@ -38,7 +38,7 @@ namespace EStore.ClientsView
 
         private void ShowData()
         {
-            DataTable itemTable = EStoreContext.Users.FillDataTable();
+            DataTable itemTable = null;// EStoreContext.Users.ToDataTable();
             dgClients.DataSource = itemTable;
         }
 

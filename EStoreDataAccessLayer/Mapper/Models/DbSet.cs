@@ -26,7 +26,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
 
 
-                List<T> items = Read(dataReader);
+                List<T> items = LoadObjects(dataReader);
 
 
                 _sqlConnection.Close();
@@ -68,7 +68,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
                 SqlDataReader dataReader = cmd.ExecuteReader();
 
-                item = ((List<T>)Read(dataReader))[0];
+                item = ((List<T>)LoadObjects(dataReader))[0];
 
                 return item;
 
@@ -84,7 +84,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
         }
 
-        public List<T> Read(SqlDataReader dataReader)
+        public List<T> LoadObjects(SqlDataReader dataReader)
         {
             List<T> items = new List<T>();
 
@@ -158,7 +158,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
         }
         
 
-        public int Create(string procName, T item)
+        public bool Create(string procName, T item)
         {
             try
             {
@@ -172,19 +172,19 @@ namespace EStoreDataAccessLayer.Mapper.Models
                 objectProperties.ToOtherParametersWithId(cmd.Parameters);
 
                 cmd.Parameters.RemoveAt("@Id");
-                cmd.Parameters.AddWithValue("insertBy", 1);
+                cmd.Parameters.AddWithValue("@insertBy", 1);
 
 
 
                 int rez = cmd.ExecuteNonQuery();
                 _sqlConnection.Close();
 
-                return rez;
+                return rez > 0;
             }
             catch (Exception e)
             {
                 var s = e.Message;
-                return 0;
+                return false;
             }
             finally
             {
@@ -192,16 +192,16 @@ namespace EStoreDataAccessLayer.Mapper.Models
             }
         }
 
-        public int Create(T item)
+        public bool Create(T item)
         {
             return Create($"usp_{typeof(T).Name}_Insert", item);
         }
 
-        public DataTable FillDataTable()
+        public DataTable ToDataTable()
         {
-            return FillDataTable($"usp_{typeof(T).Name}_Read");
+            return ToDataTable($"usp_{typeof(T).Name}_Read");
         }
-         public DataTable FillDataTable(string procName)
+         public DataTable ToDataTable(string procName)
          {
                     
                 try
@@ -225,8 +225,12 @@ namespace EStoreDataAccessLayer.Mapper.Models
                 }
                 
          }
-
-        public DataTable FillDataTable(string procName, int id)
+         
+     
+         
+         
+         
+        public DataTable ToDataTable(string procName, int id)
         {
 
             try

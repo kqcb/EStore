@@ -5,8 +5,8 @@ using System;
 
 namespace EStoreBusinessLogicLayer
 {
-    public class UserServices : DbSet<User>
+    public class UserServices : Services<User>
     {
-       
+      
     }
 }

@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using EStoreBusinessLogicLayer;
 using EStoreBusinessObjects;
 
 namespace EStore.ItemsView
@@ -19,8 +11,36 @@ namespace EStore.ItemsView
             InitializeComponent();
         }
 
-        private void ItemsCreate_Load(object sender, EventArgs e)
+
+        private void tileCreate_Click(object sender, EventArgs e)
         {
+            string name = txtName.Text;
+            string description = txtDescription.Text;
+
+            if (String.IsNullOrEmpty(name) || String.IsNullOrEmpty(description) ||
+                String.IsNullOrEmpty(txtUnitPrice.Text))
+            {
+                MessageBox.Show("Please fill all the boxes");
+            }
+            else
+            {
+
+                if (decimal.TryParse(this.txtUnitPrice.Text, out decimal price))
+                    MessageBox.Show("Please type a valid price");
+                else
+                {
+                    Item temp = new Item()
+                    {
+                        Name = name,
+                        Description = description,
+                        UnitPrice = price,
+                        IsActive = radioActive.Checked,
+                    };
+                    
+                    
+                }
+            }
+
 
         }
     }

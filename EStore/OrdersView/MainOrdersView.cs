@@ -38,7 +38,7 @@ namespace EStore.OrdersView
 
         private void ShowData()
         {
-                DataTable itemTable = EStoreContext.Orders.FillDataTable();
+                DataTable itemTable = EStoreContext.Orders.ToDataTable();
                 dgOrders.DataSource = itemTable;
         }
 

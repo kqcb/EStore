@@ -41,7 +41,7 @@ namespace EStore.ItemsView
             };
             temp.UnitPrice = decimal.Parse(txtUnitPrice.Text);
 
-            EStoreContext.Items.Update(temp);
+           // EStoreContext.Items.Update(item.Id, txtName.Text, txtDescription.Text, radioActive.Checked, txtUnitPrice.Text, 1);
         }
 
         private void ShowData(Item item)
