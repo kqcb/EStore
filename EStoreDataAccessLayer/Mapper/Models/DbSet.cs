@@ -158,7 +158,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
         }
         
 
-        public int Create(string procName, T item)
+        public bool Create(string procName, T item)
         {
             try
             {
@@ -179,12 +179,12 @@ namespace EStoreDataAccessLayer.Mapper.Models
                 int rez = cmd.ExecuteNonQuery();
                 _sqlConnection.Close();
 
-                return rez;
+                return rez > 0;
             }
             catch (Exception e)
             {
                 var s = e.Message;
-                return 0;
+                return false;
             }
             finally
             {
@@ -192,7 +192,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
             }
         }
 
-        public int Create(T item)
+        public bool Create(T item)
         {
             return Create($"usp_{typeof(T).Name}_Insert", item);
         }

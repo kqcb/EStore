@@ -22,18 +22,10 @@ namespace EStoreBusinessLogicLayer
         public bool Create(params object[] props)
         {
             
-            var pars = MethodBase.GetCurrentMethod().GetParameters();
-                
-            var propsProperties = Common.ToParametersProperties(props);
+            var obj = Common.LoadObject(typeof(T), Common.ToParametersProperties(props));
             
+            return (bool) Common.InvokeMethod(_dbSet, "Create", obj);
             
-
-            var obj = Common.LoadObject(typeof(T), propsProperties);
-            
-            
-            Common.InvokeMethod(_dbSet, "Create", new [] {obj});
-            
-            return true;
 
         }
 
@@ -44,17 +36,17 @@ namespace EStoreBusinessLogicLayer
 
         public T Read(int id)
         {
-            return (T) Common.InvokeMethod(_dbSet, "Read", new object[] {id});
+            return (T) Common.InvokeMethod(_dbSet, "Read", id);
         }
 
         public void Delete(int id)
         {
-            Common.InvokeMethod(_dbSet, "Delete",new object[] {id});
+            Common.InvokeMethod(_dbSet, "Delete", id);
         }
 
         public void Update(int id)
         {
-            Common.InvokeMethod(_dbSet, "Update", new object[] {id});
+            Common.InvokeMethod(_dbSet, "Update", id);
         }
 
         public DataTable ToDataTable()

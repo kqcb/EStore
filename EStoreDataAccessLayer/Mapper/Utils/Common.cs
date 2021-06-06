@@ -79,12 +79,18 @@ namespace EStoreDataAccessLayer.Mapper.Utils
     
             }
 
-        public static object InvokeMethod(object obj, string name, object[] parameters)
+        public static object InvokeMethod(object obj, string name, object parameters)
         {
-            var method = obj.GetType().GetMethods().FirstOrDefault(m => m.Name.Equals(name) && m.GetParameters().Length == (parameters?.Length ?? 0));
+            var paramsArray = parameters is not null ? (parameters.GetType().IsArray ? (object[])parameters : ToArrayObject(parameters) ) : null;
+            var method = obj.GetType().GetMethods().FirstOrDefault(m => m.Name.Equals(name) && m.GetParameters().Length == (paramsArray?.Length ?? 0));
 
-            return method.Invoke(obj, parameters);
+            return method.Invoke(obj, paramsArray);
 
+        }
+
+        public static object[] ToArrayObject(object obj)
+        {
+            return new[] {obj};
         }
     }
 }
