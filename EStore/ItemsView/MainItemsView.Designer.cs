@@ -41,10 +41,10 @@ namespace EStore.ItemsView
             // tileCreate
             // 
             this.tileCreate.ActiveControl = null;
-            this.tileCreate.Location = new System.Drawing.Point(613, 46);
-            this.tileCreate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tileCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tileCreate.Location = new System.Drawing.Point(460, 59);
             this.tileCreate.Name = "tileCreate";
-            this.tileCreate.Size = new System.Drawing.Size(140, 54);
+            this.tileCreate.Size = new System.Drawing.Size(105, 44);
             this.tileCreate.Style = MetroFramework.MetroColorStyle.Green;
             this.tileCreate.TabIndex = 7;
             this.tileCreate.Text = "Create";
@@ -58,6 +58,7 @@ namespace EStore.ItemsView
             this.dgItems.AllowUserToAddRows = false;
             this.dgItems.AllowUserToDeleteRows = false;
             this.dgItems.AllowUserToResizeRows = false;
+            this.dgItems.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgItems.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgItems.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgItems.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -82,8 +83,7 @@ namespace EStore.ItemsView
             this.dgItems.EnableHeadersVisualStyles = false;
             this.dgItems.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dgItems.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgItems.Location = new System.Drawing.Point(-1, 107);
-            this.dgItems.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgItems.Location = new System.Drawing.Point(20, 113);
             this.dgItems.Name = "dgItems";
             this.dgItems.ReadOnly = true;
             this.dgItems.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -98,7 +98,7 @@ namespace EStore.ItemsView
             this.dgItems.RowHeadersWidth = 51;
             this.dgItems.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgItems.Size = new System.Drawing.Size(755, 446);
+            this.dgItems.Size = new System.Drawing.Size(527, 362);
             this.dgItems.TabIndex = 9;
             this.dgItems.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgItems_CellClick);
             this.dgItems.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgItems_CellContentClick);
@@ -107,10 +107,10 @@ namespace EStore.ItemsView
             // tileCart
             // 
             this.tileCart.ActiveControl = null;
-            this.tileCart.Location = new System.Drawing.Point(447, 46);
-            this.tileCart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tileCart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tileCart.Location = new System.Drawing.Point(335, 59);
             this.tileCart.Name = "tileCart";
-            this.tileCart.Size = new System.Drawing.Size(136, 54);
+            this.tileCart.Size = new System.Drawing.Size(102, 44);
             this.tileCart.TabIndex = 10;
             this.tileCart.Text = "Cart";
             this.tileCart.UseSelectable = true;
@@ -118,15 +118,13 @@ namespace EStore.ItemsView
             // 
             // MainItemsView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(756, 554);
+            this.ClientSize = new System.Drawing.Size(567, 495);
             this.Controls.Add(this.tileCart);
             this.Controls.Add(this.dgItems);
             this.Controls.Add(this.tileCreate);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainItemsView";
-            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = "Items";
             ((System.ComponentModel.ISupportInitialize)(this.dgItems)).EndInit();
