@@ -20,6 +20,7 @@ namespace EStore.Auth
         public SignupForm()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             _cities = EStoreContext.Cities.Read();
             for (int i = 0; i < _cities.Count; i++)
                 cmbCities.Items.Add(_cities[i].Name);

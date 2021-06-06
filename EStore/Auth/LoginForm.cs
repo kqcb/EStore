@@ -15,14 +15,7 @@ namespace EStore.Auth
         public LoginForm()
         {
             InitializeComponent();
-
-            //var obj = Common.GetDbSet("User");
-
-            //var list = Common.InvokeMethod(obj, "Read", null );
-
-            //var i = 0;
-
-            
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnSignup_Click(object sender, EventArgs e)
@@ -38,7 +31,7 @@ namespace EStore.Auth
                 MessageBox.Show("Please fill all the boxes");
             else
             {
-                User user = null;// EStoreContext.Users.Read(txtEmail.Text, txtPassword.Text);
+                User user = EStoreContext.Users.Read(txtEmail.Text, txtPassword.Text);
 
                 if (user == null)
                     MessageBox.Show("Username or password is incorrect");

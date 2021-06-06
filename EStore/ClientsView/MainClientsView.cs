@@ -15,10 +15,12 @@ namespace EStore.ClientsView
     public partial class MainClientsView : MetroFramework.Forms.MetroForm
     {
         private User _user;
+
         public MainClientsView(User user)
         {
             _user = user;
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             CheckForAdmin(true);
             ShowData();
         }
@@ -38,7 +40,7 @@ namespace EStore.ClientsView
 
         private void ShowData()
         {
-            DataTable itemTable = null;// EStoreContext.Users.ToDataTable();
+            DataTable itemTable = EStoreContext.Users.ToDataTable();
             dgClients.DataSource = itemTable;
         }
 
@@ -52,6 +54,12 @@ namespace EStore.ClientsView
         private void dgClients_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void tileBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new MainForm(_user);
         }
     }
 }

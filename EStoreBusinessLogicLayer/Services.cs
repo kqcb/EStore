@@ -11,7 +11,7 @@ namespace EStoreBusinessLogicLayer
 {
     public class Services<T>
     {
-        private object _dbSet;
+        public readonly object _dbSet;
 
 
         public Services()

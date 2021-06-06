@@ -17,8 +17,9 @@ namespace EStore.OrdersView
         private User _user;
         public MainOrdersView(User user)
         {
-            _user = user;
+            this.WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            _user = user;
             CheckForAdmin(true);
             ShowData();
         }
@@ -57,6 +58,12 @@ namespace EStore.OrdersView
         private void MainOrdersView_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void tileBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new MainForm(_user);
         }
     }
 }

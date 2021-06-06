@@ -37,15 +37,17 @@ namespace EStore.Auth
             this.txtPassword = new MetroFramework.Controls.MetroTextBox();
             this.btnLogin = new MetroFramework.Controls.MetroButton();
             this.btnSignup = new MetroFramework.Controls.MetroButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // htmlLabel1
             // 
             this.htmlLabel1.AutoScroll = true;
-            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(70, 25);
+            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(61, 23);
             this.htmlLabel1.AutoSize = false;
             this.htmlLabel1.BackColor = System.Drawing.SystemColors.Window;
-            this.htmlLabel1.Location = new System.Drawing.Point(28, 68);
+            this.htmlLabel1.Location = new System.Drawing.Point(8, 3);
             this.htmlLabel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.htmlLabel1.Name = "htmlLabel1";
             this.htmlLabel1.Size = new System.Drawing.Size(88, 25);
@@ -55,10 +57,10 @@ namespace EStore.Auth
             // htmlLabel2
             // 
             this.htmlLabel2.AutoScroll = true;
-            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(68, 25);
+            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(59, 23);
             this.htmlLabel2.AutoSize = false;
             this.htmlLabel2.BackColor = System.Drawing.SystemColors.Window;
-            this.htmlLabel2.Location = new System.Drawing.Point(28, 135);
+            this.htmlLabel2.Location = new System.Drawing.Point(8, 70);
             this.htmlLabel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.htmlLabel2.Name = "htmlLabel2";
             this.htmlLabel2.Size = new System.Drawing.Size(88, 25);
@@ -81,7 +83,7 @@ namespace EStore.Auth
             this.txtEmail.CustomButton.UseSelectable = true;
             this.txtEmail.CustomButton.Visible = false;
             this.txtEmail.Lines = new string[0];
-            this.txtEmail.Location = new System.Drawing.Point(28, 99);
+            this.txtEmail.Location = new System.Drawing.Point(8, 34);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtEmail.MaxLength = 32767;
             this.txtEmail.Name = "txtEmail";
@@ -116,7 +118,7 @@ namespace EStore.Auth
             this.txtPassword.CustomButton.UseSelectable = true;
             this.txtPassword.CustomButton.Visible = false;
             this.txtPassword.Lines = new string[0];
-            this.txtPassword.Location = new System.Drawing.Point(28, 166);
+            this.txtPassword.Location = new System.Drawing.Point(8, 101);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPassword.MaxLength = 32767;
             this.txtPassword.Name = "txtPassword";
@@ -139,7 +141,7 @@ namespace EStore.Auth
             // 
             this.btnLogin.BackColor = System.Drawing.Color.White;
             this.btnLogin.Highlight = true;
-            this.btnLogin.Location = new System.Drawing.Point(132, 208);
+            this.btnLogin.Location = new System.Drawing.Point(98, 143);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(82, 43);
             this.btnLogin.Style = MetroFramework.MetroColorStyle.Teal;
@@ -152,7 +154,7 @@ namespace EStore.Auth
             // 
             this.btnSignup.BackColor = System.Drawing.Color.White;
             this.btnSignup.Highlight = true;
-            this.btnSignup.Location = new System.Drawing.Point(28, 208);
+            this.btnSignup.Location = new System.Drawing.Point(8, 143);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(84, 43);
             this.btnSignup.Style = MetroFramework.MetroColorStyle.Pink;
@@ -162,17 +164,27 @@ namespace EStore.Auth
             this.btnSignup.UseSelectable = true;
             this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Controls.Add(this.htmlLabel1);
+            this.panel1.Controls.Add(this.btnLogin);
+            this.panel1.Controls.Add(this.btnSignup);
+            this.panel1.Controls.Add(this.htmlLabel2);
+            this.panel1.Controls.Add(this.txtEmail);
+            this.panel1.Controls.Add(this.txtPassword);
+            this.panel1.Location = new System.Drawing.Point(20, 55);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(198, 189);
+            this.panel1.TabIndex = 9;
+            // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(247, 264);
-            this.Controls.Add(this.btnSignup);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.htmlLabel2);
-            this.Controls.Add(this.htmlLabel1);
+            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LoginForm";
@@ -180,6 +192,7 @@ namespace EStore.Auth
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = "EStore";
             this.Theme = MetroFramework.MetroThemeStyle.Default;
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -191,5 +204,6 @@ namespace EStore.Auth
         private MetroFramework.Controls.MetroTextBox txtPassword;
         private MetroFramework.Controls.MetroButton btnLogin;
         private MetroFramework.Controls.MetroButton btnSignup;
+        private System.Windows.Forms.Panel panel1;
     }
 }

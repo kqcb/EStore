@@ -18,12 +18,11 @@ namespace EStore.ItemsView
         private static List<Item> _selectedItems;
         public MainItemsView(User user)
         {
+            InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             _selectedItems = new List<Item>();
             _user = user;
-            InitializeComponent();
             CheckForAdmin(true);
-      
-      
           
             ShowData();
         }
@@ -110,6 +109,12 @@ namespace EStore.ItemsView
         private void dgItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void tileBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new MainForm(_user);
         }
     }
 }
