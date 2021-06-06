@@ -17,8 +17,9 @@ namespace EStore.OrdersView
         private User _user;
         public MainOrdersView(User user)
         {
-            _user = user;
+            this.WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            _user = user;
             CheckForAdmin(true);
             ShowData();
         }

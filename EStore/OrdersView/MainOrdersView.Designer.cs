@@ -41,6 +41,7 @@ namespace EStore.OrdersView
             this.dgOrders.AllowUserToAddRows = false;
             this.dgOrders.AllowUserToDeleteRows = false;
             this.dgOrders.AllowUserToResizeRows = false;
+            this.dgOrders.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgOrders.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgOrders.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgOrders.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -87,7 +88,7 @@ namespace EStore.OrdersView
             // 
             // MainOrdersView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 450);
             this.Controls.Add(this.dgOrders);
