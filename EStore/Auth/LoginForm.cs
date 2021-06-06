@@ -11,6 +11,7 @@ namespace EStore.Auth
         public LoginForm()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnSignup_Click(object sender, EventArgs e)
