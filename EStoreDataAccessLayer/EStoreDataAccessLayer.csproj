@@ -65,9 +65,12 @@
     <Compile Include="BrandDbSet.cs" />
     <Compile Include="CategoryDbSet.cs" />
     <Compile Include="CityDbSet.cs" />
+    <Compile Include="EStoreDbSetContext.cs" />
     <Compile Include="ItemDbSet.cs" />
     <Compile Include="Mapper\Models\DbSet.cs" />
     <Compile Include="Mapper\Models\ObjectProperties.cs" />
+    <Compile Include="Mapper\Models\ParameterProperties.cs" />
+    <Compile Include="Mapper\Utils\Common.cs" />
     <Compile Include="Mapper\Utils\Connection.cs" />
     <Compile Include="OrderDbSet.cs" />
     <Compile Include="OrderDetailsDbSet.cs" />

@@ -52,20 +52,8 @@ namespace EStore.Auth
             //}
             else
             {
-                User user = new User()
-                {
-                    Name = name,
-                    LastName = lastName,
-                    Email = email,
-                    Password = password,
-                    IsActive = true,
-                    City = _cities[cityIndex],
-                    Role = new Role()
-                    {
-                        Id = 1
-                    }
-                };
-                EStoreContext.Users.Create(user);
+               
+                EStoreContext.Users.Create(name, lastName, email, password, true, _cities[cityIndex].Id, 1);
             }
         }
     }

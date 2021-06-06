@@ -7,7 +7,7 @@ using System.Data;
 
 namespace EStoreBusinessLogicLayer
 {
-    public class OrderDetailsServices : DbSet<OrderDetails>
+    public class OrderDetailsServices : Services<OrderDetails>
     {
         
     }

@@ -49,7 +49,7 @@ namespace EStore.ItemsView
 
         private void ShowData()
         {
-            DataTable itemTable = EStoreContext.Items.FillDataTable();
+            DataTable itemTable = EStoreContext.Items.ToDataTable();
             dgItems.DataSource = itemTable;
 
             DataGridViewCheckBoxColumn chx = new();
