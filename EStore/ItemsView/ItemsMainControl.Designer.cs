@@ -1,14 +1,14 @@
 ﻿
 namespace EStore.ItemsView
 {
-    partial class MainItemsView
+    partial class ItemsMainControl
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -21,12 +21,8 @@ namespace EStore.ItemsView
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -35,7 +31,6 @@ namespace EStore.ItemsView
             this.tileCreate = new MetroFramework.Controls.MetroTile();
             this.dgItems = new MetroFramework.Controls.MetroGrid();
             this.tileCart = new MetroFramework.Controls.MetroTile();
-            this.tileBack = new MetroFramework.Controls.MetroTile();
             ((System.ComponentModel.ISupportInitialize)(this.dgItems)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,33 +111,16 @@ namespace EStore.ItemsView
             this.tileCart.Text = "Cart";
             this.tileCart.UseSelectable = true;
             this.tileCart.Click += new System.EventHandler(this.tileCart_Click);
-            // 
-            // tileBack
-            // 
-            this.tileBack.ActiveControl = null;
-            this.tileBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tileBack.Location = new System.Drawing.Point(207, 59);
-            this.tileBack.Name = "tileBack";
-            this.tileBack.Size = new System.Drawing.Size(105, 44);
-            this.tileBack.Style = MetroFramework.MetroColorStyle.Silver;
-            this.tileBack.TabIndex = 13;
-            this.tileBack.Text = "Back";
-            this.tileBack.UseSelectable = true;
-            this.tileBack.UseStyleColors = true;
-            this.tileBack.UseTileImage = true;
-            this.tileBack.Click += new System.EventHandler(this.tileBack_Click);
-            // 
+                      // 
             // MainItemsView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 495);
-            this.Controls.Add(this.tileBack);
             this.Controls.Add(this.tileCart);
             this.Controls.Add(this.dgItems);
             this.Controls.Add(this.tileCreate);
             this.Name = "MainItemsView";
-            this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = "Items";
             ((System.ComponentModel.ISupportInitialize)(this.dgItems)).EndInit();
             this.ResumeLayout(false);
@@ -153,6 +131,5 @@ namespace EStore.ItemsView
         private MetroFramework.Controls.MetroTile tileCreate;
         private MetroFramework.Controls.MetroGrid dgItems;
         private MetroFramework.Controls.MetroTile tileCart;
-        private MetroFramework.Controls.MetroTile tileBack;
     }
 }

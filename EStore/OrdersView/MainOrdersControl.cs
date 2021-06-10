@@ -1,5 +1,6 @@
-﻿using EStoreBusinessLogicLayer;
+﻿using EStore.Utils;
 using EStoreBusinessObjects;
+using MetroFramework.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,21 +13,30 @@ using System.Windows.Forms;
 
 namespace EStore.OrdersView
 {
-    public partial class MainOrdersView : MetroFramework.Forms.MetroForm
+    public partial class MainOrdersControl : UserControl
     {
+        private ControlCollection _controls;
         private User _user;
-        public MainOrdersView(User user)
+        public MainOrdersControl(ControlCollection controls, User user)
         {
-            this.WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            _controls = controls;
             _user = user;
+
+            //this.WindowState = FormWindowState.Maximized;
             CheckForAdmin(true);
             ShowData();
         }
 
-        private void tileCreate_Click(object sender, EventArgs e)
+        private void metroTile1_Click(object sender, EventArgs e)
         {
-           // new OrdersView.OrdersCreate().Show();
+            Common.AddControl(_controls, new OrderDetailsControl( new Order()));
+        }
+
+
+               private void tileCreate_Click(object sender, EventArgs e)
+        {
+            // new OrdersView.OrdersCreate().Show();
         }
 
         private void CheckForAdmin(bool isAdmin)
@@ -39,15 +49,15 @@ namespace EStore.OrdersView
 
         private void ShowData()
         {
-                DataTable itemTable = EStoreContext.Orders.ToDataTable();
-                dgOrders.DataSource = itemTable;
+            //DataTable itemTable = EStoreContext.Orders.ToDataTable();
+            //dgOrders.DataSource = itemTable;
         }
 
         private void dgOrders_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            int orderId = Convert.ToInt32(dgOrders.Rows[e.RowIndex].Cells[0].Value.ToString());
-            Order order = EStoreContext.Orders.Read(orderId);
-            new OrdersView.OrdersDetails(order).Show();
+            //int orderId = Convert.ToInt32(dgOrders.Rows[e.RowIndex].Cells[0].Value.ToString());
+            //Order order = EStoreContext.Orders.Read(orderId);
+            //new OrdersView.OrdersDetails(order).Show();
         }
 
         private void dgOrders_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -62,8 +72,8 @@ namespace EStore.OrdersView
 
         private void tileBack_Click(object sender, EventArgs e)
         {
-            this.Close();
-            new MainForm(_user);
+            //this.Close();
+            //new MainForm(_user);
         }
     }
 }

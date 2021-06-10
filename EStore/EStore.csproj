@@ -59,17 +59,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Auth\LoginForm.cs">
+    <Compile Include="Auth\AuthForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Auth\LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <Compile Include="Auth\AuthForm.Designer.cs">
+      <DependentUpon>AuthForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Auth\SignupForm.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Auth\LoginControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Auth\SignupForm.Designer.cs">
-      <DependentUpon>SignupForm.cs</DependentUpon>
+    <Compile Include="Auth\LoginControl.Designer.cs">
+      <DependentUpon>LoginControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\SignUpControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Auth\SignUpControl.Designer.cs">
+      <DependentUpon>SignUpControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CartView\CartMainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CartView\CartMainControl.Designer.cs">
+      <DependentUpon>CartMainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CartView\MakeOrderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CartView\MakeOrderControl.Designer.cs">
+      <DependentUpon>MakeOrderControl.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientsView\ClientsCreate.cs">
       <SubType>Form</SubType>
@@ -83,18 +101,19 @@
     <Compile Include="ClientsView\ClientsDetails.Designer.cs">
       <DependentUpon>ClientsDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientsView\MainClientsView.cs">
-      <SubType>Form</SubType>
+    <Compile Include="ClientsView\ClientProfileControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ClientsView\MainClientsView.Designer.cs">
-      <DependentUpon>MainClientsView.cs</DependentUpon>
+    <Compile Include="ClientsView\ClientProfileControl.Designer.cs">
+      <DependentUpon>ClientProfileControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="ItemsView\CartView.cs">
-      <SubType>Form</SubType>
+    <Compile Include="ClientsView\ClientsMainControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ItemsView\CartView.Designer.cs">
-      <DependentUpon>CartView.cs</DependentUpon>
+    <Compile Include="ClientsView\ClientsMainControl.Designer.cs">
+      <DependentUpon>ClientsMainControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utils\Exceptions\FieldsNotFilledException.cs" />
     <Compile Include="ItemsView\ItemDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,29 +126,47 @@
     <Compile Include="ItemsView\ItemsCreate.Designer.cs">
       <DependentUpon>ItemsCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="ItemsView\MainItemsView.cs">
+    <Compile Include="ItemsView\ItemDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemsView\ItemDetailsControl.Designer.cs">
+      <DependentUpon>ItemDetailsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsView\ItemsMainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemsView\ItemsMainControl.Designer.cs">
+      <DependentUpon>ItemsMainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\MainControl.Designer.cs">
+      <DependentUpon>MainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ItemsView\MainItemsView.Designer.cs">
-      <DependentUpon>MainItemsView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="OrdersView\MainOrdersView.cs">
+    <Compile Include="OrdersView\MainOrdersControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrdersView\MainOrdersControl.Designer.cs">
+      <DependentUpon>MainOrdersControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CartView\OrdersCreate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OrdersView\MainOrdersView.Designer.cs">
-      <DependentUpon>MainOrdersView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ItemsView\OrdersCreate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ItemsView\OrdersCreate.Designer.cs">
+    <Compile Include="CartView\OrdersCreate.Designer.cs">
       <DependentUpon>OrdersCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersView\OrderDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrdersView\OrderDetailsControl.Designer.cs">
+      <DependentUpon>OrderDetailsControl.cs</DependentUpon>
     </Compile>
     <Compile Include="OrdersView\OrdersDetails.cs">
       <SubType>Form</SubType>
@@ -139,11 +176,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Auth\LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <Compile Include="Utils\Common.cs" />
+    <EmbeddedResource Include="Auth\AuthForm.resx">
+      <DependentUpon>AuthForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Auth\SignupForm.resx">
-      <DependentUpon>SignupForm.cs</DependentUpon>
+    <EmbeddedResource Include="Auth\LoginControl.resx">
+      <DependentUpon>LoginControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth\SignUpControl.resx">
+      <DependentUpon>SignUpControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientsView\ClientsCreate.resx">
       <DependentUpon>ClientsCreate.cs</DependentUpon>
@@ -151,11 +192,8 @@
     <EmbeddedResource Include="ClientsView\ClientsDetails.resx">
       <DependentUpon>ClientsDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientsView\MainClientsView.resx">
-      <DependentUpon>MainClientsView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ItemsView\CartView.resx">
-      <DependentUpon>CartView.cs</DependentUpon>
+    <EmbeddedResource Include="ClientsView\ClientsMainControl.resx">
+      <DependentUpon>ClientsMainControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ItemsView\ItemDetails.resx">
       <DependentUpon>ItemDetails.cs</DependentUpon>
@@ -163,16 +201,16 @@
     <EmbeddedResource Include="ItemsView\ItemsCreate.resx">
       <DependentUpon>ItemsCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ItemsView\MainItemsView.resx">
-      <DependentUpon>MainItemsView.cs</DependentUpon>
+    <EmbeddedResource Include="Main\MainControl.resx">
+      <DependentUpon>MainControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Main\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OrdersView\MainOrdersView.resx">
-      <DependentUpon>MainOrdersView.cs</DependentUpon>
+    <EmbeddedResource Include="OrdersView\MainOrdersControl.resx">
+      <DependentUpon>MainOrdersControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ItemsView\OrdersCreate.resx">
+    <EmbeddedResource Include="CartView\OrdersCreate.resx">
       <DependentUpon>OrdersCreate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrdersView\OrdersDetails.resx">
@@ -229,8 +267,6 @@
   <ItemGroup>
     <None Include="Resources\72579_5454192_979319_imagei.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="MetroFramework.txt" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,5 @@
-﻿using EStoreBusinessLogicLayer;
+﻿using EStore.Utils.Exceptions;
+using EStoreBusinessLogicLayer;
 using EStoreBusinessObjects;
 using System;
 using System.Collections.Generic;
@@ -13,28 +14,20 @@ using static System.String;
 
 namespace EStore.Auth
 {
-    public partial class SignupForm : MetroFramework.Forms.MetroForm
+    public partial class SignUpControl : UserControl
     {
         private List<City> _cities;
-        private LoginForm _loginForm;
-        public SignupForm()
+        public SignUpControl()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
+
             _cities = EStoreContext.Cities.Read();
             for (int i = 0; i < _cities.Count; i++)
                 cmbCities.Items.Add(_cities[i].Name);
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            _loginForm ??= new LoginForm();
 
-            _loginForm.Show();
-        }
-
-        private void btnRegister_Click(object sender, EventArgs e)
+        public bool Register()
         {
             string name = txtName.Text;
             string lastName = txtLastName.Text;
@@ -44,7 +37,7 @@ namespace EStore.Auth
 
             if (cityIndex == -1 || IsNullOrEmpty(name) || IsNullOrWhiteSpace(password) || IsNullOrEmpty(password) || IsNullOrEmpty(lastName) || IsNullOrEmpty(email))
             {
-                MessageBox.Show("Please fill all the boxes");
+                throw new FieldsNotFilledException();
             }
             //else if (!IsNullOrEmpty(password) && !IsNullOrEmpty(repassword) && !password.Equals(repassword))
             //{
@@ -52,8 +45,24 @@ namespace EStore.Auth
             //}
             else
             {
-               
-                EStoreContext.Users.Create(name, lastName, email, password, true, _cities[cityIndex].Id, 1);
+                User temp = new User()
+                {
+                    Name = name,
+                    LastName = lastName,
+                    Email = email,
+                    Password = password,
+                    City = new City()
+                    {
+                        Id = _cities[cityIndex].Id,
+                    },
+                    Role = new Role()
+                    {
+                        Id = 1
+                    }
+                };
+
+                return EStoreContext.Users.Create(temp);
+
             }
         }
     }
