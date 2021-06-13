@@ -178,7 +178,6 @@ namespace EStore
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.SystemColors.Control;
-            this.panelMain.BackgroundImage = global::EStore.Properties.Resources.ecommerce_website;
             this.panelMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelMain.ForeColor = System.Drawing.SystemColors.Control;
             this.panelMain.HorizontalScrollbarBarColor = true;

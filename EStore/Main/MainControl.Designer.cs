@@ -33,12 +33,15 @@ namespace EStore
             // 
             // MainControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackgroundImage = global::EStore.Properties.Resources.ecommerce_website;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CausesValidation = false;
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "MainControl";
-            this.Size = new System.Drawing.Size(1676, 1073);
+            this.Size = new System.Drawing.Size(2980, 1663);
             this.ResumeLayout(false);
 
         }
