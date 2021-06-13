@@ -110,7 +110,6 @@ namespace EStore.ItemsView
             this.tileCart.TabIndex = 10;
             this.tileCart.Text = "Cart";
             this.tileCart.UseSelectable = true;
-            this.tileCart.Click += new System.EventHandler(this.tileCart_Click);
                       // 
             // MainItemsView
             // 

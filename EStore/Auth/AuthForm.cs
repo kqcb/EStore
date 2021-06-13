@@ -81,5 +81,6 @@ namespace EStore.Auth
             Common.ChangeContorl(panelMain.Controls, _signUpControl ??= new SignUpControl());
         }
 
+       
     }
 }

@@ -86,5 +86,10 @@ namespace EStore
         {
             GoToOtherUserControl(_cartMainControl);
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

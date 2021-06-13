@@ -47,7 +47,6 @@ namespace EStore.CartView
             this.tileMakeOrder.TabIndex = 1;
             this.tileMakeOrder.Text = "Make Order";
             this.tileMakeOrder.UseSelectable = true;
-            this.tileMakeOrder.Click += new System.EventHandler(this.tileMakeOrder_Click);
             // 
             // metroGridSelectedItems
             // 
@@ -93,8 +92,7 @@ namespace EStore.CartView
             this.metroGridSelectedItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGridSelectedItems.Size = new System.Drawing.Size(987, 323);
             this.metroGridSelectedItems.TabIndex = 2;
-            this.metroGridSelectedItems.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGridSelectedItems_CellContentClick);
-                      // 
+         // 
             // CartView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -106,7 +104,6 @@ namespace EStore.CartView
             this.Name = "CartView";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Text = "Cart";
-            this.Load += new System.EventHandler(this.CartView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.metroGridSelectedItems)).EndInit();
             this.ResumeLayout(false);
 

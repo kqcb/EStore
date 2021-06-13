@@ -100,10 +100,10 @@ namespace EStore.ItemsView
                 _selectedItems.Remove(itm);
         }
 
-        private void tileCart_Click(object sender, EventArgs e)
-        {
-            new CartView(_user, _selectedItems).Show();
-        }
+        //private void tileCart_Click(object sender, EventArgs e)
+        //{
+        //    new CartView(_user, _selectedItems).Show();
+        //}
 
         private void dgItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

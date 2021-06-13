@@ -57,6 +57,10 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.CrystalDark, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Auth\AuthForm.cs">
@@ -213,9 +217,13 @@
     <EmbeddedResource Include="CartView\OrdersCreate.resx">
       <DependentUpon>OrdersCreate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrdersView\OrderDetailsControl.resx">
+      <DependentUpon>OrderDetailsControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OrdersView\OrdersDetails.resx">
       <DependentUpon>OrdersDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -267,6 +275,31 @@
   <ItemGroup>
     <None Include="Resources\72579_5454192_979319_imagei.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Estore_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Estore_logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-symbol %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-symbol %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.jpg" />
+    <Content Include="Resources\test1.png" />
+    <None Include="Resources\test11.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

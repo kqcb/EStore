@@ -32,8 +32,8 @@ namespace EStore
         private void InitializeComponent()
         {
             this.panelTop = new MetroFramework.Controls.MetroPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnGoBack = new MetroFramework.Controls.MetroTile();
-            this.panelMain = new MetroFramework.Controls.MetroPanel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.btnCart = new MetroFramework.Controls.MetroTile();
             this.btnLogout = new MetroFramework.Controls.MetroTile();
@@ -42,6 +42,9 @@ namespace EStore
             this.btnProducts = new MetroFramework.Controls.MetroTile();
             this.btnProfile = new MetroFramework.Controls.MetroTile();
             this.panelImage = new MetroFramework.Controls.MetroPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.crystalDarkTheme1 = new Telerik.WinControls.Themes.CrystalDarkTheme();
+            this.panelMain = new MetroFramework.Controls.MetroPanel();
             this.panelTop.SuspendLayout();
             this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -49,49 +52,54 @@ namespace EStore
             // panelTop
             // 
             this.panelTop.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panelTop.Controls.Add(this.label1);
             this.panelTop.Controls.Add(this.btnGoBack);
             this.panelTop.HorizontalScrollbarBarColor = true;
             this.panelTop.HorizontalScrollbarHighlightOnWheel = false;
             this.panelTop.HorizontalScrollbarSize = 10;
-            this.panelTop.Location = new System.Drawing.Point(294, 65);
+            this.panelTop.Location = new System.Drawing.Point(269, 63);
             this.panelTop.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1247, 51);
+            this.panelTop.Size = new System.Drawing.Size(1232, 59);
             this.panelTop.TabIndex = 3;
             this.panelTop.VerticalScrollbarBarColor = true;
             this.panelTop.VerticalScrollbarHighlightOnWheel = false;
             this.panelTop.VerticalScrollbarSize = 10;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(582, 1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 48);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Home";
+            // 
             // btnGoBack
             // 
             this.btnGoBack.ActiveControl = null;
-            this.btnGoBack.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnGoBack.Location = new System.Drawing.Point(0, 0);
+            this.btnGoBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnGoBack.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.btnGoBack.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnGoBack.Location = new System.Drawing.Point(1147, 0);
             this.btnGoBack.Name = "btnGoBack";
-            this.btnGoBack.Size = new System.Drawing.Size(108, 51);
+            this.btnGoBack.Size = new System.Drawing.Size(85, 59);
+            this.btnGoBack.Style = MetroFramework.MetroColorStyle.Teal;
             this.btnGoBack.TabIndex = 2;
-            this.btnGoBack.Text = "Go Back";
-            this.btnGoBack.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnGoBack.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnGoBack.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnGoBack.TileImage = global::EStore.Properties.Resources.x_symbol__2_;
+            this.btnGoBack.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnGoBack.UseCustomBackColor = true;
             this.btnGoBack.UseSelectable = true;
+            this.btnGoBack.UseTileImage = true;
             this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
-            // 
-            // panelMain
-            // 
-            this.panelMain.BackColor = System.Drawing.SystemColors.Control;
-            this.panelMain.ForeColor = System.Drawing.SystemColors.Control;
-            this.panelMain.HorizontalScrollbarBarColor = true;
-            this.panelMain.HorizontalScrollbarHighlightOnWheel = false;
-            this.panelMain.HorizontalScrollbarSize = 10;
-            this.panelMain.Location = new System.Drawing.Point(294, 122);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1247, 713);
-            this.panelMain.TabIndex = 2;
-            this.panelMain.VerticalScrollbarBarColor = true;
-            this.panelMain.VerticalScrollbarHighlightOnWheel = false;
-            this.panelMain.VerticalScrollbarSize = 10;
             // 
             // metroPanel1
             // 
+            this.metroPanel1.BackColor = System.Drawing.Color.SteelBlue;
             this.metroPanel1.Controls.Add(this.btnCart);
             this.metroPanel1.Controls.Add(this.btnLogout);
             this.metroPanel1.Controls.Add(this.btnUsers);
@@ -105,7 +113,7 @@ namespace EStore
             this.metroPanel1.HorizontalScrollbarSize = 10;
             this.metroPanel1.Location = new System.Drawing.Point(23, 65);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(268, 770);
+            this.metroPanel1.Size = new System.Drawing.Size(268, 747);
             this.metroPanel1.TabIndex = 7;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
@@ -115,7 +123,7 @@ namespace EStore
             // 
             this.btnCart.ActiveControl = null;
             this.btnCart.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnCart.Location = new System.Drawing.Point(0, 644);
+            this.btnCart.Location = new System.Drawing.Point(0, 621);
             this.btnCart.Name = "btnCart";
             this.btnCart.Size = new System.Drawing.Size(268, 63);
             this.btnCart.TabIndex = 9;
@@ -127,7 +135,7 @@ namespace EStore
             // 
             this.btnLogout.ActiveControl = null;
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnLogout.Location = new System.Drawing.Point(0, 707);
+            this.btnLogout.Location = new System.Drawing.Point(0, 684);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(268, 63);
             this.btnLogout.TabIndex = 8;
@@ -137,8 +145,7 @@ namespace EStore
             // btnUsers
             // 
             this.btnUsers.ActiveControl = null;
-            this.btnUsers.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUsers.Location = new System.Drawing.Point(0, 292);
+            this.btnUsers.Location = new System.Drawing.Point(3, 298);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.Size = new System.Drawing.Size(268, 64);
             this.btnUsers.TabIndex = 7;
@@ -150,8 +157,7 @@ namespace EStore
             // btnOrders
             // 
             this.btnOrders.ActiveControl = null;
-            this.btnOrders.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnOrders.Location = new System.Drawing.Point(0, 228);
+            this.btnOrders.Location = new System.Drawing.Point(3, 234);
             this.btnOrders.Name = "btnOrders";
             this.btnOrders.Size = new System.Drawing.Size(268, 64);
             this.btnOrders.TabIndex = 6;
@@ -163,8 +169,7 @@ namespace EStore
             // btnProducts
             // 
             this.btnProducts.ActiveControl = null;
-            this.btnProducts.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProducts.Location = new System.Drawing.Point(0, 164);
+            this.btnProducts.Location = new System.Drawing.Point(3, 170);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.Size = new System.Drawing.Size(268, 64);
             this.btnProducts.TabIndex = 5;
@@ -176,8 +181,7 @@ namespace EStore
             // btnProfile
             // 
             this.btnProfile.ActiveControl = null;
-            this.btnProfile.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProfile.Location = new System.Drawing.Point(0, 100);
+            this.btnProfile.Location = new System.Drawing.Point(3, 106);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Size = new System.Drawing.Size(268, 64);
             this.btnProfile.TabIndex = 4;
@@ -188,6 +192,8 @@ namespace EStore
             // 
             // panelImage
             // 
+            this.panelImage.BackgroundImage = global::EStore.Properties.Resources.Estore_logo1;
+            this.panelImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelImage.HorizontalScrollbarBarColor = true;
             this.panelImage.HorizontalScrollbarHighlightOnWheel = false;
@@ -200,11 +206,36 @@ namespace EStore
             this.panelImage.VerticalScrollbarHighlightOnWheel = false;
             this.panelImage.VerticalScrollbarSize = 10;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel1.Location = new System.Drawing.Point(0, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1567, 55);
+            this.panel1.TabIndex = 8;
+            // 
+            // panelMain
+            // 
+            this.panelMain.BackColor = System.Drawing.SystemColors.Control;
+            this.panelMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelMain.ForeColor = System.Drawing.SystemColors.Control;
+            this.panelMain.HorizontalScrollbarBarColor = true;
+            this.panelMain.HorizontalScrollbarHighlightOnWheel = false;
+            this.panelMain.HorizontalScrollbarSize = 10;
+            this.panelMain.Location = new System.Drawing.Point(294, 122);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(932, 687);
+            this.panelMain.TabIndex = 2;
+            this.panelMain.VerticalScrollbarBarColor = true;
+            this.panelMain.VerticalScrollbarHighlightOnWheel = false;
+            this.panelMain.VerticalScrollbarSize = 10;
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1567, 857);
+            this.ClientSize = new System.Drawing.Size(1516, 834);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.panelTop);
@@ -214,7 +245,9 @@ namespace EStore
             this.Padding = new System.Windows.Forms.Padding(23, 65, 23, 22);
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = ":w";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelTop.ResumeLayout(false);
+            this.panelTop.PerformLayout();
             this.metroPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -231,9 +264,12 @@ namespace EStore
         private MetroFramework.Controls.MetroTile btnProducts;
         private MetroFramework.Controls.MetroTile btnUsers;
         private MetroFramework.Controls.MetroTile btnLogout;
-        private MetroFramework.Controls.MetroPanel panelMain;
         private MetroFramework.Controls.MetroPanel panelTop;
         private MetroFramework.Controls.MetroTile btnGoBack;
         private MetroFramework.Controls.MetroTile btnCart;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private Telerik.WinControls.Themes.CrystalDarkTheme crystalDarkTheme1;
+        private MetroFramework.Controls.MetroPanel panelMain;
     }
 }
