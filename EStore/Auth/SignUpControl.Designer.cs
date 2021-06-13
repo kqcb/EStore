@@ -46,7 +46,7 @@ namespace EStore.Auth
             // htmlLabel1
             // 
             this.htmlLabel1.AutoScroll = true;
-            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(53, 29);
+            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(84, 41);
             this.htmlLabel1.AutoSize = false;
             this.htmlLabel1.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel1.Location = new System.Drawing.Point(8, 19);
@@ -58,7 +58,7 @@ namespace EStore.Auth
             // htmlLabel6
             // 
             this.htmlLabel6.AutoScroll = true;
-            this.htmlLabel6.AutoScrollMinSize = new System.Drawing.Size(85, 29);
+            this.htmlLabel6.AutoScrollMinSize = new System.Drawing.Size(140, 41);
             this.htmlLabel6.AutoSize = false;
             this.htmlLabel6.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel6.Location = new System.Drawing.Point(8, 81);
@@ -70,7 +70,7 @@ namespace EStore.Auth
             // htmlLabel7
             // 
             this.htmlLabel7.AutoScroll = true;
-            this.htmlLabel7.AutoScrollMinSize = new System.Drawing.Size(51, 29);
+            this.htmlLabel7.AutoScrollMinSize = new System.Drawing.Size(79, 41);
             this.htmlLabel7.AutoSize = false;
             this.htmlLabel7.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel7.Location = new System.Drawing.Point(8, 143);
@@ -82,7 +82,7 @@ namespace EStore.Auth
             // htmlLabel8
             // 
             this.htmlLabel8.AutoScroll = true;
-            this.htmlLabel8.AutoScrollMinSize = new System.Drawing.Size(81, 29);
+            this.htmlLabel8.AutoScrollMinSize = new System.Drawing.Size(131, 41);
             this.htmlLabel8.AutoSize = false;
             this.htmlLabel8.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel8.Location = new System.Drawing.Point(8, 205);
@@ -94,7 +94,7 @@ namespace EStore.Auth
             // htmlLabel2
             // 
             this.htmlLabel2.AutoScroll = true;
-            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(38, 29);
+            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(59, 41);
             this.htmlLabel2.AutoSize = false;
             this.htmlLabel2.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel2.Location = new System.Drawing.Point(8, 267);
@@ -239,10 +239,10 @@ namespace EStore.Auth
             // cmbCities
             // 
             this.cmbCities.FormattingEnabled = true;
-            this.cmbCities.ItemHeight = 23;
+            this.cmbCities.ItemHeight = 24;
             this.cmbCities.Location = new System.Drawing.Point(8, 292);
             this.cmbCities.Name = "cmbCities";
-            this.cmbCities.Size = new System.Drawing.Size(186, 29);
+            this.cmbCities.Size = new System.Drawing.Size(186, 30);
             this.cmbCities.Style = MetroFramework.MetroColorStyle.Pink;
             this.cmbCities.TabIndex = 40;
             this.cmbCities.UseSelectable = true;
@@ -263,17 +263,17 @@ namespace EStore.Auth
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(212, 335);
+            this.panel1.Size = new System.Drawing.Size(247, 375);
             this.panel1.TabIndex = 41;
             // 
             // SignUpControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "SignUpControl";
-            this.Size = new System.Drawing.Size(212, 335);
+            this.Size = new System.Drawing.Size(247, 375);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

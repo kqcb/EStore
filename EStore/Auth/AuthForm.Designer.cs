@@ -34,8 +34,8 @@ namespace EStore.Auth
             this.btnSignUp = new MetroFramework.Controls.MetroTile();
             this.btnGoBack = new MetroFramework.Controls.MetroTile();
             this.btnLogin = new MetroFramework.Controls.MetroTile();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.panelBottom.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +45,7 @@ namespace EStore.Auth
             this.panelMain.HorizontalScrollbarHighlightOnWheel = false;
             this.panelMain.HorizontalScrollbarSize = 17;
             this.panelMain.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.panelMain.Location = new System.Drawing.Point(856, 241);
+            this.panelMain.Location = new System.Drawing.Point(856, 266);
             this.panelMain.Margin = new System.Windows.Forms.Padding(17, 5, 5, 5);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(521, 447);
@@ -62,7 +62,7 @@ namespace EStore.Auth
             this.panelBottom.HorizontalScrollbarBarColor = true;
             this.panelBottom.HorizontalScrollbarHighlightOnWheel = false;
             this.panelBottom.HorizontalScrollbarSize = 17;
-            this.panelBottom.Location = new System.Drawing.Point(852, 695);
+            this.panelBottom.Location = new System.Drawing.Point(856, 716);
             this.panelBottom.Margin = new System.Windows.Forms.Padding(5);
             this.panelBottom.Name = "panelBottom";
             this.panelBottom.Padding = new System.Windows.Forms.Padding(17, 7, 17, 7);
@@ -80,6 +80,7 @@ namespace EStore.Auth
             this.btnSignUp.Margin = new System.Windows.Forms.Padding(5, 5, 5, 167);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(200, 99);
+            this.btnSignUp.Style = MetroFramework.MetroColorStyle.Purple;
             this.btnSignUp.TabIndex = 4;
             this.btnSignUp.Text = "Sign Up";
             this.btnSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -95,6 +96,7 @@ namespace EStore.Auth
             this.btnGoBack.Margin = new System.Windows.Forms.Padding(5);
             this.btnGoBack.Name = "btnGoBack";
             this.btnGoBack.Size = new System.Drawing.Size(222, 99);
+            this.btnGoBack.Style = MetroFramework.MetroColorStyle.Purple;
             this.btnGoBack.TabIndex = 3;
             this.btnGoBack.Text = "Go Back";
             this.btnGoBack.UseSelectable = true;
@@ -108,21 +110,32 @@ namespace EStore.Auth
             this.btnLogin.Margin = new System.Windows.Forms.Padding(17);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(230, 99);
+            this.btnLogin.Style = MetroFramework.MetroColorStyle.Purple;
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Login";
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLogin.UseSelectable = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::EStore.Properties.Resources.test11;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(12, 71);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(832, 758);
+            this.panel1.TabIndex = 4;
+            // 
             // metroPanel1
             // 
             this.metroPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.metroPanel1.BackColor = System.Drawing.Color.White;
+            this.metroPanel1.BackgroundImage = global::EStore.Properties.Resources.Estore_logo1;
             this.metroPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(857, 44);
+            this.metroPanel1.Location = new System.Drawing.Point(857, 71);
             this.metroPanel1.Margin = new System.Windows.Forms.Padding(10);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(516, 189);
@@ -130,14 +143,6 @@ namespace EStore.Auth
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::EStore.Properties.Resources.test11;
-            this.panel1.Location = new System.Drawing.Point(17, 34);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(832, 747);
-            this.panel1.TabIndex = 4;
             // 
             // AuthForm
             // 

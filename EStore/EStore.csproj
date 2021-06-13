@@ -298,6 +298,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\test.jpg" />
+    <None Include="Resources\ecommerce-website.jpg" />
     <Content Include="Resources\test1.png" />
     <None Include="Resources\test11.png" />
   </ItemGroup>

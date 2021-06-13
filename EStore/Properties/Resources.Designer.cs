@@ -83,6 +83,16 @@ namespace EStore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ecommerce_website {
+            get {
+                object obj = ResourceManager.GetObject("ecommerce-website", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Estore_logo {
             get {
                 object obj = ResourceManager.GetObject("Estore_logo", resourceCulture);
