@@ -12,18 +12,18 @@ using System.Windows.Forms;
 
 namespace EStore.ItemsView
 {
-    public partial class MainItemsView : MetroFramework.Forms.MetroForm
+    public partial class ItemsMainControl : UserControl
     {
+       
         private User _user;
         private static List<Item> _selectedItems;
-        public MainItemsView(User user)
+        public ItemsMainControl(User user)
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
             _selectedItems = new List<Item>();
             _user = user;
             CheckForAdmin(true);
-          
+
             ShowData();
         }
 
@@ -55,23 +55,23 @@ namespace EStore.ItemsView
             DataGridViewCheckBoxColumn chx = new();
             chx.TrueValue = true;
             chx.FalseValue = false;
-            
+
             chx.Width = 100;
             dgItems.Columns.Add(chx);
 
             dgItems.Columns[dgItems.ColumnCount - 1].Name = "Add to Cart";
-            
+
         }
 
         private void dgItems_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-           if (dgItems.CurrentCell.ColumnIndex == 0)
+            if (dgItems.CurrentCell.ColumnIndex == 0)
             {
                 dgItems.CurrentCell.Value ??= false;
                 dgItems.CurrentCell.Value = !(bool)dgItems.CurrentCell.Value;
 
-                    int itemId = Convert.ToInt32(dgItems.Rows[e.RowIndex].Cells[1].Value.ToString());
-                    Item item = EStoreContext.Items.Read(itemId);
+                int itemId = Convert.ToInt32(dgItems.Rows[e.RowIndex].Cells[1].Value.ToString());
+                Item item = EStoreContext.Items.Read(itemId);
                 if ((bool)dgItems.CurrentCell.Value)
                 {
 
@@ -79,7 +79,7 @@ namespace EStore.ItemsView
                 }
                 else
                     RemovFromList(item);
-             
+
 
             }
         }
@@ -100,21 +100,15 @@ namespace EStore.ItemsView
                 _selectedItems.Remove(itm);
         }
 
-        private void tileCart_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new CartView(_user, _selectedItems).Show();
-        }
+        //private void tileCart_Click(object sender, EventArgs e)
+        //{
+        //    new CartView(_user, _selectedItems).Show();
+        //}
 
         private void dgItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void tileBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            new MainForm(_user);
-        }
     }
 }

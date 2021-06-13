@@ -1,14 +1,14 @@
 ﻿
 namespace EStore.Auth
 {
-    partial class SignupForm
+    partial class SignUpControl
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -21,13 +21,13 @@ namespace EStore.Auth
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+               private void InitializeComponent()
         {
             this.htmlLabel1 = new MetroFramework.Drawing.Html.HtmlLabel();
             this.htmlLabel6 = new MetroFramework.Drawing.Html.HtmlLabel();
@@ -38,8 +38,6 @@ namespace EStore.Auth
             this.txtLastName = new MetroFramework.Controls.MetroTextBox();
             this.txtEmail = new MetroFramework.Controls.MetroTextBox();
             this.txtPassword = new MetroFramework.Controls.MetroTextBox();
-            this.btnBack = new MetroFramework.Controls.MetroButton();
-            this.btnRegister = new MetroFramework.Controls.MetroButton();
             this.cmbCities = new MetroFramework.Controls.MetroComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -48,10 +46,10 @@ namespace EStore.Auth
             // htmlLabel1
             // 
             this.htmlLabel1.AutoScroll = true;
-            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(39, 23);
+            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(84, 41);
             this.htmlLabel1.AutoSize = false;
             this.htmlLabel1.BackColor = System.Drawing.SystemColors.Window;
-            this.htmlLabel1.Location = new System.Drawing.Point(3, 3);
+            this.htmlLabel1.Location = new System.Drawing.Point(8, 19);
             this.htmlLabel1.Name = "htmlLabel1";
             this.htmlLabel1.Size = new System.Drawing.Size(75, 23);
             this.htmlLabel1.TabIndex = 19;
@@ -60,10 +58,10 @@ namespace EStore.Auth
             // htmlLabel6
             // 
             this.htmlLabel6.AutoScroll = true;
-            this.htmlLabel6.AutoScrollMinSize = new System.Drawing.Size(61, 23);
+            this.htmlLabel6.AutoScrollMinSize = new System.Drawing.Size(140, 41);
             this.htmlLabel6.AutoSize = false;
             this.htmlLabel6.BackColor = System.Drawing.SystemColors.Window;
-            this.htmlLabel6.Location = new System.Drawing.Point(3, 65);
+            this.htmlLabel6.Location = new System.Drawing.Point(8, 81);
             this.htmlLabel6.Name = "htmlLabel6";
             this.htmlLabel6.Size = new System.Drawing.Size(75, 23);
             this.htmlLabel6.TabIndex = 25;
@@ -72,10 +70,10 @@ namespace EStore.Auth
             // htmlLabel7
             // 
             this.htmlLabel7.AutoScroll = true;
-            this.htmlLabel7.AutoScrollMinSize = new System.Drawing.Size(38, 23);
+            this.htmlLabel7.AutoScrollMinSize = new System.Drawing.Size(79, 41);
             this.htmlLabel7.AutoSize = false;
             this.htmlLabel7.BackColor = System.Drawing.SystemColors.Window;
-            this.htmlLabel7.Location = new System.Drawing.Point(3, 127);
+            this.htmlLabel7.Location = new System.Drawing.Point(8, 143);
             this.htmlLabel7.Name = "htmlLabel7";
             this.htmlLabel7.Size = new System.Drawing.Size(75, 23);
             this.htmlLabel7.TabIndex = 27;
@@ -84,10 +82,10 @@ namespace EStore.Auth
             // htmlLabel8
             // 
             this.htmlLabel8.AutoScroll = true;
-            this.htmlLabel8.AutoScrollMinSize = new System.Drawing.Size(59, 23);
+            this.htmlLabel8.AutoScrollMinSize = new System.Drawing.Size(131, 41);
             this.htmlLabel8.AutoSize = false;
             this.htmlLabel8.BackColor = System.Drawing.SystemColors.Window;
-            this.htmlLabel8.Location = new System.Drawing.Point(3, 189);
+            this.htmlLabel8.Location = new System.Drawing.Point(8, 205);
             this.htmlLabel8.Name = "htmlLabel8";
             this.htmlLabel8.Size = new System.Drawing.Size(75, 23);
             this.htmlLabel8.TabIndex = 29;
@@ -96,10 +94,10 @@ namespace EStore.Auth
             // htmlLabel2
             // 
             this.htmlLabel2.AutoScroll = true;
-            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(30, 23);
+            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(59, 41);
             this.htmlLabel2.AutoSize = false;
             this.htmlLabel2.BackColor = System.Drawing.SystemColors.Window;
-            this.htmlLabel2.Location = new System.Drawing.Point(3, 251);
+            this.htmlLabel2.Location = new System.Drawing.Point(8, 267);
             this.htmlLabel2.Name = "htmlLabel2";
             this.htmlLabel2.Size = new System.Drawing.Size(75, 23);
             this.htmlLabel2.TabIndex = 31;
@@ -121,8 +119,7 @@ namespace EStore.Auth
             this.txtName.CustomButton.UseSelectable = true;
             this.txtName.CustomButton.Visible = false;
             this.txtName.Lines = new string[0];
-            this.txtName.Location = new System.Drawing.Point(3, 32);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtName.Location = new System.Drawing.Point(8, 50);
             this.txtName.MaxLength = 32767;
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
@@ -155,8 +152,7 @@ namespace EStore.Auth
             this.txtLastName.CustomButton.UseSelectable = true;
             this.txtLastName.CustomButton.Visible = false;
             this.txtLastName.Lines = new string[0];
-            this.txtLastName.Location = new System.Drawing.Point(3, 96);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtLastName.Location = new System.Drawing.Point(8, 112);
             this.txtLastName.MaxLength = 32767;
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.PasswordChar = '\0';
@@ -189,8 +185,7 @@ namespace EStore.Auth
             this.txtEmail.CustomButton.UseSelectable = true;
             this.txtEmail.CustomButton.Visible = false;
             this.txtEmail.Lines = new string[0];
-            this.txtEmail.Location = new System.Drawing.Point(3, 156);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtEmail.Location = new System.Drawing.Point(8, 172);
             this.txtEmail.MaxLength = 32767;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
@@ -223,8 +218,7 @@ namespace EStore.Auth
             this.txtPassword.CustomButton.UseSelectable = true;
             this.txtPassword.CustomButton.Visible = false;
             this.txtPassword.Lines = new string[0];
-            this.txtPassword.Location = new System.Drawing.Point(3, 218);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtPassword.Location = new System.Drawing.Point(8, 234);
             this.txtPassword.MaxLength = 32767;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '●';
@@ -242,40 +236,13 @@ namespace EStore.Auth
             this.txtPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.White;
-            this.btnBack.Highlight = true;
-            this.btnBack.Location = new System.Drawing.Point(3, 321);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(84, 43);
-            this.btnBack.Style = MetroFramework.MetroColorStyle.Pink;
-            this.btnBack.TabIndex = 39;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseCustomBackColor = true;
-            this.btnBack.UseSelectable = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // btnRegister
-            // 
-            this.btnRegister.BackColor = System.Drawing.Color.White;
-            this.btnRegister.Highlight = true;
-            this.btnRegister.Location = new System.Drawing.Point(106, 321);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(83, 43);
-            this.btnRegister.Style = MetroFramework.MetroColorStyle.Teal;
-            this.btnRegister.TabIndex = 38;
-            this.btnRegister.Text = "Register";
-            this.btnRegister.UseSelectable = true;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
-            // 
             // cmbCities
             // 
             this.cmbCities.FormattingEnabled = true;
-            this.cmbCities.ItemHeight = 23;
-            this.cmbCities.Location = new System.Drawing.Point(3, 276);
+            this.cmbCities.ItemHeight = 24;
+            this.cmbCities.Location = new System.Drawing.Point(8, 292);
             this.cmbCities.Name = "cmbCities";
-            this.cmbCities.Size = new System.Drawing.Size(186, 29);
+            this.cmbCities.Size = new System.Drawing.Size(186, 30);
             this.cmbCities.Style = MetroFramework.MetroColorStyle.Pink;
             this.cmbCities.TabIndex = 40;
             this.cmbCities.UseSelectable = true;
@@ -283,35 +250,30 @@ namespace EStore.Auth
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.htmlLabel1);
             this.panel1.Controls.Add(this.cmbCities);
             this.panel1.Controls.Add(this.htmlLabel6);
-            this.panel1.Controls.Add(this.btnBack);
             this.panel1.Controls.Add(this.htmlLabel7);
-            this.panel1.Controls.Add(this.btnRegister);
             this.panel1.Controls.Add(this.htmlLabel8);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.htmlLabel2);
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Controls.Add(this.txtLastName);
-            this.panel1.Location = new System.Drawing.Point(21, 55);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 372);
+            this.panel1.Size = new System.Drawing.Size(247, 375);
             this.panel1.TabIndex = 41;
             // 
-            // SignupForm
+            // SignUpControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(247, 441);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "SignupForm";
-            this.Padding = new System.Windows.Forms.Padding(23, 65, 23, 22);
-            this.Style = MetroFramework.MetroColorStyle.Pink;
-            this.Text = "EStore";
+            this.Name = "SignUpControl";
+            this.Size = new System.Drawing.Size(247, 375);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -327,8 +289,6 @@ namespace EStore.Auth
         private MetroFramework.Controls.MetroTextBox txtLastName;
         private MetroFramework.Controls.MetroTextBox txtEmail;
         private MetroFramework.Controls.MetroTextBox txtPassword;
-        private MetroFramework.Controls.MetroButton btnBack;
-        private MetroFramework.Controls.MetroButton btnRegister;
         private MetroFramework.Controls.MetroComboBox cmbCities;
         private System.Windows.Forms.Panel panel1;
     }

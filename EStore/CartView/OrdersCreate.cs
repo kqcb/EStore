@@ -1,16 +1,9 @@
-﻿using EStoreBusinessLogicLayer;
-using EStoreBusinessObjects;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using EStoreBusinessLogicLayer;
+using EStoreBusinessObjects;
 
-namespace EStore.OrdersView
+namespace EStore.CartView
 {
     public partial class OrdersCreate : MetroFramework.Forms.MetroForm
     {
@@ -24,8 +17,8 @@ namespace EStore.OrdersView
             _user = user;
 
             _cities = EStoreContext.Cities.Read();
-            for (int i = 0; i < _cities.Count; i++)
-                metroComboBoxCities.Items.Add(_cities[i].Name);
+            foreach (var city in _cities)
+                metroComboBoxCities.Items.Add(city.Name);
         }
 
         private void metroButton1_Click(object sender, EventArgs e)

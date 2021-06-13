@@ -1,5 +1,5 @@
 ﻿
-namespace EStore.OrdersView
+namespace EStore.CartView
 {
     partial class OrdersCreate
     {
