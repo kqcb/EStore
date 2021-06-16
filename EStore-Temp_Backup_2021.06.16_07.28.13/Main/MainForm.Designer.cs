@@ -39,7 +39,6 @@
             this.radPanelTop = new Telerik.WinControls.UI.RadPanel();
             this.btnGoBack = new Telerik.WinControls.UI.RadButton();
             this.radPanelMain = new Telerik.WinControls.UI.RadPanel();
-            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnShoppingCart)).BeginInit();
@@ -165,12 +164,6 @@
             this.radPanelMain.Size = new System.Drawing.Size(1079, 1027);
             this.radPanelMain.TabIndex = 2;
             // 
-            // directorySearcher1
-            // 
-            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -217,6 +210,5 @@
         private Telerik.WinControls.UI.RadPanel radPanelTop;
         private Telerik.WinControls.UI.RadButton btnGoBack;
         private Telerik.WinControls.UI.RadPanel radPanelMain;
-        private System.DirectoryServices.DirectorySearcher directorySearcher1;
     }
 }
