@@ -25,6 +25,16 @@ namespace EStore.Auth
             InitializeComponent();
             btnGoBack.Visible = false;
             Common.AddControl(panelMain.Controls, _loginControl ??= new LoginControl());
+            ChangeHeight(_loginControl); 
+        }
+
+        private void ChangeHeight(UserControl control)
+        {
+            panelMain.Height = control.Height + 10;
+            panelBottom.Location = new Point(panelBottom.Location.X, panelMain.Location.Y + panelMain.Height + 10);
+            panel1.Height = panelMain.Height + panelBottom.Height + metroPanel1.Height;
+            this.Height = panel1.Height + 100;
+
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -80,6 +90,7 @@ namespace EStore.Auth
 
 
             Common.ChangeContorl(panelMain.Controls, _signUpControl ??= new SignUpControl());
+            ChangeHeight(_signUpControl);
         }
 
        
