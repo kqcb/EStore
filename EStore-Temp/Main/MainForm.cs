@@ -32,7 +32,7 @@ namespace EStore_Temp.Main
 
             btnGoBack.Visible = false;
             _clientsMainControl = new();
-            _itemsMainControl = new();
+            _itemsMainControl = new(radPanelMain.Controls, user);
             _ordersMainControl = new();
             _shoppingCartMainControl = new();
             _dashboardMainControl = new();
@@ -62,6 +62,7 @@ namespace EStore_Temp.Main
         private void btnItems_Click(object sender, EventArgs e)
         {
 
+            _itemsMainControl.FillTable();
             btnGoBack.Visible = true;
             Common.ChangeContorl(radPanelMain.Controls, _itemsMainControl); 
         }
