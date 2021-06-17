@@ -48,10 +48,10 @@ namespace EStore.Auth
             // panelMain
             // 
             this.panelMain.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.panelMain.Location = new System.Drawing.Point(453, 115);
+            this.panelMain.Location = new System.Drawing.Point(256, 55);
             this.panelMain.Margin = new System.Windows.Forms.Padding(17, 5, 5, 5);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(324, 167);
+            this.panelMain.Size = new System.Drawing.Size(196, 136);
             this.panelMain.TabIndex = 0;
             // 
             // panelBottom
@@ -59,11 +59,11 @@ namespace EStore.Auth
             this.panelBottom.Controls.Add(this.btnSignUp);
             this.panelBottom.Controls.Add(this.btnGoBack);
             this.panelBottom.Controls.Add(this.btnLogin);
-            this.panelBottom.Location = new System.Drawing.Point(491, 292);
+            this.panelBottom.Location = new System.Drawing.Point(258, 194);
             this.panelBottom.Margin = new System.Windows.Forms.Padding(5);
             this.panelBottom.Name = "panelBottom";
             this.panelBottom.Padding = new System.Windows.Forms.Padding(17, 7, 17, 7);
-            this.panelBottom.Size = new System.Drawing.Size(260, 58);
+            this.panelBottom.Size = new System.Drawing.Size(194, 36);
             this.panelBottom.TabIndex = 1;
             // 
             // btnSignUp
@@ -74,7 +74,7 @@ namespace EStore.Auth
             this.btnSignUp.Location = new System.Drawing.Point(17, 7);
             this.btnSignUp.Margin = new System.Windows.Forms.Padding(5, 5, 5, 167);
             this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(107, 44);
+            this.btnSignUp.Size = new System.Drawing.Size(82, 22);
             this.btnSignUp.TabIndex = 4;
             this.btnSignUp.Text = "Sign Up";
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
@@ -83,10 +83,10 @@ namespace EStore.Auth
             // 
             this.btnGoBack.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.btnGoBack.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnGoBack.Location = new System.Drawing.Point(15, 7);
+            this.btnGoBack.Location = new System.Drawing.Point(35, 7);
             this.btnGoBack.Margin = new System.Windows.Forms.Padding(5);
             this.btnGoBack.Name = "btnGoBack";
-            this.btnGoBack.Size = new System.Drawing.Size(114, 44);
+            this.btnGoBack.Size = new System.Drawing.Size(70, 22);
             this.btnGoBack.TabIndex = 3;
             this.btnGoBack.Text = "Go Back";
             this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
@@ -95,10 +95,10 @@ namespace EStore.Auth
             // 
             this.btnLogin.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.btnLogin.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnLogin.Location = new System.Drawing.Point(129, 7);
+            this.btnLogin.Location = new System.Drawing.Point(105, 7);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(17);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(114, 44);
+            this.btnLogin.Size = new System.Drawing.Size(72, 22);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Login";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -109,23 +109,23 @@ namespace EStore.Auth
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Location = new System.Drawing.Point(5, 9);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(442, 357);
+            this.panel1.Size = new System.Drawing.Size(245, 221);
             this.panel1.TabIndex = 4;
             // 
             // panel2
             // 
             this.panel2.BackgroundImage = global::EStore_Temp.Properties.Resources.Estore_logo;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(453, 9);
+            this.panel2.Location = new System.Drawing.Point(256, 9);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(324, 106);
+            this.panel2.Size = new System.Drawing.Size(196, 44);
             this.panel2.TabIndex = 5;
             // 
             // AuthForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(240F, 240F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(817, 425);
+            this.ClientSize = new System.Drawing.Size(465, 238);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMain);

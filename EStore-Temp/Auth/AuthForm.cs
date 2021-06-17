@@ -24,16 +24,17 @@ namespace EStore.Auth
         {
             InitializeComponent();
             btnGoBack.Visible = false;
+         
             Common.AddControl(panelMain.Controls, _loginControl ??= new LoginControl());
             ChangeHeight(_loginControl); 
         }
 
         private void ChangeHeight(UserControl control)
         {
-            //panelMain.Height = control.Height + 10;
-            //panelBottom.Location = new Point(panelBottom.Location.X, panelMain.Location.Y + panelMain.Height + 10);
-            ////panel1.Height = panelMain.Height + panelBottom.Height + metroPanel1.Height;
-            ////this.Height = panel1.Height + 100;
+            panelMain.Height = control.Height;
+            panelBottom.Location = new Point(panelBottom.Location.X, panelMain.Location.Y + panelMain.Height + 5);
+            panel1.Height = panelMain.Height + panelBottom.Height + panel2.Height;
+            this.Height = panel1.Height + 70;
 
         }
 
@@ -61,7 +62,8 @@ namespace EStore.Auth
         {
             btnGoBack.Visible = false;
             btnLogin.Visible = true;
-            Common.ChangeContorl(panelMain.Controls, _loginControl ??= new LoginControl());
+            panelMain.Controls["LoginControl"].BringToFront();
+            ChangeHeight(_loginControl);
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
@@ -89,7 +91,7 @@ namespace EStore.Auth
             btnLogin.Visible = false;
 
 
-            Common.ChangeContorl(panelMain.Controls, _signUpControl ??= new SignUpControl());
+            Common.AddControl(panelMain.Controls, _signUpControl ??= new SignUpControl());
             ChangeHeight(_signUpControl);
         }
 
