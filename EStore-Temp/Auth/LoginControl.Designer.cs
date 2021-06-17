@@ -43,51 +43,55 @@ namespace EStore.Auth
             // 
             this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.Location = new System.Drawing.Point(6, 16);
+            this.txtEmail.Location = new System.Drawing.Point(11, 49);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(160, 15);
+            this.txtEmail.Size = new System.Drawing.Size(254, 39);
             this.txtEmail.TabIndex = 1;
             // 
             // txtPassword
             // 
             this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPassword.Location = new System.Drawing.Point(7, 56);
+            this.txtPassword.Location = new System.Drawing.Point(11, 133);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '●';
-            this.txtPassword.Size = new System.Drawing.Size(160, 15);
+            this.txtPassword.Size = new System.Drawing.Size(254, 39);
             this.txtPassword.TabIndex = 3;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // metroLabel1
             // 
-            this.metroLabel1.Location = new System.Drawing.Point(7, 2);
-            this.metroLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.metroLabel1.Location = new System.Drawing.Point(13, 22);
+            this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(22, 12);
+            this.metroLabel1.Size = new System.Drawing.Size(52, 29);
             this.metroLabel1.TabIndex = 4;
             this.metroLabel1.Text = "Email";
             // 
             // metroLabel2
             // 
-            this.metroLabel2.Location = new System.Drawing.Point(7, 39);
-            this.metroLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.metroLabel2.Location = new System.Drawing.Point(13, 96);
+            this.metroLabel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(35, 12);
+            this.metroLabel2.Size = new System.Drawing.Size(83, 29);
             this.metroLabel2.TabIndex = 4;
             this.metroLabel2.Text = "Password";
             // 
             // LoginControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtEmail);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "LoginControl";
-            this.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Size = new System.Drawing.Size(170, 84);
+            this.Padding = new System.Windows.Forms.Padding(9, 0, 9, 0);
+            this.Size = new System.Drawing.Size(305, 220);
+            this.Load += new System.EventHandler(this.LoginControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroLabel1)).EndInit();

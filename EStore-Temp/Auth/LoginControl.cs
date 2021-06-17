@@ -37,5 +37,9 @@ namespace EStore.Auth
             return true;
         }
 
-           }
+        private void LoginControl_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

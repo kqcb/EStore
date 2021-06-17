@@ -30,10 +30,10 @@ namespace EStore.Auth
 
         private void ChangeHeight(UserControl control)
         {
-            panelMain.Height = control.Height + 10;
-            panelBottom.Location = new Point(panelBottom.Location.X, panelMain.Location.Y + panelMain.Height + 10);
-            panel1.Height = panelMain.Height + panelBottom.Height + metroPanel1.Height;
-            this.Height = panel1.Height + 100;
+            //panelMain.Height = control.Height + 10;
+            //panelBottom.Location = new Point(panelBottom.Location.X, panelMain.Location.Y + panelMain.Height + 10);
+            ////panel1.Height = panelMain.Height + panelBottom.Height + metroPanel1.Height;
+            ////this.Height = panel1.Height + 100;
 
         }
 
