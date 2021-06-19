@@ -78,6 +78,7 @@ namespace EStore_Temp.Main
             Common.ChangeContorl(radPanelMain.Controls, _itemsMainControl); 
         }
 
+      
         private void btnOrders_Click(object sender, EventArgs e)
         {
 

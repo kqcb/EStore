@@ -25,13 +25,13 @@ namespace EStore_Temp.OrdersView
             
   
 
-            FillTable();
+            FillList();
         }
 
-        private void FillTable()
+        public void FillList()
         {
             //DataTable itemTable = EStoreContext.Orders.ToDataTable();
-
+            flowLayoutPanel1.Controls.Clear();
             //radGridView1.DataSource = itemTable;
             Color[] colors = new Color[] {
                 Color.FromArgb(240, 240, 240, 240),

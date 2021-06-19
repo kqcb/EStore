@@ -38,9 +38,9 @@ namespace EStoreBusinessLogicLayer
             return (T) Common.InvokeMethod(_dbSet, "Read", id);
         }
 
-        public void Delete(int id)
+        public bool Delete(int id)
         {
-            Common.InvokeMethod(_dbSet, "Delete", id);
+            return (bool)Common.InvokeMethod(_dbSet, "Delete", id);
         }
 
         public bool Update(T item)

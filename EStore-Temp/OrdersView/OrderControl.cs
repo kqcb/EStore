@@ -1,4 +1,5 @@
 ﻿using EStore.Utils;
+using EStore_Temp.Main;
 using EStoreBusinessLogicLayer;
 using EStoreBusinessObjects;
 using System;
@@ -52,6 +53,16 @@ namespace EStore_Temp.OrdersView
         {
 
             Common.AddControl(_controls, new OrderDetailsMainControl(_order));
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (EStoreContext.Orders.Delete(_order.Id))
+            {
+                ((OrdersMainControl)_controls[0]).FillList();
+            }
+            else
+                MessageBox.Show("Order could not be deleted");
         }
     }
 }

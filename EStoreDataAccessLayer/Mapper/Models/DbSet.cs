@@ -97,12 +97,12 @@ namespace EStoreDataAccessLayer.Mapper.Models
             return items;
         }
 
-        public int Delete(int id)
+        public bool Delete(int id)
         {
             return Delete($"usp_{typeof(T).Name}_Delete", id);
         }
 
-        public int Delete(string procName, int? id)
+        public bool Delete(string procName, int? id)
         {
             try
             {
@@ -116,10 +116,10 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
                 _sqlConnection.Close();
 
-                return rez;
-            } catch(Exception)
+                return rez != -1;
+            } catch(Exception e)
             {
-                return -1;
+                return false;
             }finally
             {
                 _sqlConnection.Close();
