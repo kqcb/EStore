@@ -14,6 +14,7 @@ namespace EStore.Utils
         public static void ChangeContorl(ControlCollection controls, UserControl control)
         {
             controls.Clear();
+            control.Dock = DockStyle.Fill;
             controls.Add(control);
         }
 

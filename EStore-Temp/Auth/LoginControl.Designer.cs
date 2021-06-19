@@ -47,53 +47,59 @@ namespace EStore.Auth
             this.flowLayoutPanel1.Controls.Add(this.txtEmail);
             this.flowLayoutPanel1.Controls.Add(this.radLabel2);
             this.flowLayoutPanel1.Controls.Add(this.txtPassword);
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(201, 127);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(188, 159);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // radLabel1
             // 
-            this.radLabel1.Location = new System.Drawing.Point(3, 3);
+            this.radLabel1.Location = new System.Drawing.Point(3, 4);
+            this.radLabel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(33, 18);
+            this.radLabel1.Size = new System.Drawing.Size(41, 22);
             this.radLabel1.TabIndex = 0;
             this.radLabel1.Text = "Email";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(3, 27);
+            this.txtEmail.AutoSize = false;
+            this.txtEmail.Location = new System.Drawing.Point(3, 34);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(191, 28);
+            this.txtEmail.Size = new System.Drawing.Size(175, 30);
             this.txtEmail.TabIndex = 1;
             // 
             // radLabel2
             // 
-            this.radLabel2.Location = new System.Drawing.Point(3, 61);
+            this.radLabel2.Location = new System.Drawing.Point(3, 72);
+            this.radLabel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(53, 18);
+            this.radLabel2.Size = new System.Drawing.Size(66, 22);
             this.radLabel2.TabIndex = 2;
             this.radLabel2.Text = "Password";
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(3, 85);
+            this.txtPassword.AutoSize = false;
+            this.txtPassword.Location = new System.Drawing.Point(3, 102);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '●';
-            this.txtPassword.Size = new System.Drawing.Size(191, 28);
+            this.txtPassword.Size = new System.Drawing.Size(175, 30);
             this.txtPassword.TabIndex = 3;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // LoginControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "LoginControl";
             this.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Size = new System.Drawing.Size(201, 130);
+            this.Size = new System.Drawing.Size(189, 162);
             this.Load += new System.EventHandler(this.LoginControl_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();

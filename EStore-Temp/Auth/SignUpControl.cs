@@ -1,4 +1,5 @@
-﻿using EStore.Utils.Exceptions;
+﻿using EStore.Utils;
+using EStore.Utils.Exceptions;
 using EStoreBusinessLogicLayer;
 using EStoreBusinessObjects;
 using System;
@@ -6,6 +7,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,6 +48,9 @@ namespace EStore.Auth
             //}
             else
             {
+                var image = EStore_Temp.Properties.Resources.Estore_logo;
+
+
                 User temp = new User()
                 {
                     Name = name,
@@ -58,7 +64,8 @@ namespace EStore.Auth
                     Role = new Role()
                     {
                         Id = 1
-                    }
+                    },
+                    Image = Common.ToByteArray(image) 
                 };
 
                 return EStoreContext.Users.Create(temp);

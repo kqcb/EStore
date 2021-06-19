@@ -31,7 +31,7 @@ namespace EStore.Auth
 
         private void ChangeHeight(UserControl control)
         {
-            panelMain.Height = control.Height;
+            panelMain.Height = control.Height + 10;
             panelBottom.Location = new Point(panelBottom.Location.X, panelMain.Location.Y + panelMain.Height + 5);
             panel1.Height = panelMain.Height + panelBottom.Height + panel2.Height;
             this.Height = panel1.Height + 70;
@@ -48,9 +48,9 @@ namespace EStore.Auth
                     MessageBox.Show("User does not exists");
                 else
                 {
-                    this.Hide();
-                    _mainForm ??= new MainForm(user);
-                    _mainForm.Show();
+                    new MainForm(user).ShowDialog();
+
+                    this.Close();
                 }
             } catch(FieldsNotFilledException)
             {

@@ -22,8 +22,14 @@ namespace EStore_Temp.ClientsView
 
         private void FillTable()
         {
-            DataTable itemTable = EStoreContext.Users.ToDataTable();
-            radGridUsers.DataSource = itemTable;
+            // DataTable itemTable = EStoreContext.Users.ToDataTable();
+
+            EStoreContext.Users.Read().ForEach(user =>
+            {
+                var clientControl = new ClientControl(user);
+                flowLayoutPanel1.Controls.Add(clientControl);
+            });
+
         }
     }
 }

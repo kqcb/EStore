@@ -33,13 +33,21 @@ namespace EStore_Temp.Main
             btnGoBack.Visible = false;
             _clientsMainControl = new();
             _itemsMainControl = new(radPanelMain.Controls, user);
-            _ordersMainControl = new();
+            _ordersMainControl = new(radPanelMain.Controls, user);
             _shoppingCartMainControl = new();
             _dashboardMainControl = new();
-
+            lblTitle.Text = "Dashboard";
+            lblUser.Text = user.Name + " " + user.LastName;
             Common.ChangeContorl(radPanelMain.Controls, _dashboardMainControl);
             this.user = user;
         } 
+
+        public void ChangeTitleName()
+        {
+
+        }
+
+
         private void ChangeControl(UserControl userControl)
         {
             Common.ChangeContorl(radPanelMain.Controls, userControl);
@@ -49,12 +57,14 @@ namespace EStore_Temp.Main
         private void btnUsers_Click(object sender, EventArgs e)
         {
             btnGoBack.Visible = true;
+            lblTitle.Text = "Users";
             Common.ChangeContorl(radPanelMain.Controls, _clientsMainControl); 
            
         }
 
         private void btnDashBoard_Click(object sender, EventArgs e)
         {
+            lblTitle.Text = "Dashboard";
             btnGoBack.Visible = false;
             Common.ChangeContorl(radPanelMain.Controls, _dashboardMainControl); 
         }
@@ -64,6 +74,7 @@ namespace EStore_Temp.Main
 
             _itemsMainControl.FillTable();
             btnGoBack.Visible = true;
+            lblTitle.Text = "Items";
             Common.ChangeContorl(radPanelMain.Controls, _itemsMainControl); 
         }
 
@@ -71,6 +82,7 @@ namespace EStore_Temp.Main
         {
 
             btnGoBack.Visible = true;
+            lblTitle.Text = "Orders";
             Common.ChangeContorl(radPanelMain.Controls, _ordersMainControl);
         }
 

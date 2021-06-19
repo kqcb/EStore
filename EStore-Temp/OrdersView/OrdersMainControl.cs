@@ -1,4 +1,5 @@
 ﻿using EStoreBusinessLogicLayer;
+using EStoreBusinessObjects;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,17 +14,39 @@ namespace EStore_Temp.OrdersView
 {
     public partial class OrdersMainControl : UserControl
     {
-        public OrdersMainControl()
+        private readonly ControlCollection _controls;
+        private readonly User _user;
+
+        public OrdersMainControl(ControlCollection controls, User user)
         {
             InitializeComponent();
             FillTable();
+            this._controls = controls;
+            this._user = user;
         }
 
         private void FillTable()
         {
-            DataTable itemTable = EStoreContext.Orders.ToDataTable();
+            //DataTable itemTable = EStoreContext.Orders.ToDataTable();
 
-            radGridView1.DataSource = itemTable;
+            //radGridView1.DataSource = itemTable;
+            Color[] colors = new Color[] {
+                Color.FromArgb(240, 240, 240, 240),
+                Color.White
+
+            };
+            int i = 0;
+            EStoreContext.Orders.Read().ForEach(order =>
+            {
+                var orderControl = new OrderControl(_controls, order);
+                orderControl.ChangeColor(colors[i]);
+                flowLayoutPanel1.Controls.Add(orderControl);
+
+                if(++i == 2)
+                {
+                    i = 0;
+                }
+            });
         }
     }
 }

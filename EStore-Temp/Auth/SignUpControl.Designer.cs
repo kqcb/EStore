@@ -68,7 +68,7 @@ namespace EStore.Auth
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(248, 299);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(248, 416);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // radLabel1
@@ -144,19 +144,19 @@ namespace EStore.Auth
             this.cmbCities.DropDownAnimationEnabled = true;
             this.cmbCities.Location = new System.Drawing.Point(3, 259);
             this.cmbCities.Name = "cmbCities";
-            this.cmbCities.Size = new System.Drawing.Size(239, 28);
+            this.cmbCities.Size = new System.Drawing.Size(239, 31);
             this.cmbCities.TabIndex = 9;
             this.cmbCities.Text = "Choose City";
             // 
             // SignUpControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "SignUpControl";
             this.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Size = new System.Drawing.Size(250, 305);
+            this.Size = new System.Drawing.Size(250, 422);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();

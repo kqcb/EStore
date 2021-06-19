@@ -1,4 +1,5 @@
-﻿using EStoreBusinessLogicLayer;
+﻿using EStore.Utils;
+using EStoreBusinessLogicLayer;
 using EStoreBusinessObjects;
 using System;
 using System.Collections.Generic;
@@ -17,22 +18,60 @@ namespace EStore_Temp.ItemsView
     {
         private readonly ControlCollection _controls;
         private readonly User _user;
+        public static List<Item> selectedItems = new List<Item>(); 
 
         public ItemsMainControl(ControlCollection controls, User user)
         {
             this._controls = controls;
             this._user = user;
             InitializeComponent();
+
+            if (user.Role.Id == 1)
+            {
+                radPanel3.Visible = false;
+                btnNew.Visible = true;
+            }
+            else
+            {
+                btnNew.Visible = false;
+            }
+
             FillTable();
         }
 
         public void FillTable()
         {
-            DataTable itemTable = EStoreContext.Items.ToDataTable();
 
-            //radListView1.DataSource = itemTable;
+            EStoreContext.Items.Read().ForEach(item => flowLayoutPanel1.Controls.Add(new ItemView(_controls, flowLayoutSelectedList , _user, item)));  
+        }
+        
+         public static void FillCartList(){
+            flowLayoutSelectedList.Controls.Clear();
+            int count = 0;
+            ItemsMainControl.selectedItems.ForEach(item =>
+            {
+                var itemSelectedControl = new ItemSelectedControl(item);
+                itemSelectedControl.SetIndex(++count);
+                flowLayoutSelectedList.Controls.Add(itemSelectedControl);
 
-            EStoreContext.Items.Read().ForEach(item => flowLayoutPanel1.Controls.Add(new ItemView(_controls, _user, item)));  
+            });
+
+          
+
+
+                   
+         }
+
+
+        
+     
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            var itmCreateControl = new ItemCreateControl();
+
+            itmCreateControl.Dock = DockStyle.Fill;
+
+            Common.AddControl(_controls, itmCreateControl);
         }
     }
 }

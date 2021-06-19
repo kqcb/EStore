@@ -24,9 +24,10 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
         public List<PropertyInfo> GetPrimitiveProperties()
         {
+            var props =  ObjectType.GetProperties();
             return ObjectType
                 .GetProperties()
-                .Where(prop => (prop.PropertyType.IsValueType || prop.PropertyType.Name == "String") && !prop.PropertyType.Name.Contains("^"))
+                .Where(prop => (prop.PropertyType.IsValueType || prop.PropertyType.Name == "String" || prop.PropertyType.Name == "Byte[]") && (!prop.PropertyType.Name.Contains("^")))
                 .ToList();
         }
 
@@ -42,7 +43,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
         {
             return ObjectType
                 .GetProperties()
-                .Where(prop => !prop.PropertyType.IsValueType && prop.PropertyType.Name != "String" && !prop.PropertyType.Name.Contains("`"))
+                .Where(prop => !prop.PropertyType.IsValueType && prop.PropertyType.Name != "String" && prop.PropertyType.Name != "Byte[]" && !prop.PropertyType.Name.Contains("^"))
                 .Select(pr => new ObjectProperties(pr.PropertyType))
                 .ToList();
         }

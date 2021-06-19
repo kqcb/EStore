@@ -8,6 +8,7 @@
         public string Email { get; set; }
         public string Password { get; set; }
         public bool IsActive { get; set; }
+        public byte[] Image { get; set; }
         public City City { get; set; }
         public Role Role { get; set; }
     }

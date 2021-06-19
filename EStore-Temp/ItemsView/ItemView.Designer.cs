@@ -83,6 +83,7 @@ namespace EStore_Temp.ItemsView
             this.btnAddToCart.Size = new System.Drawing.Size(77, 36);
             this.btnAddToCart.TabIndex = 3;
             this.btnAddToCart.Text = "Add to Cart";
+            this.btnAddToCart.Click += new System.EventHandler(this.btnAddToCart_Click);
             // 
             // btnDetails
             // 
