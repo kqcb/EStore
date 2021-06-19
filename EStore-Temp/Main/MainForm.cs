@@ -111,5 +111,11 @@ namespace EStore_Temp.Main
                 btnGoBack.Visible = false;
             }
         }
+
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Restart();
+        }
     }
 }

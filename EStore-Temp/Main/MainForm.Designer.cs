@@ -37,22 +37,22 @@
             this.btnDashBoard = new Telerik.WinControls.UI.RadButton();
             this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
             this.radPanelTop = new Telerik.WinControls.UI.RadPanel();
-            this.btnGoBack = new Telerik.WinControls.UI.RadButton();
-            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
-            this.flowLayoutTopLeft = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutTopRight = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutTopMid = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnSearch = new Telerik.WinControls.UI.RadButton();
+            this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
+            this.flowLayoutTopRight = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnSignOut = new Telerik.WinControls.UI.RadButton();
+            this.lblUser = new Telerik.WinControls.UI.RadLabel();
+            this.flowLayoutTopLeft = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnGoBack = new Telerik.WinControls.UI.RadButton();
+            this.lblTitle = new Telerik.WinControls.UI.RadLabel();
+            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.radPanelTop2 = new Telerik.WinControls.UI.RadPanel();
+            this.flowLayoutTop2Mid = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutTop2Right = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutTop2Left = new System.Windows.Forms.FlowLayoutPanel();
             this.radPanelMain = new Telerik.WinControls.UI.RadPanel();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.flowLayoutTop2Left = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutTop2Right = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutTop2Mid = new System.Windows.Forms.FlowLayoutPanel();
-            this.lblTitle = new Telerik.WinControls.UI.RadLabel();
-            this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
-            this.btnSearch = new Telerik.WinControls.UI.RadButton();
-            this.lblUser = new Telerik.WinControls.UI.RadLabel();
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnShoppingCart)).BeginInit();
@@ -64,19 +64,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanelTop)).BeginInit();
             this.radPanelTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnGoBack)).BeginInit();
-            this.flowLayoutTopLeft.SuspendLayout();
-            this.flowLayoutTopRight.SuspendLayout();
             this.flowLayoutTopMid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).BeginInit();
+            this.flowLayoutTopRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSignOut)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblUser)).BeginInit();
+            this.flowLayoutTopLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGoBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanelTop2)).BeginInit();
             this.radPanelTop2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanelMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblTitle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblUser)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -174,21 +174,61 @@
             this.radPanelTop.Size = new System.Drawing.Size(1079, 90);
             this.radPanelTop.TabIndex = 1;
             // 
-            // btnGoBack
+            // flowLayoutTopMid
             // 
-            this.btnGoBack.Location = new System.Drawing.Point(35, 35);
-            this.btnGoBack.Margin = new System.Windows.Forms.Padding(15);
-            this.btnGoBack.Name = "btnGoBack";
-            this.btnGoBack.Size = new System.Drawing.Size(104, 30);
-            this.btnGoBack.TabIndex = 0;
-            this.btnGoBack.Text = "Go Back";
-            this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
+            this.flowLayoutTopMid.Controls.Add(this.btnSearch);
+            this.flowLayoutTopMid.Controls.Add(this.radTextBox1);
+            this.flowLayoutTopMid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutTopMid.Location = new System.Drawing.Point(357, 0);
+            this.flowLayoutTopMid.Name = "flowLayoutTopMid";
+            this.flowLayoutTopMid.Padding = new System.Windows.Forms.Padding(30);
+            this.flowLayoutTopMid.Size = new System.Drawing.Size(411, 90);
+            this.flowLayoutTopMid.TabIndex = 2;
             // 
-            // directorySearcher1
+            // btnSearch
             // 
-            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.btnSearch.Location = new System.Drawing.Point(33, 33);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(84, 36);
+            this.btnSearch.TabIndex = 1;
+            this.btnSearch.Text = "Search";
+            // 
+            // radTextBox1
+            // 
+            this.radTextBox1.Location = new System.Drawing.Point(123, 33);
+            this.radTextBox1.Name = "radTextBox1";
+            this.radTextBox1.Size = new System.Drawing.Size(219, 31);
+            this.radTextBox1.TabIndex = 0;
+            // 
+            // flowLayoutTopRight
+            // 
+            this.flowLayoutTopRight.Controls.Add(this.btnSignOut);
+            this.flowLayoutTopRight.Controls.Add(this.lblUser);
+            this.flowLayoutTopRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flowLayoutTopRight.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flowLayoutTopRight.Location = new System.Drawing.Point(768, 0);
+            this.flowLayoutTopRight.Name = "flowLayoutTopRight";
+            this.flowLayoutTopRight.Padding = new System.Windows.Forms.Padding(0, 20, 20, 0);
+            this.flowLayoutTopRight.Size = new System.Drawing.Size(311, 90);
+            this.flowLayoutTopRight.TabIndex = 1;
+            // 
+            // btnSignOut
+            // 
+            this.btnSignOut.Location = new System.Drawing.Point(212, 23);
+            this.btnSignOut.Name = "btnSignOut";
+            this.btnSignOut.Size = new System.Drawing.Size(76, 28);
+            this.btnSignOut.TabIndex = 1;
+            this.btnSignOut.Text = "Sign Out";
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
+            // 
+            // lblUser
+            // 
+            this.lblUser.Font = new System.Drawing.Font("Segoe UI", 12.25F);
+            this.lblUser.Location = new System.Drawing.Point(165, 23);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(41, 26);
+            this.lblUser.TabIndex = 0;
+            this.lblUser.Text = "User";
             // 
             // flowLayoutTopLeft
             // 
@@ -201,28 +241,30 @@
             this.flowLayoutTopLeft.Size = new System.Drawing.Size(357, 90);
             this.flowLayoutTopLeft.TabIndex = 0;
             // 
-            // flowLayoutTopRight
+            // btnGoBack
             // 
-            this.flowLayoutTopRight.Controls.Add(this.radButton1);
-            this.flowLayoutTopRight.Controls.Add(this.lblUser);
-            this.flowLayoutTopRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutTopRight.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutTopRight.Location = new System.Drawing.Point(768, 0);
-            this.flowLayoutTopRight.Name = "flowLayoutTopRight";
-            this.flowLayoutTopRight.Padding = new System.Windows.Forms.Padding(0, 20, 20, 0);
-            this.flowLayoutTopRight.Size = new System.Drawing.Size(311, 90);
-            this.flowLayoutTopRight.TabIndex = 1;
+            this.btnGoBack.Location = new System.Drawing.Point(35, 35);
+            this.btnGoBack.Margin = new System.Windows.Forms.Padding(15);
+            this.btnGoBack.Name = "btnGoBack";
+            this.btnGoBack.Size = new System.Drawing.Size(104, 30);
+            this.btnGoBack.TabIndex = 0;
+            this.btnGoBack.Text = "Go Back";
+            this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
             // 
-            // flowLayoutTopMid
+            // lblTitle
             // 
-            this.flowLayoutTopMid.Controls.Add(this.btnSearch);
-            this.flowLayoutTopMid.Controls.Add(this.radTextBox1);
-            this.flowLayoutTopMid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutTopMid.Location = new System.Drawing.Point(357, 0);
-            this.flowLayoutTopMid.Name = "flowLayoutTopMid";
-            this.flowLayoutTopMid.Padding = new System.Windows.Forms.Padding(30);
-            this.flowLayoutTopMid.Size = new System.Drawing.Size(411, 90);
-            this.flowLayoutTopMid.TabIndex = 2;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 24F);
+            this.lblTitle.Location = new System.Drawing.Point(157, 23);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(75, 49);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Title";
+            // 
+            // directorySearcher1
+            // 
+            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
             // 
             // radPanelTop2
             // 
@@ -234,6 +276,31 @@
             this.radPanelTop2.Name = "radPanelTop2";
             this.radPanelTop2.Size = new System.Drawing.Size(1079, 50);
             this.radPanelTop2.TabIndex = 2;
+            // 
+            // flowLayoutTop2Mid
+            // 
+            this.flowLayoutTop2Mid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutTop2Mid.Location = new System.Drawing.Point(357, 0);
+            this.flowLayoutTop2Mid.Name = "flowLayoutTop2Mid";
+            this.flowLayoutTop2Mid.Size = new System.Drawing.Size(411, 50);
+            this.flowLayoutTop2Mid.TabIndex = 2;
+            // 
+            // flowLayoutTop2Right
+            // 
+            this.flowLayoutTop2Right.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flowLayoutTop2Right.Location = new System.Drawing.Point(768, 0);
+            this.flowLayoutTop2Right.Name = "flowLayoutTop2Right";
+            this.flowLayoutTop2Right.Size = new System.Drawing.Size(311, 50);
+            this.flowLayoutTop2Right.TabIndex = 1;
+            // 
+            // flowLayoutTop2Left
+            // 
+            this.flowLayoutTop2Left.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flowLayoutTop2Left.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutTop2Left.Name = "flowLayoutTop2Left";
+            this.flowLayoutTop2Left.Padding = new System.Windows.Forms.Padding(8);
+            this.flowLayoutTop2Left.Size = new System.Drawing.Size(357, 50);
+            this.flowLayoutTop2Left.TabIndex = 0;
             // 
             // radPanelMain
             // 
@@ -247,72 +314,6 @@
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
-            // 
-            // flowLayoutTop2Left
-            // 
-            this.flowLayoutTop2Left.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutTop2Left.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutTop2Left.Name = "flowLayoutTop2Left";
-            this.flowLayoutTop2Left.Padding = new System.Windows.Forms.Padding(8);
-            this.flowLayoutTop2Left.Size = new System.Drawing.Size(357, 50);
-            this.flowLayoutTop2Left.TabIndex = 0;
-            // 
-            // flowLayoutTop2Right
-            // 
-            this.flowLayoutTop2Right.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutTop2Right.Location = new System.Drawing.Point(768, 0);
-            this.flowLayoutTop2Right.Name = "flowLayoutTop2Right";
-            this.flowLayoutTop2Right.Size = new System.Drawing.Size(311, 50);
-            this.flowLayoutTop2Right.TabIndex = 1;
-            // 
-            // flowLayoutTop2Mid
-            // 
-            this.flowLayoutTop2Mid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutTop2Mid.Location = new System.Drawing.Point(357, 0);
-            this.flowLayoutTop2Mid.Name = "flowLayoutTop2Mid";
-            this.flowLayoutTop2Mid.Size = new System.Drawing.Size(411, 50);
-            this.flowLayoutTop2Mid.TabIndex = 2;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.lblTitle.Location = new System.Drawing.Point(157, 23);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(75, 49);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Title";
-            // 
-            // radTextBox1
-            // 
-            this.radTextBox1.Location = new System.Drawing.Point(123, 33);
-            this.radTextBox1.Name = "radTextBox1";
-            this.radTextBox1.Size = new System.Drawing.Size(219, 31);
-            this.radTextBox1.TabIndex = 0;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(33, 33);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(84, 36);
-            this.btnSearch.TabIndex = 1;
-            this.btnSearch.Text = "Search";
-            // 
-            // lblUser
-            // 
-            this.lblUser.Font = new System.Drawing.Font("Segoe UI", 12.25F);
-            this.lblUser.Location = new System.Drawing.Point(165, 23);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(41, 26);
-            this.lblUser.TabIndex = 0;
-            this.lblUser.Text = "User";
-            // 
-            // radButton1
-            // 
-            this.radButton1.Location = new System.Drawing.Point(212, 23);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Size = new System.Drawing.Size(76, 28);
-            this.radButton1.TabIndex = 1;
-            this.radButton1.Text = "Sign Out";
             // 
             // MainForm
             // 
@@ -341,22 +342,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanelTop)).EndInit();
             this.radPanelTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnGoBack)).EndInit();
-            this.flowLayoutTopLeft.ResumeLayout(false);
-            this.flowLayoutTopLeft.PerformLayout();
-            this.flowLayoutTopRight.ResumeLayout(false);
-            this.flowLayoutTopRight.PerformLayout();
             this.flowLayoutTopMid.ResumeLayout(false);
             this.flowLayoutTopMid.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).EndInit();
+            this.flowLayoutTopRight.ResumeLayout(false);
+            this.flowLayoutTopRight.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSignOut)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblUser)).EndInit();
+            this.flowLayoutTopLeft.ResumeLayout(false);
+            this.flowLayoutTopLeft.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGoBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblTitle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanelTop2)).EndInit();
             this.radPanelTop2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radPanelMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblTitle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblUser)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -387,7 +388,7 @@
         private Telerik.WinControls.UI.RadLabel lblTitle;
         private Telerik.WinControls.UI.RadButton btnSearch;
         private Telerik.WinControls.UI.RadTextBox radTextBox1;
-        private Telerik.WinControls.UI.RadButton radButton1;
+        private Telerik.WinControls.UI.RadButton btnSignOut;
         private Telerik.WinControls.UI.RadLabel lblUser;
     }
 }
