@@ -35,6 +35,7 @@ namespace EStore_Temp.ItemsView
             this.btnAddToCart = new Telerik.WinControls.UI.RadButton();
             this.btnDetails = new Telerik.WinControls.UI.RadButton();
             this.lblItemName = new Telerik.WinControls.UI.RadLabel();
+            this.btnDelete = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -42,6 +43,7 @@ namespace EStore_Temp.ItemsView
             ((System.ComponentModel.ISupportInitialize)(this.btnAddToCart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblItemName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
             this.SuspendLayout();
             // 
             // radPanel1
@@ -59,6 +61,7 @@ namespace EStore_Temp.ItemsView
             this.flowLayoutPanel1.Controls.Add(this.btnEdit);
             this.flowLayoutPanel1.Controls.Add(this.btnAddToCart);
             this.flowLayoutPanel1.Controls.Add(this.btnDetails);
+            this.flowLayoutPanel1.Controls.Add(this.btnDelete);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(73, 250);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 91);
@@ -99,6 +102,15 @@ namespace EStore_Temp.ItemsView
             this.lblItemName.TabIndex = 6;
             this.lblItemName.Text = "Name";
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(84, 45);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(76, 36);
+            this.btnDelete.TabIndex = 6;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // ItemView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -115,6 +127,7 @@ namespace EStore_Temp.ItemsView
             ((System.ComponentModel.ISupportInitialize)(this.btnAddToCart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblItemName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -127,5 +140,6 @@ namespace EStore_Temp.ItemsView
         private Telerik.WinControls.UI.RadButton btnAddToCart;
         private Telerik.WinControls.UI.RadButton btnDetails;
         private Telerik.WinControls.UI.RadLabel lblItemName;
+        private Telerik.WinControls.UI.RadButton btnDelete;
     }
 }

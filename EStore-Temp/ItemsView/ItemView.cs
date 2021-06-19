@@ -1,4 +1,5 @@
 ﻿using EStore.Utils;
+using EStoreBusinessLogicLayer;
 using EStoreBusinessObjects;
 using System;
 using System.Collections.Generic;
@@ -69,6 +70,16 @@ namespace EStore_Temp.ItemsView
             Common.AddControl(_controls, itemDetailsControl);
         }
 
-       
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if(EStoreContext.Items.Delete(_item.Id))
+            {
+                ((ItemsMainControl)_controls[0]).FillTable();
+
+            } else
+            {
+                MessageBox.Show("Item could not be deleted");
+            }
+        }
     }
 }

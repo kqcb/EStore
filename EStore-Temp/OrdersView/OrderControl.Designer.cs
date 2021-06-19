@@ -40,6 +40,7 @@ namespace EStore_Temp.OrdersView
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnDetails = new Telerik.WinControls.UI.RadButton();
             this.btnDelete = new Telerik.WinControls.UI.RadButton();
+            this.btnEdit = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -52,6 +53,7 @@ namespace EStore_Temp.OrdersView
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
             this.SuspendLayout();
             // 
             // radPanel1
@@ -135,7 +137,7 @@ namespace EStore_Temp.OrdersView
             this.lblTotal.Location = new System.Drawing.Point(1673, 19);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(3, 19, 3, 3);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(150, 18);
+            this.lblTotal.Size = new System.Drawing.Size(100, 18);
             this.lblTotal.TabIndex = 3;
             this.lblTotal.Text = "radLabel1";
             // 
@@ -143,10 +145,11 @@ namespace EStore_Temp.OrdersView
             // 
             this.flowLayoutPanel2.Controls.Add(this.btnDetails);
             this.flowLayoutPanel2.Controls.Add(this.btnDelete);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(1826, 15);
+            this.flowLayoutPanel2.Controls.Add(this.btnEdit);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(1776, 15);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0, 15, 0, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(243, 45);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(313, 45);
             this.flowLayoutPanel2.TabIndex = 9;
             // 
             // btnDetails
@@ -168,6 +171,15 @@ namespace EStore_Temp.OrdersView
             this.btnDelete.Text = "Delete";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // btnEdit
+            // 
+            this.btnEdit.Location = new System.Drawing.Point(210, 3);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(99, 36);
+            this.btnEdit.TabIndex = 11;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
             // OrderControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -187,6 +199,7 @@ namespace EStore_Temp.OrdersView
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -204,5 +217,6 @@ namespace EStore_Temp.OrdersView
         private Telerik.WinControls.UI.RadButton btnDetails;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private Telerik.WinControls.UI.RadButton btnDelete;
+        private Telerik.WinControls.UI.RadButton btnEdit;
     }
 }

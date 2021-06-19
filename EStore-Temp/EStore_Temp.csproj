@@ -199,6 +199,12 @@
     <Compile Include="OrdersView\OrderDetailsMainControl.Designer.cs">
       <DependentUpon>OrderDetailsMainControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrdersView\OrderEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrdersView\OrderEditControl.Designer.cs">
+      <DependentUpon>OrderEditControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrdersView\OrdersMainControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -226,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientsView\ClientControl.resx">
       <DependentUpon>ClientControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsView\ClientEditControl.resx">
+      <DependentUpon>ClientEditControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientsView\ClientsMainControl.resx">
       <DependentUpon>ClientsMainControl.cs</DependentUpon>
@@ -259,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OrdersView\OrderDetailsMainControl.resx">
       <DependentUpon>OrderDetailsMainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersView\OrderEditControl.resx">
+      <DependentUpon>OrderEditControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrdersView\OrdersMainControl.resx">
       <DependentUpon>OrdersMainControl.cs</DependentUpon>

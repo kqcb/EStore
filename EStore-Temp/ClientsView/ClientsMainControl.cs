@@ -13,20 +13,23 @@ namespace EStore_Temp.ClientsView
 {
     public partial class ClientsMainControl : UserControl
     {
-        public ClientsMainControl()
+        private readonly ControlCollection _controls;
+
+        public ClientsMainControl(ControlCollection controls)
         {
             InitializeComponent();
             FillTable();
+            this._controls = controls;
         }
 
 
-        private void FillTable()
+        public void FillTable()
         {
             // DataTable itemTable = EStoreContext.Users.ToDataTable();
 
             EStoreContext.Users.Read().ForEach(user =>
             {
-                var clientControl = new ClientControl(user);
+                var clientControl = new ClientControl(_controls, user);
                 flowLayoutPanel1.Controls.Add(clientControl);
             });
 

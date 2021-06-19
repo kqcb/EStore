@@ -9,21 +9,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EStore_Temp.ClientsView
+namespace EStore_Temp.OrdersView
 {
-    public partial class ClientEditControl : UserControl
+    public partial class OrderEditControl : UserControl
     {
-        private readonly User _user;
+        private readonly Order _order;
 
-        public ClientEditControl(User user)
+        public OrderEditControl(Order order)
         {
             InitializeComponent();
-            this._user = user;
-        }
+            this._order = order;
 
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-
+            lblUserName.Text = _order.User.Name;
         }
     }
 }

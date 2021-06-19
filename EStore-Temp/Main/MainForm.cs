@@ -31,7 +31,7 @@ namespace EStore_Temp.Main
             InitializeComponent();
 
             btnGoBack.Visible = false;
-            _clientsMainControl = new();
+            _clientsMainControl = new(radPanelMain.Controls);
             _itemsMainControl = new(radPanelMain.Controls, user);
             _ordersMainControl = new(radPanelMain.Controls, user);
             _shoppingCartMainControl = new();

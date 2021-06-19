@@ -31,25 +31,34 @@ namespace EStore_Temp.ClientsView
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientControl));
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnEdit = new Telerik.WinControls.UI.RadButton();
+            this.btnDetails = new Telerik.WinControls.UI.RadButton();
+            this.btnDelete = new Telerik.WinControls.UI.RadButton();
             this.radPanel3 = new Telerik.WinControls.UI.RadPanel();
+            this.radImage = new Telerik.WinControls.UI.RadPictureBox();
             this.lblFullName = new Telerik.WinControls.UI.RadLabel();
             this.lblRole = new Telerik.WinControls.UI.RadLabel();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.lblEmail = new Telerik.WinControls.UI.RadLabel();
-            this.radImage = new Telerik.WinControls.UI.RadPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDetails)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel3)).BeginInit();
             this.radPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblFullName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblRole)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblEmail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radImage)).BeginInit();
             this.SuspendLayout();
             // 
             // radPanel1
             // 
+            this.radPanel1.Controls.Add(this.flowLayoutPanel1);
             this.radPanel1.Controls.Add(this.radPanel3);
             this.radPanel1.Controls.Add(this.radLabel1);
             this.radPanel1.Controls.Add(this.lblEmail);
@@ -58,6 +67,44 @@ namespace EStore_Temp.ClientsView
             this.radPanel1.Name = "radPanel1";
             this.radPanel1.Size = new System.Drawing.Size(1269, 171);
             this.radPanel1.TabIndex = 0;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.btnEdit);
+            this.flowLayoutPanel1.Controls.Add(this.btnDetails);
+            this.flowLayoutPanel1.Controls.Add(this.btnDelete);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(889, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 55, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(380, 171);
+            this.flowLayoutPanel1.TabIndex = 15;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Location = new System.Drawing.Point(3, 58);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(108, 36);
+            this.btnEdit.TabIndex = 0;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDetails
+            // 
+            this.btnDetails.Location = new System.Drawing.Point(117, 58);
+            this.btnDetails.Name = "btnDetails";
+            this.btnDetails.Size = new System.Drawing.Size(109, 36);
+            this.btnDetails.TabIndex = 1;
+            this.btnDetails.Text = "Details";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(232, 58);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(114, 36);
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // radPanel3
             // 
@@ -69,6 +116,15 @@ namespace EStore_Temp.ClientsView
             this.radPanel3.Name = "radPanel3";
             this.radPanel3.Size = new System.Drawing.Size(300, 171);
             this.radPanel3.TabIndex = 14;
+            // 
+            // radImage
+            // 
+            this.radImage.DefaultSvgImageXml = resources.GetString("radImage.DefaultSvgImageXml");
+            this.radImage.ImageLayout = Telerik.WinControls.UI.RadImageLayout.Stretch;
+            this.radImage.Location = new System.Drawing.Point(91, 14);
+            this.radImage.Name = "radImage";
+            this.radImage.Size = new System.Drawing.Size(112, 85);
+            this.radImage.TabIndex = 16;
             // 
             // lblFullName
             // 
@@ -102,15 +158,6 @@ namespace EStore_Temp.ClientsView
             this.lblEmail.TabIndex = 8;
             this.lblEmail.Text = "Email";
             // 
-            // radImage
-            // 
-            this.radImage.DefaultSvgImageXml = resources.GetString("radImage.DefaultSvgImageXml");
-            this.radImage.ImageLayout = Telerik.WinControls.UI.RadImageLayout.Stretch;
-            this.radImage.Location = new System.Drawing.Point(91, 14);
-            this.radImage.Name = "radImage";
-            this.radImage.Size = new System.Drawing.Size(112, 85);
-            this.radImage.TabIndex = 16;
-            // 
             // ClientControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -121,14 +168,18 @@ namespace EStore_Temp.ClientsView
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.radPanel1.ResumeLayout(false);
             this.radPanel1.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDetails)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel3)).EndInit();
             this.radPanel3.ResumeLayout(false);
             this.radPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblFullName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblRole)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblEmail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -142,5 +193,9 @@ namespace EStore_Temp.ClientsView
         private Telerik.WinControls.UI.RadLabel lblFullName;
         private Telerik.WinControls.UI.RadLabel lblRole;
         private Telerik.WinControls.UI.RadPictureBox radImage;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private Telerik.WinControls.UI.RadButton btnEdit;
+        private Telerik.WinControls.UI.RadButton btnDetails;
+        private Telerik.WinControls.UI.RadButton btnDelete;
     }
 }

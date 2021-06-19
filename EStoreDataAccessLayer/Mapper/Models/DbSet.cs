@@ -122,7 +122,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
                 return false;
             }finally
             {
-                _sqlConnection.Close();
+                _sqlConnection.Close(); 
             }
         }
 

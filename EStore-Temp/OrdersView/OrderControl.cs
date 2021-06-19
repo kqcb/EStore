@@ -64,5 +64,10 @@ namespace EStore_Temp.OrdersView
             else
                 MessageBox.Show("Order could not be deleted");
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            Common.AddControl(_controls, new OrderEditControl(_order));
+        }
     }
 }
