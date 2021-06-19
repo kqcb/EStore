@@ -43,9 +43,9 @@ namespace EStoreBusinessLogicLayer
             Common.InvokeMethod(_dbSet, "Delete", id);
         }
 
-        public void Update(int id)
+        public bool Update(T item)
         {
-            Common.InvokeMethod(_dbSet, "Update", id);
+           return (bool) Common.InvokeMethod(_dbSet, "Update", item);
         }
 
         public DataTable ToDataTable()

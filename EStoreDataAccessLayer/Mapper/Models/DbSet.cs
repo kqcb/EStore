@@ -126,12 +126,12 @@ namespace EStoreDataAccessLayer.Mapper.Models
             }
         }
 
-        public void Update(T item)
+        public bool Update(T item)
         {
-            Update($"usp_{typeof(T).Name}_Update", item);
+           return Update($"usp_{typeof(T).Name}_Update", item);
         }
 
-        public void Update(string procName, T item)
+        public bool Update(string procName, T item)
         {
             try
             {
@@ -147,10 +147,11 @@ namespace EStoreDataAccessLayer.Mapper.Models
                 cmd.Parameters.AddWithValue("lud", DateTime.Now.ToShortDateString());
                 cmd.Parameters.AddWithValue("lub", 1);
 
-                int rez = cmd.ExecuteNonQuery();
+                return cmd.ExecuteNonQuery() > -1;
             } catch(Exception e)
             {
                 var s = e.Message;
+                return false;
             } finally
             {
                 _sqlConnection.Close();

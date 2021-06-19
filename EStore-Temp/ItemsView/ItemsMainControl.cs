@@ -42,6 +42,8 @@ namespace EStore_Temp.ItemsView
         public void FillTable()
         {
 
+            flowLayoutPanel1.Controls.Clear();
+
             var items = EStoreContext.Items.Read();
             
             items.ForEach(item => flowLayoutPanel1.Controls.Add(new ItemView(_controls, flowLayoutSelectedList , _user, item)));  
