@@ -26,6 +26,7 @@ namespace EStore.Utils
 
         public static void AddControl(ControlCollection controls, UserControl control)
         {
+            control.Dock = DockStyle.Fill;
 
             controls.Add(control);
 

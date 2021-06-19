@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace EStore.OrdersView
 {
-    public partial class OrderDetailsControl : UserControl
+    public partial class OrderDetailsMainControl : UserControl
     {
         private Order _order;
-        public OrderDetailsControl(Order order)
+        public OrderDetailsMainControl(Order order)
         {
             InitializeComponent();
             _order = order;

@@ -19,10 +19,13 @@ namespace EStore_Temp.OrdersView
 
         public OrdersMainControl(ControlCollection controls, User user)
         {
-            InitializeComponent();
-            FillTable();
             this._controls = controls;
             this._user = user;
+            InitializeComponent();
+            
+  
+
+            FillTable();
         }
 
         private void FillTable()

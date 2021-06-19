@@ -30,7 +30,7 @@ namespace EStore.OrdersView
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-            Common.AddControl(_controls, new OrderDetailsControl( new Order()));
+            Common.AddControl(_controls, new OrderDetailsMainControl( new Order()));
         }
 
 

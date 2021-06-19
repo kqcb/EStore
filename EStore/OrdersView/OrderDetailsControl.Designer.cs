@@ -1,7 +1,7 @@
 ﻿
 namespace EStore.OrdersView
 {
-    partial class OrderDetailsControl
+    partial class OrderDetailsMainControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,11 +31,11 @@ namespace EStore.OrdersView
         {
             this.SuspendLayout();
             // 
-            // OrderDetailsControl
+            // OrderDetailsMainControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "OrderDetailsControl";
+            this.Name = "OrderDetailsMainControl";
             this.Size = new System.Drawing.Size(877, 571);
             this.ResumeLayout(false);
 

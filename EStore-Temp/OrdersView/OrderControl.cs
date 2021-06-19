@@ -50,7 +50,8 @@ namespace EStore_Temp.OrdersView
 
         private void btnDetails_Click(object sender, EventArgs e)
         {
-            Common.AddControl(_controls, new OrderDetailsControl(_order));
+
+            Common.AddControl(_controls, new OrderDetailsMainControl(_order));
         }
     }
 }

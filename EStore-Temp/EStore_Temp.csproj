@@ -193,6 +193,12 @@
     <Compile Include="OrdersView\OrderDetailsControl.Designer.cs">
       <DependentUpon>OrderDetailsControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrdersView\OrderDetailsMainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrdersView\OrderDetailsMainControl.Designer.cs">
+      <DependentUpon>OrderDetailsMainControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrdersView\OrdersMainControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -247,6 +253,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OrdersView\OrderControl.resx">
       <DependentUpon>OrderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersView\OrderDetailsControl.resx">
+      <DependentUpon>OrderDetailsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersView\OrderDetailsMainControl.resx">
+      <DependentUpon>OrderDetailsMainControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrdersView\OrdersMainControl.resx">
       <DependentUpon>OrdersMainControl.cs</DependentUpon>
