@@ -92,7 +92,13 @@ namespace EStore_Temp.ItemsView
                     Quantity = 1
                 };
 
-                EStoreContext.OrderDetails.Create(orderDetails);
+                if(EStoreContext.OrderDetails.Create(orderDetails) != -1)
+                {
+                    MessageBox.Show("Order created succesfully");
+                } else
+                {
+                    MessageBox.Show("Order could not be created");
+                }
 
             }
 

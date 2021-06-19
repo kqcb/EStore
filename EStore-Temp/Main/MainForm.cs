@@ -84,6 +84,7 @@ namespace EStore_Temp.Main
 
             btnGoBack.Visible = true;
             lblTitle.Text = "Orders";
+            _ordersMainControl.FillList();
             Common.ChangeContorl(radPanelMain.Controls, _ordersMainControl);
         }
 
