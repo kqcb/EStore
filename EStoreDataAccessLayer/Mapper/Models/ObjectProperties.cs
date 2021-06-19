@@ -35,8 +35,9 @@ namespace EStoreDataAccessLayer.Mapper.Models
         {
             PropertyInfo prop = ObjectType.GetProperties().FirstOrDefault(prop => prop.Name == propName);
 
-
-            prop.SetValue(ActualObject, Convert.ChangeType(value, prop.PropertyType));
+            if(value != DBNull.Value)
+                prop.SetValue(ActualObject, Convert.ChangeType(value, prop.PropertyType));
+            
         }
 
         public List<ObjectProperties> GetOtherProperties()

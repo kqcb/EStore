@@ -224,6 +224,9 @@
     <EmbeddedResource Include="ClientsView\ClientsMainControl.resx">
       <DependentUpon>ClientsMainControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ItemsView\ItemCreateControl.resx">
+      <DependentUpon>ItemCreateControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ItemsView\ItemDetailsControl.resx">
       <DependentUpon>ItemDetailsControl.cs</DependentUpon>
     </EmbeddedResource>

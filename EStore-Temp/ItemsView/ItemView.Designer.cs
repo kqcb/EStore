@@ -35,7 +35,6 @@ namespace EStore_Temp.ItemsView
             this.btnAddToCart = new Telerik.WinControls.UI.RadButton();
             this.btnDetails = new Telerik.WinControls.UI.RadButton();
             this.lblItemName = new Telerik.WinControls.UI.RadLabel();
-            this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -43,14 +42,12 @@ namespace EStore_Temp.ItemsView
             ((System.ComponentModel.ISupportInitialize)(this.btnAddToCart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblItemName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
             this.SuspendLayout();
             // 
             // radPanel1
             // 
             this.radPanel1.Controls.Add(this.flowLayoutPanel1);
             this.radPanel1.Controls.Add(this.lblItemName);
-            this.radPanel1.Controls.Add(this.radPanel2);
             this.radPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radPanel1.Location = new System.Drawing.Point(0, 0);
             this.radPanel1.Name = "radPanel1";
@@ -102,13 +99,6 @@ namespace EStore_Temp.ItemsView
             this.lblItemName.TabIndex = 6;
             this.lblItemName.Text = "Name";
             // 
-            // radPanel2
-            // 
-            this.radPanel2.Location = new System.Drawing.Point(86, 87);
-            this.radPanel2.Name = "radPanel2";
-            this.radPanel2.Size = new System.Drawing.Size(135, 102);
-            this.radPanel2.TabIndex = 5;
-            // 
             // ItemView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -125,7 +115,6 @@ namespace EStore_Temp.ItemsView
             ((System.ComponentModel.ISupportInitialize)(this.btnAddToCart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblItemName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -138,6 +127,5 @@ namespace EStore_Temp.ItemsView
         private Telerik.WinControls.UI.RadButton btnAddToCart;
         private Telerik.WinControls.UI.RadButton btnDetails;
         private Telerik.WinControls.UI.RadLabel lblItemName;
-        private Telerik.WinControls.UI.RadPanel radPanel2;
     }
 }

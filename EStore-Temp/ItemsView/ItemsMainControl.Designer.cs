@@ -40,7 +40,7 @@ namespace EStore_Temp.ItemsView
             this.eStoreDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usp_Item_ReadTableAdapter = new EStore_Temp.EStoreDataSet1TableAdapters.usp_Item_ReadTableAdapter();
             this.radPanel3 = new Telerik.WinControls.UI.RadPanel();
-           flowLayoutSelectedList = new System.Windows.Forms.FlowLayoutPanel();
+            flowLayoutSelectedList = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
@@ -95,6 +95,7 @@ namespace EStore_Temp.ItemsView
             this.btnNew.Size = new System.Drawing.Size(165, 36);
             this.btnNew.TabIndex = 1;
             this.btnNew.Text = "Create New";
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // radPanel2
             // 
@@ -141,12 +142,12 @@ namespace EStore_Temp.ItemsView
             // 
             // flowLayoutSelectedList
             // 
-           flowLayoutSelectedList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-           flowLayoutSelectedList.Dock = System.Windows.Forms.DockStyle.Fill;
-           flowLayoutSelectedList.Location = new System.Drawing.Point(0, 96);
-           flowLayoutSelectedList.Name = "flowLayoutSelectedList";
-           flowLayoutSelectedList.Size = new System.Drawing.Size(355, 549);
-           flowLayoutSelectedList.TabIndex = 6;
+            flowLayoutSelectedList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            flowLayoutSelectedList.Dock = System.Windows.Forms.DockStyle.Fill;
+            flowLayoutSelectedList.Location = new System.Drawing.Point(0, 96);
+            flowLayoutSelectedList.Name = "flowLayoutSelectedList";
+            flowLayoutSelectedList.Size = new System.Drawing.Size(355, 549);
+            flowLayoutSelectedList.TabIndex = 6;
             // 
             // flowLayoutPanel3
             // 

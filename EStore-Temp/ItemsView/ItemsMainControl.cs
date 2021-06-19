@@ -42,7 +42,9 @@ namespace EStore_Temp.ItemsView
         public void FillTable()
         {
 
-            EStoreContext.Items.Read().ForEach(item => flowLayoutPanel1.Controls.Add(new ItemView(_controls, flowLayoutSelectedList , _user, item)));  
+            var items = EStoreContext.Items.Read();
+            
+            items.ForEach(item => flowLayoutPanel1.Controls.Add(new ItemView(_controls, flowLayoutSelectedList , _user, item)));  
         }
         
          public static void FillCartList(){
@@ -59,16 +61,7 @@ namespace EStore_Temp.ItemsView
          }
 
 
-        
-     
-        private void btnNew_Click(object sender, EventArgs e)
-        {
-            var itmCreateControl = new ItemCreateControl();
-
-            itmCreateControl.Dock = DockStyle.Fill;
-
-            Common.AddControl(_controls, itmCreateControl);
-        }
+   
 
         private void btnMakeOrder_Click(object sender, EventArgs e)
         {
@@ -101,6 +94,15 @@ namespace EStore_Temp.ItemsView
 
             }
 
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            var itmCreateControl = new ItemCreateControl();
+
+            itmCreateControl.Dock = DockStyle.Fill;
+
+            Common.AddControl(_controls, itmCreateControl);
         }
     }
 }

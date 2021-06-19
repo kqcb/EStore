@@ -73,7 +73,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
                 return item;
 
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return default(T);
             }
@@ -291,6 +291,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
               
                 try
                 {
+                   
                     model.InitialiseProp(primitiveProps[i], data[subObject + primitiveProps[i]]);
                 }
                 catch (IndexOutOfRangeException)
