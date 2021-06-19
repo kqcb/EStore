@@ -30,7 +30,7 @@ namespace EStore_Temp.ItemsView
             if (user.Role.Id == 1)
             {
                 btnEdit.Visible = true;
-                btnAddToCart.Visible = false;
+                btnAddToCart.Visible = true;
             }
             else
             {

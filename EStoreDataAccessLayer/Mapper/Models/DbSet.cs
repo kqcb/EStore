@@ -158,7 +158,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
         }
         
 
-        public bool Create(string procName, T item)
+        public int Create(string procName, T item)
         {
             try
             {
@@ -175,16 +175,18 @@ namespace EStoreDataAccessLayer.Mapper.Models
                 cmd.Parameters.AddWithValue("@insertBy", 1);
 
 
+                var returnParameter = cmd.Parameters.Add("@ReturnVal", SqlDbType.Int);
+                returnParameter.Direction = ParameterDirection.ReturnValue;
 
                 int rez = cmd.ExecuteNonQuery();
                 _sqlConnection.Close();
 
-                return rez > 0;
+                return (int)returnParameter.Value;
             }
             catch (Exception e)
             {
                 var s = e.Message;
-                return false;
+                return 0;
             }
             finally
             {
@@ -192,7 +194,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
             }
         }
 
-        public bool Create(T item)
+        public int Create(T item)
         {
             return Create($"usp_{typeof(T).Name}_Insert", item);
         }

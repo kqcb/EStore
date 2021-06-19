@@ -28,7 +28,7 @@ namespace EStore_Temp.ItemsView
 
             if (user.Role.Id == 1)
             {
-                radPanel3.Visible = false;
+                radPanel3.Visible = true;
                 btnNew.Visible = true;
             }
             else
@@ -46,7 +46,7 @@ namespace EStore_Temp.ItemsView
         }
         
          public static void FillCartList(){
-            flowLayoutSelectedList.Controls.Clear();
+           flowLayoutSelectedList.Controls.Clear();
             int count = 0;
             ItemsMainControl.selectedItems.ForEach(item =>
             {
@@ -56,10 +56,6 @@ namespace EStore_Temp.ItemsView
 
             });
 
-          
-
-
-                   
          }
 
 
@@ -72,6 +68,39 @@ namespace EStore_Temp.ItemsView
             itmCreateControl.Dock = DockStyle.Fill;
 
             Common.AddControl(_controls, itmCreateControl);
+        }
+
+        private void btnMakeOrder_Click(object sender, EventArgs e)
+        {
+            Order order = new Order()
+            {
+                User = _user,
+                City = _user.City,
+                Street = "",
+                IsPaid = false,
+                OrderDate = DateTime.Now
+            };
+
+           int id = EStoreContext.Orders.Create(order);
+
+            foreach (var item in ItemsMainControl.selectedItems)
+            {
+
+                var orderDetails = new OrderDetails()
+                {
+                    Item = item,
+                    Order = new Order() { 
+                        Id = id 
+                    },
+                    Discount = 0,
+                    Price = item.UnitPrice,
+                    Quantity = 1
+                };
+
+                EStoreContext.OrderDetails.Create(orderDetails);
+
+            }
+
         }
     }
 }

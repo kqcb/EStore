@@ -68,7 +68,7 @@ namespace EStore.Auth
                     Image = Common.ToByteArray(image) 
                 };
 
-                return EStoreContext.Users.Create(temp);
+                return EStoreContext.Users.Create(temp) > 0;
 
             }
         }

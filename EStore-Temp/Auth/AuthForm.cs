@@ -48,6 +48,7 @@ namespace EStore.Auth
                     MessageBox.Show("User does not exists");
                 else
                 {
+                    this.Hide();
                     new MainForm(user).ShowDialog();
 
                     this.Close();

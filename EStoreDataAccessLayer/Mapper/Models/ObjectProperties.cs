@@ -43,7 +43,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
         {
             return ObjectType
                 .GetProperties()
-                .Where(prop => !prop.PropertyType.IsValueType && prop.PropertyType.Name != "String" && prop.PropertyType.Name != "Byte[]" && !prop.PropertyType.Name.Contains("^"))
+                .Where(prop => !prop.PropertyType.IsValueType && prop.PropertyType.Name != "String" && prop.PropertyType.Name != "Byte[]" && !prop.PropertyType.Name.Contains("`"))
                 .Select(pr => new ObjectProperties(pr.PropertyType))
                 .ToList();
         }

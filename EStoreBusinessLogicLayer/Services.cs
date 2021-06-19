@@ -19,11 +19,11 @@ namespace EStoreBusinessLogicLayer
             _dbSet = Common.GetDbSet(typeof(T).Name);
         }
         
-        public bool Create(T item)
+        public int Create(T item)
         {
             
             
-            return (bool) Common.InvokeMethod(_dbSet, "Create", item);
+            return (int) Common.InvokeMethod(_dbSet, "Create", item);
             
 
         }

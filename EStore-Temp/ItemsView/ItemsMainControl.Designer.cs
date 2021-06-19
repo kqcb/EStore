@@ -31,6 +31,8 @@ namespace EStore_Temp.ItemsView
         {
             this.components = new System.ComponentModel.Container();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnNew = new Telerik.WinControls.UI.RadButton();
             this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
             this.uspItemReadBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.eStoreDataSet1 = new EStore_Temp.EStoreDataSet1();
@@ -38,7 +40,7 @@ namespace EStore_Temp.ItemsView
             this.eStoreDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usp_Item_ReadTableAdapter = new EStore_Temp.EStoreDataSet1TableAdapters.usp_Item_ReadTableAdapter();
             this.radPanel3 = new Telerik.WinControls.UI.RadPanel();
-            flowLayoutSelectedList = new System.Windows.Forms.FlowLayoutPanel();
+           flowLayoutSelectedList = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
@@ -46,10 +48,10 @@ namespace EStore_Temp.ItemsView
             this.btnMakeOrder = new Telerik.WinControls.UI.RadButton();
             this.radPanel4 = new Telerik.WinControls.UI.RadPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnNew = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnNew)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uspItemReadBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eStoreDataSet1)).BeginInit();
@@ -64,8 +66,6 @@ namespace EStore_Temp.ItemsView
             ((System.ComponentModel.ISupportInitialize)(this.btnMakeOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel4)).BeginInit();
             this.radPanel4.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnNew)).BeginInit();
             this.SuspendLayout();
             // 
             // radPanel1
@@ -76,6 +76,25 @@ namespace EStore_Temp.ItemsView
             this.radPanel1.Name = "radPanel1";
             this.radPanel1.Size = new System.Drawing.Size(1252, 79);
             this.radPanel1.TabIndex = 0;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.btnNew);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Padding = new System.Windows.Forms.Padding(20);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1252, 79);
+            this.flowLayoutPanel2.TabIndex = 0;
+            // 
+            // btnNew
+            // 
+            this.btnNew.Location = new System.Drawing.Point(1044, 23);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(165, 36);
+            this.btnNew.TabIndex = 1;
+            this.btnNew.Text = "Create New";
             // 
             // radPanel2
             // 
@@ -122,12 +141,12 @@ namespace EStore_Temp.ItemsView
             // 
             // flowLayoutSelectedList
             // 
-            flowLayoutSelectedList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            flowLayoutSelectedList.Dock = System.Windows.Forms.DockStyle.Fill;
-            flowLayoutSelectedList.Location = new System.Drawing.Point(0, 96);
-            flowLayoutSelectedList.Name = "flowLayoutSelectedList";
-            flowLayoutSelectedList.Size = new System.Drawing.Size(355, 549);
-            flowLayoutSelectedList.TabIndex = 6;
+           flowLayoutSelectedList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+           flowLayoutSelectedList.Dock = System.Windows.Forms.DockStyle.Fill;
+           flowLayoutSelectedList.Location = new System.Drawing.Point(0, 96);
+           flowLayoutSelectedList.Name = "flowLayoutSelectedList";
+           flowLayoutSelectedList.Size = new System.Drawing.Size(355, 549);
+           flowLayoutSelectedList.TabIndex = 6;
             // 
             // flowLayoutPanel3
             // 
@@ -177,6 +196,7 @@ namespace EStore_Temp.ItemsView
             this.btnMakeOrder.Size = new System.Drawing.Size(165, 63);
             this.btnMakeOrder.TabIndex = 1;
             this.btnMakeOrder.Text = "Make Order";
+            this.btnMakeOrder.Click += new System.EventHandler(this.btnMakeOrder_Click);
             // 
             // radPanel4
             // 
@@ -195,25 +215,6 @@ namespace EStore_Temp.ItemsView
             this.flowLayoutPanel1.Size = new System.Drawing.Size(897, 715);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.btnNew);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Padding = new System.Windows.Forms.Padding(20);
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1252, 79);
-            this.flowLayoutPanel2.TabIndex = 0;
-            // 
-            // btnNew
-            // 
-            this.btnNew.Location = new System.Drawing.Point(1044, 23);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(165, 36);
-            this.btnNew.TabIndex = 1;
-            this.btnNew.Text = "Create New";
-            // 
             // ItemsMainControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -226,6 +227,8 @@ namespace EStore_Temp.ItemsView
             this.Size = new System.Drawing.Size(1252, 866);
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.radPanel1.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnNew)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uspItemReadBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eStoreDataSet1)).EndInit();
@@ -241,8 +244,6 @@ namespace EStore_Temp.ItemsView
             ((System.ComponentModel.ISupportInitialize)(this.btnMakeOrder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel4)).EndInit();
             this.radPanel4.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnNew)).EndInit();
             this.ResumeLayout(false);
 
         }
