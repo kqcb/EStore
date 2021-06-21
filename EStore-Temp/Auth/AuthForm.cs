@@ -20,18 +20,32 @@ namespace EStore.Auth
         private SignUpControl _signUpControl;
         private MainForm _mainForm;
         private LoginControl _loginControl;
+        private int loginHeight;
+        private int signUpHight;
         public AuthForm()
         {
             InitializeComponent();
             btnGoBack.Visible = false;
-         
-            Common.AddControl(panelMain.Controls, _loginControl ??= new LoginControl());
-            ChangeHeight(_loginControl); 
+
+
+            _loginControl ??= new LoginControl();
+
+            _signUpControl ??= new SignUpControl();
+
+            loginHeight = _loginControl.Height;
+            signUpHight = _signUpControl.Height;
+
+
+
+            ChangeController(_loginControl); 
         }
 
-        private void ChangeHeight(UserControl control)
+        private void ChangeController(UserControl control)
         {
-            panelMain.Height = control.Height + 10;
+
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(control);
+            panelMain.Height = (control.Height) + 10;
             panelBottom.Location = new Point(panelBottom.Location.X, panelMain.Location.Y + panelMain.Height + 5);
             panel1.Height = panelMain.Height + panelBottom.Height + panel2.Height;
             this.Height = panel1.Height + 70;
@@ -63,8 +77,7 @@ namespace EStore.Auth
         {
             btnGoBack.Visible = false;
             btnLogin.Visible = true;
-            panelMain.Controls["LoginControl"].BringToFront();
-            ChangeHeight(_loginControl);
+            ChangeController(_loginControl);
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
@@ -90,10 +103,8 @@ namespace EStore.Auth
 
             btnGoBack.Visible = true;
             btnLogin.Visible = false;
+            ChangeController(_signUpControl);
 
-
-            Common.AddControl(panelMain.Controls, _signUpControl ??= new SignUpControl());
-            ChangeHeight(_signUpControl);
         }
 
        

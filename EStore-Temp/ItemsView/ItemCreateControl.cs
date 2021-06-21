@@ -64,6 +64,10 @@ namespace EStore_Temp.ItemsView
                     {
                         Id = _brands[drlBrand.SelectedIndex].Id
                     },
+                    Category = new Category()
+                    {
+                        Id = _categories[drlCategory.SelectedIndex].Id
+                    },
                     UnitPrice = unitPrice,
                     Image = image
                 };

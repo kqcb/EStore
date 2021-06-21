@@ -29,25 +29,29 @@ namespace EStore_Temp.ItemsView
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ItemView));
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnEdit = new Telerik.WinControls.UI.RadButton();
             this.btnAddToCart = new Telerik.WinControls.UI.RadButton();
             this.btnDetails = new Telerik.WinControls.UI.RadButton();
-            this.lblItemName = new Telerik.WinControls.UI.RadLabel();
             this.btnDelete = new Telerik.WinControls.UI.RadButton();
+            this.lblItemName = new Telerik.WinControls.UI.RadLabel();
+            this.radImage = new Telerik.WinControls.UI.RadPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddToCart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblItemName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblItemName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radImage)).BeginInit();
             this.SuspendLayout();
             // 
             // radPanel1
             // 
+            this.radPanel1.Controls.Add(this.radImage);
             this.radPanel1.Controls.Add(this.flowLayoutPanel1);
             this.radPanel1.Controls.Add(this.lblItemName);
             this.radPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -94,14 +98,6 @@ namespace EStore_Temp.ItemsView
             this.btnDetails.Text = "Details";
             this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
             // 
-            // lblItemName
-            // 
-            this.lblItemName.Location = new System.Drawing.Point(133, 213);
-            this.lblItemName.Name = "lblItemName";
-            this.lblItemName.Size = new System.Drawing.Size(36, 18);
-            this.lblItemName.TabIndex = 6;
-            this.lblItemName.Text = "Name";
-            // 
             // btnDelete
             // 
             this.btnDelete.Location = new System.Drawing.Point(84, 45);
@@ -110,6 +106,22 @@ namespace EStore_Temp.ItemsView
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "Delete";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // lblItemName
+            // 
+            this.lblItemName.Location = new System.Drawing.Point(133, 213);
+            this.lblItemName.Name = "lblItemName";
+            this.lblItemName.Size = new System.Drawing.Size(36, 18);
+            this.lblItemName.TabIndex = 6;
+            this.lblItemName.Text = "Name";
+            // 
+            // radImage
+            // 
+            this.radImage.DefaultSvgImageXml = resources.GetString("radImage.DefaultSvgImageXml");
+            this.radImage.Location = new System.Drawing.Point(85, 46);
+            this.radImage.Name = "radImage";
+            this.radImage.Size = new System.Drawing.Size(150, 150);
+            this.radImage.TabIndex = 8;
             // 
             // ItemView
             // 
@@ -126,8 +138,9 @@ namespace EStore_Temp.ItemsView
             ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddToCart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblItemName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblItemName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -141,5 +154,6 @@ namespace EStore_Temp.ItemsView
         private Telerik.WinControls.UI.RadButton btnDetails;
         private Telerik.WinControls.UI.RadLabel lblItemName;
         private Telerik.WinControls.UI.RadButton btnDelete;
+        private Telerik.WinControls.UI.RadPictureBox radImage;
     }
 }

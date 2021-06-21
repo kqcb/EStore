@@ -30,8 +30,8 @@ namespace EStore_Temp.ItemsView
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            int index = ItemsMainControl.selectedItems.FirstOrDefault(item => item.Id == _item.Id).Id;
-            ItemsMainControl.selectedItems.RemoveAt(index);
+            var item = ItemsMainControl.selectedItems.FirstOrDefault(item => item.Id == _item.Id);
+            ItemsMainControl.selectedItems.Remove(item);
             ItemsMainControl.FillCartList();
         }
     }
