@@ -29,7 +29,7 @@ namespace EStore_Temp.ItemsView
                 drlBrand.Items.Add(brand.Name);
 
             foreach (var category in _categories)
-                drlCategory.Items.Add(category.Name);
+                drlCategory.Items.Add(category.Description);
         }
 
         private void btnSelectImage_Click(object sender, EventArgs e)
