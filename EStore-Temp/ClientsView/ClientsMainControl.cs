@@ -1,4 +1,5 @@
 ﻿using EStoreBusinessLogicLayer;
+using EStoreBusinessObjects;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,6 +34,19 @@ namespace EStore_Temp.ClientsView
                 flowLayoutPanel1.Controls.Add(clientControl);
             });
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnToExcel_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+
+            Services<User> service = new Services<User>();
+            service.ToExcel(user);
         }
     }
 }

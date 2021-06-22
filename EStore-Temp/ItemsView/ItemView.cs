@@ -39,7 +39,7 @@ namespace EStore_Temp.ItemsView
                 btnAddToCart.Visible = true;
             }
 
-            this.radImage.Image = Common.ToImage(item.Image);
+            //this.radImage.Image = Common.ToImage(item.Image);
             this.lblItemName.Text = _item.Name;
 
         }

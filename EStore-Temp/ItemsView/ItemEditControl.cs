@@ -41,7 +41,7 @@ namespace EStore_Temp.ItemsView
             drlCategory.SelectedItem = drlCategory.Items.FirstOrDefault(c => c.Text == _item.Category.Description);
             drlCategory.SelectedIndex = drlCategory.Items.IndexOf(drlCategory.SelectedItem);
             txtUnitPrice.Text = _item.UnitPrice.ToString();
-            radImage.Image = Common.ToImage(_item.Image);
+            //radImage.Image = Common.ToImage(_item.Image);
 
             
         }

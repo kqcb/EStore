@@ -304,5 +304,55 @@ namespace EStoreDataAccessLayer.Mapper.Models
             return model;
         }
 
+        public bool ToExcel(T item)
+        {
+            try
+            {
+                _sqlConnection.Open();
+
+                SqlCommand cmd = Connection.GetSqlCommand($"usp_{typeof(T).Name}_Read");
+                SqlDataReader dataReader = cmd.ExecuteReader();
+
+
+
+                CreateExcelSheet(dataReader);
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                var s = e.Message;
+                return false;
+            }
+            finally
+            {
+                _sqlConnection.Close();
+            }
+        }
+
+        private void CreateExcelSheet(SqlDataReader dataReader)
+        {
+            Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+            excel.Application.Workbooks.Add(Type.Missing);
+
+            // write excel header (properties)
+            WriteExcelHeader(excel, dataReader);
+
+            // write data
+
+            // excel fix
+            excel.Columns.AutoFit();
+            excel.Visible = true;
+        }
+
+        private void WriteExcelHeader(Microsoft.Office.Interop.Excel.Application excel, SqlDataReader dataReader)
+        {
+            for (int i = 1; i < dataReader.FieldCount + 1; i++)
+            {
+                excel.Cells[1, i] = dataReader.GetName(i - 1);
+                string a = dataReader.GetName(i - 1);
+            }
+        }
+
     }
 }
