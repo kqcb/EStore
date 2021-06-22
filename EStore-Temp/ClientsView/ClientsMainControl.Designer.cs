@@ -36,10 +36,12 @@ namespace EStore_Temp.ClientsView
             this.eStoreDataSet = new EStore_Temp.EStoreDataSet();
             this.usp_User_ReadTableAdapter = new EStore_Temp.EStoreDataSetTableAdapters.usp_User_ReadTableAdapter();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnToExcel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.radPanelTop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanelBottom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uspUserReadBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eStoreDataSet)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // radPanelTop
@@ -47,16 +49,27 @@ namespace EStore_Temp.ClientsView
             this.radPanelTop.BackColor = System.Drawing.Color.DarkGray;
             this.radPanelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.radPanelTop.Location = new System.Drawing.Point(0, 0);
+            this.radPanelTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radPanelTop.Name = "radPanelTop";
-            this.radPanelTop.Size = new System.Drawing.Size(1214, 83);
+            // 
+            // 
+            // 
+            this.radPanelTop.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 200, 100);
+            this.radPanelTop.Size = new System.Drawing.Size(809, 54);
             this.radPanelTop.TabIndex = 0;
             // 
             // radPanelBottom
             // 
+            this.radPanelBottom.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.radPanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.radPanelBottom.Location = new System.Drawing.Point(0, 734);
+            this.radPanelBottom.Location = new System.Drawing.Point(0, 477);
+            this.radPanelBottom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radPanelBottom.Name = "radPanelBottom";
-            this.radPanelBottom.Size = new System.Drawing.Size(1214, 71);
+            // 
+            // 
+            // 
+            this.radPanelBottom.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 200, 100);
+            this.radPanelBottom.Size = new System.Drawing.Size(809, 46);
             this.radPanelBottom.TabIndex = 1;
             // 
             // uspUserReadBindingSource
@@ -76,26 +89,40 @@ namespace EStore_Temp.ClientsView
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.btnToExcel);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 83);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 54);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(15);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1214, 651);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(809, 423);
             this.flowLayoutPanel1.TabIndex = 2;
+            // 
+            // btnToExcel
+            // 
+            this.btnToExcel.Location = new System.Drawing.Point(13, 13);
+            this.btnToExcel.Name = "btnToExcel";
+            this.btnToExcel.Size = new System.Drawing.Size(75, 23);
+            this.btnToExcel.TabIndex = 0;
+            this.btnToExcel.Text = "To Excel";
+            this.btnToExcel.UseVisualStyleBackColor = true;
+            this.btnToExcel.Click += new System.EventHandler(this.btnToExcel_Click);
             // 
             // ClientsMainControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.radPanelBottom);
             this.Controls.Add(this.radPanelTop);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ClientsMainControl";
-            this.Size = new System.Drawing.Size(1214, 805);
+            this.Size = new System.Drawing.Size(809, 523);
             ((System.ComponentModel.ISupportInitialize)(this.radPanelTop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanelBottom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uspUserReadBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eStoreDataSet)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -108,5 +135,6 @@ namespace EStore_Temp.ClientsView
         private EStoreDataSet eStoreDataSet;
         private EStoreDataSetTableAdapters.usp_User_ReadTableAdapter usp_User_ReadTableAdapter;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button btnToExcel;
     }
 }

@@ -43,7 +43,7 @@ namespace EStore_Temp.ItemsView
             txtUnitPrice.Text = _item.UnitPrice.ToString();
             radImage.Image = Common.ToImage(_item.Image);
 
-            
+
         }
 
         private void btnSelectImage_Click(object sender, EventArgs e)
