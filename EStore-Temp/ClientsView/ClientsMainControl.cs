@@ -18,8 +18,8 @@ namespace EStore_Temp.ClientsView
         public ClientsMainControl(ControlCollection controls)
         {
             InitializeComponent();
-            FillTable();
             this._controls = controls;
+            FillTable();
         }
 
 

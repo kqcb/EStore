@@ -32,11 +32,14 @@ namespace EStore_Temp.ItemsView
                 drlBrand.Items.Add(brand.Name);
 
             foreach (var category in _categories)
-                drlCategory.Items.Add(category.Name);
+                drlCategory.Items.Add(category.Description);
 
             txtName.Text = _item.Name;
             txtDescription.Text = _item.Description;
-            drlBrand.SelectedIndex = _brands.FindIndex(i => i.Id == _item.Brand.Id);
+            drlBrand.SelectedItem = drlBrand.Items.FirstOrDefault(i => i.Text == _item.Brand.Name);
+            drlBrand.SelectedIndex = drlBrand.Items.IndexOf(drlBrand.SelectedItem);
+            drlCategory.SelectedItem = drlCategory.Items.FirstOrDefault(c => c.Text == _item.Category.Description);
+            drlCategory.SelectedIndex = drlCategory.Items.IndexOf(drlCategory.SelectedItem);
             txtUnitPrice.Text = _item.UnitPrice.ToString();
             radImage.Image = Common.ToImage(_item.Image);
 
@@ -78,6 +81,10 @@ namespace EStore_Temp.ItemsView
                     Brand = new Brand()
                     {
                         Id = _brands[drlBrand.SelectedIndex].Id
+                    },
+                    Category = new Category()
+                    {
+                        Id = _categories[drlCategory.SelectedIndex].Id
                     },
                     UnitPrice = unitPrice,
                     Image = image

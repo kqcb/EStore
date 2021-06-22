@@ -44,7 +44,7 @@ namespace EStore_Temp.ClientsView
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            Common.ChangeContorl(_controls, new ClientEditControl(_user));
+            Common.AddControl(_controls, new ClientEditControl(_user));
         }
     }
 }

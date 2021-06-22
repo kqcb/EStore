@@ -23,9 +23,6 @@ namespace EStore_Temp.OrdersView
             this._user = user;
             InitializeComponent();
             
-  
-
-            FillList();
         }
 
         public void FillList()
