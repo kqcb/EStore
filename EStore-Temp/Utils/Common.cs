@@ -49,12 +49,12 @@ namespace EStore.Utils
             throw new NotImplementedException();
         }
 
-        //public static Image ToImage(byte[] bytes)
-        //{
-        //    var memoryStream = new MemoryStream(bytes, 0, bytes.Length);
-        //    memoryStream.Write(bytes, 0, bytes.Length);
-        //    return Image.FromStream(memoryStream, true);
-        //}
+        public static Image ToImage(byte[] bytes)
+        {
+            var memoryStream = new MemoryStream(bytes, 0, bytes.Length);
+            memoryStream.Write(bytes, 0, bytes.Length);
+            return Image.FromStream(memoryStream, true);
+        }
 
         public static byte[] ToByteArray(Image image)
         {

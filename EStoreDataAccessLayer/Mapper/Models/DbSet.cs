@@ -339,6 +339,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
             WriteExcelHeader(excel, dataReader);
 
             // write data
+            WriteExcelData(excel, dataReader);
 
             // excel fix
             excel.Columns.AutoFit();
@@ -354,5 +355,16 @@ namespace EStoreDataAccessLayer.Mapper.Models
             }
         }
 
+        private void WriteExcelData(Microsoft.Office.Interop.Excel.Application excel, SqlDataReader dataReader)
+        {
+            for (int i = 2; dataReader.Read(); i++)
+            {
+                for (int j = 1; j < dataReader.FieldCount + 1; j++)
+                {
+                    excel.Cells[i, j] = dataReader.GetValue(j - 1).ToString();
+                    string a = dataReader.GetValue(j - 1).ToString();
+                }
+            }
+        }
     }
 }

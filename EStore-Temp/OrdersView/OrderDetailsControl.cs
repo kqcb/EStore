@@ -26,7 +26,7 @@ namespace EStore_Temp.OrdersView
             lblQuantity.Text = _orderDetails.Quantity.ToString();
             lblDescription.Text = _orderDetails.Item.Description;
 
-            //radImage.Image = _orderDetails.Item.Image is not null ? Common.ToImage(_orderDetails.Item.Image) : null;
+            radImage.Image = _orderDetails.Item.Image is not null ? Common.ToImage(_orderDetails.Item.Image) : null;
 
 
 

@@ -25,7 +25,7 @@ namespace EStore_Temp.ClientsView
             this._user = user;
             lblFullName.Text = user.Name + " " +user.LastName;
 
-            //radImage.BackgroundImage = Common.ToImage(user.Image);
+            radImage.BackgroundImage = Common.ToImage(user.Image);
 
             radImage.Image = EStore_Temp.Properties.Resources.Estore_logo;
             lblRole.Text = user.Role.Name;
