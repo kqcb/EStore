@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
-            this.btnShoppingCart = new Telerik.WinControls.UI.RadButton();
             this.btnLogOut = new Telerik.WinControls.UI.RadButton();
             this.btnOrders = new Telerik.WinControls.UI.RadButton();
             this.btnUsers = new Telerik.WinControls.UI.RadButton();
@@ -39,9 +38,9 @@
             this.radPanelTop = new Telerik.WinControls.UI.RadPanel();
             this.flowLayoutTopMid = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutTopRight = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnSignOut = new Telerik.WinControls.UI.RadButton();
             this.lblUser = new Telerik.WinControls.UI.RadLabel();
             this.flowLayoutTopLeft = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnGoBack = new System.Windows.Forms.Button();
             this.lblTitle = new Telerik.WinControls.UI.RadLabel();
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.radPanelTop2 = new Telerik.WinControls.UI.RadPanel();
@@ -50,20 +49,19 @@
             this.flowLayoutTop2Left = new System.Windows.Forms.FlowLayoutPanel();
             this.radPanelMain = new Telerik.WinControls.UI.RadPanel();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.btnGoBack = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnShoppingCart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOrders)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUsers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDashBoard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
+            this.radPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanelTop)).BeginInit();
             this.radPanelTop.SuspendLayout();
             this.flowLayoutTopRight.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSignOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblUser)).BeginInit();
             this.flowLayoutTopLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lblTitle)).BeginInit();
@@ -71,12 +69,13 @@
             this.radPanelTop2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanelMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // radPanel1
             // 
-            this.radPanel1.Controls.Add(this.btnShoppingCart);
+            this.radPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.radPanel1.Controls.Add(this.btnLogOut);
             this.radPanel1.Controls.Add(this.btnOrders);
             this.radPanel1.Controls.Add(this.btnUsers);
@@ -86,71 +85,91 @@
             this.radPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.radPanel1.Location = new System.Drawing.Point(0, 0);
             this.radPanel1.Name = "radPanel1";
-            this.radPanel1.Size = new System.Drawing.Size(226, 1084);
+            this.radPanel1.Size = new System.Drawing.Size(226, 1067);
             this.radPanel1.TabIndex = 0;
-            // 
-            // btnShoppingCart
-            // 
-            this.btnShoppingCart.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnShoppingCart.Location = new System.Drawing.Point(0, 984);
-            this.btnShoppingCart.Name = "btnShoppingCart";
-            this.btnShoppingCart.Size = new System.Drawing.Size(226, 50);
-            this.btnShoppingCart.TabIndex = 9;
-            this.btnShoppingCart.Text = "ShoppingCart";
-            this.btnShoppingCart.Click += new System.EventHandler(this.btnShoppingCart_Click);
             // 
             // btnLogOut
             // 
             this.btnLogOut.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnLogOut.Location = new System.Drawing.Point(0, 1034);
+            this.btnLogOut.ForeColor = System.Drawing.Color.White;
+            this.btnLogOut.Location = new System.Drawing.Point(0, 1017);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(226, 50);
             this.btnLogOut.TabIndex = 8;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnLogOut.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnLogOut.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             // 
             // btnOrders
             // 
             this.btnOrders.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOrders.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrders.ForeColor = System.Drawing.Color.White;
             this.btnOrders.Location = new System.Drawing.Point(0, 290);
             this.btnOrders.Name = "btnOrders";
             this.btnOrders.Size = new System.Drawing.Size(226, 50);
             this.btnOrders.TabIndex = 7;
             this.btnOrders.Text = "Orders";
             this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnOrders.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnOrders.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             // 
             // btnUsers
             // 
             this.btnUsers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUsers.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsers.ForeColor = System.Drawing.Color.White;
             this.btnUsers.Location = new System.Drawing.Point(0, 240);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.Size = new System.Drawing.Size(226, 50);
             this.btnUsers.TabIndex = 6;
             this.btnUsers.Text = "Users";
             this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnUsers.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnUsers.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             // 
             // btnItems
             // 
             this.btnItems.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnItems.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItems.ForeColor = System.Drawing.Color.White;
             this.btnItems.Location = new System.Drawing.Point(0, 190);
             this.btnItems.Name = "btnItems";
+            // 
+            // 
+            // 
+            this.btnItems.RootElement.BorderHighlightColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(223)))), ((int)(((byte)(21)))));
+            this.btnItems.RootElement.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.btnItems.Size = new System.Drawing.Size(226, 50);
             this.btnItems.TabIndex = 5;
             this.btnItems.Text = "Items";
             this.btnItems.Click += new System.EventHandler(this.btnItems_Click);
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnItems.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnItems.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             // 
             // btnDashBoard
             // 
             this.btnDashBoard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDashBoard.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashBoard.ForeColor = System.Drawing.Color.White;
             this.btnDashBoard.Location = new System.Drawing.Point(0, 140);
             this.btnDashBoard.Name = "btnDashBoard";
             this.btnDashBoard.Size = new System.Drawing.Size(226, 50);
             this.btnDashBoard.TabIndex = 4;
             this.btnDashBoard.Text = "DashBoard";
             this.btnDashBoard.Click += new System.EventHandler(this.btnDashBoard_Click);
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(0))).ClipDrawing = false;
+            ((Telerik.WinControls.Primitives.TextPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(1).GetChildAt(1))).TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
+            ((Telerik.WinControls.Primitives.TextPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(1).GetChildAt(1))).LineLimit = false;
+            ((Telerik.WinControls.Primitives.TextPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(1).GetChildAt(1))).CustomFontSize = 20F;
+            ((Telerik.WinControls.Primitives.TextPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(1).GetChildAt(1))).Alignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // radPanel2
             // 
+            this.radPanel2.Controls.Add(this.pictureBox1);
             this.radPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.radPanel2.Location = new System.Drawing.Point(0, 0);
             this.radPanel2.Name = "radPanel2";
@@ -179,7 +198,6 @@
             // 
             // flowLayoutTopRight
             // 
-            this.flowLayoutTopRight.Controls.Add(this.btnSignOut);
             this.flowLayoutTopRight.Controls.Add(this.lblUser);
             this.flowLayoutTopRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutTopRight.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
@@ -189,19 +207,10 @@
             this.flowLayoutTopRight.Size = new System.Drawing.Size(311, 90);
             this.flowLayoutTopRight.TabIndex = 1;
             // 
-            // btnSignOut
-            // 
-            this.btnSignOut.Location = new System.Drawing.Point(212, 23);
-            this.btnSignOut.Name = "btnSignOut";
-            this.btnSignOut.Size = new System.Drawing.Size(76, 28);
-            this.btnSignOut.TabIndex = 1;
-            this.btnSignOut.Text = "Sign Out";
-            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
-            // 
             // lblUser
             // 
             this.lblUser.Font = new System.Drawing.Font("Segoe UI", 12.25F);
-            this.lblUser.Location = new System.Drawing.Point(165, 23);
+            this.lblUser.Location = new System.Drawing.Point(247, 23);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(41, 26);
             this.lblUser.TabIndex = 0;
@@ -217,6 +226,20 @@
             this.flowLayoutTopLeft.Padding = new System.Windows.Forms.Padding(20);
             this.flowLayoutTopLeft.Size = new System.Drawing.Size(357, 90);
             this.flowLayoutTopLeft.TabIndex = 0;
+            // 
+            // btnGoBack
+            // 
+            this.btnGoBack.BackColor = System.Drawing.Color.White;
+            this.btnGoBack.BackgroundImage = global::EStore.Properties.Resources.go_back_arrow;
+            this.btnGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGoBack.FlatAppearance.BorderSize = 0;
+            this.btnGoBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGoBack.Location = new System.Drawing.Point(23, 23);
+            this.btnGoBack.Name = "btnGoBack";
+            this.btnGoBack.Size = new System.Drawing.Size(65, 41);
+            this.btnGoBack.TabIndex = 0;
+            this.btnGoBack.UseVisualStyleBackColor = false;
+            this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
             // 
             // lblTitle
             // 
@@ -272,9 +295,10 @@
             // radPanelMain
             // 
             this.radPanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radPanelMain.ForeColor = System.Drawing.Color.White;
             this.radPanelMain.Location = new System.Drawing.Point(226, 140);
             this.radPanelMain.Name = "radPanelMain";
-            this.radPanelMain.Size = new System.Drawing.Size(1079, 944);
+            this.radPanelMain.Size = new System.Drawing.Size(1079, 927);
             this.radPanelMain.TabIndex = 3;
             // 
             // fileSystemWatcher1
@@ -282,25 +306,22 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // btnGoBack
+            // pictureBox1
             // 
-            this.btnGoBack.BackColor = System.Drawing.Color.White;
-            this.btnGoBack.BackgroundImage = global::EStore.Properties.Resources.go_back_arrow;
-            this.btnGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGoBack.FlatAppearance.BorderSize = 0;
-            this.btnGoBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGoBack.Location = new System.Drawing.Point(23, 23);
-            this.btnGoBack.Name = "btnGoBack";
-            this.btnGoBack.Size = new System.Drawing.Size(65, 41);
-            this.btnGoBack.TabIndex = 0;
-            this.btnGoBack.UseVisualStyleBackColor = false;
-            this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::EStore.Properties.Resources.cart;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(226, 140);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1305, 1084);
+            this.ClientSize = new System.Drawing.Size(1305, 1067);
             this.Controls.Add(this.radPanelMain);
             this.Controls.Add(this.radPanelTop2);
             this.Controls.Add(this.radPanelTop);
@@ -314,18 +335,17 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.radPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnShoppingCart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogOut)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOrders)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUsers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnItems)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDashBoard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).EndInit();
+            this.radPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radPanelTop)).EndInit();
             this.radPanelTop.ResumeLayout(false);
             this.flowLayoutTopRight.ResumeLayout(false);
             this.flowLayoutTopRight.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSignOut)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblUser)).EndInit();
             this.flowLayoutTopLeft.ResumeLayout(false);
             this.flowLayoutTopLeft.PerformLayout();
@@ -334,6 +354,7 @@
             this.radPanelTop2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radPanelMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -342,7 +363,6 @@
         #endregion
 
         private Telerik.WinControls.UI.RadPanel radPanel1;
-        private Telerik.WinControls.UI.RadButton btnShoppingCart;
         private Telerik.WinControls.UI.RadButton btnLogOut;
         private Telerik.WinControls.UI.RadButton btnOrders;
         private Telerik.WinControls.UI.RadButton btnUsers;
@@ -361,8 +381,8 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutTop2Left;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutTop2Mid;
         private Telerik.WinControls.UI.RadLabel lblTitle;
-        private Telerik.WinControls.UI.RadButton btnSignOut;
         private Telerik.WinControls.UI.RadLabel lblUser;
         private System.Windows.Forms.Button btnGoBack;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

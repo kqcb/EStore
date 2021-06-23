@@ -31,7 +31,7 @@ namespace EStore.Main
             _shoppingCartMainControl = new();
             _dashboardMainControl = new();
             lblTitle.Text = "Dashboard";
-            lblUser.Text = user.Name + " " + user.LastName;
+            lblUser.Text = "Welcome " + user.Name + " " + user.LastName;
             Common.ChangeContorl(radPanelMain.Controls, _dashboardMainControl);
             this.user = user;
         } 
@@ -90,17 +90,6 @@ namespace EStore.Main
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
-        {
-
-            this.Hide();
-            
-            new AuthForm().Show();
-
-        }
-
-    
-
-        private void btnSignOut_Click(object sender, EventArgs e)
         {
             this.Close();
             Application.Restart();
