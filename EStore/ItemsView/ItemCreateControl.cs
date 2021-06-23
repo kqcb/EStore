@@ -18,7 +18,9 @@ namespace EStore_Temp.ItemsView
     {
         private List<Brand> _brands;
         private List<Category> _categories;
-        public ItemCreateControl()
+        private readonly ControlCollection _controls;
+
+        public ItemCreateControl(ControlCollection controls)
         {
             InitializeComponent();
 
@@ -30,6 +32,7 @@ namespace EStore_Temp.ItemsView
 
             foreach (var category in _categories)
                 drlCategory.Items.Add(category.Description);
+            this._controls = controls;
         }
 
         private void btnSelectImage_Click(object sender, EventArgs e)
@@ -79,6 +82,7 @@ namespace EStore_Temp.ItemsView
                 else
                     MessageBox.Show("Item could not be created");
 
+                ((ItemsMainControl)_controls["ItemsMainControl"]).FillTable();
             }
         }
     }

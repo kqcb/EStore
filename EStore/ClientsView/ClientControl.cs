@@ -18,7 +18,7 @@ namespace EStore.ClientsView
             this._user = user;
             lblFullName.Text = user.Name + " " +user.LastName;
 
-            radImage.BackgroundImage = Common.ToImage(user.Image);
+            radImage.BackgroundImage = user.Image is not null ? Common.ToImage(user.Image) :null;
 
             radImage.Image = EStore.Properties.Resources.Estore_logo;
             lblRole.Text = user.Role.Name;

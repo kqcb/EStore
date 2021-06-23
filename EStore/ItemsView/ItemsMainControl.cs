@@ -25,6 +25,7 @@ namespace EStore_Temp.ItemsView
             this._controls = controls;
             this._user = user;
             InitializeComponent();
+            btnNew.Visible = true;
 
             if (user.Role.Id == 1)
             {
@@ -33,7 +34,7 @@ namespace EStore_Temp.ItemsView
             }
             else
             {
-                btnNew.Visible = false;
+                btnNew.Visible = true;
             }
 
             FillTable();
@@ -42,19 +43,19 @@ namespace EStore_Temp.ItemsView
         public void FillTable()
         {
 
-            flowLayoutPanel1.Controls.Clear();
+            panelMain.Controls.Clear();
 
             var items = EStoreContext.Items.Read();
             
-            items.ForEach(item => flowLayoutPanel1.Controls.Add(new ItemView(_controls, flowLayoutSelectedList , _user, item)));  
+            items.ForEach(item => panelMain.Controls.Add(new ItemView(_controls, flowLayoutSelectedList , _user, item)));  
         }
         
-         public static void FillCartList(){
+         public void FillCartList(){
            flowLayoutSelectedList.Controls.Clear();
             int count = 0;
             ItemsMainControl.selectedItems.ForEach(item =>
             {
-                var itemSelectedControl = new ItemSelectedControl(item);
+                var itemSelectedControl = new ItemSelectedControl(_controls, item);
                 itemSelectedControl.SetIndex(++count);
                 flowLayoutSelectedList.Controls.Add(itemSelectedControl);
 
@@ -106,7 +107,7 @@ namespace EStore_Temp.ItemsView
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            var itmCreateControl = new ItemCreateControl();
+            var itmCreateControl = new ItemCreateControl(_controls);
 
             itmCreateControl.Dock = DockStyle.Fill;
 

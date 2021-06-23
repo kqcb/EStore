@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="eng_UserCouldNotBeDeleted" xml:space="preserve">
-    <value>User could not be deleted</value>
-  </data>
   <data name="radImage.DefaultSvgImageXml" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;svg width="30" height="26" viewBox="0, 0, 30, 26" id="Layer_1" data-name="Layer 1" xml="http://www.w3.org/XML/1998/namespace" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xml="http://www.w3.org/XML/1998/namespace" version="1.1"&gt;
@@ -133,8 +130,5 @@
     &lt;path d="M30 26 L0 26 L0 0 L30 0 z M1 25 L29 25 L29 1 L1 1 z" class="cls-4" style="fill:#A0A09F;" /&gt;
   &lt;/g&gt;
 &lt;/svg&gt;</value>
-  </data>
-  <data name="shp_UserCouldNotBeDeleted" xml:space="preserve">
-    <value>Useri nuk mund te fshihet</value>
   </data>
 </root>

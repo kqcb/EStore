@@ -93,6 +93,7 @@ namespace EStore.Main
         {
 
             this.Hide();
+            
             new AuthForm().Show();
 
         }
@@ -103,6 +104,7 @@ namespace EStore.Main
 
             if (radPanelMain.Controls.Count < 1)
             {
+                lblTitle.Text = "Dashboard";
                 Common.ChangeContorl(radPanelMain.Controls, _dashboardMainControl);
                 btnGoBack.Visible = false;
             }

@@ -59,7 +59,7 @@ namespace EStore_Temp.ItemsView
 
             ItemsMainControl.selectedItems.Add(_item);
 
-            ItemsMainControl.FillCartList();
+            ((ItemsMainControl)_controls["ItemsMainControl"]).FillCartList();
           
 
         }

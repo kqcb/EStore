@@ -31,16 +31,13 @@ namespace EStore.ClientsView
             EStoreContext.Users.Read().ForEach(user =>
             {
                 var clientControl = new ClientControl(_controls, user);
+                clientControl.Margin = new Padding(30, 10, 10, 10);
                 flowLayoutPanel1.Controls.Add(clientControl);
             });
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void btnToExcel_Click(object sender, EventArgs e)
         {
             User user = new User();

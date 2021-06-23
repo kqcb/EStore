@@ -98,9 +98,11 @@ namespace EStore.Auth
             this.txtPassword.EnableTheming = false;
             this.txtPassword.Location = new System.Drawing.Point(7, 149);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '●';
             this.txtPassword.Size = new System.Drawing.Size(280, 27);
             this.txtPassword.TabIndex = 17;
             this.txtPassword.ThemeName = "ControlDefault";
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // radLabel5
             // 
