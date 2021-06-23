@@ -98,6 +98,14 @@ namespace EStore.Main
 
         }
 
+    
+
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Restart();
+        }
+
         private void btnGoBack_Click(object sender, EventArgs e)
         {
             Common.RemoveControl(radPanelMain.Controls);
@@ -108,12 +116,6 @@ namespace EStore.Main
                 Common.ChangeContorl(radPanelMain.Controls, _dashboardMainControl);
                 btnGoBack.Visible = false;
             }
-        }
-
-        private void btnSignOut_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Application.Restart();
         }
     }
 }
