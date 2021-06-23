@@ -326,6 +326,9 @@
     <None Include="Resources\test.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\user %282%29.png" />
+    <None Include="Resources\user %281%29.png" />
+    <None Include="Resources\user.png" />
     <None Include="Resources\78-780842_back-button-white-icon-png-transparent-png.png" />
     <None Include="Resources\185-1853839_arrow-pointing-to-the-left-android-back-button-png.png" />
     <None Include="Resources\go-back-arrow.png" />

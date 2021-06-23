@@ -29,92 +29,80 @@ namespace EStore.Auth
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginControl));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.txtEmail = new Telerik.WinControls.UI.RadTextBox();
-            this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
-            this.txtPassword = new Telerik.WinControls.UI.RadTextBox();
-            this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
+            this.txtEmail = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.txtPassword = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.object_61eedfac_4b8e_41d1_b05b_6b39eb8e0b28 = new Telerik.WinControls.RootRadElement();
+            this.object_b2069201_bb67_49e3_94eb_dcf9e6357595 = new Telerik.WinControls.RootRadElement();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.radLabel1);
             this.flowLayoutPanel1.Controls.Add(this.txtEmail);
-            this.flowLayoutPanel1.Controls.Add(this.radLabel2);
             this.flowLayoutPanel1.Controls.Add(this.txtPassword);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(182, 118);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(324, 183);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // txtEmail
             // 
-            this.txtEmail.AutoSize = false;
-            this.txtEmail.CausesValidation = false;
-            this.txtEmail.EnableTheming = false;
-            this.txtEmail.Location = new System.Drawing.Point(3, 30);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEmail.Location = new System.Drawing.Point(3, 3);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.ShowItemToolTips = false;
-            this.txtEmail.Size = new System.Drawing.Size(175, 24);
-            this.txtEmail.TabIndex = 1;
-            this.txtEmail.ThemeName = "ControlDefault";
-            // 
-            // radLabel2
-            // 
-            this.radLabel2.Location = new System.Drawing.Point(3, 62);
-            this.radLabel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(53, 18);
-            this.radLabel2.TabIndex = 2;
-            this.radLabel2.Text = "Password";
+            this.txtEmail.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.txtEmail.Size = new System.Drawing.Size(299, 45);
+            this.txtEmail.TabIndex = 0;
+            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            ((Telerik.WinControls.UI.RadTextBoxControlElement)(this.txtEmail.GetChildAt(0))).Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            ((Telerik.WinControls.UI.RadTextBoxControlElement)(this.txtEmail.GetChildAt(0))).ImageLayout = System.Windows.Forms.ImageLayout.None;
+            ((Telerik.WinControls.UI.RadTextBoxControlElement)(this.txtEmail.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            ((Telerik.WinControls.UI.RadTextBoxControlElement)(this.txtEmail.GetChildAt(0))).Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            ((Telerik.WinControls.UI.TextBoxViewElement)(this.txtEmail.GetChildAt(0).GetChildAt(0))).Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            ((Telerik.WinControls.UI.TextBoxViewElement)(this.txtEmail.GetChildAt(0).GetChildAt(0))).ImageLayout = System.Windows.Forms.ImageLayout.None;
+            ((Telerik.WinControls.UI.TextBoxViewElement)(this.txtEmail.GetChildAt(0).GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            ((Telerik.WinControls.UI.TextBoxViewElement)(this.txtEmail.GetChildAt(0).GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            ((Telerik.WinControls.UI.TextBoxWrapPanel)(this.txtEmail.GetChildAt(0).GetChildAt(1))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            ((Telerik.WinControls.UI.TextBoxWrapPanel)(this.txtEmail.GetChildAt(0).GetChildAt(1))).Visibility = Telerik.WinControls.ElementVisibility.Hidden;
+            ((Telerik.WinControls.UI.RadScrollBarElement)(this.txtEmail.GetChildAt(0).GetChildAt(2))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+            ((Telerik.WinControls.UI.ScrollBarButton)(this.txtEmail.GetChildAt(0).GetChildAt(2).GetChildAt(2))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtPassword
             // 
-            this.txtPassword.AutoSize = false;
-            this.txtPassword.CausesValidation = false;
-            this.txtPassword.EnableTheming = false;
-            this.txtPassword.Location = new System.Drawing.Point(3, 88);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPassword.Location = new System.Drawing.Point(3, 54);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '●';
-            this.txtPassword.ShowItemToolTips = false;
-            this.txtPassword.Size = new System.Drawing.Size(175, 24);
-            this.txtPassword.TabIndex = 3;
-            this.txtPassword.ThemeName = "ControlDefault";
-            this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.Size = new System.Drawing.Size(299, 39);
+            this.txtPassword.TabIndex = 1;
             // 
-            // radLabel1
+            // object_61eedfac_4b8e_41d1_b05b_6b39eb8e0b28
             // 
-            this.radLabel1.Location = new System.Drawing.Point(3, 4);
-            this.radLabel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(33, 18);
-            this.radLabel1.TabIndex = 0;
-            this.radLabel1.Text = "Email";
+            this.object_61eedfac_4b8e_41d1_b05b_6b39eb8e0b28.Name = "object_61eedfac_4b8e_41d1_b05b_6b39eb8e0b28";
+            this.object_61eedfac_4b8e_41d1_b05b_6b39eb8e0b28.StretchHorizontally = true;
+            this.object_61eedfac_4b8e_41d1_b05b_6b39eb8e0b28.StretchVertically = true;
+            // 
+            // object_b2069201_bb67_49e3_94eb_dcf9e6357595
+            // 
+            this.object_b2069201_bb67_49e3_94eb_dcf9e6357595.Name = "object_b2069201_bb67_49e3_94eb_dcf9e6357595";
+            this.object_b2069201_bb67_49e3_94eb_dcf9e6357595.StretchHorizontally = true;
+            this.object_b2069201_bb67_49e3_94eb_dcf9e6357595.StretchVertically = true;
             // 
             // LoginControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "LoginControl";
-            this.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Size = new System.Drawing.Size(188, 122);
+            this.Padding = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.Size = new System.Drawing.Size(334, 189);
             this.Load += new System.EventHandler(this.LoginControl_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -124,9 +112,9 @@ namespace EStore.Auth
         private Telerik.WinControls.UI.RadLabel htmlLabel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private Telerik.WinControls.UI.RadTextBox txtEmail;
-        private Telerik.WinControls.UI.RadLabel radLabel2;
-        private Telerik.WinControls.UI.RadTextBox txtPassword;
-        private Telerik.WinControls.UI.RadLabel radLabel1;
+        private Telerik.WinControls.UI.RadTextBoxControl txtEmail;
+        private Telerik.WinControls.UI.RadTextBoxControl txtPassword;
+        private Telerik.WinControls.RootRadElement object_61eedfac_4b8e_41d1_b05b_6b39eb8e0b28;
+        private Telerik.WinControls.RootRadElement object_b2069201_bb67_49e3_94eb_dcf9e6357595;
     }
 }
