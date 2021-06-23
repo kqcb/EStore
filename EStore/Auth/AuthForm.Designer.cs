@@ -30,14 +30,19 @@ namespace EStore.Auth
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelMain = new System.Windows.Forms.Panel();
             this.btnSignUp = new Telerik.WinControls.UI.RadButton();
             this.btnGoBack = new Telerik.WinControls.UI.RadButton();
             this.btnLogin = new Telerik.WinControls.UI.RadButton();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panelBottom = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelMain = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.btnSignUp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGoBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.panelBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
@@ -46,17 +51,11 @@ namespace EStore.Auth
             // 
             this.panel1.BackgroundImage = global::EStore.Properties.Resources.test1;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(221, 9);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(213, 248);
+            this.panel1.Size = new System.Drawing.Size(268, 261);
             this.panel1.TabIndex = 4;
-            // 
-            // panelMain
-            // 
-            this.panelMain.Location = new System.Drawing.Point(13, 9);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(200, 204);
-            this.panelMain.TabIndex = 6;
             // 
             // btnSignUp
             // 
@@ -94,29 +93,51 @@ namespace EStore.Auth
             this.btnLogin.Text = "Login";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.panelMain);
+            this.splitContainer1.Panel1.Controls.Add(this.panelBottom);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.panel1);
+            this.splitContainer1.Size = new System.Drawing.Size(499, 261);
+            this.splitContainer1.SplitterDistance = 227;
+            this.splitContainer1.TabIndex = 8;
+            // 
             // panelBottom
             // 
             this.panelBottom.Controls.Add(this.btnLogin);
             this.panelBottom.Controls.Add(this.btnGoBack);
             this.panelBottom.Controls.Add(this.btnSignUp);
-            this.panelBottom.Location = new System.Drawing.Point(15, 219);
+            this.panelBottom.Location = new System.Drawing.Point(16, 191);
             this.panelBottom.Name = "panelBottom";
-            this.panelBottom.Size = new System.Drawing.Size(200, 38);
-            this.panelBottom.TabIndex = 7;
+            this.panelBottom.Size = new System.Drawing.Size(200, 43);
+            this.panelBottom.TabIndex = 9;
+            // 
+            // panelMain
+            // 
+            this.panelMain.Location = new System.Drawing.Point(16, 12);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(200, 164);
+            this.panelMain.TabIndex = 10;
             // 
             // AuthForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(440, 268);
-            this.Controls.Add(this.panelBottom);
-            this.Controls.Add(this.panelMain);
-            this.Controls.Add(this.panel1);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(499, 261);
+            this.Controls.Add(this.splitContainer1);
             this.DoubleBuffered = false;
             this.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "AuthForm";
-            this.Padding = new System.Windows.Forms.Padding(33, 50, 33, 33);
             // 
             // 
             // 
@@ -125,6 +146,10 @@ namespace EStore.Auth
             ((System.ComponentModel.ISupportInitialize)(this.btnSignUp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGoBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogin)).EndInit();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.panelBottom.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
@@ -134,10 +159,11 @@ namespace EStore.Auth
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panelMain;
         private Telerik.WinControls.UI.RadButton btnSignUp;
         private Telerik.WinControls.UI.RadButton btnGoBack;
         private Telerik.WinControls.UI.RadButton btnLogin;
+        private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.FlowLayoutPanel panelBottom;
+        private System.Windows.Forms.FlowLayoutPanel panelMain;
     }
 }

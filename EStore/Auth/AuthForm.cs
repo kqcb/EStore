@@ -51,7 +51,7 @@ namespace EStore.Auth
             panelBottom.Location = new Point(panelBottom.Location.X, panelMain.Location.Y + panelMain.Height + 5);
             panel1.Height = panelMain.Height + panelBottom.Height;
             panel1.Location = new Point(panelMain.Location.X + panelMain.Width + 10, panel1.Location.Y);
-            this.Height = panel1.Height + panelBottom.Height + 40;
+            this.Height = panelMain.Height + panelBottom.Height + 60;
             this.Width = panelMain.Width + panel1.Width + 50;
 
         }

@@ -47,7 +47,7 @@ namespace EStore_Temp.ItemsView
 
             var items = EStoreContext.Items.Read();
             
-            items.ForEach(item => panelMain.Controls.Add(new ItemView(_controls, flowLayoutSelectedList , _user, item)));  
+            items.ForEach(item => panelMain.Controls.Add(new ItemView(_controls, flowLayoutSelectedListTop , _user, item)));  
         }
         
          public void FillCartList(){

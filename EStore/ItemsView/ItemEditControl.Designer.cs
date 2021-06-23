@@ -65,7 +65,7 @@ namespace EStore_Temp.ItemsView
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(997, 744);
+            this.btnEdit.Location = new System.Drawing.Point(312, 449);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(165, 36);
             this.btnEdit.TabIndex = 9;
@@ -74,9 +74,9 @@ namespace EStore_Temp.ItemsView
             // 
             // btnSelectImage
             // 
-            this.btnSelectImage.Location = new System.Drawing.Point(832, 373);
+            this.btnSelectImage.Location = new System.Drawing.Point(61, 240);
             this.btnSelectImage.Name = "btnSelectImage";
-            this.btnSelectImage.Size = new System.Drawing.Size(165, 36);
+            this.btnSelectImage.Size = new System.Drawing.Size(150, 36);
             this.btnSelectImage.TabIndex = 8;
             this.btnSelectImage.Text = "Select Image";
             this.btnSelectImage.Click += new System.EventHandler(this.btnSelectImage_Click);
@@ -85,7 +85,7 @@ namespace EStore_Temp.ItemsView
             // 
             this.radImage.DefaultSvgImageXml = resources.GetString("radImage.DefaultSvgImageXml");
             this.radImage.ImageLayout = Telerik.WinControls.UI.RadImageLayout.Stretch;
-            this.radImage.Location = new System.Drawing.Point(832, 166);
+            this.radImage.Location = new System.Drawing.Point(61, 60);
             this.radImage.Name = "radImage";
             this.radImage.Size = new System.Drawing.Size(150, 150);
             this.radImage.TabIndex = 7;
@@ -94,18 +94,18 @@ namespace EStore_Temp.ItemsView
             // 
             this.flowLayoutPanel1.Controls.Add(this.radLabel1);
             this.flowLayoutPanel1.Controls.Add(this.txtName);
-            this.flowLayoutPanel1.Controls.Add(this.radLabel3);
-            this.flowLayoutPanel1.Controls.Add(this.drlBrand);
-            this.flowLayoutPanel1.Controls.Add(this.radLabel4);
-            this.flowLayoutPanel1.Controls.Add(this.txtUnitPrice);
-            this.flowLayoutPanel1.Controls.Add(this.radLabel6);
-            this.flowLayoutPanel1.Controls.Add(this.drlCategory);
             this.flowLayoutPanel1.Controls.Add(this.radLabel7);
             this.flowLayoutPanel1.Controls.Add(this.txtDescription);
+            this.flowLayoutPanel1.Controls.Add(this.radLabel4);
+            this.flowLayoutPanel1.Controls.Add(this.txtUnitPrice);
+            this.flowLayoutPanel1.Controls.Add(this.radLabel3);
+            this.flowLayoutPanel1.Controls.Add(this.drlBrand);
+            this.flowLayoutPanel1.Controls.Add(this.radLabel6);
+            this.flowLayoutPanel1.Controls.Add(this.drlCategory);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(239, 163);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(251, 60);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(226, 382);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(226, 336);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
             // radLabel1
@@ -120,12 +120,12 @@ namespace EStore_Temp.ItemsView
             // 
             this.txtName.Location = new System.Drawing.Point(3, 27);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(150, 31);
+            this.txtName.Size = new System.Drawing.Size(209, 31);
             this.txtName.TabIndex = 1;
             // 
             // radLabel3
             // 
-            this.radLabel3.Location = new System.Drawing.Point(3, 64);
+            this.radLabel3.Location = new System.Drawing.Point(3, 186);
             this.radLabel3.Name = "radLabel3";
             this.radLabel3.Size = new System.Drawing.Size(35, 18);
             this.radLabel3.TabIndex = 0;
@@ -134,9 +134,9 @@ namespace EStore_Temp.ItemsView
             // drlBrand
             // 
             this.drlBrand.DropDownAnimationEnabled = true;
-            this.drlBrand.Location = new System.Drawing.Point(3, 88);
+            this.drlBrand.Location = new System.Drawing.Point(3, 210);
             this.drlBrand.Name = "drlBrand";
-            this.drlBrand.Size = new System.Drawing.Size(187, 31);
+            this.drlBrand.Size = new System.Drawing.Size(209, 31);
             this.drlBrand.TabIndex = 2;
             this.drlBrand.Text = "Select Brand";
             // 
@@ -152,12 +152,12 @@ namespace EStore_Temp.ItemsView
             // 
             this.txtUnitPrice.Location = new System.Drawing.Point(3, 149);
             this.txtUnitPrice.Name = "txtUnitPrice";
-            this.txtUnitPrice.Size = new System.Drawing.Size(150, 31);
+            this.txtUnitPrice.Size = new System.Drawing.Size(209, 31);
             this.txtUnitPrice.TabIndex = 1;
             // 
             // radLabel6
             // 
-            this.radLabel6.Location = new System.Drawing.Point(3, 186);
+            this.radLabel6.Location = new System.Drawing.Point(3, 247);
             this.radLabel6.Name = "radLabel6";
             this.radLabel6.Size = new System.Drawing.Size(51, 18);
             this.radLabel6.TabIndex = 0;
@@ -166,15 +166,15 @@ namespace EStore_Temp.ItemsView
             // drlCategory
             // 
             this.drlCategory.DropDownAnimationEnabled = true;
-            this.drlCategory.Location = new System.Drawing.Point(3, 210);
+            this.drlCategory.Location = new System.Drawing.Point(3, 271);
             this.drlCategory.Name = "drlCategory";
-            this.drlCategory.Size = new System.Drawing.Size(187, 31);
+            this.drlCategory.Size = new System.Drawing.Size(209, 31);
             this.drlCategory.TabIndex = 0;
             this.drlCategory.Text = "Select Category";
             // 
             // radLabel7
             // 
-            this.radLabel7.Location = new System.Drawing.Point(3, 247);
+            this.radLabel7.Location = new System.Drawing.Point(3, 64);
             this.radLabel7.Name = "radLabel7";
             this.radLabel7.Size = new System.Drawing.Size(63, 18);
             this.radLabel7.TabIndex = 0;
@@ -182,9 +182,9 @@ namespace EStore_Temp.ItemsView
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(3, 271);
+            this.txtDescription.Location = new System.Drawing.Point(3, 88);
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(150, 31);
+            this.txtDescription.Size = new System.Drawing.Size(209, 31);
             this.txtDescription.TabIndex = 1;
             // 
             // radLabel2
@@ -209,7 +209,7 @@ namespace EStore_Temp.ItemsView
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.radLabel2);
             this.Name = "ItemEditControl";
-            this.Size = new System.Drawing.Size(1400, 943);
+            this.Size = new System.Drawing.Size(536, 560);
             ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSelectImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radImage)).EndInit();

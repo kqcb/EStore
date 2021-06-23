@@ -44,42 +44,46 @@ namespace EStore_Temp.ItemsView
             this.flowLayoutPanel1.Controls.Add(this.lblName);
             this.flowLayoutPanel1.Controls.Add(this.lblPrice);
             this.flowLayoutPanel1.Controls.Add(this.btnClear);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(277, 70);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(409, 70);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // lblIndex
             // 
-            this.lblIndex.AutoSize = true;
-            this.lblIndex.Location = new System.Drawing.Point(3, 0);
+            this.lblIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIndex.Location = new System.Drawing.Point(10, 20);
+            this.lblIndex.Margin = new System.Windows.Forms.Padding(10, 20, 10, 0);
             this.lblIndex.Name = "lblIndex";
-            this.lblIndex.Size = new System.Drawing.Size(48, 20);
+            this.lblIndex.Size = new System.Drawing.Size(50, 31);
             this.lblIndex.TabIndex = 0;
             this.lblIndex.Text = "Index";
+            this.lblIndex.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblName
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(57, 0);
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(83, 20);
+            this.lblName.Margin = new System.Windows.Forms.Padding(13, 20, 10, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(51, 20);
+            this.lblName.Size = new System.Drawing.Size(100, 31);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Name";
             // 
             // lblPrice
             // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(114, 0);
+            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.Location = new System.Drawing.Point(201, 20);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(8, 20, 10, 0);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(44, 20);
+            this.lblPrice.Size = new System.Drawing.Size(100, 31);
             this.lblPrice.TabIndex = 2;
             this.lblPrice.Text = "Price";
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(164, 3);
+            this.btnClear.Location = new System.Drawing.Point(316, 15);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(5, 15, 5, 0);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(58, 36);
             this.btnClear.TabIndex = 3;
@@ -92,9 +96,8 @@ namespace EStore_Temp.ItemsView
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "ItemSelectedControl";
-            this.Size = new System.Drawing.Size(277, 70);
+            this.Size = new System.Drawing.Size(460, 70);
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClear)).EndInit();
             this.ResumeLayout(false);
 
