@@ -117,7 +117,6 @@ namespace EStore_Temp.ItemsView
             // 
             // radImage
             // 
-            this.radImage.DefaultSvgImageXml = resources.GetString("radImage.DefaultSvgImageXml");
             this.radImage.Location = new System.Drawing.Point(85, 46);
             this.radImage.Name = "radImage";
             this.radImage.Size = new System.Drawing.Size(150, 150);

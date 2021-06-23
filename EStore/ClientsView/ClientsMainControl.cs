@@ -37,13 +37,9 @@ namespace EStore.ClientsView
 
         }
 
-     
         private void btnToExcel_Click(object sender, EventArgs e)
         {
-            User user = new User();
-
-            Services<User> service = new Services<User>();
-            service.ToExcel(user);
+            EStoreContext.Users.ToExcel();
         }
     }
 }
