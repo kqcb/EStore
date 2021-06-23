@@ -1,5 +1,5 @@
 ﻿
-namespace EStore.ItemsView
+namespace EStore_Temp.ItemsView
 {
     partial class ItemsMainControl
     {
@@ -23,112 +23,234 @@ namespace EStore.ItemsView
 
         #region Component Designer generated code
 
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.tileCreate = new MetroFramework.Controls.MetroTile();
-            this.dgItems = new MetroFramework.Controls.MetroGrid();
-            this.tileCart = new MetroFramework.Controls.MetroTile();
-            ((System.ComponentModel.ISupportInitialize)(this.dgItems)).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnNew = new Telerik.WinControls.UI.RadButton();
+            this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
+            this.uspItemReadBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eStoreDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.radPanel3 = new Telerik.WinControls.UI.RadPanel();
+            flowLayoutSelectedList = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnCancel = new Telerik.WinControls.UI.RadButton();
+            this.btnMakeOrder = new Telerik.WinControls.UI.RadButton();
+            this.radPanel4 = new Telerik.WinControls.UI.RadPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
+            this.radPanel1.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnNew)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uspItemReadBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eStoreDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel3)).BeginInit();
+            this.radPanel3.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
+            this.flowLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMakeOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel4)).BeginInit();
+            this.radPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tileCreate
+            // radPanel1
             // 
-            this.tileCreate.ActiveControl = null;
-            this.tileCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tileCreate.Location = new System.Drawing.Point(460, 59);
-            this.tileCreate.Name = "tileCreate";
-            this.tileCreate.Size = new System.Drawing.Size(105, 44);
-            this.tileCreate.Style = MetroFramework.MetroColorStyle.Green;
-            this.tileCreate.TabIndex = 7;
-            this.tileCreate.Text = "Create";
-            this.tileCreate.UseSelectable = true;
-            this.tileCreate.UseStyleColors = true;
-            this.tileCreate.UseTileImage = true;
-            this.tileCreate.Click += new System.EventHandler(this.tileCreate_Click);
+            this.radPanel1.Controls.Add(this.flowLayoutPanel2);
+            this.radPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radPanel1.Location = new System.Drawing.Point(0, 0);
+            this.radPanel1.Name = "radPanel1";
+            this.radPanel1.Size = new System.Drawing.Size(1252, 79);
+            this.radPanel1.TabIndex = 0;
             // 
-            // dgItems
+            // flowLayoutPanel2
             // 
-            this.dgItems.AllowUserToAddRows = false;
-            this.dgItems.AllowUserToDeleteRows = false;
-            this.dgItems.AllowUserToResizeRows = false;
-            this.dgItems.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dgItems.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgItems.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgItems.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgItems.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgItems.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgItems.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dgItems.EnableHeadersVisualStyles = false;
-            this.dgItems.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.dgItems.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgItems.Location = new System.Drawing.Point(20, 113);
-            this.dgItems.Name = "dgItems";
-            this.dgItems.ReadOnly = true;
-            this.dgItems.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgItems.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgItems.RowHeadersWidth = 51;
-            this.dgItems.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgItems.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgItems.Size = new System.Drawing.Size(527, 362);
-            this.dgItems.TabIndex = 9;
-            this.dgItems.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgItems_CellClick);
-            this.dgItems.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgItems_CellContentClick);
-            this.dgItems.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgItems_CellDoubleClick);
+            this.flowLayoutPanel2.Controls.Add(this.btnNew);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Padding = new System.Windows.Forms.Padding(20);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1252, 79);
+            this.flowLayoutPanel2.TabIndex = 0;
             // 
-            // tileCart
+            // btnNew
             // 
-            this.tileCart.ActiveControl = null;
-            this.tileCart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tileCart.Location = new System.Drawing.Point(335, 59);
-            this.tileCart.Name = "tileCart";
-            this.tileCart.Size = new System.Drawing.Size(102, 44);
-            this.tileCart.TabIndex = 10;
-            this.tileCart.Text = "Cart";
-            this.tileCart.UseSelectable = true;
-                      // 
-            // MainItemsView
+            this.btnNew.Location = new System.Drawing.Point(1044, 23);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(165, 36);
+            this.btnNew.TabIndex = 1;
+            this.btnNew.Text = "Create New";
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            // radPanel2
+            // 
+            this.radPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.radPanel2.Location = new System.Drawing.Point(0, 794);
+            this.radPanel2.Name = "radPanel2";
+            this.radPanel2.Size = new System.Drawing.Size(1252, 72);
+            this.radPanel2.TabIndex = 1;
+            // 
+            // uspItemReadBindingSource
+            // 
+            this.uspItemReadBindingSource.DataMember = "usp_Item_Read";
+            // 
+            // eStoreDataSet1
+            // 
+            // 
+            // eStoreDataSet
+            // 
+            // 
+            // eStoreDataSetBindingSource
+            // 
+            this.eStoreDataSetBindingSource.Position = 0;
+            // 
+            // usp_Item_ReadTableAdapter
+            // 
+            // 
+            // radPanel3
+            // 
+            this.radPanel3.Controls.Add(flowLayoutSelectedList);
+            this.radPanel3.Controls.Add(this.flowLayoutPanel3);
+            this.radPanel3.Controls.Add(this.flowLayoutPanel5);
+            this.radPanel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.radPanel3.Location = new System.Drawing.Point(897, 79);
+            this.radPanel3.Name = "radPanel3";
+            this.radPanel3.Size = new System.Drawing.Size(355, 715);
+            this.radPanel3.TabIndex = 2;
+            // 
+            // flowLayoutSelectedList
+            // 
+            flowLayoutSelectedList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            flowLayoutSelectedList.Dock = System.Windows.Forms.DockStyle.Fill;
+            flowLayoutSelectedList.Location = new System.Drawing.Point(0, 96);
+            flowLayoutSelectedList.Name = "flowLayoutSelectedList";
+            flowLayoutSelectedList.Size = new System.Drawing.Size(355, 549);
+            flowLayoutSelectedList.TabIndex = 6;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutPanel3.Controls.Add(this.radLabel1);
+            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(355, 96);
+            this.flowLayoutPanel3.TabIndex = 3;
+            // 
+            // radLabel1
+            // 
+            this.radLabel1.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.radLabel1.Location = new System.Drawing.Point(70, 23);
+            this.radLabel1.Margin = new System.Windows.Forms.Padding(70, 3, 3, 3);
+            this.radLabel1.Name = "radLabel1";
+            this.radLabel1.Size = new System.Drawing.Size(188, 41);
+            this.radLabel1.TabIndex = 1;
+            this.radLabel1.Text = "Shopping Cart";
+            // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutPanel5.Controls.Add(this.btnCancel);
+            this.flowLayoutPanel5.Controls.Add(this.btnMakeOrder);
+            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 645);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(355, 70);
+            this.flowLayoutPanel5.TabIndex = 5;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(13, 3);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(161, 63);
+            this.btnCancel.TabIndex = 0;
+            this.btnCancel.Text = "Cancel";
+            // 
+            // btnMakeOrder
+            // 
+            this.btnMakeOrder.Location = new System.Drawing.Point(180, 3);
+            this.btnMakeOrder.Name = "btnMakeOrder";
+            this.btnMakeOrder.Size = new System.Drawing.Size(165, 63);
+            this.btnMakeOrder.TabIndex = 1;
+            this.btnMakeOrder.Text = "Make Order";
+            this.btnMakeOrder.Click += new System.EventHandler(this.btnMakeOrder_Click);
+            // 
+            // radPanel4
+            // 
+            this.radPanel4.Controls.Add(this.flowLayoutPanel1);
+            this.radPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radPanel4.Location = new System.Drawing.Point(0, 79);
+            this.radPanel4.Name = "radPanel4";
+            this.radPanel4.Size = new System.Drawing.Size(897, 715);
+            this.radPanel4.TabIndex = 3;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(897, 715);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // ItemsMainControl
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(567, 495);
-            this.Controls.Add(this.tileCart);
-            this.Controls.Add(this.dgItems);
-            this.Controls.Add(this.tileCreate);
-            this.Name = "MainItemsView";
-            this.Text = "Items";
-            ((System.ComponentModel.ISupportInitialize)(this.dgItems)).EndInit();
+            this.Controls.Add(this.radPanel4);
+            this.Controls.Add(this.radPanel3);
+            this.Controls.Add(this.radPanel2);
+            this.Controls.Add(this.radPanel1);
+            this.Name = "ItemsMainControl";
+            this.Size = new System.Drawing.Size(1252, 866);
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
+            this.radPanel1.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnNew)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uspItemReadBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eStoreDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel3)).EndInit();
+            this.radPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
+            this.flowLayoutPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMakeOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanel4)).EndInit();
+            this.radPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private MetroFramework.Controls.MetroTile tileCreate;
-        private MetroFramework.Controls.MetroGrid dgItems;
-        private MetroFramework.Controls.MetroTile tileCart;
+
+        private Telerik.WinControls.UI.RadPanel radPanel1;
+        private Telerik.WinControls.UI.RadPanel radPanel2;
+        private System.Windows.Forms.BindingSource uspItemReadBindingSource;
+        private System.Windows.Forms.BindingSource eStoreDataSetBindingSource;
+        private Telerik.WinControls.UI.RadPanel radPanel3;
+        private Telerik.WinControls.UI.RadPanel radPanel4;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private Telerik.WinControls.UI.RadLabel radLabel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        private Telerik.WinControls.UI.RadButton btnCancel;
+        private Telerik.WinControls.UI.RadButton btnMakeOrder;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private Telerik.WinControls.UI.RadButton btnNew;
+        private static System.Windows.Forms.FlowLayoutPanel flowLayoutSelectedList;
     }
 }

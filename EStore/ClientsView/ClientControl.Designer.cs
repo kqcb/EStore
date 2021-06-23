@@ -1,5 +1,5 @@
 ﻿
-namespace EStore_Temp.ClientsView
+namespace EStore.ClientsView
 {
     partial class ClientControl
     {

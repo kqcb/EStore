@@ -1,5 +1,5 @@
 ﻿
-namespace EStore.ItemsView
+namespace EStore_Temp.ItemsView
 {
     partial class ItemDetailsControl
     {
@@ -29,8 +29,16 @@ namespace EStore.ItemsView
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // ItemDetailsControl
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Name = "ItemDetailsControl";
+            this.Size = new System.Drawing.Size(581, 642);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

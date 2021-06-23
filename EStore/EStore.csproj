@@ -1,21 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2ADBA982-0012-46AE-A136-4C46CAC42ED3}</ProjectGuid>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE3D4B79-21F7-4AED-8A3D-877129887AE0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EStore</RootNamespace>
     <AssemblyName>EStore</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,8 +25,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,36 +34,38 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>EStore.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FastMember, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FastMember.1.5.0\lib\net461\FastMember.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Telerik.WinControls, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
       <HintPath>..\lib\RCWF\2021.2.615.40.Trial\Telerik.WinControls.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.WinControls.Themes.CrystalDark, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
-      <HintPath>..\lib\RCWF\2021.2.615.40.Trial\Telerik.WinControls.Themes.CrystalDark.dll</HintPath>
+    <Reference Include="Telerik.WinControls.GridView, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.615.40.Trial\Telerik.WinControls.GridView.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.WinControls.UI, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
@@ -93,35 +96,29 @@
     <Compile Include="Auth\SignUpControl.Designer.cs">
       <DependentUpon>SignUpControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="CartView\CartMainControl.cs">
+    <Compile Include="ClientsView\ClientControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CartView\CartMainControl.Designer.cs">
-      <DependentUpon>CartMainControl.cs</DependentUpon>
+    <Compile Include="ClientsView\ClientControl.Designer.cs">
+      <DependentUpon>ClientControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="CartView\MakeOrderControl.cs">
+    <Compile Include="ClientsView\ClientCreateControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CartView\MakeOrderControl.Designer.cs">
-      <DependentUpon>MakeOrderControl.cs</DependentUpon>
+    <Compile Include="ClientsView\ClientCreateControl.Designer.cs">
+      <DependentUpon>ClientCreateControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientsView\ClientsCreate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClientsView\ClientsCreate.Designer.cs">
-      <DependentUpon>ClientsCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClientsView\ClientsDetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClientsView\ClientsDetails.Designer.cs">
-      <DependentUpon>ClientsDetails.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClientsView\ClientProfileControl.cs">
+    <Compile Include="ClientsView\ClientDetailsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ClientsView\ClientProfileControl.Designer.cs">
-      <DependentUpon>ClientProfileControl.cs</DependentUpon>
+    <Compile Include="ClientsView\ClientDetailsControl.Designer.cs">
+      <DependentUpon>ClientDetailsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsView\ClientEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientsView\ClientEditControl.Designer.cs">
+      <DependentUpon>ClientEditControl.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientsView\ClientsMainControl.cs">
       <SubType>UserControl</SubType>
@@ -129,18 +126,17 @@
     <Compile Include="ClientsView\ClientsMainControl.Designer.cs">
       <DependentUpon>ClientsMainControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Utils\Exceptions\FieldsNotFilledException.cs" />
-    <Compile Include="ItemsView\ItemDetails.cs">
-      <SubType>Form</SubType>
+    <Compile Include="DashboardView\DashboardMainControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ItemsView\ItemDetails.Designer.cs">
-      <DependentUpon>ItemDetails.cs</DependentUpon>
+    <Compile Include="DashboardView\DashboardMainControl.Designer.cs">
+      <DependentUpon>DashboardMainControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="ItemsView\ItemsCreate.cs">
-      <SubType>Form</SubType>
+    <Compile Include="ItemsView\ItemCreateControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ItemsView\ItemsCreate.Designer.cs">
-      <DependentUpon>ItemsCreate.cs</DependentUpon>
+    <Compile Include="ItemsView\ItemCreateControl.Designer.cs">
+      <DependentUpon>ItemCreateControl.cs</DependentUpon>
     </Compile>
     <Compile Include="ItemsView\ItemDetailsControl.cs">
       <SubType>UserControl</SubType>
@@ -148,17 +144,29 @@
     <Compile Include="ItemsView\ItemDetailsControl.Designer.cs">
       <DependentUpon>ItemDetailsControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="ItemsView\ItemEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemsView\ItemEditControl.Designer.cs">
+      <DependentUpon>ItemEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsView\ItemSelectedControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemsView\ItemSelectedControl.Designer.cs">
+      <DependentUpon>ItemSelectedControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="ItemsView\ItemsMainControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ItemsView\ItemsMainControl.Designer.cs">
       <DependentUpon>ItemsMainControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\MainControl.cs">
+    <Compile Include="ItemsView\ItemView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Main\MainControl.Designer.cs">
-      <DependentUpon>MainControl.cs</DependentUpon>
+    <Compile Include="ItemsView\ItemView.Designer.cs">
+      <DependentUpon>ItemView.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\MainForm.cs">
       <SubType>Form</SubType>
@@ -166,17 +174,11 @@
     <Compile Include="Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="OrdersView\MainOrdersControl.cs">
+    <Compile Include="OrdersView\OrderControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="OrdersView\MainOrdersControl.Designer.cs">
-      <DependentUpon>MainOrdersControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CartView\OrdersCreate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CartView\OrdersCreate.Designer.cs">
-      <DependentUpon>OrdersCreate.cs</DependentUpon>
+    <Compile Include="OrdersView\OrderControl.Designer.cs">
+      <DependentUpon>OrderControl.cs</DependentUpon>
     </Compile>
     <Compile Include="OrdersView\OrderDetailsControl.cs">
       <SubType>UserControl</SubType>
@@ -184,15 +186,34 @@
     <Compile Include="OrdersView\OrderDetailsControl.Designer.cs">
       <DependentUpon>OrderDetailsControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="OrdersView\OrdersDetails.cs">
-      <SubType>Form</SubType>
+    <Compile Include="OrdersView\OrderDetailsMainControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="OrdersView\OrdersDetails.Designer.cs">
-      <DependentUpon>OrdersDetails.cs</DependentUpon>
+    <Compile Include="OrdersView\OrderDetailsMainControl.Designer.cs">
+      <DependentUpon>OrderDetailsMainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersView\OrderEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrdersView\OrderEditControl.Designer.cs">
+      <DependentUpon>OrderEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersView\OrdersMainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrdersView\OrdersMainControl.Designer.cs">
+      <DependentUpon>OrdersMainControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShoppingCartView\ShoppingCartMainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShoppingCartView\ShoppingCartMainControl.Designer.cs">
+      <DependentUpon>ShoppingCartMainControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utils\Common.cs" />
+    <Compile Include="Utils\Exceptions\FieldsNotFilledException.cs" />
     <EmbeddedResource Include="Auth\AuthForm.resx">
       <DependentUpon>AuthForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,38 +223,50 @@
     <EmbeddedResource Include="Auth\SignUpControl.resx">
       <DependentUpon>SignUpControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientsView\ClientsCreate.resx">
-      <DependentUpon>ClientsCreate.cs</DependentUpon>
+    <EmbeddedResource Include="ClientsView\ClientControl.resx">
+      <DependentUpon>ClientControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientsView\ClientsDetails.resx">
-      <DependentUpon>ClientsDetails.cs</DependentUpon>
+    <EmbeddedResource Include="ClientsView\ClientEditControl.resx">
+      <DependentUpon>ClientEditControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientsView\ClientsMainControl.resx">
       <DependentUpon>ClientsMainControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ItemsView\ItemDetails.resx">
-      <DependentUpon>ItemDetails.cs</DependentUpon>
+    <EmbeddedResource Include="ItemsView\ItemCreateControl.resx">
+      <DependentUpon>ItemCreateControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ItemsView\ItemsCreate.resx">
-      <DependentUpon>ItemsCreate.cs</DependentUpon>
+    <EmbeddedResource Include="ItemsView\ItemDetailsControl.resx">
+      <DependentUpon>ItemDetailsControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\MainControl.resx">
-      <DependentUpon>MainControl.cs</DependentUpon>
+    <EmbeddedResource Include="ItemsView\ItemEditControl.resx">
+      <DependentUpon>ItemEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsView\ItemSelectedControl.resx">
+      <DependentUpon>ItemSelectedControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsView\ItemsMainControl.resx">
+      <DependentUpon>ItemsMainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsView\ItemView.resx">
+      <DependentUpon>ItemView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OrdersView\MainOrdersControl.resx">
-      <DependentUpon>MainOrdersControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CartView\OrdersCreate.resx">
-      <DependentUpon>OrdersCreate.cs</DependentUpon>
+    <EmbeddedResource Include="OrdersView\OrderControl.resx">
+      <DependentUpon>OrderControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrdersView\OrderDetailsControl.resx">
       <DependentUpon>OrderDetailsControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OrdersView\OrdersDetails.resx">
-      <DependentUpon>OrdersDetails.cs</DependentUpon>
+    <EmbeddedResource Include="OrdersView\OrderDetailsMainControl.resx">
+      <DependentUpon>OrderDetailsMainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersView\OrderEditControl.resx">
+      <DependentUpon>OrderEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersView\OrdersMainControl.resx">
+      <DependentUpon>OrdersMainControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -246,17 +279,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="packages.config" />
-    <None Include="Properties\DataSources\EStoreBusinessObjects.Brand.datasource" />
-    <None Include="Properties\DataSources\EStoreBusinessObjects.Category.datasource" />
-    <None Include="Properties\DataSources\EStoreBusinessObjects.City.datasource" />
-    <None Include="Properties\DataSources\EStoreBusinessObjects.Item.datasource" />
-    <None Include="Properties\DataSources\EStoreBusinessObjects.Order.datasource" />
-    <None Include="Properties\DataSources\EStoreBusinessObjects.OrderDetails.datasource" />
-    <None Include="Properties\DataSources\EStoreBusinessObjects.Role.datasource" />
-    <None Include="Properties\DataSources\EStoreBusinessObjects.User.datasource" />
-    <None Include="Properties\DataSources\EStoreBusinessObjects.Order.datasource" />
-    <None Include="Properties\DataSources\EStoreBusinessObjects.User.datasource" />
+    <EmbeddedResource Include="ShoppingCartView\ShoppingCartMainControl.resx">
+      <DependentUpon>ShoppingCartMainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -271,21 +297,24 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <!--sirinie -->
+    <None Include="Resources\72579_5454192_979319_imagei.png" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\EStoreBusinessLogicLayer\EStoreBusinessLogicLayer.csproj">
-      <Project>{c756da6d-900e-447a-82ad-9b0dc04c757e}</Project>
+      <Project>{C756DA6D-900E-447A-82AD-9B0DC04C757E}</Project>
       <Name>EStoreBusinessLogicLayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\EStoreBusinessObjects\EStoreBusinessObjects.csproj">
-      <Project>{d2430b39-41e3-405b-aae1-27c9e6676206}</Project>
+      <Project>{D2430B39-41E3-405B-AAE1-27C9E6676206}</Project>
       <Name>EStoreBusinessObjects</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EStoreDataAccessLayer\EStoreDataAccessLayer.csproj">
-      <Project>{64ed0297-221c-47be-9cd5-83df5f5d1001}</Project>
-      <Name>EStoreDataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\72579_5454192_979319_imagei.png" />
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ecommerce-website.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Estore_logo.png" />
@@ -294,25 +323,27 @@
     <None Include="Resources\Estore_logo1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cart.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\X.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\x-symbol.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\x-symbol %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\x-symbol %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\test.jpg" />
-    <None Include="Resources\ecommerce-website.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Resources\test1.png" />
+    <None Include="Resources\X.png" />
+    <None Include="Resources\x-symbol.png" />
+    <None Include="Resources\x-symbol %282%29.png" />
+    <None Include="Resources\x-symbol %281%29.png" />
     <None Include="Resources\test11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ShouldAddDPIScalingManifest="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>

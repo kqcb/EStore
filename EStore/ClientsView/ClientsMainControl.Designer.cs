@@ -23,102 +23,108 @@ namespace EStore.ClientsView
 
         #region Component Designer generated code
 
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgClients = new MetroFramework.Controls.MetroGrid();
-            this.tileCreate = new MetroFramework.Controls.MetroTile();
-            ((System.ComponentModel.ISupportInitialize)(this.dgClients)).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            this.radPanelTop = new Telerik.WinControls.UI.RadPanel();
+            this.radPanelBottom = new Telerik.WinControls.UI.RadPanel();
+            this.uspUserReadBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnToExcel = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanelTop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanelBottom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uspUserReadBindingSource)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgClients
+            // radPanelTop
             // 
-            this.dgClients.AllowUserToAddRows = false;
-            this.dgClients.AllowUserToDeleteRows = false;
-            this.dgClients.AllowUserToResizeRows = false;
-            this.dgClients.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgClients.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgClients.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgClients.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgClients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgClients.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgClients.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgClients.EnableHeadersVisualStyles = false;
-            this.dgClients.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.dgClients.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgClients.Location = new System.Drawing.Point(23, 65);
-            this.dgClients.Name = "dgClients";
-            this.dgClients.ReadOnly = true;
-            this.dgClients.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgClients.RowHeadersWidth = 102;
-            this.dgClients.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgClients.Size = new System.Drawing.Size(1219, 957);
-            this.dgClients.TabIndex = 11;
+            this.radPanelTop.BackColor = System.Drawing.Color.DarkGray;
+            this.radPanelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radPanelTop.Location = new System.Drawing.Point(0, 0);
+            this.radPanelTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radPanelTop.Name = "radPanelTop";
             // 
-            // tileCreate
             // 
-            this.tileCreate.ActiveControl = null;
-            this.tileCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tileCreate.Location = new System.Drawing.Point(1122, 15);
-            this.tileCreate.Name = "tileCreate";
-            this.tileCreate.Size = new System.Drawing.Size(105, 44);
-            this.tileCreate.Style = MetroFramework.MetroColorStyle.Green;
-            this.tileCreate.TabIndex = 10;
-            this.tileCreate.Text = "Create";
-            this.tileCreate.UseSelectable = true;
-            this.tileCreate.UseStyleColors = true;
-            this.tileCreate.UseTileImage = true;
-            this.tileCreate.Click += new System.EventHandler(this.tileCreate_Click);
+            // 
+            this.radPanelTop.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 200, 100);
+            this.radPanelTop.Size = new System.Drawing.Size(809, 54);
+            this.radPanelTop.TabIndex = 0;
+            // 
+            // radPanelBottom
+            // 
+            this.radPanelBottom.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.radPanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.radPanelBottom.Location = new System.Drawing.Point(0, 477);
+            this.radPanelBottom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radPanelBottom.Name = "radPanelBottom";
+            // 
+            // 
+            // 
+            this.radPanelBottom.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 200, 100);
+            this.radPanelBottom.Size = new System.Drawing.Size(809, 46);
+            this.radPanelBottom.TabIndex = 1;
+            // 
+            // uspUserReadBindingSource
+            // 
+            this.uspUserReadBindingSource.DataMember = "usp_User_Read";
+            // 
+            // eStoreDataSet
+            // 
+            // 
+            // usp_User_ReadTableAdapter
+            // 
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.btnToExcel);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 54);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(809, 423);
+            this.flowLayoutPanel1.TabIndex = 2;
+            // 
+            // btnToExcel
+            // 
+            this.btnToExcel.Location = new System.Drawing.Point(13, 13);
+            this.btnToExcel.Name = "btnToExcel";
+            this.btnToExcel.Size = new System.Drawing.Size(75, 23);
+            this.btnToExcel.TabIndex = 0;
+            this.btnToExcel.Text = "To Excel";
+            this.btnToExcel.UseVisualStyleBackColor = true;
+            this.btnToExcel.Click += new System.EventHandler(this.btnToExcel_Click);
             // 
             // ClientsMainControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dgClients);
-            this.Controls.Add(this.tileCreate);
-            this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.radPanelBottom);
+            this.Controls.Add(this.radPanelTop);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ClientsMainControl";
-            this.Padding = new System.Windows.Forms.Padding(23, 65, 23, 22);
-            this.Size = new System.Drawing.Size(1265, 1044);
-            ((System.ComponentModel.ISupportInitialize)(this.dgClients)).EndInit();
+            this.Size = new System.Drawing.Size(809, 523);
+            ((System.ComponentModel.ISupportInitialize)(this.radPanelTop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radPanelBottom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uspUserReadBindingSource)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private MetroFramework.Controls.MetroGrid dgClients;
-        private MetroFramework.Controls.MetroTile tileCreate;
+        private Telerik.WinControls.UI.RadPanel radPanelTop;
+        private Telerik.WinControls.UI.RadPanel radPanelBottom;
+        private System.Windows.Forms.BindingSource uspUserReadBindingSource;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button btnToExcel;
     }
 }

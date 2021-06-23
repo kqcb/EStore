@@ -33,8 +33,6 @@ namespace EStore_Temp.OrdersView
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
             this.uspOrderReadBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.eStoreDataSet1 = new EStore_Temp.EStoreDataSet1();
-            this.usp_Order_ReadTableAdapter = new EStore_Temp.EStoreDataSet1TableAdapters.usp_Order_ReadTableAdapter();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
@@ -46,7 +44,6 @@ namespace EStore_Temp.OrdersView
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uspOrderReadBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eStoreDataSet1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
@@ -76,16 +73,12 @@ namespace EStore_Temp.OrdersView
             // uspOrderReadBindingSource
             // 
             this.uspOrderReadBindingSource.DataMember = "usp_Order_Read";
-            this.uspOrderReadBindingSource.DataSource = this.eStoreDataSet1;
             // 
             // eStoreDataSet1
             // 
-            this.eStoreDataSet1.DataSetName = "EStoreDataSet1";
-            this.eStoreDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // usp_Order_ReadTableAdapter
             // 
-            this.usp_Order_ReadTableAdapter.ClearBeforeFill = true;
             // 
             // flowLayoutPanel1
             // 
@@ -183,7 +176,6 @@ namespace EStore_Temp.OrdersView
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uspOrderReadBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eStoreDataSet1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
@@ -201,8 +193,6 @@ namespace EStore_Temp.OrdersView
         private Telerik.WinControls.UI.RadPanel radPanel1;
         private Telerik.WinControls.UI.RadPanel radPanel2;
         private System.Windows.Forms.BindingSource uspOrderReadBindingSource;
-        private EStoreDataSet1 eStoreDataSet1;
-        private EStoreDataSet1TableAdapters.usp_Order_ReadTableAdapter usp_Order_ReadTableAdapter;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private Telerik.WinControls.UI.RadLabel radLabel1;

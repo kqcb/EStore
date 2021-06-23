@@ -1,4 +1,5 @@
-﻿using EStoreBusinessLogicLayer;
+﻿using EStore.Utils;
+using EStoreBusinessLogicLayer;
 using EStoreBusinessObjects;
 using System;
 using System.Collections.Generic;
@@ -9,106 +10,107 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.Control;
 
-namespace EStore.ItemsView
+namespace EStore_Temp.ItemsView
 {
     public partial class ItemsMainControl : UserControl
     {
-       
-        private User _user;
-        private static List<Item> _selectedItems;
-        public ItemsMainControl(User user)
+        private readonly ControlCollection _controls;
+        private readonly User _user;
+        public static List<Item> selectedItems = new List<Item>(); 
+
+        public ItemsMainControl(ControlCollection controls, User user)
         {
+            this._controls = controls;
+            this._user = user;
             InitializeComponent();
-            _selectedItems = new List<Item>();
-            _user = user;
-            CheckForAdmin(true);
 
-            ShowData();
-        }
-
-        private void tileCreate_Click(object sender, EventArgs e)
-        {
-            new ItemsView.ItemsCreate().Show();
-        }
-
-        private void dgItems_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int itemId = Convert.ToInt32(dgItems.Rows[e.RowIndex].Cells[1].Value.ToString());
-            Item item = EStoreContext.Items.Read(itemId);
-            new ItemsView.ItemDetails(item).Show();
-        }
-
-        private void CheckForAdmin(bool isAdmin)
-        {
-            if (!isAdmin)
+            if (user.Role.Id == 1)
             {
-                tileCreate.Visible = false;
+                radPanel3.Visible = true;
+                btnNew.Visible = true;
             }
-        }
-
-        private void ShowData()
-        {
-            DataTable itemTable = EStoreContext.Items.ToDataTable();
-            dgItems.DataSource = itemTable;
-
-            DataGridViewCheckBoxColumn chx = new();
-            chx.TrueValue = true;
-            chx.FalseValue = false;
-
-            chx.Width = 100;
-            dgItems.Columns.Add(chx);
-
-            dgItems.Columns[dgItems.ColumnCount - 1].Name = "Add to Cart";
-
-        }
-
-        private void dgItems_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dgItems.CurrentCell.ColumnIndex == 0)
+            else
             {
-                dgItems.CurrentCell.Value ??= false;
-                dgItems.CurrentCell.Value = !(bool)dgItems.CurrentCell.Value;
+                btnNew.Visible = false;
+            }
 
-                int itemId = Convert.ToInt32(dgItems.Rows[e.RowIndex].Cells[1].Value.ToString());
-                Item item = EStoreContext.Items.Read(itemId);
-                if ((bool)dgItems.CurrentCell.Value)
+            FillTable();
+        }
+
+        public void FillTable()
+        {
+
+            flowLayoutPanel1.Controls.Clear();
+
+            var items = EStoreContext.Items.Read();
+            
+            items.ForEach(item => flowLayoutPanel1.Controls.Add(new ItemView(_controls, flowLayoutSelectedList , _user, item)));  
+        }
+        
+         public static void FillCartList(){
+           flowLayoutSelectedList.Controls.Clear();
+            int count = 0;
+            ItemsMainControl.selectedItems.ForEach(item =>
+            {
+                var itemSelectedControl = new ItemSelectedControl(item);
+                itemSelectedControl.SetIndex(++count);
+                flowLayoutSelectedList.Controls.Add(itemSelectedControl);
+
+            });
+
+         }
+
+
+   
+
+        private void btnMakeOrder_Click(object sender, EventArgs e)
+        {
+            Order order = new Order()
+            {
+                User = _user,
+                City = _user.City,
+                Street = "",
+                IsPaid = false,
+                OrderDate = DateTime.Now
+            };
+
+           int id = EStoreContext.Orders.Create(order);
+
+            foreach (var item in ItemsMainControl.selectedItems)
+            {
+
+                var orderDetails = new OrderDetails()
                 {
+                    Item = item,
+                    Order = new Order() { 
+                        Id = id 
+                    },
+                    Discount = 0,
+                    Price = item.UnitPrice,
+                    Quantity = 1
+                };
 
-                    AddToList(item);
+                if(EStoreContext.OrderDetails.Create(orderDetails) != -1)
+                {
+                    MessageBox.Show("Order created succesfully");
+                } else
+                {
+                    MessageBox.Show("Order could not be created");
                 }
-                else
-                    RemovFromList(item);
-
 
             }
+
         }
 
-        private void AddToList(Item item)
+        private void btnNew_Click(object sender, EventArgs e)
         {
-            var itm = _selectedItems.FirstOrDefault(f => f.Id == item.Id);
+            var itmCreateControl = new ItemCreateControl();
 
-            if (itm is null)
-                _selectedItems.Add(item);
+            itmCreateControl.Dock = DockStyle.Fill;
+
+            Common.AddControl(_controls, itmCreateControl);
         }
-
-        private void RemovFromList(Item item)
-        {
-            var itm = _selectedItems.FirstOrDefault(f => f.Id == item.Id);
-
-            if (itm is not null)
-                _selectedItems.Remove(itm);
-        }
-
-        //private void tileCart_Click(object sender, EventArgs e)
-        //{
-        //    new CartView(_user, _selectedItems).Show();
-        //}
-
-        private void dgItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
     }
 }

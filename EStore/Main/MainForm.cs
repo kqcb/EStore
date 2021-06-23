@@ -1,95 +1,117 @@
 ﻿using System;
 using System.Windows.Forms;
-using EStore.CartView;
+using EStore.Auth;
 using EStore.ClientsView;
-using EStore.ItemsView;
-using EStore.OrdersView;
 using EStore.Utils;
+using EStore_Temp.DashboardView;
+using EStore_Temp.ItemsView;
+using EStore_Temp.OrdersView;
+using EStore_Temp.ShoppingCartView;
 using EStoreBusinessObjects;
 
-namespace EStore
+namespace EStore.Main
 {
-    public partial class MainForm : MetroFramework.Forms.MetroForm
+    public partial class MainForm : Telerik.WinControls.UI.RadForm
     {
-        private User _user;
-        private MainOrdersControl _mainOrdersControl;
         private ClientsMainControl _clientsMainControl;
-        private ClientProfileControl _clientProfileControl;
         private ItemsMainControl _itemsMainControl;
-        private CartMainControl _cartMainControl;
- 
-        private MainControl _mainControl;
+        private OrdersMainControl _ordersMainControl;
+        private ShoppingCartMainControl _shoppingCartMainControl;
+        private DashboardMainControl _dashboardMainControl;
+        private readonly User user;
+
         public MainForm(User user)
         {
             InitializeComponent();
 
-            this.WindowState = FormWindowState.Maximized;
-
-            _user = user;
-
-            IsClient(user.Role.Id == 2);
-            GoToOtherUserControl(_mainControl ??= new MainControl());
-
             btnGoBack.Visible = false;
+            _clientsMainControl = new(radPanelMain.Controls);
+            _itemsMainControl = new(radPanelMain.Controls, user);
+            _ordersMainControl = new(radPanelMain.Controls, user);
+            _shoppingCartMainControl = new();
+            _dashboardMainControl = new();
+            lblTitle.Text = "Dashboard";
+            lblUser.Text = user.Name + " " + user.LastName;
+            Common.ChangeContorl(radPanelMain.Controls, _dashboardMainControl);
+            this.user = user;
+        } 
+
+        public void ChangeTitleName()
+        {
 
         }
 
-       
-       
-        private void btnProfile_Click(object sender, EventArgs e)
-        {
-            GoToOtherUserControl(_clientProfileControl ??= new ClientProfileControl(panelMain.Controls,_user));
-        }
 
-        private void btnProducts_Click(object sender, EventArgs e)
+        private void ChangeControl(UserControl userControl)
         {
-            GoToOtherUserControl(_itemsMainControl ??= new ItemsMainControl(_user));
-        }
+            Common.ChangeContorl(radPanelMain.Controls, userControl);
 
-        private void btnOrders_Click(object sender, EventArgs e)
-        {
-            GoToOtherUserControl(_mainOrdersControl ??= new MainOrdersControl(panelMain.Controls, _user)); 
         }
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            GoToOtherUserControl(_clientsMainControl ??= new ClientsMainControl(panelMain.Controls, _user));
-        }
-
-              
-        public void GoToOtherUserControl(UserControl userControl)
-        {
             btnGoBack.Visible = true;
-            
-            Common.ChangeContorl(panelMain.Controls, userControl);
+            lblTitle.Text = "Users";
+            Common.ChangeContorl(radPanelMain.Controls, _clientsMainControl); 
+           
+        }
+
+        private void btnDashBoard_Click(object sender, EventArgs e)
+        {
+            lblTitle.Text = "Dashboard";
+            btnGoBack.Visible = false;
+            Common.ChangeContorl(radPanelMain.Controls, _dashboardMainControl); 
+        }
+
+        private void btnItems_Click(object sender, EventArgs e)
+        {
+
+            _itemsMainControl.FillTable();
+            btnGoBack.Visible = true;
+            lblTitle.Text = "Items";
+            Common.ChangeContorl(radPanelMain.Controls, _itemsMainControl); 
+        }
+
+      
+        private void btnOrders_Click(object sender, EventArgs e)
+        {
+
+            btnGoBack.Visible = true;
+            lblTitle.Text = "Orders";
+            _ordersMainControl.FillList();
+            Common.ChangeContorl(radPanelMain.Controls, _ordersMainControl);
+        }
+
+        private void btnShoppingCart_Click(object sender, EventArgs e)
+        {
+
+            btnGoBack.Visible = true;
+            Common.ChangeContorl(radPanelMain.Controls, _shoppingCartMainControl); 
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+            new AuthForm().Show();
 
         }
-       
+
         private void btnGoBack_Click(object sender, EventArgs e)
         {
-            Common.RemoveControl(panelMain.Controls);
+            Common.RemoveControl(radPanelMain.Controls);
 
-            if (panelMain.Controls.Count < 1)
+            if (radPanelMain.Controls.Count < 1)
             {
-                GoToOtherUserControl(_mainControl);
+                Common.ChangeContorl(radPanelMain.Controls, _dashboardMainControl);
                 btnGoBack.Visible = false;
             }
         }
 
-        private void IsClient(bool isClient)
+        private void btnSignOut_Click(object sender, EventArgs e)
         {
-           btnCart.Visible = isClient;
-           btnUsers.Visible = !isClient;
-        }
-
-        private void btnCart_Click(object sender, EventArgs e)
-        {
-            GoToOtherUserControl(_cartMainControl);
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
+            this.Close();
+            Application.Restart();
         }
     }
 }

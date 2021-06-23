@@ -1,15 +1,8 @@
-﻿using EStoreBusinessObjects;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
+using EStoreBusinessObjects;
 
-namespace EStore_Temp.ClientsView
+namespace EStore.ClientsView
 {
     public partial class ClientEditControl : UserControl
     {

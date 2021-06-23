@@ -2,16 +2,9 @@
 using EStoreBusinessLogicLayer;
 using EStoreBusinessObjects;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EStore_Temp.ClientsView
+namespace EStore.ClientsView
 {
     public partial class ClientControl : UserControl
     {
@@ -27,7 +20,7 @@ namespace EStore_Temp.ClientsView
 
             radImage.BackgroundImage = Common.ToImage(user.Image);
 
-            radImage.Image = EStore_Temp.Properties.Resources.Estore_logo;
+            radImage.Image = EStore.Properties.Resources.Estore_logo;
             lblRole.Text = user.Role.Name;
             lblEmail.Text = user.Email;
         }

@@ -14,30 +14,39 @@ namespace EStore.ClientsView
 {
     public partial class ClientsMainControl : UserControl
     {
-        private User _admin;
-        private ControlCollection _controlCollection;
-        public ClientsMainControl(ControlCollection controlCollection,  User admin)
+        private readonly ControlCollection _controls;
+
+        public ClientsMainControl(ControlCollection controls)
         {
-            _admin = admin;
-            _controlCollection = controlCollection;
             InitializeComponent();
+            this._controls = controls;
             FillTable();
         }
 
-        private void tileBack_Click(object sender, EventArgs e)
+
+        public void FillTable()
+        {
+            // DataTable itemTable = EStoreContext.Users.ToDataTable();
+
+            EStoreContext.Users.Read().ForEach(user =>
+            {
+                var clientControl = new ClientControl(_controls, user);
+                flowLayoutPanel1.Controls.Add(clientControl);
+            });
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void tileCreate_Click(object sender, EventArgs e)
+        private void btnToExcel_Click(object sender, EventArgs e)
         {
+            User user = new User();
 
-        }
-
-        private void FillTable()
-        {
-                    DataTable itemTable = EStoreContext.Users.ToDataTable();
-                dgClients.DataSource = itemTable;
+            Services<User> service = new Services<User>();
+            service.ToExcel(user);
         }
     }
 }

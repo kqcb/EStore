@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,13 +16,17 @@ namespace EStore.Utils
 
         public static void ChangeContorl(ControlCollection controls, UserControl control)
         {
+
             controls.Clear();
+            control.Focus();
+            control.BringToFront();
             control.Dock = DockStyle.Fill;
             controls.Add(control);
         }
 
         public static void AddControl(ControlCollection controls, UserControl control)
         {
+            control.Dock = DockStyle.Fill;
 
             controls.Add(control);
 
@@ -40,6 +47,25 @@ namespace EStore.Utils
         internal static void RemoveControl(ControlCollection controls, int index)
         {
             throw new NotImplementedException();
+        }
+
+        public static Image ToImage(byte[] bytes)
+        {
+            var memoryStream = new MemoryStream(bytes, 0, bytes.Length);
+            memoryStream.Write(bytes, 0, bytes.Length);
+            return Image.FromStream(memoryStream, true);
+        }
+
+        public static byte[] ToByteArray(Image image)
+        {
+            var ms = new MemoryStream();
+            image.Save(ms, ImageFormat.Jpeg);
+            byte[] bytes = new byte[ms.Length];
+            ms.Position = 0;
+            ms.Read(bytes, 0, bytes.Length);
+
+            return bytes;
+
         }
     }
 }
