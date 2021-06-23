@@ -35,6 +35,7 @@
             this.btnItems = new Telerik.WinControls.UI.RadButton();
             this.btnDashBoard = new Telerik.WinControls.UI.RadButton();
             this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.radPanelTop = new Telerik.WinControls.UI.RadPanel();
             this.flowLayoutTopMid = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutTopRight = new System.Windows.Forms.FlowLayoutPanel();
@@ -49,7 +50,6 @@
             this.flowLayoutTop2Left = new System.Windows.Forms.FlowLayoutPanel();
             this.radPanelMain = new Telerik.WinControls.UI.RadPanel();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogOut)).BeginInit();
@@ -59,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnDashBoard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
             this.radPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanelTop)).BeginInit();
             this.radPanelTop.SuspendLayout();
             this.flowLayoutTopRight.SuspendLayout();
@@ -69,7 +70,6 @@
             this.radPanelTop2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanelMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,8 +98,10 @@
             this.btnLogOut.TabIndex = 8;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnLogOut.GetChildAt(0))).Text = "Log Out";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnLogOut.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnLogOut.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
+            ((Telerik.WinControls.Primitives.BorderPrimitive)(this.btnLogOut.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             // 
             // btnOrders
             // 
@@ -112,8 +114,11 @@
             this.btnOrders.TabIndex = 7;
             this.btnOrders.Text = "Orders";
             this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnOrders.GetChildAt(0))).Text = "Orders";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnOrders.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnOrders.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
+            ((Telerik.WinControls.Primitives.BorderPrimitive)(this.btnOrders.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            ((Telerik.WinControls.Primitives.FocusPrimitive)(this.btnOrders.GetChildAt(0).GetChildAt(3))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
             // 
             // btnUsers
             // 
@@ -126,8 +131,10 @@
             this.btnUsers.TabIndex = 6;
             this.btnUsers.Text = "Users";
             this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnUsers.GetChildAt(0))).Text = "Users";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnUsers.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnUsers.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
+            ((Telerik.WinControls.Primitives.BorderPrimitive)(this.btnUsers.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             // 
             // btnItems
             // 
@@ -145,8 +152,10 @@
             this.btnItems.TabIndex = 5;
             this.btnItems.Text = "Items";
             this.btnItems.Click += new System.EventHandler(this.btnItems_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnItems.GetChildAt(0))).Text = "Items";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnItems.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnItems.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
+            ((Telerik.WinControls.Primitives.BorderPrimitive)(this.btnItems.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
             // 
             // btnDashBoard
             // 
@@ -159,6 +168,7 @@
             this.btnDashBoard.TabIndex = 4;
             this.btnDashBoard.Text = "DashBoard";
             this.btnDashBoard.Click += new System.EventHandler(this.btnDashBoard_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnDashBoard.GetChildAt(0))).Text = "DashBoard";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(0))).ClipDrawing = false;
@@ -166,6 +176,7 @@
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(1).GetChildAt(1))).LineLimit = false;
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(1).GetChildAt(1))).CustomFontSize = 20F;
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(1).GetChildAt(1))).Alignment = System.Drawing.ContentAlignment.MiddleCenter;
+            ((Telerik.WinControls.Primitives.BorderPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             // 
             // radPanel2
             // 
@@ -175,6 +186,17 @@
             this.radPanel2.Name = "radPanel2";
             this.radPanel2.Size = new System.Drawing.Size(226, 140);
             this.radPanel2.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::EStore.Properties.Resources.cart;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(226, 140);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // radPanelTop
             // 
@@ -306,17 +328,6 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::EStore.Properties.Resources.cart;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(226, 140);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -342,6 +353,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnDashBoard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).EndInit();
             this.radPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanelTop)).EndInit();
             this.radPanelTop.ResumeLayout(false);
             this.flowLayoutTopRight.ResumeLayout(false);
@@ -354,7 +366,6 @@
             this.radPanelTop2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radPanelMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
