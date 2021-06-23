@@ -113,5 +113,10 @@ namespace EStore_Temp.ItemsView
 
             Common.AddControl(_controls, itmCreateControl);
         }
+
+        private void btnToExcel_Click(object sender, EventArgs e)
+        {
+            EStoreContext.Items.ToExcel();
+        }
     }
 }

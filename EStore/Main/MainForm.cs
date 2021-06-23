@@ -6,7 +6,6 @@ using EStore.Utils;
 using EStore_Temp.DashboardView;
 using EStore_Temp.ItemsView;
 using EStore_Temp.OrdersView;
-using EStore_Temp.ShoppingCartView;
 using EStoreBusinessObjects;
 
 namespace EStore.Main
@@ -16,7 +15,6 @@ namespace EStore.Main
         private ClientsMainControl _clientsMainControl;
         private ItemsMainControl _itemsMainControl;
         private OrdersMainControl _ordersMainControl;
-        private ShoppingCartMainControl _shoppingCartMainControl;
         private DashboardMainControl _dashboardMainControl;
         private readonly User user;
 
@@ -28,7 +26,6 @@ namespace EStore.Main
             _clientsMainControl = new(radPanelMain.Controls);
             _itemsMainControl = new(radPanelMain.Controls, user);
             _ordersMainControl = new(radPanelMain.Controls, user);
-            _shoppingCartMainControl = new();
             _dashboardMainControl = new();
             lblTitle.Text = "Dashboard";
             lblUser.Text = "Welcome " + user.Name + " " + user.LastName;
@@ -86,7 +83,6 @@ namespace EStore.Main
         {
 
             btnGoBack.Visible = true;
-            Common.ChangeContorl(radPanelMain.Controls, _shoppingCartMainControl); 
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
