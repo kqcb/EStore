@@ -32,10 +32,8 @@ namespace EStore_Temp.ItemsView
             this.components = new System.ComponentModel.Container();
             this.btnNew = new Telerik.WinControls.UI.RadButton();
             this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
-            this.uspItemReadBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.eStoreDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.radPanel3 = new Telerik.WinControls.UI.RadPanel();
-            this.flowLayoutSelectedList = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutSelectedListTop = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
@@ -45,12 +43,17 @@ namespace EStore_Temp.ItemsView
             this.panelMain = new System.Windows.Forms.FlowLayoutPanel();
             this.panelMainTop = new System.Windows.Forms.FlowLayoutPanel();
             this.btnToExcel = new Telerik.WinControls.UI.RadButton();
+            this.uspItemReadBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eStoreDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.flowLayoutSelectedList = new System.Windows.Forms.FlowLayoutPanel();
+            this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
             ((System.ComponentModel.ISupportInitialize)(this.btnNew)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uspItemReadBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eStoreDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel3)).BeginInit();
             this.radPanel3.SuspendLayout();
+            this.flowLayoutSelectedListTop.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             this.flowLayoutPanel5.SuspendLayout();
@@ -60,6 +63,11 @@ namespace EStore_Temp.ItemsView
             this.radPanel4.SuspendLayout();
             this.panelMainTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnToExcel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uspItemReadBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eStoreDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
             this.SuspendLayout();
             // 
             // btnNew
@@ -81,13 +89,10 @@ namespace EStore_Temp.ItemsView
             this.radPanel2.Size = new System.Drawing.Size(835, 47);
             this.radPanel2.TabIndex = 1;
             // 
-            // uspItemReadBindingSource
-            // 
-            this.uspItemReadBindingSource.DataMember = "usp_Item_Read";
-            // 
             // radPanel3
             // 
             this.radPanel3.Controls.Add(this.flowLayoutSelectedList);
+            this.radPanel3.Controls.Add(this.flowLayoutSelectedListTop);
             this.radPanel3.Controls.Add(this.flowLayoutPanel3);
             this.radPanel3.Controls.Add(this.flowLayoutPanel5);
             this.radPanel3.Dock = System.Windows.Forms.DockStyle.Right;
@@ -97,7 +102,7 @@ namespace EStore_Temp.ItemsView
             this.radPanel3.Size = new System.Drawing.Size(265, 516);
             this.radPanel3.TabIndex = 2;
             // 
-            // flowLayoutSelectedList
+            // flowLayoutSelectedListTop
             // 
             this.flowLayoutSelectedList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutSelectedList.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -106,6 +111,16 @@ namespace EStore_Temp.ItemsView
             this.flowLayoutSelectedList.Name = "flowLayoutSelectedList";
             this.flowLayoutSelectedList.Size = new System.Drawing.Size(265, 407);
             this.flowLayoutSelectedList.TabIndex = 6;
+            this.flowLayoutSelectedListTop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutSelectedListTop.Controls.Add(this.radLabel2);
+            this.flowLayoutSelectedListTop.Controls.Add(this.radLabel3);
+            this.flowLayoutSelectedListTop.Controls.Add(this.radLabel4);
+            this.flowLayoutSelectedListTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutSelectedListTop.Location = new System.Drawing.Point(0, 96);
+            this.flowLayoutSelectedListTop.Name = "flowLayoutSelectedListTop";
+            this.flowLayoutSelectedListTop.Padding = new System.Windows.Forms.Padding(7);
+            this.flowLayoutSelectedListTop.Size = new System.Drawing.Size(397, 47);
+            this.flowLayoutSelectedListTop.TabIndex = 6;
             // 
             // flowLayoutPanel3
             // 
@@ -209,6 +224,51 @@ namespace EStore_Temp.ItemsView
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnToExcel.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnToExcel.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             ((Telerik.WinControls.Primitives.FocusPrimitive)(this.btnToExcel.GetChildAt(0).GetChildAt(3))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            // uspItemReadBindingSource
+            // 
+            this.uspItemReadBindingSource.DataMember = "usp_Item_Read";
+            // 
+            // flowLayoutSelectedList
+            // 
+            this.flowLayoutSelectedList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutSelectedList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutSelectedList.Location = new System.Drawing.Point(0, 143);
+            this.flowLayoutSelectedList.Name = "flowLayoutSelectedList";
+            this.flowLayoutSelectedList.Size = new System.Drawing.Size(397, 581);
+            this.flowLayoutSelectedList.TabIndex = 7;
+            // 
+            // radLabel2
+            // 
+            this.radLabel2.AutoSize = false;
+            this.radLabel2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel2.Location = new System.Drawing.Point(17, 10);
+            this.radLabel2.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
+            this.radLabel2.Name = "radLabel2";
+            this.radLabel2.Size = new System.Drawing.Size(50, 24);
+            this.radLabel2.TabIndex = 0;
+            this.radLabel2.Text = "Index";
+            // 
+            // radLabel3
+            // 
+            this.radLabel3.AutoSize = false;
+            this.radLabel3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel3.Location = new System.Drawing.Point(87, 10);
+            this.radLabel3.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
+            this.radLabel3.Name = "radLabel3";
+            this.radLabel3.Size = new System.Drawing.Size(100, 24);
+            this.radLabel3.TabIndex = 1;
+            this.radLabel3.Text = "Name";
+            // 
+            // radLabel4
+            // 
+            this.radLabel4.AutoSize = false;
+            this.radLabel4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel4.Location = new System.Drawing.Point(207, 10);
+            this.radLabel4.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
+            this.radLabel4.Name = "radLabel4";
+            this.radLabel4.Size = new System.Drawing.Size(80, 24);
+            this.radLabel4.TabIndex = 2;
+            this.radLabel4.Text = "Price";
             // 
             // ItemsMainControl
             // 
@@ -222,10 +282,9 @@ namespace EStore_Temp.ItemsView
             this.Size = new System.Drawing.Size(835, 563);
             ((System.ComponentModel.ISupportInitialize)(this.btnNew)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uspItemReadBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eStoreDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel3)).EndInit();
             this.radPanel3.ResumeLayout(false);
+            this.flowLayoutSelectedListTop.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
@@ -236,6 +295,11 @@ namespace EStore_Temp.ItemsView
             this.radPanel4.ResumeLayout(false);
             this.panelMainTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnToExcel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uspItemReadBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eStoreDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -254,7 +318,11 @@ namespace EStore_Temp.ItemsView
         private Telerik.WinControls.UI.RadButton btnMakeOrder;
         private Telerik.WinControls.UI.RadButton btnNew;
         private System.Windows.Forms.FlowLayoutPanel panelMain;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutSelectedListTop;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutSelectedList;
         private Telerik.WinControls.UI.RadButton btnToExcel;
+        private Telerik.WinControls.UI.RadLabel radLabel2;
+        private Telerik.WinControls.UI.RadLabel radLabel3;
+        private Telerik.WinControls.UI.RadLabel radLabel4;
     }
 }
