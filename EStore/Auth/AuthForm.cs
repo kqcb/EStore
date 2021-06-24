@@ -46,13 +46,13 @@ namespace EStore.Auth
 
             panelMain.Controls.Clear();
             panelMain.Controls.Add(control);
-            panelMain.Height = (control.Height) + 10;
-            panelMain.Width = (control.Width + 10);
-            panelBottom.Location = new Point(panelBottom.Location.X, panelMain.Location.Y + panelMain.Height + 5);
-            panel1.Height = panelMain.Height + panelBottom.Height;
-            panel1.Location = new Point(panelMain.Location.X + panelMain.Width + 10, panel1.Location.Y);
-            this.Height = panelMain.Height + panelBottom.Height + 60;
-            this.Width = panelMain.Width + panel1.Width + 50;
+            //panelMain.Height = (control.Height) + 10;
+            //panelMain.Width = (control.Width + 10);
+            //panelBottom.Location = new Point(panelBottom.Location.X, panelMain.Location.Y + panelMain.Height + 5);
+            //panel1.Height = panelMain.Height + panelBottom.Height;
+            //panel1.Location = new Point(panelMain.Location.X + panelMain.Width + 10, panel1.Location.Y);
+            //this.Height = panelMain.Height + panelBottom.Height + 60;
+            //this.Width = panelMain.Width + panel1.Width + 50;
 
         }
 
@@ -114,5 +114,9 @@ namespace EStore.Auth
 
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
+    }
 }
