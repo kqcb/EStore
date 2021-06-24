@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Configuration;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
@@ -7,12 +9,49 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 using static System.Windows.Forms.Control;
 
 namespace EStore.Utils
 {
     static class Common
     {
+
+        public static void ChangeLanguage(Form form, string language)
+        {
+            foreach (Control item in form.Controls)
+            {
+                ComponentResourceManager res = new ComponentResourceManager(form.GetType());
+
+                res.ApplyResources(item, item.Name, new System.Globalization.CultureInfo(language));
+            }
+        }
+
+        public static void ChangeLanguage(string key, string value)
+        {
+            var xml = new XmlDocument();
+
+            xml.Load(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile);
+
+            foreach (XmlElement item in xml.DocumentElement)
+            {
+                if(item.Name == "appSettings")
+                {
+                    foreach (XmlNode item1 in item.ChildNodes)
+                    {
+                        if(item1.Attributes[0].Value.Equals(key))
+                        {
+                            item1.Attributes[1].Value = value;
+                        }
+                    }
+                }
+            }
+
+            ConfigurationManager.RefreshSection("appSettings");
+
+            xml.Save(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile);
+            Application.Restart();
+        }
 
         public static void ChangeContorl(ControlCollection controls, UserControl control)
         {

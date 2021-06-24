@@ -118,5 +118,17 @@ namespace EStore.Auth
         {
 
         }
+
+        private void btnEnglish_Click(object sender, EventArgs e)
+        {
+          
+            Common.ChangeLanguage("language", "en");
+        }
+
+        private void btnShqip_Click(object sender, EventArgs e)
+        {
+
+            Common.ChangeLanguage("language", "sq");
+        }
     }
 }
