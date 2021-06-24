@@ -32,14 +32,20 @@ namespace EStore.Auth
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginControl));
             this.object_61eedfac_4b8e_41d1_b05b_6b39eb8e0b28 = new Telerik.WinControls.RootRadElement();
             this.object_b2069201_bb67_49e3_94eb_dcf9e6357595 = new Telerik.WinControls.RootRadElement();
-            this.txtEmail = new Telerik.WinControls.UI.RadTextBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.radPictureBox2 = new Telerik.WinControls.UI.RadPictureBox();
             this.txtPassword = new Telerik.WinControls.UI.RadTextBox();
             this.radPictureBox1 = new Telerik.WinControls.UI.RadPictureBox();
-            this.radPictureBox2 = new Telerik.WinControls.UI.RadPictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEmail)).BeginInit();
+            this.txtEmail = new Telerik.WinControls.UI.RadTextBox();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail)).BeginInit();
             this.SuspendLayout();
             // 
             // object_61eedfac_4b8e_41d1_b05b_6b39eb8e0b28
@@ -54,81 +60,49 @@ namespace EStore.Auth
             this.object_b2069201_bb67_49e3_94eb_dcf9e6357595.StretchHorizontally = true;
             this.object_b2069201_bb67_49e3_94eb_dcf9e6357595.StretchVertically = true;
             // 
-            // txtEmail
+            // tableLayoutPanel1
             // 
-            this.txtEmail.Location = new System.Drawing.Point(31, 10);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.txtEmail.Name = "txtEmail";
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(282, 460);
+            this.tableLayoutPanel1.TabIndex = 4;
             // 
+            // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(282, 230);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
             // 
-            this.txtEmail.RootElement.ShadowDepth = 0;
-            this.txtEmail.Size = new System.Drawing.Size(100, 15);
-            this.txtEmail.TabIndex = 1;
-            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtEmail.GetChildAt(0))).Text = "";
-            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtEmail.GetChildAt(0))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtEmail.GetChildAt(0).GetChildAt(0))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.LightVisualButtonElement)(this.txtEmail.GetChildAt(0).GetChildAt(3).GetChildAt(0))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.LightVisualButtonElement)(this.txtEmail.GetChildAt(0).GetChildAt(3).GetChildAt(0))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+            // panel2
             // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(30, 36);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            // 
-            // 
-            // 
-            this.txtPassword.RootElement.AccessibleDescription = "Password";
-            this.txtPassword.RootElement.ShadowDepth = 0;
-            this.txtPassword.Size = new System.Drawing.Size(101, 24);
-            this.txtPassword.TabIndex = 2;
-            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtPassword.GetChildAt(0))).Text = "";
-            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtPassword.GetChildAt(0))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtPassword.GetChildAt(0).GetChildAt(0))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.LightVisualButtonElement)(this.txtPassword.GetChildAt(0).GetChildAt(3).GetChildAt(0))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.LightVisualButtonElement)(this.txtPassword.GetChildAt(0).GetChildAt(3).GetChildAt(0))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
-            // 
-            // radPictureBox1
-            // 
-            this.radPictureBox1.AllowPanelAnimations = false;
-            this.radPictureBox1.EnableAnalytics = false;
-            this.radPictureBox1.EnableGestures = false;
-            this.radPictureBox1.Image = global::EStore.Properties.Resources.user__2_;
-            this.radPictureBox1.ImageLayout = Telerik.WinControls.UI.RadImageLayout.Stretch;
-            this.radPictureBox1.Location = new System.Drawing.Point(17, 10);
-            this.radPictureBox1.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.radPictureBox1.Name = "radPictureBox1";
-            // 
-            // 
-            // 
-            this.radPictureBox1.RootElement.ShadowDepth = 0;
-            this.radPictureBox1.ShowScrollBars = false;
-            this.radPictureBox1.Size = new System.Drawing.Size(13, 13);
-            this.radPictureBox1.SvgImageXml = null;
-            this.radPictureBox1.TabIndex = 0;
-            ((Telerik.WinControls.UI.RadPictureBoxElement)(this.radPictureBox1.GetChildAt(0))).Image = global::EStore.Properties.Resources.user__2_;
-            ((Telerik.WinControls.UI.RadPictureBoxElement)(this.radPictureBox1.GetChildAt(0))).ImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            ((Telerik.WinControls.UI.RadPictureBoxElement)(this.radPictureBox1.GetChildAt(0))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.PictureBoxCanvasElement)(this.radPictureBox1.GetChildAt(0).GetChildAt(0))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.PictureBoxHorizontalPanelElement)(this.radPictureBox1.GetChildAt(0).GetChildAt(1))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(1).GetChildAt(1))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(1).GetChildAt(2))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.PictureBoxHorizontalPanelElement)(this.radPictureBox1.GetChildAt(0).GetChildAt(2))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(2).GetChildAt(0))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(2).GetChildAt(1))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(2).GetChildAt(2))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.PictureBoxVerticalPanelElement)(this.radPictureBox1.GetChildAt(0).GetChildAt(3))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(3).GetChildAt(0))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(3).GetChildAt(1))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(3).GetChildAt(2))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.PictureBoxVerticalPanelElement)(this.radPictureBox1.GetChildAt(0).GetChildAt(4))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(4).GetChildAt(0))).ShadowDepth = 0;
-            ((Telerik.WinControls.Layouts.StackLayoutPanel)(this.radPictureBox1.GetChildAt(0).GetChildAt(5))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
-            ((Telerik.WinControls.UI.LightVisualElement)(this.radPictureBox1.GetChildAt(0).GetChildAt(5).GetChildAt(0))).ShadowDepth = 0;
-            ((Telerik.WinControls.UI.LightVisualElement)(this.radPictureBox1.GetChildAt(0).GetChildAt(5).GetChildAt(1))).ShadowDepth = 0;
+            this.panel2.Controls.Add(this.radPictureBox2);
+            this.panel2.Controls.Add(this.txtPassword);
+            this.panel2.Controls.Add(this.radPictureBox1);
+            this.panel2.Controls.Add(this.txtEmail);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 233);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(276, 224);
+            this.panel2.TabIndex = 10;
             // 
             // radPictureBox2
             // 
@@ -138,7 +112,7 @@ namespace EStore.Auth
             this.radPictureBox2.EnableGestures = false;
             this.radPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("radPictureBox2.Image")));
             this.radPictureBox2.ImageLayout = Telerik.WinControls.UI.RadImageLayout.Stretch;
-            this.radPictureBox2.Location = new System.Drawing.Point(3, 36);
+            this.radPictureBox2.Location = new System.Drawing.Point(42, 115);
             this.radPictureBox2.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.radPictureBox2.Name = "radPictureBox2";
             // 
@@ -146,9 +120,9 @@ namespace EStore.Auth
             // 
             this.radPictureBox2.RootElement.ShadowDepth = 0;
             this.radPictureBox2.ShowScrollBars = false;
-            this.radPictureBox2.Size = new System.Drawing.Size(27, 22);
+            this.radPictureBox2.Size = new System.Drawing.Size(39, 31);
             this.radPictureBox2.SvgImageXml = null;
-            this.radPictureBox2.TabIndex = 2;
+            this.radPictureBox2.TabIndex = 10;
             ((Telerik.WinControls.UI.RadPictureBoxElement)(this.radPictureBox2.GetChildAt(0))).Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             ((Telerik.WinControls.UI.RadPictureBoxElement)(this.radPictureBox2.GetChildAt(0))).ImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             ((Telerik.WinControls.UI.RadPictureBoxElement)(this.radPictureBox2.GetChildAt(0))).ShadowDepth = 0;
@@ -172,25 +146,104 @@ namespace EStore.Auth
             ((Telerik.WinControls.UI.LightVisualElement)(this.radPictureBox2.GetChildAt(0).GetChildAt(5).GetChildAt(0))).ShadowDepth = 0;
             ((Telerik.WinControls.UI.LightVisualElement)(this.radPictureBox2.GetChildAt(0).GetChildAt(5).GetChildAt(1))).ShadowDepth = 0;
             // 
+            // txtPassword
+            // 
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtPassword.Location = new System.Drawing.Point(91, 115);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            // 
+            // 
+            // 
+            this.txtPassword.RootElement.AccessibleDescription = "Password";
+            this.txtPassword.RootElement.ShadowDepth = 0;
+            this.txtPassword.Size = new System.Drawing.Size(143, 31);
+            this.txtPassword.TabIndex = 11;
+            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtPassword.GetChildAt(0))).Text = "";
+            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtPassword.GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtPassword.GetChildAt(0).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtPassword.GetChildAt(0).GetChildAt(0))).Font = new System.Drawing.Font("Segoe UI", 12F);
+            ((Telerik.WinControls.UI.LightVisualButtonElement)(this.txtPassword.GetChildAt(0).GetChildAt(3).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.LightVisualButtonElement)(this.txtPassword.GetChildAt(0).GetChildAt(3).GetChildAt(0))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+            // 
+            // radPictureBox1
+            // 
+            this.radPictureBox1.AllowPanelAnimations = false;
+            this.radPictureBox1.EnableAnalytics = false;
+            this.radPictureBox1.EnableGestures = false;
+            this.radPictureBox1.Image = global::EStore.Properties.Resources.user__2_;
+            this.radPictureBox1.ImageLayout = Telerik.WinControls.UI.RadImageLayout.Stretch;
+            this.radPictureBox1.Location = new System.Drawing.Point(42, 59);
+            this.radPictureBox1.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.radPictureBox1.Name = "radPictureBox1";
+            // 
+            // 
+            // 
+            this.radPictureBox1.RootElement.ShadowDepth = 0;
+            this.radPictureBox1.ShowScrollBars = false;
+            this.radPictureBox1.Size = new System.Drawing.Size(34, 31);
+            this.radPictureBox1.SvgImageXml = null;
+            this.radPictureBox1.TabIndex = 8;
+            ((Telerik.WinControls.UI.RadPictureBoxElement)(this.radPictureBox1.GetChildAt(0))).Image = global::EStore.Properties.Resources.user__2_;
+            ((Telerik.WinControls.UI.RadPictureBoxElement)(this.radPictureBox1.GetChildAt(0))).ImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            ((Telerik.WinControls.UI.RadPictureBoxElement)(this.radPictureBox1.GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.PictureBoxCanvasElement)(this.radPictureBox1.GetChildAt(0).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.PictureBoxHorizontalPanelElement)(this.radPictureBox1.GetChildAt(0).GetChildAt(1))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(1).GetChildAt(1))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(1).GetChildAt(2))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.PictureBoxHorizontalPanelElement)(this.radPictureBox1.GetChildAt(0).GetChildAt(2))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(2).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(2).GetChildAt(1))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(2).GetChildAt(2))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.PictureBoxVerticalPanelElement)(this.radPictureBox1.GetChildAt(0).GetChildAt(3))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(3).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(3).GetChildAt(1))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(3).GetChildAt(2))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.PictureBoxVerticalPanelElement)(this.radPictureBox1.GetChildAt(0).GetChildAt(4))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.StackLayoutElementLite)(this.radPictureBox1.GetChildAt(0).GetChildAt(4).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.Layouts.StackLayoutPanel)(this.radPictureBox1.GetChildAt(0).GetChildAt(5))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+            ((Telerik.WinControls.UI.LightVisualElement)(this.radPictureBox1.GetChildAt(0).GetChildAt(5).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.LightVisualElement)(this.radPictureBox1.GetChildAt(0).GetChildAt(5).GetChildAt(1))).ShadowDepth = 0;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtEmail.Location = new System.Drawing.Point(91, 59);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.txtEmail.Name = "txtEmail";
+            // 
+            // 
+            // 
+            this.txtEmail.RootElement.ShadowDepth = 0;
+            this.txtEmail.Size = new System.Drawing.Size(143, 31);
+            this.txtEmail.TabIndex = 9;
+            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtEmail.GetChildAt(0))).Text = "";
+            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtEmail.GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtEmail.GetChildAt(0).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtEmail.GetChildAt(0).GetChildAt(0))).Font = new System.Drawing.Font("Segoe UI", 12F);
+            ((Telerik.WinControls.UI.LightVisualButtonElement)(this.txtEmail.GetChildAt(0).GetChildAt(3).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.LightVisualButtonElement)(this.txtEmail.GetChildAt(0).GetChildAt(3).GetChildAt(0))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+            // 
             // LoginControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.radPictureBox2);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.radPictureBox1);
-            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "LoginControl";
-            this.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.Size = new System.Drawing.Size(149, 74);
+            this.Size = new System.Drawing.Size(282, 460);
             this.Load += new System.EventHandler(this.LoginControl_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.txtEmail)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -200,9 +253,12 @@ namespace EStore.Auth
         private System.Windows.Forms.Panel panel1;
         private Telerik.WinControls.RootRadElement object_61eedfac_4b8e_41d1_b05b_6b39eb8e0b28;
         private Telerik.WinControls.RootRadElement object_b2069201_bb67_49e3_94eb_dcf9e6357595;
-        private Telerik.WinControls.UI.RadTextBox txtEmail;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel2;
+        private Telerik.WinControls.UI.RadPictureBox radPictureBox2;
         private Telerik.WinControls.UI.RadTextBox txtPassword;
         private Telerik.WinControls.UI.RadPictureBox radPictureBox1;
-        private Telerik.WinControls.UI.RadPictureBox radPictureBox2;
+        private Telerik.WinControls.UI.RadTextBox txtEmail;
     }
 }
