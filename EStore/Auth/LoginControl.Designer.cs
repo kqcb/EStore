@@ -57,7 +57,6 @@ namespace EStore.Auth
             // radPictureBox1
             // 
             this.radPictureBox1.AllowPanelAnimations = false;
-            this.radPictureBox1.DefaultSvgImageXml = resources.GetString("radPictureBox1.DefaultSvgImageXml");
             this.radPictureBox1.EnableAnalytics = false;
             this.radPictureBox1.EnableGestures = false;
             this.radPictureBox1.Image = global::EStore.Properties.Resources.user__2_;
@@ -113,7 +112,6 @@ namespace EStore.Auth
             // radPictureBox2
             // 
             this.radPictureBox2.AllowPanelAnimations = false;
-            this.radPictureBox2.DefaultSvgImageXml = resources.GetString("radPictureBox2.DefaultSvgImageXml");
             this.radPictureBox2.EnableAnalytics = false;
             this.radPictureBox2.EnableGestures = false;
             this.radPictureBox2.Image = global::EStore.Properties.Resources.user__2_;

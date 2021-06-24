@@ -16,17 +16,6 @@ namespace EStore.Utils
 {
     static class Common
     {
-
-        public static void ChangeLanguage(Form form, string language)
-        {
-            foreach (Control item in form.Controls)
-            {
-                ComponentResourceManager res = new ComponentResourceManager(form.GetType());
-
-                res.ApplyResources(item, item.Name, new System.Globalization.CultureInfo(language));
-            }
-        }
-
         public static void ChangeLanguage(string key, string value)
         {
             var xml = new XmlDocument();

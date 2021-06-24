@@ -27,6 +27,7 @@ namespace EStore_Temp.OrdersView
 
         public void FillList()
         {
+            flowLayoutPanel1.Controls.Clear();
             //DataTable itemTable = EStoreContext.Orders.ToDataTable();
             //radGridView1.DataSource = itemTable;
             Color[] colors = new Color[] {

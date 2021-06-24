@@ -133,7 +133,7 @@
     <value>15, 5, 15, 5</value>
   </data>
   <data name="&gt;&gt;btnToExcel.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="radPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -146,9 +146,6 @@
   </data>
   <data name="radLabel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 37</value>
-  </data>
-  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 63</value>
   </data>
   <data name="&gt;&gt;btnToExcel.Name" xml:space="preserve">
     <value>btnToExcel</value>
@@ -165,9 +162,6 @@
   <data name="radLabel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 37</value>
   </data>
-  <data name="radLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 23</value>
-  </data>
   <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
     <value>radPanel4</value>
   </data>
@@ -175,7 +169,7 @@
     <value>165, 35</value>
   </data>
   <data name="&gt;&gt;radLabel4.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;btnNew.Name" xml:space="preserve">
     <value>btnNew</value>
@@ -189,14 +183,14 @@
   <data name="radPanel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>854, 0</value>
   </data>
+  <data name="radLabel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>15, 5, 15, 5</value>
+  </data>
   <data name="&gt;&gt;flowLayoutPanel5.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="&gt;&gt;radLabel2.Name" xml:space="preserve">
     <value>radLabel2</value>
-  </data>
-  <data name="&gt;&gt;eStoreDataSetBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="flowLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -247,16 +241,16 @@
     <value>btnMakeOrder</value>
   </data>
   <data name="&gt;&gt;radPanel2.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadPanel, Telerik.WinControls.UI, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadPanel, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;radLabel2.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;radLabel1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;btnNew.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="flowLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -272,6 +266,9 @@
   </data>
   <data name="panelMainTop.Size" type="System.Drawing.Size, System.Drawing">
     <value>768, 69</value>
+  </data>
+  <data name="radLabel4.Text" xml:space="preserve">
+    <value>Price</value>
   </data>
   <data name="radPanel4.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -334,7 +331,7 @@
     <value>panelMainTop</value>
   </data>
   <data name="&gt;&gt;btnMakeOrder.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -390,8 +387,8 @@
   <data name="flowLayoutSelectedList.Size" type="System.Drawing.Size, System.Drawing">
     <value>398, 557</value>
   </data>
-  <data name="radLabel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>15, 5, 15, 5</value>
+  <data name="radLabel3.Text" xml:space="preserve">
+    <value>Name</value>
   </data>
   <data name="flowLayoutPanel5.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 724</value>
@@ -435,8 +432,8 @@
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>1252, 866</value>
   </data>
-  <data name="radLabel4.Text" xml:space="preserve">
-    <value>Price</value>
+  <data name="radLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 23</value>
   </data>
   <data name="radLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>290, 64</value>
@@ -445,10 +442,10 @@
     <value>Cancel</value>
   </data>
   <data name="&gt;&gt;radPanel4.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadPanel, Telerik.WinControls.UI, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadPanel, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;radPanel3.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadPanel, Telerik.WinControls.UI, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadPanel, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel3.Type" xml:space="preserve">
     <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -459,8 +456,8 @@
   <data name="&gt;&gt;flowLayoutSelectedList.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="radLabel3.Text" xml:space="preserve">
-    <value>Name</value>
+  <data name="radLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -471,8 +468,8 @@
   <data name="flowLayoutSelectedList.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="&gt;&gt;flowLayoutSelectedListTop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 63</value>
   </data>
   <data name="&gt;&gt;flowLayoutSelectedListTop.Parent" xml:space="preserve">
     <value>radPanel3</value>
@@ -492,8 +489,8 @@
   <data name="&gt;&gt;radLabel1.Parent" xml:space="preserve">
     <value>flowLayoutPanel3</value>
   </data>
-  <data name="&gt;&gt;radPanel3.Name" xml:space="preserve">
-    <value>radPanel3</value>
+  <data name="&gt;&gt;flowLayoutSelectedListTop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="radLabel3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11.25pt, style=Bold</value>
@@ -504,17 +501,17 @@
   <data name="&gt;&gt;flowLayoutPanel3.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;radPanel3.Name" xml:space="preserve">
+    <value>radPanel3</value>
+  </data>
   <data name="radPanel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 794</value>
   </data>
   <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="radLabel4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 11.25pt, style=Bold</value>
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;radLabel3.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
   </data>
   <data name="&gt;&gt;radLabel4.Parent" xml:space="preserve">
     <value>flowLayoutSelectedListTop</value>
@@ -576,6 +573,9 @@
   <data name="radPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
+  <data name="panelMainTop.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>RightToLeft</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ItemsMainControl</value>
   </data>
@@ -603,8 +603,8 @@
   <data name="flowLayoutSelectedListTop.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 96</value>
   </data>
-  <data name="panelMainTop.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>RightToLeft</value>
+  <data name="&gt;&gt;eStoreDataSetBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <metadata name="uspItemReadBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>680, 17</value>

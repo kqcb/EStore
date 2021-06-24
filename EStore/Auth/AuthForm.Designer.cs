@@ -60,48 +60,39 @@ namespace EStore.Auth
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(0);
+            resources.ApplyResources(this.splitContainer1, "splitContainer1");
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
+            resources.ApplyResources(this.splitContainer1.Panel1, "splitContainer1.Panel1");
             this.splitContainer1.Panel1.Controls.Add(this.radPictureBox1);
             this.splitContainer1.Panel1.Controls.Add(this.panelMain);
             this.splitContainer1.Panel1.Controls.Add(this.panelBottom);
             // 
             // splitContainer1.Panel2
             // 
+            resources.ApplyResources(this.splitContainer1.Panel2, "splitContainer1.Panel2");
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
-            this.splitContainer1.Size = new System.Drawing.Size(524, 320);
-            this.splitContainer1.SplitterDistance = 247;
-            this.splitContainer1.TabIndex = 8;
             // 
             // panelMain
             // 
-            this.panelMain.Location = new System.Drawing.Point(12, 89);
+            resources.ApplyResources(this.panelMain, "panelMain");
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(227, 167);
-            this.panelMain.TabIndex = 10;
             // 
             // panelBottom
             // 
+            resources.ApplyResources(this.panelBottom, "panelBottom");
             this.panelBottom.Controls.Add(this.btnLogin);
             this.panelBottom.Controls.Add(this.btnGoBack);
             this.panelBottom.Controls.Add(this.btnSignUp);
-            this.panelBottom.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.panelBottom.Location = new System.Drawing.Point(12, 262);
             this.panelBottom.Name = "panelBottom";
-            this.panelBottom.Size = new System.Drawing.Size(227, 41);
-            this.panelBottom.TabIndex = 9;
             // 
             // btnLogin
             // 
+            resources.ApplyResources(this.btnLogin, "btnLogin");
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(149, 3);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(8, 3, 3, 3);
             this.btnLogin.Name = "btnLogin";
             // 
             // 
@@ -113,11 +104,8 @@ namespace EStore.Auth
             this.btnLogin.RootElement.EnableHighlight = true;
             this.btnLogin.RootElement.Shape = this.roundRectShape1;
             this.btnLogin.RootElement.ShouldPaint = true;
-            this.btnLogin.Size = new System.Drawing.Size(75, 35);
-            this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Kyqu";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnLogin.GetChildAt(0))).Text = "Kyqu";
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnLogin.GetChildAt(0))).Text = resources.GetString("resource.Text");
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnLogin.GetChildAt(0))).BorderHighlightColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(191)))), ((int)(((byte)(55)))));
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnLogin.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnLogin.GetChildAt(0).GetChildAt(0))).GradientPercentage = 1F;
@@ -126,26 +114,18 @@ namespace EStore.Auth
             // 
             // btnGoBack
             // 
+            resources.ApplyResources(this.btnGoBack, "btnGoBack");
             this.btnGoBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.btnGoBack.ForeColor = System.Drawing.Color.White;
-            this.btnGoBack.Location = new System.Drawing.Point(63, 3);
-            this.btnGoBack.Margin = new System.Windows.Forms.Padding(8, 3, 3, 3);
             this.btnGoBack.Name = "btnGoBack";
-            this.btnGoBack.Size = new System.Drawing.Size(75, 35);
-            this.btnGoBack.TabIndex = 3;
-            this.btnGoBack.Text = "Kthehu mbrapa";
             this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
             // 
             // btnSignUp
             // 
+            resources.ApplyResources(this.btnSignUp, "btnSignUp");
             this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.btnSignUp.ForeColor = System.Drawing.Color.White;
-            this.btnSignUp.Location = new System.Drawing.Point(149, 44);
-            this.btnSignUp.Margin = new System.Windows.Forms.Padding(8, 3, 3, 3);
             this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(75, 35);
-            this.btnSignUp.TabIndex = 4;
-            this.btnSignUp.Text = "Krijo Llogari";
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // object_16b44ec2_e7c4_4203_8dff_26daab68a4f4
@@ -160,112 +140,82 @@ namespace EStore.Auth
             // 
             // radPictureBox1
             // 
+            resources.ApplyResources(this.radPictureBox1, "radPictureBox1");
             this.radPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(191)))), ((int)(((byte)(55)))));
-            this.radPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.radPictureBox1.DefaultImage = null;
-            this.radPictureBox1.DefaultSvgImageXml = resources.GetString("radPictureBox1.DefaultSvgImageXml");
             this.radPictureBox1.Image = global::EStore.Properties.Resources.user__1_;
-            this.radPictureBox1.Location = new System.Drawing.Point(63, 12);
             this.radPictureBox1.Name = "radPictureBox1";
             // 
             // 
             // 
             this.radPictureBox1.RootElement.BorderHighlightColor = System.Drawing.Color.Empty;
             this.radPictureBox1.RootElement.BorderHighlightThickness = 2;
-            this.radPictureBox1.Size = new System.Drawing.Size(104, 71);
-            this.radPictureBox1.TabIndex = 0;
+            this.radPictureBox1.SvgImageXml = null;
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.panel1.BackgroundImage = global::EStore.Properties.Resources.test1;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.btnShqip);
             this.panel1.Controls.Add(this.btnEnglish);
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.btnMinimise);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(191)))), ((int)(((byte)(55)))));
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(273, 320);
-            this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnShqip
             // 
-            this.btnShqip.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.btnShqip, "btnShqip");
             this.btnShqip.BackgroundImage = global::EStore.Properties.Resources.albania;
-            this.btnShqip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnShqip.FlatAppearance.BorderSize = 0;
             this.btnShqip.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.btnShqip.Location = new System.Drawing.Point(195, 288);
             this.btnShqip.Name = "btnShqip";
-            this.btnShqip.Size = new System.Drawing.Size(30, 20);
-            this.btnShqip.TabIndex = 5;
             this.btnShqip.UseVisualStyleBackColor = true;
+            this.btnShqip.Click += new System.EventHandler(this.btnShqip_Click);
             // 
             // btnEnglish
             // 
-            this.btnEnglish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.btnEnglish, "btnEnglish");
             this.btnEnglish.BackgroundImage = global::EStore.Properties.Resources.englisht;
-            this.btnEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEnglish.FlatAppearance.BorderSize = 0;
-            this.btnEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnglish.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.btnEnglish.Location = new System.Drawing.Point(231, 288);
             this.btnEnglish.Name = "btnEnglish";
-            this.btnEnglish.Size = new System.Drawing.Size(30, 20);
-            this.btnEnglish.TabIndex = 4;
             this.btnEnglish.UseVisualStyleBackColor = true;
+            this.btnEnglish.Click += new System.EventHandler(this.btnEnglish_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.btnClose, "btnClose");
             this.btnClose.BackgroundImage = global::EStore.Properties.Resources.cancel;
-            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.btnClose.Location = new System.Drawing.Point(247, 3);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(20, 20);
-            this.btnClose.TabIndex = 3;
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnMinimise
             // 
-            this.btnMinimise.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.btnMinimise, "btnMinimise");
             this.btnMinimise.BackgroundImage = global::EStore.Properties.Resources.minimise_button;
-            this.btnMinimise.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMinimise.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimise.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.btnMinimise.Location = new System.Drawing.Point(221, 3);
             this.btnMinimise.Name = "btnMinimise";
-            this.btnMinimise.Size = new System.Drawing.Size(20, 20);
-            this.btnMinimise.TabIndex = 2;
             this.btnMinimise.UseVisualStyleBackColor = true;
             this.btnMinimise.Click += new System.EventHandler(this.btnMinimise_Click);
             // 
             // AuthForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 320);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
             this.DoubleBuffered = false;
-            this.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "AuthForm";
             // 
             // 
             // 
             this.RootElement.ApplyShapeToControl = true;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AuthForm";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

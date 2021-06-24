@@ -103,6 +103,8 @@ namespace EStore_Temp.ItemsView
 
             }
 
+            flowLayoutSelectedList.Controls.Clear();
+
         }
 
         private void btnNew_Click(object sender, EventArgs e)
@@ -117,6 +119,11 @@ namespace EStore_Temp.ItemsView
         private void btnToExcel_Click(object sender, EventArgs e)
         {
             EStoreContext.Items.ToExcel();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            flowLayoutSelectedList.Controls.Clear();
         }
     }
 }

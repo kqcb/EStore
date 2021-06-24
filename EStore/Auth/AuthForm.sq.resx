@@ -117,37 +117,33 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnLogin.Text" xml:space="preserve">
-    <value>Kyqu</value>
-  </data>
-  <data name="resource.Text" xml:space="preserve">
-    <value>Kyqu</value>
-  </data>
-  <data name="btnGoBack.Text" xml:space="preserve">
-    <value>Kthehu mbrapa</value>
-  </data>
-  <data name="btnSignUp.Text" xml:space="preserve">
-    <value>Krijo Llogari</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="panelBottom.Size" type="System.Drawing.Size, System.Drawing">
     <value>227, 71</value>
   </data>
+  <data name="btnShqip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 387</value>
+  </data>
+  <data name="btnEnglish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 387</value>
+  </data>
+  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 3</value>
+  </data>
+  <data name="btnMinimise.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 3</value>
+  </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>303, 383</value>
+    <value>308, 416</value>
   </data>
   <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>583, 383</value>
+    <value>591, 416</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
-    <value>276</value>
+    <value>279</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>583, 383</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+    <value>591, 416</value>
   </data>
 </root>
