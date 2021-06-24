@@ -37,9 +37,23 @@ namespace EStore.Auth
             return true;
         }
 
-        private void LoginControl_Load(object sender, EventArgs e)
+        #region Textboxs
+        private void txtEmail_Click(object sender, EventArgs e)
         {
-
+            changeText(txtEmail, "Email");
         }
+
+        private void txtPassword_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.Text == "Password") txtPassword.PasswordChar = '*';
+            changeText(txtPassword, "Password");
+        }
+
+        private void changeText(Telerik.WinControls.UI.RadTextBox textBox, string initialValue)
+        {
+            if (textBox.Text == initialValue) textBox.Text = "";
+        }
+
+        #endregion
     }
 }

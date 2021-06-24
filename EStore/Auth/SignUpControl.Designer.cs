@@ -29,171 +29,193 @@ namespace EStore.Auth
         /// </summary>
                private void InitializeComponent()
         {
-            this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
-            this.txtName = new Telerik.WinControls.UI.RadTextBox();
-            this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpControl));
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbCities = new System.Windows.Forms.ComboBox();
             this.txtEmail = new Telerik.WinControls.UI.RadTextBox();
-            this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
             this.txtPassword = new Telerik.WinControls.UI.RadTextBox();
-            this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
-            this.cmbCities = new Telerik.WinControls.UI.RadDropDownList();
-            this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
+            this.txtName = new Telerik.WinControls.UI.RadTextBox();
             this.txtLastName = new Telerik.WinControls.UI.RadTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbCities)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName)).BeginInit();
             this.SuspendLayout();
             // 
-            // radLabel1
+            // tableLayoutPanel1
             // 
-            this.radLabel1.Location = new System.Drawing.Point(26, 12);
-            this.radLabel1.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(36, 18);
-            this.radLabel1.TabIndex = 10;
-            this.radLabel1.Text = "Name";
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(282, 460);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // txtName
+            // pictureBox1
             // 
-            this.txtName.EnableTheming = false;
-            this.txtName.Location = new System.Drawing.Point(26, 40);
-            this.txtName.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(136, 27);
-            this.txtName.TabIndex = 11;
-            this.txtName.ThemeName = "ControlDefault";
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(282, 230);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // radLabel3
+            // panel1
             // 
-            this.radLabel3.Location = new System.Drawing.Point(26, 69);
-            this.radLabel3.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.radLabel3.Name = "radLabel3";
-            this.radLabel3.Size = new System.Drawing.Size(33, 18);
-            this.radLabel3.TabIndex = 14;
-            this.radLabel3.Text = "Email";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.EnableTheming = false;
-            this.txtEmail.Location = new System.Drawing.Point(26, 97);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(280, 27);
-            this.txtEmail.TabIndex = 15;
-            this.txtEmail.ThemeName = "ControlDefault";
-            // 
-            // radLabel4
-            // 
-            this.radLabel4.Location = new System.Drawing.Point(26, 126);
-            this.radLabel4.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.radLabel4.Name = "radLabel4";
-            this.radLabel4.Size = new System.Drawing.Size(53, 18);
-            this.radLabel4.TabIndex = 16;
-            this.radLabel4.Text = "Password";
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.EnableTheming = false;
-            this.txtPassword.Location = new System.Drawing.Point(26, 154);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '●';
-            this.txtPassword.Size = new System.Drawing.Size(280, 27);
-            this.txtPassword.TabIndex = 17;
-            this.txtPassword.ThemeName = "ControlDefault";
-            this.txtPassword.UseSystemPasswordChar = true;
-            // 
-            // radLabel5
-            // 
-            this.radLabel5.Location = new System.Drawing.Point(26, 183);
-            this.radLabel5.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.radLabel5.Name = "radLabel5";
-            this.radLabel5.Size = new System.Drawing.Size(25, 18);
-            this.radLabel5.TabIndex = 18;
-            this.radLabel5.Text = "City";
+            this.panel1.Controls.Add(this.cmbCities);
+            this.panel1.Controls.Add(this.txtEmail);
+            this.panel1.Controls.Add(this.txtPassword);
+            this.panel1.Controls.Add(this.txtName);
+            this.panel1.Controls.Add(this.txtLastName);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 233);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(276, 224);
+            this.panel1.TabIndex = 1;
             // 
             // cmbCities
             // 
-            this.cmbCities.DropDownAnimationEnabled = true;
-            this.cmbCities.EnableTheming = false;
-            this.cmbCities.Location = new System.Drawing.Point(26, 211);
-            this.cmbCities.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.cmbCities.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cmbCities.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.cmbCities.FormattingEnabled = true;
+            this.cmbCities.Location = new System.Drawing.Point(16, 175);
             this.cmbCities.Name = "cmbCities";
-            this.cmbCities.Size = new System.Drawing.Size(280, 27);
+            this.cmbCities.Size = new System.Drawing.Size(244, 29);
             this.cmbCities.TabIndex = 19;
-            this.cmbCities.Text = "Choose City";
-            this.cmbCities.ThemeName = "ControlDefault";
+            this.cmbCities.Text = "Choose city";
             // 
-            // radLabel2
+            // txtEmail
             // 
-            this.radLabel2.Location = new System.Drawing.Point(175, 12);
-            this.radLabel2.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(59, 18);
-            this.radLabel2.TabIndex = 12;
-            this.radLabel2.Text = "Last Name";
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtEmail.Location = new System.Drawing.Point(16, 75);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.txtEmail.Name = "txtEmail";
+            // 
+            // 
+            // 
+            this.txtEmail.RootElement.AccessibleDescription = "Password";
+            this.txtEmail.RootElement.ShadowDepth = 0;
+            this.txtEmail.Size = new System.Drawing.Size(244, 31);
+            this.txtEmail.TabIndex = 17;
+            this.txtEmail.Text = "Email";
+            this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
+            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtEmail.GetChildAt(0))).Text = "Email";
+            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtEmail.GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtEmail.GetChildAt(0).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtEmail.GetChildAt(0).GetChildAt(0))).Font = new System.Drawing.Font("Segoe UI", 12F);
+            ((Telerik.WinControls.UI.LightVisualButtonElement)(this.txtEmail.GetChildAt(0).GetChildAt(3).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.LightVisualButtonElement)(this.txtEmail.GetChildAt(0).GetChildAt(3).GetChildAt(0))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtPassword.Location = new System.Drawing.Point(16, 125);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.txtPassword.Name = "txtPassword";
+            // 
+            // 
+            // 
+            this.txtPassword.RootElement.AccessibleDescription = "Password";
+            this.txtPassword.RootElement.ShadowDepth = 0;
+            this.txtPassword.Size = new System.Drawing.Size(244, 31);
+            this.txtPassword.TabIndex = 16;
+            this.txtPassword.Text = "Password";
+            this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
+            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtPassword.GetChildAt(0))).Text = "Password";
+            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtPassword.GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtPassword.GetChildAt(0).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtPassword.GetChildAt(0).GetChildAt(0))).Font = new System.Drawing.Font("Segoe UI", 12F);
+            ((Telerik.WinControls.UI.LightVisualButtonElement)(this.txtPassword.GetChildAt(0).GetChildAt(3).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.LightVisualButtonElement)(this.txtPassword.GetChildAt(0).GetChildAt(3).GetChildAt(0))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+            // 
+            // txtName
+            // 
+            this.txtName.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtName.Location = new System.Drawing.Point(16, 27);
+            this.txtName.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(107, 31);
+            this.txtName.TabIndex = 15;
+            this.txtName.Text = "Name";
+            this.txtName.Click += new System.EventHandler(this.txtName_Click);
+            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtName.GetChildAt(0))).Text = "Name";
+            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtName.GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtName.GetChildAt(0).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtName.GetChildAt(0).GetChildAt(0))).Font = new System.Drawing.Font("Segoe UI", 12F);
+            ((Telerik.WinControls.UI.LightVisualButtonElement)(this.txtName.GetChildAt(0).GetChildAt(3).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.LightVisualButtonElement)(this.txtName.GetChildAt(0).GetChildAt(3).GetChildAt(0))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
             // 
             // txtLastName
             // 
-            this.txtLastName.EnableTheming = false;
-            this.txtLastName.Location = new System.Drawing.Point(175, 40);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtLastName.Location = new System.Drawing.Point(151, 27);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(131, 27);
+            this.txtLastName.Size = new System.Drawing.Size(109, 31);
             this.txtLastName.TabIndex = 13;
-            this.txtLastName.ThemeName = "ControlDefault";
+            this.txtLastName.Text = "Lastname";
+            this.txtLastName.Click += new System.EventHandler(this.txtLastName_Click);
+            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtLastName.GetChildAt(0))).Text = "Lastname";
+            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtLastName.GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtLastName.GetChildAt(0).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtLastName.GetChildAt(0).GetChildAt(0))).Font = new System.Drawing.Font("Segoe UI", 12F);
+            ((Telerik.WinControls.UI.LightVisualButtonElement)(this.txtLastName.GetChildAt(0).GetChildAt(3).GetChildAt(0))).ShadowDepth = 0;
+            ((Telerik.WinControls.UI.LightVisualButtonElement)(this.txtLastName.GetChildAt(0).GetChildAt(3).GetChildAt(0))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
             // 
             // SignUpControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.radLabel1);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.radLabel3);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.radLabel4);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.radLabel5);
-            this.Controls.Add(this.cmbCities);
-            this.Controls.Add(this.radLabel2);
-            this.Controls.Add(this.txtLastName);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "SignUpControl";
-            this.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Size = new System.Drawing.Size(358, 269);
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
+            this.Size = new System.Drawing.Size(282, 460);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbCities)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Telerik.WinControls.UI.RadLabel radLabel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
         private Telerik.WinControls.UI.RadTextBox txtName;
-        private Telerik.WinControls.UI.RadLabel radLabel3;
-        private Telerik.WinControls.UI.RadTextBox txtEmail;
-        private Telerik.WinControls.UI.RadLabel radLabel4;
-        private Telerik.WinControls.UI.RadTextBox txtPassword;
-        private Telerik.WinControls.UI.RadLabel radLabel5;
-        private Telerik.WinControls.UI.RadDropDownList cmbCities;
-        private Telerik.WinControls.UI.RadLabel radLabel2;
         private Telerik.WinControls.UI.RadTextBox txtLastName;
+        private Telerik.WinControls.UI.RadTextBox txtPassword;
+        private Telerik.WinControls.UI.RadTextBox txtEmail;
+        private System.Windows.Forms.ComboBox cmbCities;
     }
 }

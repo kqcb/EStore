@@ -34,8 +34,8 @@ namespace EStore.Auth
         {
             string name = txtName.Text;
             string lastName = txtLastName.Text;
-            string email = txtEmail.Text;
-            string password = txtPassword.Text;
+            string email = txtLastName.Text;
+            string password = txtName.Text;
             int cityIndex = cmbCities.SelectedIndex;
 
             if (cityIndex == -1 || IsNullOrEmpty(name) || IsNullOrWhiteSpace(password) || IsNullOrEmpty(password) || IsNullOrEmpty(lastName) || IsNullOrEmpty(email))
@@ -65,12 +65,40 @@ namespace EStore.Auth
                     {
                         Id = 1
                     },
-                    Image = Common.ToByteArray(image) 
+                    Image = Common.ToByteArray(image)
                 };
 
                 return EStoreContext.Users.Create(temp) > 0;
 
             }
         }
+
+        #region Textboxs
+        private void txtName_Click(object sender, EventArgs e)
+        {
+            changeText(txtName, "Name");
+        }
+
+        private void txtLastName_Click(object sender, EventArgs e)
+        {
+            changeText(txtLastName, "Lastname");
+        }
+
+        private void txtEmail_Click(object sender, EventArgs e)
+        {
+            changeText(txtEmail, "Email");
+        }
+
+        private void txtPassword_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.Text == "Password") txtPassword.PasswordChar = '*';
+            changeText(txtPassword, "Password");
+        }
+
+        private void changeText(Telerik.WinControls.UI.RadTextBox textBox, string initialValue)
+        {
+            if(textBox.Text == initialValue) textBox.Text = "";
+        }
+        #endregion
     }
 }

@@ -152,7 +152,6 @@ namespace EStore.Auth
             this.txtPassword.Location = new System.Drawing.Point(91, 115);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
             // 
             // 
             // 
@@ -160,7 +159,9 @@ namespace EStore.Auth
             this.txtPassword.RootElement.ShadowDepth = 0;
             this.txtPassword.Size = new System.Drawing.Size(143, 31);
             this.txtPassword.TabIndex = 11;
-            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtPassword.GetChildAt(0))).Text = "";
+            this.txtPassword.Text = "Password";
+            this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
+            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtPassword.GetChildAt(0))).Text = "Password";
             ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtPassword.GetChildAt(0))).ShadowDepth = 0;
             ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtPassword.GetChildAt(0).GetChildAt(0))).ShadowDepth = 0;
             ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtPassword.GetChildAt(0).GetChildAt(0))).Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -219,7 +220,9 @@ namespace EStore.Auth
             this.txtEmail.RootElement.ShadowDepth = 0;
             this.txtEmail.Size = new System.Drawing.Size(143, 31);
             this.txtEmail.TabIndex = 9;
-            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtEmail.GetChildAt(0))).Text = "";
+            this.txtEmail.Text = "Email";
+            this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
+            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtEmail.GetChildAt(0))).Text = "Email";
             ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtEmail.GetChildAt(0))).ShadowDepth = 0;
             ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtEmail.GetChildAt(0).GetChildAt(0))).ShadowDepth = 0;
             ((Telerik.WinControls.UI.RadTextBoxItem)(this.txtEmail.GetChildAt(0).GetChildAt(0))).Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -234,7 +237,6 @@ namespace EStore.Auth
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "LoginControl";
             this.Size = new System.Drawing.Size(282, 460);
-            this.Load += new System.EventHandler(this.LoginControl_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
