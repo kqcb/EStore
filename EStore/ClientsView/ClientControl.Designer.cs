@@ -121,7 +121,6 @@ namespace EStore.ClientsView
             // 
             // radImage
             // 
-            this.radImage.DefaultSvgImageXml = resources.GetString("radImage.DefaultSvgImageXml");
             this.radImage.ImageLayout = Telerik.WinControls.UI.RadImageLayout.Stretch;
             this.radImage.Location = new System.Drawing.Point(91, 14);
             this.radImage.Name = "radImage";

@@ -304,7 +304,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
             return model;
         }
 
-        public bool ToExcel(T item)
+        public bool ToExcel()
         {
             try
             {

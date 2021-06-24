@@ -47,5 +47,10 @@ namespace EStore_Temp.OrdersView
                 }
             });
         }
+
+        private void btnToExcel_Click(object sender, EventArgs e)
+        {
+            EStoreContext.Orders.ToExcel();
+        }
     }
 }

@@ -54,9 +54,9 @@ namespace EStoreBusinessLogicLayer
         }
      
         
-        public bool ToExcel(T myObject)
+        public bool ToExcel()
         {
-            return (bool)Common.InvokeMethod(_dbSet, "ToExcel", myObject);
+            return (bool)Common.InvokeMethod(_dbSet, "ToExcel", null);
         }
         
  
