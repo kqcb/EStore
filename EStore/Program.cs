@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using EStore.Auth;
+using System;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EStore
@@ -16,8 +15,7 @@ namespace EStore
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Auth.AuthMainForm());
-
+            Application.Run(new AuthForm());
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using EStoreDataAccessLayer.Mapper.Utils;
 
@@ -25,15 +26,16 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
 
 
-                List<T> items = Read(dataReader);
+                List<T> items = LoadObjects(dataReader);
 
 
                 _sqlConnection.Close();
 
                 return items;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                var s = e.Message;
                 return null;
             }
             finally
@@ -50,7 +52,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
         public T Read(int id)
         {
-            return Read($"usp_{typeof(T).Name}_Read", id);
+            return Read($"usp_{typeof(T).Name}_Read_By_Id", id);
         }
 
 
@@ -62,16 +64,16 @@ namespace EStoreDataAccessLayer.Mapper.Models
                 _sqlConnection.Open();
                 SqlCommand cmd = Connection.GetSqlCommand( procName);
 
-                cmd.Parameters.AddWithValue($"Id", id);
+                cmd.Parameters.AddWithValue($"id", id);
 
                 SqlDataReader dataReader = cmd.ExecuteReader();
 
-                item = ((List<T>)Read(dataReader))[0];
+                item = ((List<T>)LoadObjects(dataReader))[0];
 
                 return item;
 
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return default(T);
             }
@@ -82,7 +84,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
         }
 
-        public List<T> Read(SqlDataReader dataReader)
+        public List<T> LoadObjects(SqlDataReader dataReader)
         {
             List<T> items = new List<T>();
 
@@ -95,12 +97,12 @@ namespace EStoreDataAccessLayer.Mapper.Models
             return items;
         }
 
-        public int Delete(int id)
+        public bool Delete(int id)
         {
             return Delete($"usp_{typeof(T).Name}_Delete", id);
         }
 
-        public int Delete(string procName, int? id)
+        public bool Delete(string procName, int? id)
         {
             try
             {
@@ -108,28 +110,28 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
                 var cmd = Connection.GetSqlCommand(procName);
 
-                cmd.Parameters.AddWithValue($"{typeof(T).Name}Id", id);
+                cmd.Parameters.AddWithValue($"Id", id);
 
                 int rez = cmd.ExecuteNonQuery();
 
                 _sqlConnection.Close();
 
-                return rez;
-            } catch(Exception)
+                return rez != -1;
+            } catch(Exception e)
             {
-                return -1;
+                return false;
             }finally
             {
-                _sqlConnection.Close();
+                _sqlConnection.Close(); 
             }
         }
 
-        public void Update(T item)
+        public bool Update(T item)
         {
-            Update($"usp_{typeof(T).Name}_Update", item);
+           return Update($"usp_{typeof(T).Name}_Update", item);
         }
 
-        public void Update(string procName, T item)
+        public bool Update(string procName, T item)
         {
             try
             {
@@ -141,11 +143,15 @@ namespace EStoreDataAccessLayer.Mapper.Models
 
 
                 objectProperties.ToParametersWithId(cmd.Parameters);
+                objectProperties.ToOtherParametersWithId(cmd.Parameters);
+                cmd.Parameters.AddWithValue("lud", DateTime.Now.ToShortDateString());
+                cmd.Parameters.AddWithValue("lub", 1);
 
-                int rez = cmd.ExecuteNonQuery();
-            } catch(Exception)
+                return cmd.ExecuteNonQuery() > -1;
+            } catch(Exception e)
             {
-                
+                var s = e.Message;
+                return false;
             } finally
             {
                 _sqlConnection.Close();
@@ -167,14 +173,16 @@ namespace EStoreDataAccessLayer.Mapper.Models
                 objectProperties.ToOtherParametersWithId(cmd.Parameters);
 
                 cmd.Parameters.RemoveAt("@Id");
-              //  cmd.Parameters.AddWithValue("insertBy", 1);
+                cmd.Parameters.AddWithValue("@insertBy", 1);
 
 
+                var returnParameter = cmd.Parameters.Add("@ReturnVal", SqlDbType.Int);
+                returnParameter.Direction = ParameterDirection.ReturnValue;
 
                 int rez = cmd.ExecuteNonQuery();
                 _sqlConnection.Close();
 
-                return rez;
+                return (int)returnParameter.Value;
             }
             catch (Exception e)
             {
@@ -190,6 +198,68 @@ namespace EStoreDataAccessLayer.Mapper.Models
         public int Create(T item)
         {
             return Create($"usp_{typeof(T).Name}_Insert", item);
+        }
+
+        public DataTable ToDataTable()
+        {
+            return ToDataTable($"usp_{typeof(T).Name}_Read");
+        }
+         public DataTable ToDataTable(string procName)
+         {
+                    
+                try
+                {
+                    Connection.GetSqlConnection().Open();
+                    
+                    var adapter = Connection.GetSqlDataAdapter(procName);
+                    var datatable = new DataTable();
+                    
+                    adapter.Fill(datatable);
+    
+                    return datatable;
+                }
+                catch (Exception)
+                {
+                    return null;
+                }
+                finally
+                {
+                    Connection.GetSqlConnection().Close();
+                }
+                
+         }
+         
+     
+         
+         
+         
+        public DataTable ToDataTable(string procName, int id)
+        {
+
+            try
+            {
+                Connection.GetSqlConnection().Open();
+                var cmd = Connection.GetSqlCommand(procName);
+
+
+                cmd.Parameters.AddWithValue("Id", id);
+                var adapter = Connection.GetSqlDataAdapter(cmd);
+
+                var datatable = new DataTable();
+
+                adapter.Fill(datatable);
+
+                return datatable;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            finally
+            {
+                Connection.GetSqlConnection().Close();
+            }
+
         }
 
         public static T LoadObject(SqlDataReader data)
@@ -222,6 +292,7 @@ namespace EStoreDataAccessLayer.Mapper.Models
               
                 try
                 {
+                   
                     model.InitialiseProp(primitiveProps[i], data[subObject + primitiveProps[i]]);
                 }
                 catch (IndexOutOfRangeException)
@@ -233,5 +304,67 @@ namespace EStoreDataAccessLayer.Mapper.Models
             return model;
         }
 
+        public bool ToExcel()
+        {
+            try
+            {
+                _sqlConnection.Open();
+
+                SqlCommand cmd = Connection.GetSqlCommand($"usp_{typeof(T).Name}_Read");
+                SqlDataReader dataReader = cmd.ExecuteReader();
+
+
+
+                CreateExcelSheet(dataReader);
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                var s = e.Message;
+                return false;
+            }
+            finally
+            {
+                _sqlConnection.Close();
+            }
+        }
+
+        private void CreateExcelSheet(SqlDataReader dataReader)
+        {
+            Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+            excel.Application.Workbooks.Add(Type.Missing);
+
+            // write excel header (properties)
+            WriteExcelHeader(excel, dataReader);
+
+            // write data
+            WriteExcelData(excel, dataReader);
+
+            // excel fix
+            excel.Columns.AutoFit();
+            excel.Visible = true;
+        }
+
+        private void WriteExcelHeader(Microsoft.Office.Interop.Excel.Application excel, SqlDataReader dataReader)
+        {
+            for (int i = 1; i < dataReader.FieldCount + 1; i++)
+            {
+                excel.Cells[1, i] = dataReader.GetName(i - 1);
+                string a = dataReader.GetName(i - 1);
+            }
+        }
+
+        private void WriteExcelData(Microsoft.Office.Interop.Excel.Application excel, SqlDataReader dataReader)
+        {
+            for (int i = 2; dataReader.Read(); i++)
+            {
+                for (int j = 1; j < dataReader.FieldCount + 1; j++)
+                {
+                    excel.Cells[i, j] = dataReader.GetValue(j - 1).ToString();
+                    string a = dataReader.GetValue(j - 1).ToString();
+                }
+            }
+        }
     }
 }

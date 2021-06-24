@@ -1,21 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2ADBA982-0012-46AE-A136-4C46CAC42ED3}</ProjectGuid>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE3D4B79-21F7-4AED-8A3D-877129887AE0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EStore</RootNamespace>
     <AssemblyName>EStore</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,8 +25,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,88 +34,235 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>EStore.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.511.40.Trial\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.511.40.Trial\Telerik.WinControls.GridView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.511.40.Trial\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.511.40.Trial\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Auth\AuthMainForm.cs">
+    <Compile Include="Auth\AuthForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Auth\AuthMainForm.Designer.cs">
-      <DependentUpon>AuthMainForm.cs</DependentUpon>
+    <Compile Include="Auth\AuthForm.Designer.cs">
+      <DependentUpon>AuthForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Auth\LoginUserControl.cs">
+    <Compile Include="Auth\LoginControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Auth\LoginUserControl.Designer.cs">
-      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    <Compile Include="Auth\LoginControl.Designer.cs">
+      <DependentUpon>LoginControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Auth\SignUpUserControl.cs">
+    <Compile Include="Auth\SignUpControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Auth\SignUpUserControl.Designer.cs">
-      <DependentUpon>SignUpUserControl.cs</DependentUpon>
+    <Compile Include="Auth\SignUpControl.Designer.cs">
+      <DependentUpon>SignUpControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="ClientsView\ClientControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientsView\ClientControl.Designer.cs">
+      <DependentUpon>ClientControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsView\ClientCreateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientsView\ClientCreateControl.Designer.cs">
+      <DependentUpon>ClientCreateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsView\ClientDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientsView\ClientDetailsControl.Designer.cs">
+      <DependentUpon>ClientDetailsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsView\ClientEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientsView\ClientEditControl.Designer.cs">
+      <DependentUpon>ClientEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsView\ClientsMainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientsView\ClientsMainControl.Designer.cs">
+      <DependentUpon>ClientsMainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardView\DashboardMainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardView\DashboardMainControl.Designer.cs">
+      <DependentUpon>DashboardMainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsView\ItemCreateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemsView\ItemCreateControl.Designer.cs">
+      <DependentUpon>ItemCreateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsView\ItemDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemsView\ItemDetailsControl.Designer.cs">
+      <DependentUpon>ItemDetailsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsView\ItemEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemsView\ItemEditControl.Designer.cs">
+      <DependentUpon>ItemEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsView\ItemSelectedControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemsView\ItemSelectedControl.Designer.cs">
+      <DependentUpon>ItemSelectedControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsView\ItemsMainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemsView\ItemsMainControl.Designer.cs">
+      <DependentUpon>ItemsMainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsView\ItemView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemsView\ItemView.Designer.cs">
+      <DependentUpon>ItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersView\OrderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrdersView\OrderControl.Designer.cs">
+      <DependentUpon>OrderControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersView\OrderDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrdersView\OrderDetailsControl.Designer.cs">
+      <DependentUpon>OrderDetailsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersView\OrderDetailsMainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrdersView\OrderDetailsMainControl.Designer.cs">
+      <DependentUpon>OrderDetailsMainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersView\OrderEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrdersView\OrderEditControl.Designer.cs">
+      <DependentUpon>OrderEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersView\OrdersMainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrdersView\OrdersMainControl.Designer.cs">
+      <DependentUpon>OrdersMainControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControls\ClientsUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\ClientsUserControl.Designer.cs">
-      <DependentUpon>ClientsUserControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\InvoicesUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\InvoicesUserControl.Designer.cs">
-      <DependentUpon>InvoicesUserControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\ItemsUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\ItemsUserControl.Designer.cs">
-      <DependentUpon>ItemsUserControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\MainUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\MainUserControl.Designer.cs">
-      <DependentUpon>MainUserControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\OrdersUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\OrdersUserControl.Designer.cs">
-      <DependentUpon>OrdersUserControl.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Auth\AuthMainForm.resx">
-      <DependentUpon>AuthMainForm.cs</DependentUpon>
+    <Compile Include="Utils\Common.cs" />
+    <Compile Include="Utils\Exceptions\FieldsNotFilledException.cs" />
+    <EmbeddedResource Include="Auth\AuthForm.resx">
+      <DependentUpon>AuthForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Auth\LoginUserControl.resx">
-      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    <EmbeddedResource Include="Auth\LoginControl.resx">
+      <DependentUpon>LoginControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Auth\SignUpUserControl.resx">
-      <DependentUpon>SignUpUserControl.cs</DependentUpon>
+    <EmbeddedResource Include="Auth\SignUpControl.resx">
+      <DependentUpon>SignUpControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="ClientsView\ClientControl.resx">
+      <DependentUpon>ClientControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsView\ClientEditControl.resx">
+      <DependentUpon>ClientEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsView\ClientsMainControl.resx">
+      <DependentUpon>ClientsMainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsView\ItemCreateControl.resx">
+      <DependentUpon>ItemCreateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsView\ItemDetailsControl.resx">
+      <DependentUpon>ItemDetailsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsView\ItemEditControl.resx">
+      <DependentUpon>ItemEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsView\ItemSelectedControl.resx">
+      <DependentUpon>ItemSelectedControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsView\ItemsMainControl.resx">
+      <DependentUpon>ItemsMainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsView\ItemView.resx">
+      <DependentUpon>ItemView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrdersView\OrderControl.resx">
+      <DependentUpon>OrderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersView\OrderDetailsControl.resx">
+      <DependentUpon>OrderDetailsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersView\OrderDetailsMainControl.resx">
+      <DependentUpon>OrderDetailsMainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersView\OrderEditControl.resx">
+      <DependentUpon>OrderEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersView\OrdersMainControl.resx">
+      <DependentUpon>OrdersMainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -125,9 +273,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControls\ClientsUserControl.resx">
-      <DependentUpon>ClientsUserControl.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -142,21 +288,56 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <!--sirinie -->
+    <None Include="Resources\72579_5454192_979319_imagei.png" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\EStoreBusinessLogicLayer\EStoreBusinessLogicLayer.csproj">
-      <Project>{c756da6d-900e-447a-82ad-9b0dc04c757e}</Project>
+      <Project>{C756DA6D-900E-447A-82AD-9B0DC04C757E}</Project>
       <Name>EStoreBusinessLogicLayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\EStoreBusinessObjects\EStoreBusinessObjects.csproj">
-      <Project>{d2430b39-41e3-405b-aae1-27c9e6676206}</Project>
+      <Project>{D2430B39-41E3-405B-AAE1-27C9E6676206}</Project>
       <Name>EStoreBusinessObjects</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EStoreDataAccessLayer\EStoreDataAccessLayer.csproj">
-      <Project>{64ed0297-221c-47be-9cd5-83df5f5d1001}</Project>
-      <Name>EStoreDataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\72579_5454192_979319_imagei.png" />
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ecommerce-website.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Estore_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Estore_logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\78-780842_back-button-white-icon-png-transparent-png.png" />
+    <None Include="Resources\185-1853839_arrow-pointing-to-the-left-android-back-button-png.png" />
+    <None Include="Resources\go-back-arrow.png" />
+    <Content Include="Resources\test1.png" />
+    <None Include="Resources\X.png" />
+    <None Include="Resources\x-symbol.png" />
+    <None Include="Resources\x-symbol %282%29.png" />
+    <None Include="Resources\x-symbol %281%29.png" />
+    <None Include="Resources\test11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ShouldAddDPIScalingManifest="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>

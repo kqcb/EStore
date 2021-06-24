@@ -3,7 +3,7 @@ using EStoreDataAccessLayer.Mapper.Models;
 
 namespace EStoreBusinessLogicLayer
 {
-    public class BrandServices : DbSet<Brand>
+    public class BrandServices : Services<Brand>
     {
     }
 }

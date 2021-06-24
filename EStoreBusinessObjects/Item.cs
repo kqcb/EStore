@@ -6,10 +6,11 @@ namespace EStoreBusinessObjects
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public double UnitPrice { get; set; }
+        public decimal UnitPrice { get; set; }
+        public byte[] Image { get; set; }
         public string Description { get; set; }
-        public List<Category> Categories { get; set; }
-        public int Quantity { get; set; }
+        public Brand Brand { get; set; }
+        public Category Category { get; set; }
         public bool IsActive { get; set; }
     }
 }
