@@ -53,7 +53,8 @@ namespace EStore.Auth
             // 
             // radLabel1
             // 
-            this.radLabel1.Location = new System.Drawing.Point(7, 7);
+            this.radLabel1.Location = new System.Drawing.Point(26, 12);
+            this.radLabel1.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.radLabel1.Name = "radLabel1";
             this.radLabel1.Size = new System.Drawing.Size(36, 18);
             this.radLabel1.TabIndex = 10;
@@ -62,7 +63,8 @@ namespace EStore.Auth
             // txtName
             // 
             this.txtName.EnableTheming = false;
-            this.txtName.Location = new System.Drawing.Point(7, 35);
+            this.txtName.Location = new System.Drawing.Point(26, 40);
+            this.txtName.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(136, 27);
             this.txtName.TabIndex = 11;
@@ -70,7 +72,8 @@ namespace EStore.Auth
             // 
             // radLabel3
             // 
-            this.radLabel3.Location = new System.Drawing.Point(7, 64);
+            this.radLabel3.Location = new System.Drawing.Point(26, 69);
+            this.radLabel3.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.radLabel3.Name = "radLabel3";
             this.radLabel3.Size = new System.Drawing.Size(33, 18);
             this.radLabel3.TabIndex = 14;
@@ -79,7 +82,8 @@ namespace EStore.Auth
             // txtEmail
             // 
             this.txtEmail.EnableTheming = false;
-            this.txtEmail.Location = new System.Drawing.Point(7, 92);
+            this.txtEmail.Location = new System.Drawing.Point(26, 97);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(280, 27);
             this.txtEmail.TabIndex = 15;
@@ -87,7 +91,8 @@ namespace EStore.Auth
             // 
             // radLabel4
             // 
-            this.radLabel4.Location = new System.Drawing.Point(7, 121);
+            this.radLabel4.Location = new System.Drawing.Point(26, 126);
+            this.radLabel4.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.radLabel4.Name = "radLabel4";
             this.radLabel4.Size = new System.Drawing.Size(53, 18);
             this.radLabel4.TabIndex = 16;
@@ -96,7 +101,8 @@ namespace EStore.Auth
             // txtPassword
             // 
             this.txtPassword.EnableTheming = false;
-            this.txtPassword.Location = new System.Drawing.Point(7, 149);
+            this.txtPassword.Location = new System.Drawing.Point(26, 154);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '●';
             this.txtPassword.Size = new System.Drawing.Size(280, 27);
@@ -106,7 +112,8 @@ namespace EStore.Auth
             // 
             // radLabel5
             // 
-            this.radLabel5.Location = new System.Drawing.Point(7, 178);
+            this.radLabel5.Location = new System.Drawing.Point(26, 183);
+            this.radLabel5.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.radLabel5.Name = "radLabel5";
             this.radLabel5.Size = new System.Drawing.Size(25, 18);
             this.radLabel5.TabIndex = 18;
@@ -116,7 +123,8 @@ namespace EStore.Auth
             // 
             this.cmbCities.DropDownAnimationEnabled = true;
             this.cmbCities.EnableTheming = false;
-            this.cmbCities.Location = new System.Drawing.Point(7, 206);
+            this.cmbCities.Location = new System.Drawing.Point(26, 211);
+            this.cmbCities.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.cmbCities.Name = "cmbCities";
             this.cmbCities.Size = new System.Drawing.Size(280, 27);
             this.cmbCities.TabIndex = 19;
@@ -125,7 +133,8 @@ namespace EStore.Auth
             // 
             // radLabel2
             // 
-            this.radLabel2.Location = new System.Drawing.Point(156, 7);
+            this.radLabel2.Location = new System.Drawing.Point(175, 12);
+            this.radLabel2.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.radLabel2.Name = "radLabel2";
             this.radLabel2.Size = new System.Drawing.Size(59, 18);
             this.radLabel2.TabIndex = 12;
@@ -134,7 +143,8 @@ namespace EStore.Auth
             // txtLastName
             // 
             this.txtLastName.EnableTheming = false;
-            this.txtLastName.Location = new System.Drawing.Point(156, 35);
+            this.txtLastName.Location = new System.Drawing.Point(175, 40);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(131, 27);
             this.txtLastName.TabIndex = 13;
@@ -157,7 +167,7 @@ namespace EStore.Auth
             this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "SignUpControl";
             this.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Size = new System.Drawing.Size(301, 247);
+            this.Size = new System.Drawing.Size(358, 269);
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();

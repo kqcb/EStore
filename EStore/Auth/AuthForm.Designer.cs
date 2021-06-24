@@ -74,13 +74,13 @@ namespace EStore.Auth
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
-            this.splitContainer1.Size = new System.Drawing.Size(599, 320);
-            this.splitContainer1.SplitterDistance = 282;
+            this.splitContainer1.Size = new System.Drawing.Size(524, 320);
+            this.splitContainer1.SplitterDistance = 247;
             this.splitContainer1.TabIndex = 8;
             // 
             // panelMain
             // 
-            this.panelMain.Location = new System.Drawing.Point(29, 89);
+            this.panelMain.Location = new System.Drawing.Point(12, 89);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(227, 167);
             this.panelMain.TabIndex = 10;
@@ -91,7 +91,7 @@ namespace EStore.Auth
             this.panelBottom.Controls.Add(this.btnGoBack);
             this.panelBottom.Controls.Add(this.btnSignUp);
             this.panelBottom.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.panelBottom.Location = new System.Drawing.Point(29, 262);
+            this.panelBottom.Location = new System.Drawing.Point(12, 262);
             this.panelBottom.Name = "panelBottom";
             this.panelBottom.Size = new System.Drawing.Size(227, 41);
             this.panelBottom.TabIndex = 9;
@@ -165,7 +165,7 @@ namespace EStore.Auth
             this.radPictureBox1.DefaultImage = null;
             this.radPictureBox1.DefaultSvgImageXml = resources.GetString("radPictureBox1.DefaultSvgImageXml");
             this.radPictureBox1.Image = global::EStore.Properties.Resources.user__1_;
-            this.radPictureBox1.Location = new System.Drawing.Point(93, 12);
+            this.radPictureBox1.Location = new System.Drawing.Point(63, 12);
             this.radPictureBox1.Name = "radPictureBox1";
             // 
             // 
@@ -189,18 +189,18 @@ namespace EStore.Auth
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(313, 320);
+            this.panel1.Size = new System.Drawing.Size(273, 320);
             this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnShqip
             // 
-            this.btnShqip.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnShqip.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnShqip.BackgroundImage = global::EStore.Properties.Resources.albania;
             this.btnShqip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnShqip.FlatAppearance.BorderSize = 0;
             this.btnShqip.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.btnShqip.Location = new System.Drawing.Point(238, 288);
+            this.btnShqip.Location = new System.Drawing.Point(195, 288);
             this.btnShqip.Name = "btnShqip";
             this.btnShqip.Size = new System.Drawing.Size(30, 20);
             this.btnShqip.TabIndex = 5;
@@ -208,13 +208,13 @@ namespace EStore.Auth
             // 
             // btnEnglish
             // 
-            this.btnEnglish.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnEnglish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEnglish.BackgroundImage = global::EStore.Properties.Resources.englisht;
             this.btnEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEnglish.FlatAppearance.BorderSize = 0;
             this.btnEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnglish.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.btnEnglish.Location = new System.Drawing.Point(274, 288);
+            this.btnEnglish.Location = new System.Drawing.Point(231, 288);
             this.btnEnglish.Name = "btnEnglish";
             this.btnEnglish.Size = new System.Drawing.Size(30, 20);
             this.btnEnglish.TabIndex = 4;
@@ -227,7 +227,7 @@ namespace EStore.Auth
             this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.btnClose.Location = new System.Drawing.Point(287, 3);
+            this.btnClose.Location = new System.Drawing.Point(247, 3);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(20, 20);
             this.btnClose.TabIndex = 3;
@@ -241,7 +241,7 @@ namespace EStore.Auth
             this.btnMinimise.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMinimise.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimise.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.btnMinimise.Location = new System.Drawing.Point(261, 3);
+            this.btnMinimise.Location = new System.Drawing.Point(221, 3);
             this.btnMinimise.Name = "btnMinimise";
             this.btnMinimise.Size = new System.Drawing.Size(20, 20);
             this.btnMinimise.TabIndex = 2;
@@ -252,7 +252,8 @@ namespace EStore.Auth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 320);
+            this.ClientSize = new System.Drawing.Size(524, 320);
+            this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
             this.DoubleBuffered = false;
             this.Font = new System.Drawing.Font("Segoe UI", 8F);
