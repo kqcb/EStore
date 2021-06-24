@@ -158,7 +158,7 @@ namespace EStore.Auth
             this.txtPassword.RootElement.AccessibleDescription = "Password";
             this.txtPassword.RootElement.ShadowDepth = 0;
             this.txtPassword.Size = new System.Drawing.Size(143, 31);
-            this.txtPassword.TabIndex = 11;
+            this.txtPassword.TabIndex = 2;
             this.txtPassword.Text = "Password";
             this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
             ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtPassword.GetChildAt(0))).Text = "Password";
@@ -219,7 +219,7 @@ namespace EStore.Auth
             // 
             this.txtEmail.RootElement.ShadowDepth = 0;
             this.txtEmail.Size = new System.Drawing.Size(143, 31);
-            this.txtEmail.TabIndex = 9;
+            this.txtEmail.TabIndex = 1;
             this.txtEmail.Text = "Email";
             this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
             ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtEmail.GetChildAt(0))).Text = "Email";

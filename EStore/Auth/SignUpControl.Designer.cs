@@ -105,7 +105,7 @@ namespace EStore.Auth
             this.cmbCities.Location = new System.Drawing.Point(16, 175);
             this.cmbCities.Name = "cmbCities";
             this.cmbCities.Size = new System.Drawing.Size(244, 29);
-            this.cmbCities.TabIndex = 19;
+            this.cmbCities.TabIndex = 5;
             this.cmbCities.Text = "Choose city";
             // 
             // txtEmail
@@ -120,7 +120,7 @@ namespace EStore.Auth
             this.txtEmail.RootElement.AccessibleDescription = "Password";
             this.txtEmail.RootElement.ShadowDepth = 0;
             this.txtEmail.Size = new System.Drawing.Size(244, 31);
-            this.txtEmail.TabIndex = 17;
+            this.txtEmail.TabIndex = 3;
             this.txtEmail.Text = "Email";
             this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
             ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtEmail.GetChildAt(0))).Text = "Email";
@@ -142,7 +142,7 @@ namespace EStore.Auth
             this.txtPassword.RootElement.AccessibleDescription = "Password";
             this.txtPassword.RootElement.ShadowDepth = 0;
             this.txtPassword.Size = new System.Drawing.Size(244, 31);
-            this.txtPassword.TabIndex = 16;
+            this.txtPassword.TabIndex = 4;
             this.txtPassword.Text = "Password";
             this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
             ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtPassword.GetChildAt(0))).Text = "Password";
@@ -159,7 +159,7 @@ namespace EStore.Auth
             this.txtName.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(107, 31);
-            this.txtName.TabIndex = 15;
+            this.txtName.TabIndex = 1;
             this.txtName.Text = "Name";
             this.txtName.Click += new System.EventHandler(this.txtName_Click);
             ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtName.GetChildAt(0))).Text = "Name";
@@ -176,7 +176,7 @@ namespace EStore.Auth
             this.txtLastName.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(109, 31);
-            this.txtLastName.TabIndex = 13;
+            this.txtLastName.TabIndex = 2;
             this.txtLastName.Text = "Lastname";
             this.txtLastName.Click += new System.EventHandler(this.txtLastName_Click);
             ((Telerik.WinControls.UI.RadTextBoxElement)(this.txtLastName.GetChildAt(0))).Text = "Lastname";

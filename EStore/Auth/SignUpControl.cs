@@ -91,7 +91,7 @@ namespace EStore.Auth
 
         private void txtPassword_Click(object sender, EventArgs e)
         {
-            if (txtPassword.Text == "Password") txtPassword.PasswordChar = '*';
+            txtPassword.PasswordChar = '*';
             changeText(txtPassword, "Password");
         }
 
