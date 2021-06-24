@@ -20,25 +20,16 @@ namespace EStore.Auth
         private SignUpControl _signUpControl;
         private MainForm _mainForm;
         private LoginControl _loginControl;
-        private int loginHeight;
-        private int signUpHight;
         public AuthForm()
         {
             InitializeComponent();
             btnGoBack.Visible = false;
 
-            this.Text = "Login";
-
             _loginControl ??= new LoginControl();
 
             _signUpControl ??= new SignUpControl();
 
-            loginHeight = _loginControl.Height;
-            signUpHight = _signUpControl.Height;
-
-
-
-            ChangeController(_loginControl); 
+            ChangeController(_loginControl);
         }
 
         private void ChangeController(UserControl control)
@@ -47,12 +38,6 @@ namespace EStore.Auth
             panelMain.Controls.Clear();
             panelMain.Controls.Add(control);
             panelMain.Height = (control.Height) + 10;
-            //panelMain.Width = (control.Width + 10);
-            panelBottom.Location = new Point(panelBottom.Location.X, panelMain.Location.Y + panelMain.Height + 0);
-         
-            this.Height = radPictureBox1.Height + panelMain.Height + panelBottom.Height + 40;
-         
-
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -70,7 +55,8 @@ namespace EStore.Auth
 
                     this.Close();
                 }
-            } catch(FieldsNotFilledException)
+            }
+            catch (FieldsNotFilledException)
             {
                 MessageBox.Show("Please fill the fields");
             }
@@ -113,11 +99,6 @@ namespace EStore.Auth
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnEnglish_Click(object sender, EventArgs e)
         {
 
@@ -135,7 +116,7 @@ namespace EStore.Auth
             this.Close();
         }
 
-        private void btnMinimise_Click(object sender, EventArgs e)
+        private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
