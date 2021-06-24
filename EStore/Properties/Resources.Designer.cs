@@ -93,6 +93,26 @@ namespace EStore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap albania {
+            get {
+                object obj = ResourceManager.GetObject("albania", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel {
+            get {
+                object obj = ResourceManager.GetObject("cancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cart {
             get {
                 object obj = ResourceManager.GetObject("cart", resourceCulture);
@@ -106,6 +126,16 @@ namespace EStore.Properties {
         internal static System.Drawing.Bitmap ecommerce_website {
             get {
                 object obj = ResourceManager.GetObject("ecommerce-website", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap englisht {
+            get {
+                object obj = ResourceManager.GetObject("englisht", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +166,16 @@ namespace EStore.Properties {
         internal static System.Drawing.Bitmap go_back_arrow {
             get {
                 object obj = ResourceManager.GetObject("go-back-arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimise_button {
+            get {
+                object obj = ResourceManager.GetObject("minimise-button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
