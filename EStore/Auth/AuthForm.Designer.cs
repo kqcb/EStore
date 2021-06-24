@@ -61,15 +61,15 @@
             // 
             // tableLayoutPanel1
             // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Teal;
             resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Name = "panel1";
             // 
@@ -82,18 +82,18 @@
             // 
             // tableLayoutPanel2
             // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panelMain, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 0, 2);
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // panel3
             // 
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Controls.Add(this.btnShqip);
             this.panel3.Controls.Add(this.btnEnglish);
-            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
             // btnShqip
@@ -108,8 +108,8 @@
             // 
             // btnEnglish
             // 
-            this.btnEnglish.BackgroundImage = global::EStore.Properties.Resources.englisht;
             resources.ApplyResources(this.btnEnglish, "btnEnglish");
+            this.btnEnglish.BackgroundImage = global::EStore.Properties.Resources.englisht;
             this.btnEnglish.FlatAppearance.BorderSize = 0;
             this.btnEnglish.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.btnEnglish.Name = "btnEnglish";
@@ -118,9 +118,9 @@
             // 
             // panel2
             // 
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Controls.Add(this.btnClose);
             this.panel2.Controls.Add(this.btnMinimize);
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
             // btnClose
@@ -144,10 +144,10 @@
             // 
             // panel4
             // 
+            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Controls.Add(this.btnGoBack);
             this.panel4.Controls.Add(this.btnSignUp);
             this.panel4.Controls.Add(this.btnLogin);
-            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
             // btnGoBack
