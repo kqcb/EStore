@@ -36,8 +36,8 @@ namespace EStore.Auth
         {
 
             panelMain.Controls.Clear();
+            control.Height = panelMain.Height;
             panelMain.Controls.Add(control);
-            panelMain.Height = (control.Height) + 10;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

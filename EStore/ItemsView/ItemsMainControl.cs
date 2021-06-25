@@ -66,11 +66,7 @@ namespace EStore_Temp.ItemsView
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            var itmCreateControl = new ItemCreateControl(_controls);
-
-            itmCreateControl.Dock = DockStyle.Fill;
-
-            Common.AddControl(_controls, itmCreateControl);
+            new ItemCreateControl(_controls).ShowDialog();
         }
 
         private void btnToExcel_Click(object sender, EventArgs e)

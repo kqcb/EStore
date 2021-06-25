@@ -14,13 +14,13 @@ using System.Windows.Forms;
 
 namespace EStore_Temp.ItemsView
 {
-    public partial class ItemCreateControl : UserControl
+    public partial class ItemCreateControl : Telerik.WinControls.UI.RadForm
     {
         private List<Brand> _brands;
         private List<Category> _categories;
-        private readonly ControlCollection _controls;
+        private readonly Control.ControlCollection _controls;
 
-        public ItemCreateControl(ControlCollection controls)
+        public ItemCreateControl(Control.ControlCollection controls)
         {
             InitializeComponent();
 
@@ -84,6 +84,11 @@ namespace EStore_Temp.ItemsView
 
                 ((ItemsMainControl)_controls["ItemsMainControl"]).FillTable();
             }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
