@@ -20,19 +20,40 @@ namespace EStore.ClientsView
         {
             InitializeComponent();
             this._controls = controls;
-            FillTable();
+            FillList();
         }
 
 
-        public void FillTable()
+        public void FillList()
         {
             // DataTable itemTable = EStoreContext.Users.ToDataTable();
 
-            EStoreContext.Users.Read().ForEach(user =>
+            //EStoreContext.Users.Read().ForEach(user =>
+            //{
+            //    var clientControl = new ClientControl(_controls, user);
+            //    clientControl.Margin = new Padding(30, 10, 10, 10);
+            //    flowLayoutPanel1.Controls.Add(clientControl);
+            //});
+
+            flowLayoutPanel1.Controls.Clear();
+
+            Color[] colors = new Color[] {
+                Color.FromArgb(240, 240, 240, 240),
+                Color.White
+
+            };
+            int i = 0;
+
+            EStoreContext.Users.Read().ForEach(u =>
             {
-                var clientControl = new ClientControl(_controls, user);
-                clientControl.Margin = new Padding(30, 10, 10, 10);
+                var clientControl = new ClientControl(_controls, u);
+                clientControl.ChangeColor(colors[i]);
                 flowLayoutPanel1.Controls.Add(clientControl);
+
+                if (++i == 2)
+                {
+                    i = 0;
+                }
             });
 
         }

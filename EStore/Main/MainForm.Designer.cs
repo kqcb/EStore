@@ -119,7 +119,7 @@
             // 
             // 
             this.lblUser.RootElement.CustomFontStyle = System.Drawing.FontStyle.Bold;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.lblUser.GetChildAt(0))).Text = resources.GetString("resource.Text1");
+            ((Telerik.WinControls.UI.RadButtonElement)(this.lblUser.GetChildAt(0))).Text = resources.GetString("resource.Text");
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.lblUser.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.lblUser.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.lblUser.GetChildAt(0).GetChildAt(1).GetChildAt(1))).LineLimit = false;
@@ -140,7 +140,7 @@
             this.btnDashBoard.ForeColor = System.Drawing.Color.White;
             this.btnDashBoard.Name = "btnDashBoard";
             this.btnDashBoard.Click += new System.EventHandler(this.btnDashBoard_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnDashBoard.GetChildAt(0))).Text = resources.GetString("resource.Text2");
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnDashBoard.GetChildAt(0))).Text = resources.GetString("resource.Text1");
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnDashBoard.GetChildAt(0).GetChildAt(0))).ClipDrawing = false;
@@ -161,7 +161,7 @@
             this.btnItems.RootElement.BorderHighlightColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(223)))), ((int)(((byte)(21)))));
             this.btnItems.RootElement.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.btnItems.Click += new System.EventHandler(this.btnItems_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnItems.GetChildAt(0))).Text = resources.GetString("resource.Text3");
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnItems.GetChildAt(0))).Text = resources.GetString("resource.Text2");
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnItems.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnItems.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.btnItems.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
@@ -172,7 +172,7 @@
             this.btnUsers.ForeColor = System.Drawing.Color.White;
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnUsers.GetChildAt(0))).Text = resources.GetString("resource.Text4");
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnUsers.GetChildAt(0))).Text = resources.GetString("resource.Text3");
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnUsers.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnUsers.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.btnUsers.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
@@ -183,7 +183,7 @@
             this.btnOrders.ForeColor = System.Drawing.Color.White;
             this.btnOrders.Name = "btnOrders";
             this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnOrders.GetChildAt(0))).Text = resources.GetString("resource.Text5");
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnOrders.GetChildAt(0))).Text = resources.GetString("resource.Text4");
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnOrders.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnOrders.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.btnOrders.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
@@ -195,7 +195,7 @@
             this.btnLogOut.ForeColor = System.Drawing.Color.White;
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnLogOut.GetChildAt(0))).Text = resources.GetString("resource.Text");
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnLogOut.GetChildAt(0))).Text = resources.GetString("resource.Text5");
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnLogOut.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnLogOut.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.btnLogOut.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));

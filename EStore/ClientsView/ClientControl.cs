@@ -2,6 +2,7 @@
 using EStoreBusinessLogicLayer;
 using EStoreBusinessObjects;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace EStore.ClientsView
@@ -16,20 +17,30 @@ namespace EStore.ClientsView
             InitializeComponent();
             this._controls = controls;
             this._user = user;
-            lblFullName.Text = user.Name + " " +user.LastName;
+            lblId.Text = user.Id.ToString();
+            lblName.Text = user.Name;
+            lblLastname.Text = user.LastName;
 
-            radImage.BackgroundImage = user.Image is not null ? Common.ToImage(user.Image) :null;
+            //radImage.BackgroundImage = user.Image is not null ? Common.ToImage(user.Image) :null;
 
-            radImage.Image = EStore.Properties.Resources.Estore_logo;
-            lblRole.Text = user.Role.Name;
+            //radImage.Image = EStore.Properties.Resources.Estore_logo;
             lblEmail.Text = user.Email;
+            lblIsActive.Text = user.IsActive.ToString();
+        }
+
+        public void ChangeColor(Color color)
+        {
+            this.flowLayoutPanel1.BackColor = color;
+            this.BackColor = color;
+            this.flowLayoutPanel2.BackColor = color;
+            //this.BackColor = color;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (EStoreContext.Users.Delete(_user.Id))
             {
-                ((ClientsMainControl)_controls[0]).FillTable();
+                ((ClientsMainControl)_controls[0]).FillList();
             }
             else
                 MessageBox.Show("User could not be deleted");
