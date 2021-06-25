@@ -22,6 +22,7 @@ namespace EStore.Main
         public MainForm(User user)
         {
             InitializeComponent();
+            this.user = user;
 
             btnGoBack.Visible = false;
             _clientsMainControl = new(radPanelMain.Controls);
@@ -30,8 +31,17 @@ namespace EStore.Main
             _dashboard = new();
             lblTitle.Text = "Dashboard";
             lblUser.Text = "Welcome " + user.Name + " " + user.LastName;
-            Common.ChangeContorl(radPanelMain.Controls, _dashboard);
-            this.user = user;
+
+            if (user.Role.Description == "Admin")
+            {
+                Common.ChangeContorl(radPanelMain.Controls, _dashboard);
+            }
+            else
+            {
+                btnUsers.Visible = false;
+                btnDashBoard.Visible = false;
+                Common.ChangeContorl(radPanelMain.Controls, _itemsMainControl);
+            }
         } 
 
         public void ChangeTitleName()
@@ -122,6 +132,7 @@ namespace EStore.Main
 
             int id = EStoreContext.Orders.Create(order);
 
+           
             foreach (var item in ItemsMainControl.selectedItems)
             {
 
@@ -137,16 +148,17 @@ namespace EStore.Main
                     Quantity = 1
                 };
 
-                if (EStoreContext.OrderDetails.Create(orderDetails) != -1)
-                {
-                    MessageBox.Show("Order created succesfully");
-                }
-                else
-                {
-                    MessageBox.Show("Order could not be created");
-                }
-
             }
+
+            if(id != -1)
+            {
+                MessageBox.Show("Order created succesfully");
+            } else
+            {
+
+                MessageBox.Show("Order could not be created");
+            }
+
 
             flowLayoutSelectedList.Controls.Clear();
         }

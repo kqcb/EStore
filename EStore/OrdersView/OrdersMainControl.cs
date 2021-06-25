@@ -36,9 +36,12 @@ namespace EStore_Temp.OrdersView
 
             };
             int i = 0;
-            EStoreContext.Orders.Read().ForEach(order =>
+
+            var orders = _user.Role.Description == "Admin" ? EStoreContext.Orders.Read() : EStoreContext.Orders.ReadByUserId(_user.Id);
+
+            orders.ForEach(order =>
             {
-                var orderControl = new OrderControl(_controls, order);
+                var orderControl = new OrderControl(_controls, order, _user);
                 orderControl.ChangeColor(colors[i]);
                 flowLayoutPanel1.Controls.Add(orderControl);
 

@@ -59,9 +59,8 @@ namespace EStore_Temp.ItemsView
             this.radPanel1.Controls.Add(this.radImage);
             this.radPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radPanel1.Location = new System.Drawing.Point(0, 0);
-            this.radPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.radPanel1.Name = "radPanel1";
-            this.radPanel1.Size = new System.Drawing.Size(205, 252);
+            this.radPanel1.Size = new System.Drawing.Size(308, 388);
             this.radPanel1.TabIndex = 0;
             // 
             // flowLayoutPanel2
@@ -72,18 +71,19 @@ namespace EStore_Temp.ItemsView
             this.flowLayoutPanel2.Controls.Add(this.btnDelete);
             this.flowLayoutPanel2.Controls.Add(this.btnAddToCart);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 211);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 325);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(205, 36);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(308, 55);
             this.flowLayoutPanel2.TabIndex = 16;
             // 
             // btnDetails
             // 
             this.btnDetails.Image = ((System.Drawing.Image)(resources.GetObject("btnDetails.Image")));
-            this.btnDetails.Location = new System.Drawing.Point(15, 3);
-            this.btnDetails.Margin = new System.Windows.Forms.Padding(15, 3, 0, 3);
+            this.btnDetails.Location = new System.Drawing.Point(22, 5);
+            this.btnDetails.Margin = new System.Windows.Forms.Padding(22, 5, 0, 5);
             this.btnDetails.Name = "btnDetails";
-            this.btnDetails.Size = new System.Drawing.Size(33, 33);
+            this.btnDetails.Size = new System.Drawing.Size(50, 51);
             this.btnDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnDetails.TabIndex = 11;
             this.btnDetails.TabStop = false;
@@ -92,10 +92,10 @@ namespace EStore_Temp.ItemsView
             // btnEdit
             // 
             this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
-            this.btnEdit.Location = new System.Drawing.Point(63, 3);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(15, 3, 0, 3);
+            this.btnEdit.Location = new System.Drawing.Point(94, 5);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(22, 5, 0, 5);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(33, 33);
+            this.btnEdit.Size = new System.Drawing.Size(50, 51);
             this.btnEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnEdit.TabIndex = 12;
             this.btnEdit.TabStop = false;
@@ -104,10 +104,10 @@ namespace EStore_Temp.ItemsView
             // btnDelete
             // 
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
-            this.btnDelete.Location = new System.Drawing.Point(111, 3);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(15, 3, 0, 3);
+            this.btnDelete.Location = new System.Drawing.Point(166, 5);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(22, 5, 0, 5);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(33, 33);
+            this.btnDelete.Size = new System.Drawing.Size(50, 51);
             this.btnDelete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnDelete.TabIndex = 14;
             this.btnDelete.TabStop = false;
@@ -116,10 +116,10 @@ namespace EStore_Temp.ItemsView
             // btnAddToCart
             // 
             this.btnAddToCart.Image = ((System.Drawing.Image)(resources.GetObject("btnAddToCart.Image")));
-            this.btnAddToCart.Location = new System.Drawing.Point(159, 3);
-            this.btnAddToCart.Margin = new System.Windows.Forms.Padding(15, 3, 0, 3);
+            this.btnAddToCart.Location = new System.Drawing.Point(238, 5);
+            this.btnAddToCart.Margin = new System.Windows.Forms.Padding(22, 5, 0, 5);
             this.btnAddToCart.Name = "btnAddToCart";
-            this.btnAddToCart.Size = new System.Drawing.Size(33, 33);
+            this.btnAddToCart.Size = new System.Drawing.Size(50, 51);
             this.btnAddToCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnAddToCart.TabIndex = 15;
             this.btnAddToCart.TabStop = false;
@@ -130,9 +130,10 @@ namespace EStore_Temp.ItemsView
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.panel1.Controls.Add(this.lblItemName);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 178);
+            this.panel1.Location = new System.Drawing.Point(0, 274);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(205, 33);
+            this.panel1.Size = new System.Drawing.Size(308, 51);
             this.panel1.TabIndex = 14;
             // 
             // lblItemName
@@ -141,9 +142,8 @@ namespace EStore_Temp.ItemsView
             this.lblItemName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblItemName.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lblItemName.Location = new System.Drawing.Point(0, 0);
-            this.lblItemName.Margin = new System.Windows.Forms.Padding(2);
             this.lblItemName.Name = "lblItemName";
-            this.lblItemName.Size = new System.Drawing.Size(205, 33);
+            this.lblItemName.Size = new System.Drawing.Size(123, 58);
             this.lblItemName.TabIndex = 6;
             this.lblItemName.Text = "Name";
             // 
@@ -152,20 +152,21 @@ namespace EStore_Temp.ItemsView
             this.radImage.BackColor = System.Drawing.Color.White;
             this.radImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.radImage.Location = new System.Drawing.Point(0, 0);
+            this.radImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radImage.Name = "radImage";
-            this.radImage.Size = new System.Drawing.Size(205, 178);
+            this.radImage.Size = new System.Drawing.Size(308, 274);
             this.radImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.radImage.TabIndex = 9;
             this.radImage.TabStop = false;
             // 
             // ItemView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.radPanel1);
-            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.Name = "ItemView";
-            this.Size = new System.Drawing.Size(205, 252);
+            this.Size = new System.Drawing.Size(308, 388);
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.radPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);

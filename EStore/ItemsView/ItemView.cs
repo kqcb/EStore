@@ -28,7 +28,7 @@ namespace EStore_Temp.ItemsView
             this._user = user;
             this._item = item;
 
-            if (user.Role.Id == 1)
+            if (user.Role.Description == "Admin")
             {
                 btnDelete.Visible = true;
                 btnEdit.Visible = true;
@@ -36,7 +36,7 @@ namespace EStore_Temp.ItemsView
             else
             {
                 btnDelete.Visible = false;
-                btnEdit.Visible = true;
+                btnEdit.Visible = false;
             }
 
             this.radImage.Image = Common.ToImage(item.Image);
