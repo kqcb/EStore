@@ -29,13 +29,13 @@ namespace EStore_Temp.ItemsView
             InitializeComponent();
             btnNew.Visible = true;
 
-            if (user.Role.Id == 1)
+            if (user.Role.Description == "Admin")
             {
                 btnNew.Visible = true;
             }
             else
             {
-                btnNew.Visible = true;
+                btnNew.Visible = false;
             }
 
             FillTable();

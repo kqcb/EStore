@@ -17,12 +17,14 @@ namespace EStore_Temp.OrdersView
     {
         private readonly ControlCollection _controls;
         private readonly Order _order;
+        private readonly User _user;
 
-        public OrderControl(ControlCollection controls, Order order)
+        public OrderControl(ControlCollection controls, Order order, User user)
         {
             InitializeComponent();
             this._controls = controls;
             this._order = order;
+            this._user = user;
             this.lblId.Text = order.Id.ToString();
             this.lblStatus.Text = order.IsPaid ? "Order is paid" : "Order is not payed yet";
             this.lblClient.Text = order.User.Name + " " + order.User.LastName;
@@ -37,6 +39,12 @@ namespace EStore_Temp.OrdersView
             });
 
             this.lblTotal.Text = amount.ToString().Substring(0, amount.ToString().Length - 3);
+
+            if(_user.Role.Description != "Admin")
+            {
+                btnDelete.Visible = false;
+                btnEdit.Visible = false;
+            }
 
         }
 
