@@ -181,20 +181,20 @@
     <Compile Include="OrdersView\OrderControl.Designer.cs">
       <DependentUpon>OrderControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="OrdersView\OrderDetailsControl.cs">
+    <Compile Include="OrdersView\OrderDetailControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="OrdersView\OrderDetailsControl.Designer.cs">
-      <DependentUpon>OrderDetailsControl.cs</DependentUpon>
+    <Compile Include="OrdersView\OrderDetailControl.Designer.cs">
+      <DependentUpon>OrderDetailControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="OrdersView\OrderDetailsMainControl.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="OrdersView\OrderDetailsForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OrdersView\OrderDetailsMainControl.Designer.cs">
-      <DependentUpon>OrderDetailsMainControl.cs</DependentUpon>
+    <Compile Include="OrdersView\OrderDetailsForm.Designer.cs">
+      <DependentUpon>OrderDetailsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="OrdersView\OrderEditControl.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="OrdersView\OrderEditControl.Designer.cs">
       <DependentUpon>OrderEditControl.cs</DependentUpon>
@@ -269,11 +269,11 @@
     <EmbeddedResource Include="OrdersView\OrderControl.resx">
       <DependentUpon>OrderControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OrdersView\OrderDetailsControl.resx">
-      <DependentUpon>OrderDetailsControl.cs</DependentUpon>
+    <EmbeddedResource Include="OrdersView\OrderDetailControl.resx">
+      <DependentUpon>OrderDetailControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OrdersView\OrderDetailsMainControl.resx">
-      <DependentUpon>OrderDetailsMainControl.cs</DependentUpon>
+    <EmbeddedResource Include="OrdersView\OrderDetailsForm.resx">
+      <DependentUpon>OrderDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrdersView\OrderEditControl.resx">
       <DependentUpon>OrderEditControl.cs</DependentUpon>

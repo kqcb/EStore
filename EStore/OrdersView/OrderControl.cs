@@ -36,7 +36,7 @@ namespace EStore_Temp.OrdersView
             
             });
 
-            this.lblTotal.Text = amount.ToString();
+            this.lblTotal.Text = amount.ToString().Substring(0, amount.ToString().Length - 3);
 
         }
 
@@ -51,8 +51,8 @@ namespace EStore_Temp.OrdersView
 
         private void btnDetails_Click(object sender, EventArgs e)
         {
-
-            Common.AddControl(_controls, new OrderDetailsMainControl(_order));
+            List<OrderDetails> orderDetails = EStoreContext.OrderDetails.ReadByOrderId(_order.Id);
+            new OrderDetailsForm(orderDetails).ShowDialog();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -67,7 +67,7 @@ namespace EStore_Temp.OrdersView
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            Common.AddControl(_controls, new OrderEditControl(_order));
+            new OrderEditForm(_order).ShowDialog();
         }
     }
 }
