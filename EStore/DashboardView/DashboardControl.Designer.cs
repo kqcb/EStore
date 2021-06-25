@@ -29,7 +29,9 @@ namespace EStore.DashboardView
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.CartesianArea cartesianArea1 = new Telerik.WinControls.UI.CartesianArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -43,7 +45,7 @@ namespace EStore.DashboardView
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.radChartView1 = new Telerik.WinControls.UI.RadChartView();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -52,7 +54,7 @@ namespace EStore.DashboardView
             this.flowLayoutPanel5.SuspendLayout();
             this.panel5.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radChartView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -85,7 +87,7 @@ namespace EStore.DashboardView
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.radChartView1);
+            this.panel2.Controls.Add(this.chart1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 105);
             this.panel2.Name = "panel2";
@@ -185,15 +187,22 @@ namespace EStore.DashboardView
             this.panel6.Size = new System.Drawing.Size(401, 390);
             this.panel6.TabIndex = 0;
             // 
-            // radChartView1
+            // chart1
             // 
-            this.radChartView1.AreaDesign = cartesianArea1;
-            this.radChartView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radChartView1.Location = new System.Drawing.Point(0, 0);
-            this.radChartView1.Name = "radChartView1";
-            this.radChartView1.ShowGrid = false;
-            this.radChartView1.Size = new System.Drawing.Size(401, 377);
-            this.radChartView1.TabIndex = 0;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(0, 0);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(401, 377);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "chart1";
             // 
             // DashboardControl
             // 
@@ -210,7 +219,7 @@ namespace EStore.DashboardView
             this.flowLayoutPanel5.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radChartView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -230,6 +239,6 @@ namespace EStore.DashboardView
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel6;
-        private Telerik.WinControls.UI.RadChartView radChartView1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
