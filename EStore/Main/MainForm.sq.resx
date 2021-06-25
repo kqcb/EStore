@@ -155,7 +155,7 @@
   <data name="lblTitle.Text" xml:space="preserve">
     <value>Titulli</value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
 </root>
