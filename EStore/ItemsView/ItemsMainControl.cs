@@ -18,10 +18,12 @@ namespace EStore_Temp.ItemsView
     {
         private readonly ControlCollection _controls;
         private readonly User _user;
-        public static List<Item> selectedItems = new List<Item>(); 
+        public static List<Item> selectedItems = new List<Item>();
+        private FlowLayoutPanel flowLayoutSelectedList;
 
-        public ItemsMainControl(ControlCollection controls, User user)
+        public ItemsMainControl(ControlCollection controls, FlowLayoutPanel flowLayoutSelectedList, User user)
         {
+            this.flowLayoutSelectedList = flowLayoutSelectedList;
             this._controls = controls;
             this._user = user;
             InitializeComponent();
@@ -29,7 +31,6 @@ namespace EStore_Temp.ItemsView
 
             if (user.Role.Id == 1)
             {
-                radPanel3.Visible = true;
                 btnNew.Visible = true;
             }
             else
@@ -62,57 +63,6 @@ namespace EStore_Temp.ItemsView
             });
 
          }
-
-
-
-
-        private void btnMakeOrder_Click(object sender, EventArgs e)
-        {
-            Order order = new Order()
-            {
-                User = _user,
-                City = _user.City,
-                Street = "",
-                IsPaid = false,
-                OrderDate = DateTime.Now
-            };
-
-            int id = EStoreContext.Orders.Create(order);
-
-            foreach (var item in ItemsMainControl.selectedItems)
-            {
-
-                var orderDetails = new OrderDetails()
-                {
-                    Item = item,
-                    Order = new Order()
-                    {
-                        Id = id
-                    },
-                    Discount = 0,
-                    Price = item.UnitPrice,
-                    Quantity = 1
-                };
-
-                if (EStoreContext.OrderDetails.Create(orderDetails) != -1)
-                {
-                    MessageBox.Show("Order created succesfully");
-                }
-                else
-                {
-                    MessageBox.Show("Order could not be created");
-                }
-
-            }
-
-            flowLayoutSelectedList.Controls.Clear();
-
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            flowLayoutSelectedList.Controls.Clear();
-        }
 
         private void btnNew_Click(object sender, EventArgs e)
         {

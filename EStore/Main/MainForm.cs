@@ -6,6 +6,7 @@ using EStore.Utils;
 using EStore_Temp.DashboardView;
 using EStore_Temp.ItemsView;
 using EStore_Temp.OrdersView;
+using EStoreBusinessLogicLayer;
 using EStoreBusinessObjects;
 
 namespace EStore.Main
@@ -24,7 +25,7 @@ namespace EStore.Main
 
             btnGoBack.Visible = false;
             _clientsMainControl = new(radPanelMain.Controls);
-            _itemsMainControl = new(radPanelMain.Controls, user);
+            _itemsMainControl = new(radPanelMain.Controls, flowLayoutSelectedList, user);
             _ordersMainControl = new(radPanelMain.Controls, user);
             _dashboardMainControl = new();
             lblTitle.Text = "Dashboard";
@@ -101,6 +102,53 @@ namespace EStore.Main
                 Common.ChangeContorl(radPanelMain.Controls, _dashboardMainControl);
                 btnGoBack.Visible = false;
             }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            flowLayoutSelectedList.Controls.Clear();
+        }
+
+        private void btnMakeOrder_Click(object sender, EventArgs e)
+        {
+            Order order = new Order()
+            {
+                User = user,
+                City = user.City,
+                Street = "",
+                IsPaid = false,
+                OrderDate = DateTime.Now
+            };
+
+            int id = EStoreContext.Orders.Create(order);
+
+            foreach (var item in ItemsMainControl.selectedItems)
+            {
+
+                var orderDetails = new OrderDetails()
+                {
+                    Item = item,
+                    Order = new Order()
+                    {
+                        Id = id
+                    },
+                    Discount = 0,
+                    Price = item.UnitPrice,
+                    Quantity = 1
+                };
+
+                if (EStoreContext.OrderDetails.Create(orderDetails) != -1)
+                {
+                    MessageBox.Show("Order created succesfully");
+                }
+                else
+                {
+                    MessageBox.Show("Order could not be created");
+                }
+
+            }
+
+            flowLayoutSelectedList.Controls.Clear();
         }
     }
 }

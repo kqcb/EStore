@@ -147,270 +147,6 @@
   <data name="&gt;&gt;btnNew.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="flowLayoutSelectedList.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="flowLayoutSelectedList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 63</value>
-  </data>
-  <data name="flowLayoutSelectedList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="flowLayoutSelectedList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 454</value>
-  </data>
-  <data name="flowLayoutSelectedList.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutSelectedList.Name" xml:space="preserve">
-    <value>flowLayoutSelectedList</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutSelectedList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutSelectedList.Parent" xml:space="preserve">
-    <value>radPanel3</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutSelectedList.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;radLabel1.Name" xml:space="preserve">
-    <value>radLabel1</value>
-  </data>
-  <data name="&gt;&gt;radLabel1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;radLabel1.Parent" xml:space="preserve">
-    <value>flowLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;radLabel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="flowLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="flowLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="flowLayoutPanel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="flowLayoutPanel3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 13, 0, 0</value>
-  </data>
-  <data name="flowLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 63</value>
-  </data>
-  <data name="flowLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel3.Name" xml:space="preserve">
-    <value>flowLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel3.Parent" xml:space="preserve">
-    <value>radPanel3</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 2</value>
-  </data>
-  <data name="btnCancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 39</value>
-  </data>
-  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="btnCancel.Text" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
-    <value>btnCancel</value>
-  </data>
-  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
-    <value>flowLayoutPanel5</value>
-  </data>
-  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="resource.Text" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="btnMakeOrder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 2</value>
-  </data>
-  <data name="btnMakeOrder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btnMakeOrder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 39</value>
-  </data>
-  <data name="btnMakeOrder.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="btnMakeOrder.Text" xml:space="preserve">
-    <value>Make Order</value>
-  </data>
-  <data name="&gt;&gt;btnMakeOrder.Name" xml:space="preserve">
-    <value>btnMakeOrder</value>
-  </data>
-  <data name="&gt;&gt;btnMakeOrder.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;btnMakeOrder.Parent" xml:space="preserve">
-    <value>flowLayoutPanel5</value>
-  </data>
-  <data name="&gt;&gt;btnMakeOrder.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="resource.Text1" xml:space="preserve">
-    <value>Make Order</value>
-  </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 46</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 0</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>flowLayoutPanel5</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 52</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 0</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>flowLayoutPanel5</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="flowLayoutPanel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="flowLayoutPanel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 517</value>
-  </data>
-  <data name="flowLayoutPanel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="flowLayoutPanel5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 0, 0, 0</value>
-  </data>
-  <data name="flowLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 46</value>
-  </data>
-  <data name="flowLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel5.Name" xml:space="preserve">
-    <value>flowLayoutPanel5</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel5.Parent" xml:space="preserve">
-    <value>radPanel3</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel5.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="radPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="radPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>570, 0</value>
-  </data>
-  <data name="radPanel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="radPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 563</value>
-  </data>
-  <data name="radPanel3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;radPanel3.Name" xml:space="preserve">
-    <value>radPanel3</value>
-  </data>
-  <data name="&gt;&gt;radPanel3.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadPanel, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;radPanel3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;radPanel3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="radLabel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 20.25pt</value>
-  </data>
-  <data name="radLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 15</value>
-  </data>
-  <data name="radLabel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>47, 2, 2, 2</value>
-  </data>
-  <data name="radLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 41</value>
-  </data>
-  <data name="radLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="radLabel1.Text" xml:space="preserve">
-    <value>Shopping Cart</value>
-  </data>
-  <data name="&gt;&gt;radLabel1.Name" xml:space="preserve">
-    <value>radLabel1</value>
-  </data>
-  <data name="&gt;&gt;radLabel1.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;radLabel1.Parent" xml:space="preserve">
-    <value>flowLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;radLabel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 45</value>
   </data>
@@ -438,6 +174,18 @@
   <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="btnToExcel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 9</value>
+  </data>
+  <data name="btnToExcel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 24</value>
+  </data>
+  <data name="btnToExcel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnToExcel.Text" xml:space="preserve">
+    <value>To Excel</value>
+  </data>
   <data name="&gt;&gt;btnToExcel.Name" xml:space="preserve">
     <value>btnToExcel</value>
   </data>
@@ -450,7 +198,7 @@
   <data name="&gt;&gt;btnToExcel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="resource.Text2" xml:space="preserve">
+  <data name="resource.Text" xml:space="preserve">
     <value>To Excel</value>
   </data>
   <data name="panelMainTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -510,33 +258,6 @@
   <data name="&gt;&gt;radPanel4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btnToExcel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>271, 9</value>
-  </data>
-  <data name="btnToExcel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 24</value>
-  </data>
-  <data name="btnToExcel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btnToExcel.Text" xml:space="preserve">
-    <value>To Excel</value>
-  </data>
-  <data name="&gt;&gt;btnToExcel.Name" xml:space="preserve">
-    <value>btnToExcel</value>
-  </data>
-  <data name="&gt;&gt;btnToExcel.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;btnToExcel.Parent" xml:space="preserve">
-    <value>panelMainTop</value>
-  </data>
-  <data name="&gt;&gt;btnToExcel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="resource.Text2" xml:space="preserve">
-    <value>To Excel</value>
-  </data>
   <metadata name="uspItemReadBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>680, 17</value>
   </metadata>
@@ -553,7 +274,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 563</value>
+    <value>534, 478</value>
   </data>
   <data name="&gt;&gt;uspItemReadBindingSource.Name" xml:space="preserve">
     <value>uspItemReadBindingSource</value>
