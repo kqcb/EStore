@@ -148,6 +148,8 @@ namespace EStore.Main
                     Quantity = 1
                 };
 
+                EStoreContext.OrderDetails.Create(orderDetails);
+
             }
 
             if(id != -1)

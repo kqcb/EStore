@@ -14,8 +14,9 @@ namespace EStoreDataAccessLayer
             var cmd = Connection.GetSqlCommand("usp_Order_Read_By_UserId");
 
             cmd.Parameters.AddWithValue("Id", userId);
-
-            return LoadObjects(cmd.ExecuteReader());
+            var result = LoadObjects(cmd.ExecuteReader());
+            Connection.GetSqlConnection().Close();
+            return result;
 
         }
          public System.Data.DataTable ToDataTableByUserId(int userId)

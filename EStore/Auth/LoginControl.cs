@@ -38,15 +38,9 @@ namespace EStore.Auth
         }
 
         #region Textboxs
-        private void txtEmail_Click(object sender, EventArgs e)
+        private void txtEmail_Enter(object sender, EventArgs e)
         {
             changeText(txtEmail, "Email");
-        }
-
-        private void txtPassword_Click(object sender, EventArgs e)
-        {
-            if (txtPassword.Text == "Password") txtPassword.PasswordChar = '*';
-            changeText(txtPassword, "Password");
         }
 
         private void changeText(Telerik.WinControls.UI.RadTextBox textBox, string initialValue)

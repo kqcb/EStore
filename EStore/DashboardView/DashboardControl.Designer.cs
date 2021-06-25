@@ -35,26 +35,26 @@ namespace EStore.DashboardView
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.panel5.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -94,6 +94,23 @@ namespace EStore.DashboardView
             this.panel2.Size = new System.Drawing.Size(401, 377);
             this.panel2.TabIndex = 3;
             // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(0, 0);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(401, 377);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "chart1";
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.label5);
@@ -123,6 +140,14 @@ namespace EStore.DashboardView
             this.panel3.Size = new System.Drawing.Size(401, 482);
             this.panel3.TabIndex = 6;
             // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 105);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(401, 377);
+            this.panel4.TabIndex = 4;
+            // 
             // flowLayoutPanel5
             // 
             this.flowLayoutPanel5.Controls.Add(this.label1);
@@ -142,14 +167,6 @@ namespace EStore.DashboardView
             this.label1.Text = "Orders";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 105);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(401, 377);
-            this.panel4.TabIndex = 4;
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.panel6);
@@ -159,6 +176,14 @@ namespace EStore.DashboardView
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(401, 483);
             this.panel5.TabIndex = 7;
+            // 
+            // panel6
+            // 
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(0, 93);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(401, 390);
+            this.panel6.TabIndex = 0;
             // 
             // flowLayoutPanel3
             // 
@@ -179,31 +204,6 @@ namespace EStore.DashboardView
             this.label2.Text = "Items";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel6
-            // 
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 93);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(401, 390);
-            this.panel6.TabIndex = 0;
-            // 
-            // chart1
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(0, 0);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(401, 377);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
-            // 
             // DashboardControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,12 +214,12 @@ namespace EStore.DashboardView
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.flowLayoutPanel5.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }

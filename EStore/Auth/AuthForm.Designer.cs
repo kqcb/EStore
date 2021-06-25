@@ -37,25 +37,25 @@
             this.btnShqip = new System.Windows.Forms.Button();
             this.btnEnglish = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.btnGoBack = new Telerik.WinControls.UI.RadButton();
             this.btnSignUp = new Telerik.WinControls.UI.RadButton();
             this.btnLogin = new Telerik.WinControls.UI.RadButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnGoBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSignUp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogin)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
-            this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,9 +98,9 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel2, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.panelMain, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.panel4, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel1, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(325, 3);
@@ -160,9 +160,21 @@
             this.panelMain.Size = new System.Drawing.Size(316, 507);
             this.panelMain.TabIndex = 13;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnGoBack);
+            this.panel4.Controls.Add(this.btnSignUp);
+            this.panel4.Controls.Add(this.btnLogin);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(3, 551);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(310, 36);
+            this.panel4.TabIndex = 14;
+            // 
             // btnGoBack
             // 
-            this.btnGoBack.Location = new System.Drawing.Point(81, 3);
+            this.btnGoBack.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnGoBack.Location = new System.Drawing.Point(90, 0);
             this.btnGoBack.Name = "btnGoBack";
             this.btnGoBack.Size = new System.Drawing.Size(110, 36);
             this.btnGoBack.TabIndex = 2;
@@ -174,7 +186,8 @@
             // 
             // btnSignUp
             // 
-            this.btnSignUp.Location = new System.Drawing.Point(197, 3);
+            this.btnSignUp.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnSignUp.Location = new System.Drawing.Point(0, 0);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(110, 36);
             this.btnSignUp.TabIndex = 1;
@@ -188,7 +201,8 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(87)))), ((int)(((byte)(18)))));
-            this.btnLogin.Location = new System.Drawing.Point(197, 45);
+            this.btnLogin.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnLogin.Location = new System.Drawing.Point(200, 0);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(110, 36);
             this.btnLogin.TabIndex = 3;
@@ -234,18 +248,6 @@
             this.btnMinimize.TabStop = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.btnSignUp);
-            this.flowLayoutPanel2.Controls.Add(this.btnGoBack);
-            this.flowLayoutPanel2.Controls.Add(this.btnLogin);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 551);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(310, 36);
-            this.flowLayoutPanel2.TabIndex = 0;
-            // 
             // AuthForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,13 +269,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnGoBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSignUp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogin)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
-            this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -291,10 +293,10 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnShqip;
         private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.Panel panel4;
         private Telerik.WinControls.UI.RadButton btnSignUp;
         private Telerik.WinControls.UI.RadButton btnLogin;
         private Telerik.WinControls.UI.RadButton btnGoBack;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
     }
 }

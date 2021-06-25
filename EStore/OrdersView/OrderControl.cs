@@ -38,7 +38,7 @@ namespace EStore_Temp.OrdersView
             
             });
 
-            this.lblTotal.Text = amount.ToString().Substring(0, amount.ToString().Length - 3);
+            this.lblTotal.Text = amount.ToString().Length > 2 ? amount.ToString().Substring(0, amount.ToString().Length - 3) : 0.ToString();
 
             if(_user.Role.Description != "Admin")
             {
