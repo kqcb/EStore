@@ -660,6 +660,9 @@
   <data name="panelMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
+  <data name="resource.Text" xml:space="preserve">
+    <value>Register</value>
+  </data>
   <data name="btnLogin.Text" xml:space="preserve">
     <value>Login</value>
   </data>
@@ -728,8 +731,5 @@
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>sq</value>
   </metadata>
 </root>

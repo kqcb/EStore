@@ -155,18 +155,28 @@
             resources.ApplyResources(this.btnGoBack, "btnGoBack");
             this.btnGoBack.Name = "btnGoBack";
             this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnGoBack.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnGoBack.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             // 
             // btnSignUp
             // 
             resources.ApplyResources(this.btnSignUp, "btnSignUp");
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnSignUp.GetChildAt(0))).Text = resources.GetString("resource.Text");
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnSignUp.GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(103)))), ((int)(((byte)(250)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSignUp.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(247)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSignUp.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             // 
             // btnLogin
             // 
             resources.ApplyResources(this.btnLogin, "btnLogin");
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(87)))), ((int)(((byte)(18)))));
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnLogin.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(151)))), ((int)(((byte)(41)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnLogin.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.btnLogin.GetChildAt(0).GetChildAt(1).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(106)))), ((int)(((byte)(25)))));
             // 
             // AuthForm
             // 
