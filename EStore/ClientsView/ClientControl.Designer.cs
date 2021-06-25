@@ -138,6 +138,7 @@ namespace EStore.ClientsView
             this.btnDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnDetails.TabIndex = 0;
             this.btnDetails.TabStop = false;
+            this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
             // 
             // btnEdit
             // 
@@ -148,6 +149,7 @@ namespace EStore.ClientsView
             this.btnEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnEdit.TabIndex = 1;
             this.btnEdit.TabStop = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click_1);
             // 
             // btnDelete
             // 
@@ -164,7 +166,7 @@ namespace EStore.ClientsView
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ClientControl";
             this.Size = new System.Drawing.Size(900, 50);
             this.flowLayoutPanel1.ResumeLayout(false);

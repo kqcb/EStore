@@ -186,6 +186,7 @@ namespace EStore_Temp.OrdersView
             // 
             // 
             this.RootElement.ApplyShapeToControl = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.OrderEditForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);

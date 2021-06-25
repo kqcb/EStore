@@ -46,9 +46,16 @@ namespace EStore.ClientsView
                 MessageBox.Show("User could not be deleted");
         }
 
-        private void btnEdit_Click(object sender, EventArgs e)
+        
+
+        private void btnDetails_Click(object sender, EventArgs e)
         {
-            Common.AddControl(_controls, new ClientEditControl(_user));
+            new ClientsDetailsForm(_user).ShowDialog();
+        }
+
+        private void btnEdit_Click_1(object sender, EventArgs e)
+        {
+            new ClientEditForm(_controls, _user).ShowDialog();
         }
     }
 }

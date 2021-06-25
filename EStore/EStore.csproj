@@ -53,6 +53,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -103,23 +104,17 @@
     <Compile Include="ClientsView\ClientControl.Designer.cs">
       <DependentUpon>ClientControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientsView\ClientCreateControl.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="ClientsView\ClientDetailsForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientsView\ClientCreateControl.Designer.cs">
-      <DependentUpon>ClientCreateControl.cs</DependentUpon>
+    <Compile Include="ClientsView\ClientDetailsForm.Designer.cs">
+      <DependentUpon>ClientDetailsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientsView\ClientDetailsControl.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="ClientsView\ClientEditForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientsView\ClientDetailsControl.Designer.cs">
-      <DependentUpon>ClientDetailsControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClientsView\ClientEditControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ClientsView\ClientEditControl.Designer.cs">
-      <DependentUpon>ClientEditControl.cs</DependentUpon>
+    <Compile Include="ClientsView\ClientEditForm.Designer.cs">
+      <DependentUpon>ClientEditForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientsView\ClientsMainControl.cs">
       <SubType>UserControl</SubType>
@@ -230,11 +225,17 @@
     <EmbeddedResource Include="ClientsView\ClientControl.resx">
       <DependentUpon>ClientControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientsView\ClientEditControl.resx">
-      <DependentUpon>ClientEditControl.cs</DependentUpon>
+    <EmbeddedResource Include="ClientsView\ClientDetailsForm.resx">
+      <DependentUpon>ClientDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsView\ClientEditForm.resx">
+      <DependentUpon>ClientEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientsView\ClientsMainControl.resx">
       <DependentUpon>ClientsMainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardView\DashboardMainControl.resx">
+      <DependentUpon>DashboardMainControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ItemsView\ItemCreateForm.resx">
       <DependentUpon>ItemCreateForm.cs</DependentUpon>
