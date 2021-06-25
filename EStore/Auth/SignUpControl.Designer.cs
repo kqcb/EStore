@@ -104,7 +104,7 @@ namespace EStore.Auth
             this.cmbCities.FormattingEnabled = true;
             this.cmbCities.Location = new System.Drawing.Point(16, 175);
             this.cmbCities.Name = "cmbCities";
-            this.cmbCities.Size = new System.Drawing.Size(244, 29);
+            this.cmbCities.Size = new System.Drawing.Size(244, 40);
             this.cmbCities.TabIndex = 5;
             this.cmbCities.Text = "Choose city";
             // 
@@ -119,7 +119,7 @@ namespace EStore.Auth
             // 
             this.txtEmail.RootElement.AccessibleDescription = "Password";
             this.txtEmail.RootElement.ShadowDepth = 0;
-            this.txtEmail.Size = new System.Drawing.Size(244, 31);
+            this.txtEmail.Size = new System.Drawing.Size(244, 41);
             this.txtEmail.TabIndex = 3;
             this.txtEmail.Text = "Email";
             this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
@@ -141,7 +141,7 @@ namespace EStore.Auth
             // 
             this.txtPassword.RootElement.AccessibleDescription = "Password";
             this.txtPassword.RootElement.ShadowDepth = 0;
-            this.txtPassword.Size = new System.Drawing.Size(244, 31);
+            this.txtPassword.Size = new System.Drawing.Size(244, 41);
             this.txtPassword.TabIndex = 4;
             this.txtPassword.Text = "Password";
             this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
@@ -158,7 +158,7 @@ namespace EStore.Auth
             this.txtName.Location = new System.Drawing.Point(16, 27);
             this.txtName.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(107, 31);
+            this.txtName.Size = new System.Drawing.Size(107, 41);
             this.txtName.TabIndex = 1;
             this.txtName.Text = "Name";
             this.txtName.Click += new System.EventHandler(this.txtName_Click);
@@ -175,7 +175,7 @@ namespace EStore.Auth
             this.txtLastName.Location = new System.Drawing.Point(151, 27);
             this.txtLastName.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(109, 31);
+            this.txtLastName.Size = new System.Drawing.Size(109, 41);
             this.txtLastName.TabIndex = 2;
             this.txtLastName.Text = "Lastname";
             this.txtLastName.Click += new System.EventHandler(this.txtLastName_Click);
@@ -188,7 +188,7 @@ namespace EStore.Auth
             // 
             // SignUpControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

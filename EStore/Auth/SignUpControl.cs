@@ -34,8 +34,8 @@ namespace EStore.Auth
         {
             string name = txtName.Text;
             string lastName = txtLastName.Text;
-            string email = txtLastName.Text;
-            string password = txtName.Text;
+            string email = txtEmail.Text;
+            string password = txtPassword.Text;
             int cityIndex = cmbCities.SelectedIndex;
 
             if (cityIndex == -1 || IsNullOrEmpty(name) || IsNullOrWhiteSpace(password) || IsNullOrEmpty(password) || IsNullOrEmpty(lastName) || IsNullOrEmpty(email))
