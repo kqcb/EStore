@@ -55,5 +55,11 @@ namespace EStore.Auth
         }
 
         #endregion
+
+        private void txtPassword_Enter(object sender, EventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = true;
+            txtPassword.Text = "";
+        }
     }
 }
