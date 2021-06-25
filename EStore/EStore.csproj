@@ -139,11 +139,11 @@
     <Compile Include="ItemsView\ItemCreateForm.Designer.cs">
       <DependentUpon>ItemCreateForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ItemsView\ItemDetailsControl.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="ItemsView\ItemDetailsForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ItemsView\ItemDetailsControl.Designer.cs">
-      <DependentUpon>ItemDetailsControl.cs</DependentUpon>
+    <Compile Include="ItemsView\ItemDetailsForm.Designer.cs">
+      <DependentUpon>ItemDetailsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ItemsView\ItemEditForm.cs">
       <SubType>Form</SubType>
@@ -239,8 +239,8 @@
     <EmbeddedResource Include="ItemsView\ItemCreateForm.resx">
       <DependentUpon>ItemCreateForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ItemsView\ItemDetailsControl.resx">
-      <DependentUpon>ItemDetailsControl.cs</DependentUpon>
+    <EmbeddedResource Include="ItemsView\ItemDetailsForm.resx">
+      <DependentUpon>ItemDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ItemsView\ItemEditForm.resx">
       <DependentUpon>ItemEditForm.cs</DependentUpon>

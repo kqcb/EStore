@@ -16,13 +16,13 @@ namespace EStore_Temp.ItemsView
     public partial class ItemEditForm : Telerik.WinControls.UI.RadForm
     {
         private readonly Item _item;
+        private readonly Control.ControlCollection _controls;
         private List<Brand> _brands;
         private List<Category> _categories;
-        public ItemEditForm(Item item)
+        public ItemEditForm(Item item, Control.ControlCollection controls)
         {
             _item = item;
-
-
+            this._controls = controls;
             InitializeComponent();
 
             _brands = EStoreContext.Brands.Read();
@@ -96,7 +96,7 @@ namespace EStore_Temp.ItemsView
 
                 if (EStoreContext.Items.Update(item))
                 {
-                    MessageBox.Show("Item edited succesfully");
+                    ((ItemsMainControl)_controls["ItemsMainControl"]).FillTable();
                     this.Close();
                 }
                 else

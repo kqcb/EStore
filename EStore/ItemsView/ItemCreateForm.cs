@@ -77,7 +77,6 @@ namespace EStore_Temp.ItemsView
 
                 if (EStoreContext.Items.Create(item) > 0)
                 {
-                    MessageBox.Show("Item created succesfully");
                     ((ItemsMainControl)_controls["ItemsMainControl"]).FillTable();
                     this.Close();
                 }

@@ -46,7 +46,7 @@ namespace EStore_Temp.ItemsView
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            new ItemEditForm(_item).ShowDialog();
+            new ItemEditForm(_item, _controls).ShowDialog();
 
         }
 
@@ -62,9 +62,7 @@ namespace EStore_Temp.ItemsView
 
         private void btnDetails_Click(object sender, EventArgs e)
         {
-            var itemDetailsControl = new ItemDetailsControl(_item);
-            itemDetailsControl.Dock = DockStyle.Fill;
-            Common.AddControl(_controls, itemDetailsControl);
+            new ItemDetailsForm(_item).ShowDialog();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
