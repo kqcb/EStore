@@ -29,6 +29,7 @@ namespace EStore_Temp.OrdersView
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderControl));
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblId = new Telerik.WinControls.UI.RadLabel();
@@ -38,9 +39,9 @@ namespace EStore_Temp.OrdersView
             this.lblDeliveryDate = new Telerik.WinControls.UI.RadLabel();
             this.lblTotal = new Telerik.WinControls.UI.RadLabel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnDetails = new Telerik.WinControls.UI.RadButton();
-            this.btnDelete = new Telerik.WinControls.UI.RadButton();
-            this.btnEdit = new Telerik.WinControls.UI.RadButton();
+            this.btnDetails = new System.Windows.Forms.PictureBox();
+            this.btnEdit = new System.Windows.Forms.PictureBox();
+            this.btnDelete = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -52,8 +53,8 @@ namespace EStore_Temp.OrdersView
             ((System.ComponentModel.ISupportInitialize)(this.lblTotal)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
             this.SuspendLayout();
             // 
             // radPanel1
@@ -61,8 +62,9 @@ namespace EStore_Temp.OrdersView
             this.radPanel1.Controls.Add(this.flowLayoutPanel1);
             this.radPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radPanel1.Location = new System.Drawing.Point(0, 0);
+            this.radPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radPanel1.Name = "radPanel1";
-            this.radPanel1.Size = new System.Drawing.Size(2118, 77);
+            this.radPanel1.Size = new System.Drawing.Size(900, 50);
             this.radPanel1.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -76,117 +78,124 @@ namespace EStore_Temp.OrdersView
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(2118, 77);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(33, 0, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(900, 50);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // lblId
             // 
             this.lblId.AutoSize = false;
-            this.lblId.Location = new System.Drawing.Point(53, 19);
-            this.lblId.Margin = new System.Windows.Forms.Padding(3, 19, 3, 3);
+            this.lblId.Location = new System.Drawing.Point(35, 12);
+            this.lblId.Margin = new System.Windows.Forms.Padding(2, 12, 2, 2);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(280, 18);
+            this.lblId.Size = new System.Drawing.Size(66, 27);
             this.lblId.TabIndex = 4;
             this.lblId.Text = "radLabel2";
             // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = false;
-            this.lblStatus.Location = new System.Drawing.Point(339, 19);
-            this.lblStatus.Margin = new System.Windows.Forms.Padding(3, 19, 3, 3);
+            this.lblStatus.Location = new System.Drawing.Point(105, 12);
+            this.lblStatus.Margin = new System.Windows.Forms.Padding(2, 12, 2, 2);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(350, 18);
+            this.lblStatus.Size = new System.Drawing.Size(95, 27);
             this.lblStatus.TabIndex = 5;
             this.lblStatus.Text = "radLabel2";
             // 
             // lblClient
             // 
             this.lblClient.AutoSize = false;
-            this.lblClient.Location = new System.Drawing.Point(695, 19);
-            this.lblClient.Margin = new System.Windows.Forms.Padding(3, 19, 3, 3);
+            this.lblClient.Location = new System.Drawing.Point(204, 12);
+            this.lblClient.Margin = new System.Windows.Forms.Padding(2, 12, 2, 2);
             this.lblClient.Name = "lblClient";
-            this.lblClient.Size = new System.Drawing.Size(320, 18);
+            this.lblClient.Size = new System.Drawing.Size(133, 27);
             this.lblClient.TabIndex = 6;
             this.lblClient.Text = "radLabel2";
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = false;
-            this.lblDate.Location = new System.Drawing.Point(1021, 19);
-            this.lblDate.Margin = new System.Windows.Forms.Padding(3, 19, 3, 3);
+            this.lblDate.Location = new System.Drawing.Point(341, 12);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(2, 12, 2, 2);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(320, 18);
+            this.lblDate.Size = new System.Drawing.Size(126, 27);
             this.lblDate.TabIndex = 7;
             this.lblDate.Text = "radLabel2";
             // 
             // lblDeliveryDate
             // 
             this.lblDeliveryDate.AutoSize = false;
-            this.lblDeliveryDate.Location = new System.Drawing.Point(1347, 19);
-            this.lblDeliveryDate.Margin = new System.Windows.Forms.Padding(3, 19, 3, 3);
+            this.lblDeliveryDate.Location = new System.Drawing.Point(471, 12);
+            this.lblDeliveryDate.Margin = new System.Windows.Forms.Padding(2, 12, 2, 2);
             this.lblDeliveryDate.Name = "lblDeliveryDate";
-            this.lblDeliveryDate.Size = new System.Drawing.Size(320, 18);
+            this.lblDeliveryDate.Size = new System.Drawing.Size(115, 27);
             this.lblDeliveryDate.TabIndex = 8;
             this.lblDeliveryDate.Text = "radLabel2";
             // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = false;
-            this.lblTotal.Location = new System.Drawing.Point(1673, 19);
-            this.lblTotal.Margin = new System.Windows.Forms.Padding(3, 19, 3, 3);
+            this.lblTotal.Location = new System.Drawing.Point(590, 12);
+            this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 12, 2, 2);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(100, 18);
+            this.lblTotal.Size = new System.Drawing.Size(120, 27);
             this.lblTotal.TabIndex = 3;
             this.lblTotal.Text = "radLabel1";
             // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.btnDetails);
-            this.flowLayoutPanel2.Controls.Add(this.btnDelete);
             this.flowLayoutPanel2.Controls.Add(this.btnEdit);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(1776, 15);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0, 15, 0, 0);
+            this.flowLayoutPanel2.Controls.Add(this.btnDelete);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(712, 10);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(313, 45);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(117, 29);
             this.flowLayoutPanel2.TabIndex = 9;
             // 
             // btnDetails
             // 
-            this.btnDetails.Location = new System.Drawing.Point(0, 0);
-            this.btnDetails.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDetails.Image = ((System.Drawing.Image)(resources.GetObject("btnDetails.Image")));
+            this.btnDetails.Location = new System.Drawing.Point(3, 3);
             this.btnDetails.Name = "btnDetails";
-            this.btnDetails.Size = new System.Drawing.Size(102, 39);
-            this.btnDetails.TabIndex = 9;
-            this.btnDetails.Text = "View Details";
+            this.btnDetails.Size = new System.Drawing.Size(31, 26);
+            this.btnDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnDetails.TabIndex = 0;
+            this.btnDetails.TabStop = false;
             this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(105, 3);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(99, 36);
-            this.btnDelete.TabIndex = 10;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(210, 3);
+            this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
+            this.btnEdit.Location = new System.Drawing.Point(40, 3);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(99, 36);
-            this.btnEdit.TabIndex = 11;
-            this.btnEdit.Text = "Edit";
+            this.btnEdit.Size = new System.Drawing.Size(31, 26);
+            this.btnEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnEdit.TabIndex = 1;
+            this.btnEdit.TabStop = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
+            this.btnDelete.Location = new System.Drawing.Point(77, 3);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(31, 26);
+            this.btnDelete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.TabStop = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // OrderControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.radPanel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "OrderControl";
-            this.Size = new System.Drawing.Size(2118, 77);
+            this.Size = new System.Drawing.Size(900, 50);
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.radPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -198,8 +207,8 @@ namespace EStore_Temp.OrdersView
             ((System.ComponentModel.ISupportInitialize)(this.lblTotal)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -214,9 +223,9 @@ namespace EStore_Temp.OrdersView
         private Telerik.WinControls.UI.RadLabel lblDate;
         private Telerik.WinControls.UI.RadLabel lblDeliveryDate;
         private Telerik.WinControls.UI.RadLabel lblTotal;
-        private Telerik.WinControls.UI.RadButton btnDetails;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private Telerik.WinControls.UI.RadButton btnDelete;
-        private Telerik.WinControls.UI.RadButton btnEdit;
+        private System.Windows.Forms.PictureBox btnDetails;
+        private System.Windows.Forms.PictureBox btnEdit;
+        private System.Windows.Forms.PictureBox btnDelete;
     }
 }

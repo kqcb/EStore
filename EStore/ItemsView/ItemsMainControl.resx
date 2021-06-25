@@ -175,7 +175,10 @@
     <value>0</value>
   </data>
   <data name="btnToExcel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>271, 9</value>
+    <value>272, 8</value>
+  </data>
+  <data name="btnToExcel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="btnToExcel.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 24</value>

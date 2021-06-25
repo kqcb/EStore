@@ -31,7 +31,6 @@ namespace EStore_Temp.OrdersView
         {
             this.components = new System.ComponentModel.Container();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnToExcel = new Telerik.WinControls.UI.RadButton();
             this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
             this.uspOrderReadBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -43,9 +42,9 @@ namespace EStore_Temp.OrdersView
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelMainTop = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnToExcel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uspOrderReadBindingSource)).BeginInit();
@@ -56,34 +55,24 @@ namespace EStore_Temp.OrdersView
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
+            this.panelMainTop.SuspendLayout();
             this.SuspendLayout();
             // 
             // radPanel1
             // 
-            this.radPanel1.Controls.Add(this.flowLayoutPanel3);
+            this.radPanel1.Controls.Add(this.panelMainTop);
             this.radPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.radPanel1.Location = new System.Drawing.Point(0, 0);
             this.radPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.radPanel1.Name = "radPanel1";
-            this.radPanel1.Size = new System.Drawing.Size(1460, 53);
+            this.radPanel1.Size = new System.Drawing.Size(800, 53);
             this.radPanel1.TabIndex = 0;
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.Controls.Add(this.btnToExcel);
-            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(1260, 0);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Padding = new System.Windows.Forms.Padding(10);
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(200, 53);
-            this.flowLayoutPanel3.TabIndex = 3;
             // 
             // btnToExcel
             // 
             this.btnToExcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.btnToExcel.ForeColor = System.Drawing.Color.White;
-            this.btnToExcel.Location = new System.Drawing.Point(67, 13);
+            this.btnToExcel.Location = new System.Drawing.Point(673, 9);
             this.btnToExcel.Name = "btnToExcel";
             this.btnToExcel.Size = new System.Drawing.Size(110, 24);
             this.btnToExcel.TabIndex = 2;
@@ -97,10 +86,10 @@ namespace EStore_Temp.OrdersView
             // radPanel2
             // 
             this.radPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.radPanel2.Location = new System.Drawing.Point(0, 528);
+            this.radPanel2.Location = new System.Drawing.Point(0, 434);
             this.radPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.radPanel2.Name = "radPanel2";
-            this.radPanel2.Size = new System.Drawing.Size(1460, 44);
+            this.radPanel2.Size = new System.Drawing.Size(800, 44);
             this.radPanel2.TabIndex = 1;
             // 
             // uspOrderReadBindingSource
@@ -120,7 +109,7 @@ namespace EStore_Temp.OrdersView
             this.flowLayoutPanelNames.Location = new System.Drawing.Point(0, 53);
             this.flowLayoutPanelNames.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanelNames.Name = "flowLayoutPanelNames";
-            this.flowLayoutPanelNames.Size = new System.Drawing.Size(1460, 26);
+            this.flowLayoutPanelNames.Size = new System.Drawing.Size(800, 26);
             this.flowLayoutPanelNames.TabIndex = 2;
             // 
             // radLabel1
@@ -130,7 +119,7 @@ namespace EStore_Temp.OrdersView
             this.radLabel1.Location = new System.Drawing.Point(2, 2);
             this.radLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(187, 19);
+            this.radLabel1.Size = new System.Drawing.Size(66, 19);
             this.radLabel1.TabIndex = 0;
             this.radLabel1.Text = "Id";
             // 
@@ -138,10 +127,10 @@ namespace EStore_Temp.OrdersView
             // 
             this.radLabel6.AutoSize = false;
             this.radLabel6.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel6.Location = new System.Drawing.Point(193, 2);
+            this.radLabel6.Location = new System.Drawing.Point(72, 2);
             this.radLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.radLabel6.Name = "radLabel6";
-            this.radLabel6.Size = new System.Drawing.Size(213, 19);
+            this.radLabel6.Size = new System.Drawing.Size(95, 19);
             this.radLabel6.TabIndex = 5;
             this.radLabel6.Text = "Total";
             // 
@@ -149,10 +138,10 @@ namespace EStore_Temp.OrdersView
             // 
             this.radLabel5.AutoSize = false;
             this.radLabel5.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel5.Location = new System.Drawing.Point(410, 2);
+            this.radLabel5.Location = new System.Drawing.Point(171, 2);
             this.radLabel5.Margin = new System.Windows.Forms.Padding(2);
             this.radLabel5.Name = "radLabel5";
-            this.radLabel5.Size = new System.Drawing.Size(213, 19);
+            this.radLabel5.Size = new System.Drawing.Size(133, 19);
             this.radLabel5.TabIndex = 4;
             this.radLabel5.Text = "Delivery Date";
             // 
@@ -160,10 +149,10 @@ namespace EStore_Temp.OrdersView
             // 
             this.radLabel4.AutoSize = false;
             this.radLabel4.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel4.Location = new System.Drawing.Point(627, 2);
+            this.radLabel4.Location = new System.Drawing.Point(308, 2);
             this.radLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.radLabel4.Name = "radLabel4";
-            this.radLabel4.Size = new System.Drawing.Size(213, 19);
+            this.radLabel4.Size = new System.Drawing.Size(126, 19);
             this.radLabel4.TabIndex = 3;
             this.radLabel4.Text = "Date";
             // 
@@ -171,10 +160,10 @@ namespace EStore_Temp.OrdersView
             // 
             this.radLabel3.AutoSize = false;
             this.radLabel3.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel3.Location = new System.Drawing.Point(844, 2);
+            this.radLabel3.Location = new System.Drawing.Point(438, 2);
             this.radLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.radLabel3.Name = "radLabel3";
-            this.radLabel3.Size = new System.Drawing.Size(213, 19);
+            this.radLabel3.Size = new System.Drawing.Size(115, 19);
             this.radLabel3.TabIndex = 2;
             this.radLabel3.Text = "Client";
             // 
@@ -182,10 +171,10 @@ namespace EStore_Temp.OrdersView
             // 
             this.radLabel2.AutoSize = false;
             this.radLabel2.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel2.Location = new System.Drawing.Point(1061, 2);
+            this.radLabel2.Location = new System.Drawing.Point(557, 2);
             this.radLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(233, 19);
+            this.radLabel2.Size = new System.Drawing.Size(120, 19);
             this.radLabel2.TabIndex = 1;
             this.radLabel2.Text = "Status";
             // 
@@ -194,8 +183,20 @@ namespace EStore_Temp.OrdersView
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 79);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1460, 449);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(800, 355);
             this.flowLayoutPanel1.TabIndex = 3;
+            // 
+            // panelMainTop
+            // 
+            this.panelMainTop.Controls.Add(this.btnToExcel);
+            this.panelMainTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMainTop.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.panelMainTop.Location = new System.Drawing.Point(0, 0);
+            this.panelMainTop.Margin = new System.Windows.Forms.Padding(2);
+            this.panelMainTop.Name = "panelMainTop";
+            this.panelMainTop.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.panelMainTop.Size = new System.Drawing.Size(800, 45);
+            this.panelMainTop.TabIndex = 1;
             // 
             // OrdersMainControl
             // 
@@ -207,10 +208,9 @@ namespace EStore_Temp.OrdersView
             this.Controls.Add(this.radPanel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "OrdersMainControl";
-            this.Size = new System.Drawing.Size(1460, 572);
+            this.Size = new System.Drawing.Size(800, 478);
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.radPanel1.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnToExcel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uspOrderReadBindingSource)).EndInit();
@@ -221,6 +221,7 @@ namespace EStore_Temp.OrdersView
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
+            this.panelMainTop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -238,7 +239,7 @@ namespace EStore_Temp.OrdersView
         private Telerik.WinControls.UI.RadLabel radLabel5;
         private Telerik.WinControls.UI.RadLabel radLabel6;
         private Telerik.WinControls.UI.RadButton btnToExcel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel panelMainTop;
     }
 }

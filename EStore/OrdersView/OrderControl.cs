@@ -48,6 +48,7 @@ namespace EStore_Temp.OrdersView
             this.radPanel1.BackColor = color;
         }
 
+
         private void btnDetails_Click(object sender, EventArgs e)
         {
 
