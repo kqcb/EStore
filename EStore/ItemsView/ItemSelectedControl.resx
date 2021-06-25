@@ -117,4 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnClear.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAO+SURBVGhD7ZpBSxZRFIYHcRHRIvoFLSREREREJMSFiIgL
+        /1fLiBbR4lu0kohoERIRLkIkXEiIREiIiLiKEIkQMXvey7mXO/PNjDOfM9ViDjycO3Pfc+49370zIzMm
+        de13kgzDxFWSPIZvcHJDDuApOafwwzZMe8YgmvwmXMJVFZhcaRuvXNv4GRumPWOgJ1B58jVQzp4N057x
+        Kx3l/Ypl7Rqc2jDtGRP77gfMTPInHMORoM/5POiTNo4N2DDtWVyAh3Nf8EugC7EKC8R8xqfyCBumPcsp
+        4AwWrbuyETMHPyxHWE3rbs8YIVvAIUxad2VjwuPEfY3yOKy7PWOEbAG6j9cugJhx23ouTyMrQPQQ3IUR
+        Ej7Ig76w7IYuzFXw/Q7fjn3m3ApeD8JUAbEmbuNH4B4M2XT7DeEYPEe0hd/G6+Hi8G38BYQCOHcOe+rP
+        I46N2/g9/C98yCVK9FvQoz1h0+03OiVITbAJyNlIGy45XrPp9hudBwrIBN2YOGcD7WObbr8heinhdfiE
+        Vdp1tBXb6zbdfqNzGj4gvihK9A/R1v4ID226xYboFuivzk+QSqTi8G/xKnYMXsC5+jz2A7ymPQm636+B
+        0+jHEHasFVf/BOde4d31F2nk9cSewt/GVzfEum3pyg8TM05Itmoy6WbB3Q79oKBb67JJpJkHd31Zv7R6
+        AC6YRNffIseHGY3YoT1qsupGUCggTgr7HM+azOuyf9foCTttEmlGYdf6PLr1jptEGq1WeLB5Gikgwz5c
+        WwADhwJoj4IrAO9/ED0HcguINH+nAAZxBfhBoW8F6NuN+kXuCsQataHZLUS7sICI1ApwHFYgottCpUZQ
+        t4VMEgrIaNrfQgSHFaDtkxZuoUiTuwLW56lUAOwQW78AgtwKaFJ+YuZLV8D0fSsAoQDLU1qAacRgBRCY
+        WoGIShcx5BYQTaywgEgjmikgStptIcvTbaFSI7DbQiZxBUC3hWoZgd0WMokrALotVMsI7LaQSVwB0G2h
+        WkZgt4VM4gqA/2MLcU4f8lZMJt0MqKhYp5dW4bMT7Tnisi+/9KJr3iTSLIDiYo1ofAuJDVgBfax7g3ff
+        jSONjt/DMuiNm15Fpr4t2/E6LNHWB8J3kNIYjW8hzxnH7mtNfD7TPsWLQg1cpxm4gPsE65cOSQelYGKV
+        2qBdMGLTqm4k0dvgR/jwVtkSDjKJgSCH3lbrn0ru2LTqGYF67b3hJ1M0wRbbm/hwN6ttJNBXS30hfAa6
+        t+vVuvs3GfkqbfkB0F2tB/roWPxVMkmSP210Li/C6jc4AAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

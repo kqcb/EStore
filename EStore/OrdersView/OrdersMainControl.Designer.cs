@@ -37,11 +37,11 @@ namespace EStore_Temp.OrdersView
             this.uspOrderReadBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.flowLayoutPanelNames = new System.Windows.Forms.FlowLayoutPanel();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
-            this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
@@ -51,11 +51,11 @@ namespace EStore_Temp.OrdersView
             ((System.ComponentModel.ISupportInitialize)(this.uspOrderReadBindingSource)).BeginInit();
             this.flowLayoutPanelNames.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
             this.SuspendLayout();
             // 
             // radPanel1
@@ -130,53 +130,9 @@ namespace EStore_Temp.OrdersView
             this.radLabel1.Location = new System.Drawing.Point(2, 2);
             this.radLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(187, 12);
+            this.radLabel1.Size = new System.Drawing.Size(187, 19);
             this.radLabel1.TabIndex = 0;
             this.radLabel1.Text = "Id";
-            // 
-            // radLabel2
-            // 
-            this.radLabel2.AutoSize = false;
-            this.radLabel2.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel2.Location = new System.Drawing.Point(1061, 2);
-            this.radLabel2.Margin = new System.Windows.Forms.Padding(2);
-            this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(233, 12);
-            this.radLabel2.TabIndex = 1;
-            this.radLabel2.Text = "Statusi";
-            // 
-            // radLabel3
-            // 
-            this.radLabel3.AutoSize = false;
-            this.radLabel3.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel3.Location = new System.Drawing.Point(844, 2);
-            this.radLabel3.Margin = new System.Windows.Forms.Padding(2);
-            this.radLabel3.Name = "radLabel3";
-            this.radLabel3.Size = new System.Drawing.Size(213, 12);
-            this.radLabel3.TabIndex = 2;
-            this.radLabel3.Text = "Client";
-            // 
-            // radLabel4
-            // 
-            this.radLabel4.AutoSize = false;
-            this.radLabel4.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel4.Location = new System.Drawing.Point(627, 2);
-            this.radLabel4.Margin = new System.Windows.Forms.Padding(2);
-            this.radLabel4.Name = "radLabel4";
-            this.radLabel4.Size = new System.Drawing.Size(213, 12);
-            this.radLabel4.TabIndex = 3;
-            this.radLabel4.Text = "Date";
-            // 
-            // radLabel5
-            // 
-            this.radLabel5.AutoSize = false;
-            this.radLabel5.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
-            this.radLabel5.Location = new System.Drawing.Point(410, 2);
-            this.radLabel5.Margin = new System.Windows.Forms.Padding(2);
-            this.radLabel5.Name = "radLabel5";
-            this.radLabel5.Size = new System.Drawing.Size(213, 12);
-            this.radLabel5.TabIndex = 4;
-            this.radLabel5.Text = "Delivery Date";
             // 
             // radLabel6
             // 
@@ -185,9 +141,53 @@ namespace EStore_Temp.OrdersView
             this.radLabel6.Location = new System.Drawing.Point(193, 2);
             this.radLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.radLabel6.Name = "radLabel6";
-            this.radLabel6.Size = new System.Drawing.Size(213, 12);
+            this.radLabel6.Size = new System.Drawing.Size(213, 19);
             this.radLabel6.TabIndex = 5;
             this.radLabel6.Text = "Total";
+            // 
+            // radLabel5
+            // 
+            this.radLabel5.AutoSize = false;
+            this.radLabel5.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel5.Location = new System.Drawing.Point(410, 2);
+            this.radLabel5.Margin = new System.Windows.Forms.Padding(2);
+            this.radLabel5.Name = "radLabel5";
+            this.radLabel5.Size = new System.Drawing.Size(213, 19);
+            this.radLabel5.TabIndex = 4;
+            this.radLabel5.Text = "Delivery Date";
+            // 
+            // radLabel4
+            // 
+            this.radLabel4.AutoSize = false;
+            this.radLabel4.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel4.Location = new System.Drawing.Point(627, 2);
+            this.radLabel4.Margin = new System.Windows.Forms.Padding(2);
+            this.radLabel4.Name = "radLabel4";
+            this.radLabel4.Size = new System.Drawing.Size(213, 19);
+            this.radLabel4.TabIndex = 3;
+            this.radLabel4.Text = "Date";
+            // 
+            // radLabel3
+            // 
+            this.radLabel3.AutoSize = false;
+            this.radLabel3.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel3.Location = new System.Drawing.Point(844, 2);
+            this.radLabel3.Margin = new System.Windows.Forms.Padding(2);
+            this.radLabel3.Name = "radLabel3";
+            this.radLabel3.Size = new System.Drawing.Size(213, 19);
+            this.radLabel3.TabIndex = 2;
+            this.radLabel3.Text = "Client";
+            // 
+            // radLabel2
+            // 
+            this.radLabel2.AutoSize = false;
+            this.radLabel2.Font = new System.Drawing.Font("Segoe UI", 12.25F, System.Drawing.FontStyle.Bold);
+            this.radLabel2.Location = new System.Drawing.Point(1061, 2);
+            this.radLabel2.Margin = new System.Windows.Forms.Padding(2);
+            this.radLabel2.Name = "radLabel2";
+            this.radLabel2.Size = new System.Drawing.Size(233, 19);
+            this.radLabel2.TabIndex = 1;
+            this.radLabel2.Text = "Status";
             // 
             // flowLayoutPanel1
             // 
@@ -216,11 +216,11 @@ namespace EStore_Temp.OrdersView
             ((System.ComponentModel.ISupportInitialize)(this.uspOrderReadBindingSource)).EndInit();
             this.flowLayoutPanelNames.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
             this.ResumeLayout(false);
 
         }

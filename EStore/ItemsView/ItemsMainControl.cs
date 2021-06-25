@@ -47,7 +47,7 @@ namespace EStore_Temp.ItemsView
 
             var items = EStoreContext.Items.Read();
             
-            items.ForEach(item => panelMain.Controls.Add(new ItemView(_controls, flowLayoutSelectedListTop , _user, item)));  
+            items.ForEach(item => panelMain.Controls.Add(new ItemView(_controls, flowLayoutSelectedList , _user, item)));  
         }
         
          public void FillCartList(){
@@ -64,7 +64,7 @@ namespace EStore_Temp.ItemsView
          }
 
 
-   
+
 
         private void btnMakeOrder_Click(object sender, EventArgs e)
         {
@@ -77,7 +77,7 @@ namespace EStore_Temp.ItemsView
                 OrderDate = DateTime.Now
             };
 
-           int id = EStoreContext.Orders.Create(order);
+            int id = EStoreContext.Orders.Create(order);
 
             foreach (var item in ItemsMainControl.selectedItems)
             {
@@ -85,18 +85,20 @@ namespace EStore_Temp.ItemsView
                 var orderDetails = new OrderDetails()
                 {
                     Item = item,
-                    Order = new Order() { 
-                        Id = id 
+                    Order = new Order()
+                    {
+                        Id = id
                     },
                     Discount = 0,
                     Price = item.UnitPrice,
                     Quantity = 1
                 };
 
-                if(EStoreContext.OrderDetails.Create(orderDetails) != -1)
+                if (EStoreContext.OrderDetails.Create(orderDetails) != -1)
                 {
                     MessageBox.Show("Order created succesfully");
-                } else
+                }
+                else
                 {
                     MessageBox.Show("Order could not be created");
                 }
@@ -105,6 +107,11 @@ namespace EStore_Temp.ItemsView
 
             flowLayoutSelectedList.Controls.Clear();
 
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            flowLayoutSelectedList.Controls.Clear();
         }
 
         private void btnNew_Click(object sender, EventArgs e)
@@ -119,11 +126,6 @@ namespace EStore_Temp.ItemsView
         private void btnToExcel_Click(object sender, EventArgs e)
         {
             EStoreContext.Items.ToExcel();
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            flowLayoutSelectedList.Controls.Clear();
         }
     }
 }
