@@ -46,10 +46,7 @@ namespace EStore_Temp.ItemsView
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            ItemEditControl itemEdit = new ItemEditControl(_item);
-            itemEdit.Dock = DockStyle.Fill;
-            Common.AddControl(_controls, itemEdit);
-            //  Common.AddControl(_controls, itemEdit);
+            new ItemEditForm(_item).ShowDialog();
 
         }
 

@@ -76,7 +76,7 @@ namespace EStore_Temp.ItemsView
             this.flowLayoutPanel1.Controls.Add(this.radLabel3);
             this.flowLayoutPanel1.Controls.Add(this.drlBrand);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(232, 51);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(252, 42);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(238, 276);
             this.flowLayoutPanel1.TabIndex = 0;
@@ -163,7 +163,7 @@ namespace EStore_Temp.ItemsView
             // radImage
             // 
             this.radImage.ImageLayout = Telerik.WinControls.UI.RadImageLayout.Stretch;
-            this.radImage.Location = new System.Drawing.Point(12, 51);
+            this.radImage.Location = new System.Drawing.Point(32, 42);
             this.radImage.Name = "radImage";
             this.radImage.Size = new System.Drawing.Size(189, 180);
             this.radImage.SvgImageXml = null;
@@ -172,12 +172,13 @@ namespace EStore_Temp.ItemsView
             // btnSelectImage
             // 
             this.btnSelectImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(56)))), ((int)(((byte)(163)))));
-            this.btnSelectImage.Location = new System.Drawing.Point(12, 256);
+            this.btnSelectImage.Location = new System.Drawing.Point(32, 247);
             this.btnSelectImage.Name = "btnSelectImage";
             this.btnSelectImage.Size = new System.Drawing.Size(189, 36);
             this.btnSelectImage.TabIndex = 3;
             this.btnSelectImage.Text = "Select Image";
             this.btnSelectImage.Click += new System.EventHandler(this.btnSelectImage_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnSelectImage.GetChildAt(0))).Text = "Select Image";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSelectImage.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(158)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSelectImage.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.btnSelectImage.GetChildAt(0).GetChildAt(1).GetChildAt(1))).LineLimit = false;
@@ -190,12 +191,13 @@ namespace EStore_Temp.ItemsView
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(349, 343);
+            this.btnCreate.Location = new System.Drawing.Point(369, 334);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(92, 36);
             this.btnCreate.TabIndex = 4;
             this.btnCreate.Text = "Create";
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnCreate.GetChildAt(0))).Text = "Create";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCreate.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(176)))), ((int)(((byte)(60)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCreate.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.btnCreate.GetChildAt(0).GetChildAt(1).GetChildAt(1))).LineLimit = false;
@@ -204,7 +206,7 @@ namespace EStore_Temp.ItemsView
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(235, 343);
+            this.btnCancel.Location = new System.Drawing.Point(255, 334);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(92, 36);
             this.btnCancel.TabIndex = 5;

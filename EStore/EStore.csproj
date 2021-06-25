@@ -133,11 +133,11 @@
     <Compile Include="DashboardView\DashboardMainControl.Designer.cs">
       <DependentUpon>DashboardMainControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="ItemsView\ItemCreateControl.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="ItemsView\ItemCreateForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ItemsView\ItemCreateControl.Designer.cs">
-      <DependentUpon>ItemCreateControl.cs</DependentUpon>
+    <Compile Include="ItemsView\ItemCreateForm.Designer.cs">
+      <DependentUpon>ItemCreateForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ItemsView\ItemDetailsControl.cs">
       <SubType>UserControl</SubType>
@@ -145,11 +145,11 @@
     <Compile Include="ItemsView\ItemDetailsControl.Designer.cs">
       <DependentUpon>ItemDetailsControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="ItemsView\ItemEditControl.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="ItemsView\ItemEditForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ItemsView\ItemEditControl.Designer.cs">
-      <DependentUpon>ItemEditControl.cs</DependentUpon>
+    <Compile Include="ItemsView\ItemEditForm.Designer.cs">
+      <DependentUpon>ItemEditForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ItemsView\ItemSelectedControl.cs">
       <SubType>UserControl</SubType>
@@ -236,14 +236,14 @@
     <EmbeddedResource Include="ClientsView\ClientsMainControl.resx">
       <DependentUpon>ClientsMainControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ItemsView\ItemCreateControl.resx">
-      <DependentUpon>ItemCreateControl.cs</DependentUpon>
+    <EmbeddedResource Include="ItemsView\ItemCreateForm.resx">
+      <DependentUpon>ItemCreateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ItemsView\ItemDetailsControl.resx">
       <DependentUpon>ItemDetailsControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ItemsView\ItemEditControl.resx">
-      <DependentUpon>ItemEditControl.cs</DependentUpon>
+    <EmbeddedResource Include="ItemsView\ItemEditForm.resx">
+      <DependentUpon>ItemEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ItemsView\ItemSelectedControl.resx">
       <DependentUpon>ItemSelectedControl.cs</DependentUpon>
