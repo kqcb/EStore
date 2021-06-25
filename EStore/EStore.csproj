@@ -66,6 +66,7 @@
       <HintPath>..\lib\RCWF\2021.2.511.40.Trial\Telerik.WinControls.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Telerik.WinControls.ChartView, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.GridView, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
       <HintPath>..\lib\RCWF\2021.2.511.40.Trial\Telerik.WinControls.GridView.dll</HintPath>
       <Private>True</Private>
@@ -127,6 +128,11 @@
     </Compile>
     <Compile Include="DashboardView\DashboardControl.Designer.cs">
       <DependentUpon>DashboardControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EStoreDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EStoreDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="ItemsView\ItemCreateForm.cs">
       <SubType>Form</SubType>
@@ -294,6 +300,17 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.manifest" />
+    <None Include="EStoreDataSet1.xsc">
+      <DependentUpon>EStoreDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EStoreDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EStoreDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EStoreDataSet1.xss">
+      <DependentUpon>EStoreDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -42,5 +42,15 @@ namespace EStore.Properties {
                 return ((string)(this["EStoreConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-A57SPHC;Initial Catalog=EStore;User ID=sa;Password=123")]
+        public string EStoreConnectionString2 {
+            get {
+                return ((string)(this["EStoreConnectionString2"]));
+            }
+        }
     }
 }
