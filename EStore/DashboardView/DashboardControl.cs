@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EStore_Temp.DashboardView
+namespace EStore.DashboardView
 {
-    public partial class DashboardMainControl : UserControl
+    public partial class DashboardControl : UserControl
     {
-        public DashboardMainControl()
+        public DashboardControl()
         {
             InitializeComponent();
         }

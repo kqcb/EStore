@@ -122,11 +122,11 @@
     <Compile Include="ClientsView\ClientsMainControl.Designer.cs">
       <DependentUpon>ClientsMainControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="DashboardView\DashboardMainControl.cs">
+    <Compile Include="DashboardView\DashboardControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DashboardView\DashboardMainControl.Designer.cs">
-      <DependentUpon>DashboardMainControl.cs</DependentUpon>
+    <Compile Include="DashboardView\DashboardControl.Designer.cs">
+      <DependentUpon>DashboardControl.cs</DependentUpon>
     </Compile>
     <Compile Include="ItemsView\ItemCreateForm.cs">
       <SubType>Form</SubType>
@@ -234,8 +234,8 @@
     <EmbeddedResource Include="ClientsView\ClientsMainControl.resx">
       <DependentUpon>ClientsMainControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DashboardView\DashboardMainControl.resx">
-      <DependentUpon>DashboardMainControl.cs</DependentUpon>
+    <EmbeddedResource Include="DashboardView\DashboardControl.resx">
+      <DependentUpon>DashboardControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ItemsView\ItemCreateForm.resx">
       <DependentUpon>ItemCreateForm.cs</DependentUpon>

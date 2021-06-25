@@ -3,7 +3,6 @@ using System.Windows.Forms;
 using EStore.Auth;
 using EStore.ClientsView;
 using EStore.Utils;
-using EStore_Temp.DashboardView;
 using EStore_Temp.ItemsView;
 using EStore_Temp.OrdersView;
 using EStoreBusinessLogicLayer;
@@ -16,7 +15,8 @@ namespace EStore.Main
         private ClientsMainControl _clientsMainControl;
         private ItemsMainControl _itemsMainControl;
         private OrdersMainControl _ordersMainControl;
-        private DashboardMainControl _dashboardMainControl;
+        private DashboardView.DashboardControl _dashboard;
+        //private Dashboard _dashboard;
         private readonly User user;
 
         public MainForm(User user)
@@ -27,10 +27,10 @@ namespace EStore.Main
             _clientsMainControl = new(radPanelMain.Controls);
             _itemsMainControl = new(radPanelMain.Controls, flowLayoutSelectedList, user);
             _ordersMainControl = new(radPanelMain.Controls, user);
-            _dashboardMainControl = new();
+            _dashboard = new();
             lblTitle.Text = "Dashboard";
             lblUser.Text = "Welcome " + user.Name + " " + user.LastName;
-            Common.ChangeContorl(radPanelMain.Controls, _dashboardMainControl);
+            Common.ChangeContorl(radPanelMain.Controls, _dashboard);
             this.user = user;
         } 
 
@@ -58,7 +58,7 @@ namespace EStore.Main
         {
             lblTitle.Text = "Dashboard";
             btnGoBack.Visible = false;
-            Common.ChangeContorl(radPanelMain.Controls, _dashboardMainControl); 
+            Common.ChangeContorl(radPanelMain.Controls, _dashboard); 
         }
 
         private void btnItems_Click(object sender, EventArgs e)
@@ -99,7 +99,7 @@ namespace EStore.Main
             if (radPanelMain.Controls.Count < 1)
             {
                 lblTitle.Text = "Dashboard";
-                Common.ChangeContorl(radPanelMain.Controls, _dashboardMainControl);
+                Common.ChangeContorl(radPanelMain.Controls, _dashboard);
                 btnGoBack.Visible = false;
             }
         }
