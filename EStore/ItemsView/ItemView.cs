@@ -30,13 +30,13 @@ namespace EStore_Temp.ItemsView
 
             if (user.Role.Id == 1)
             {
+                btnDelete.Visible = true;
                 btnEdit.Visible = true;
-                btnAddToCart.Visible = true;
             }
             else
             {
-                btnEdit.Visible = false;
-                btnAddToCart.Visible = true;
+                btnDelete.Visible = false;
+                btnEdit.Visible = true;
             }
 
             this.radImage.Image = Common.ToImage(item.Image);
@@ -44,13 +44,12 @@ namespace EStore_Temp.ItemsView
 
         }
 
-       
-        private void btnEdit_Click_1(object sender, EventArgs e)
+        private void btnEdit_Click(object sender, EventArgs e)
         {
-             ItemEditControl itemEdit = new ItemEditControl(_item);
+            ItemEditControl itemEdit = new ItemEditControl(_item);
             itemEdit.Dock = DockStyle.Fill;
             Common.AddControl(_controls, itemEdit);
-          //  Common.AddControl(_controls, itemEdit);
+            //  Common.AddControl(_controls, itemEdit);
 
         }
 
@@ -60,7 +59,7 @@ namespace EStore_Temp.ItemsView
             ItemsMainControl.selectedItems.Add(_item);
 
             ((ItemsMainControl)_controls["ItemsMainControl"]).FillCartList();
-          
+
 
         }
 
@@ -73,11 +72,12 @@ namespace EStore_Temp.ItemsView
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if(EStoreContext.Items.Delete(_item.Id))
+            if (EStoreContext.Items.Delete(_item.Id))
             {
                 ((ItemsMainControl)_controls[0]).FillTable();
 
-            } else
+            }
+            else
             {
                 MessageBox.Show("Item could not be deleted");
             }

@@ -15,20 +15,13 @@ namespace EStore_Temp.ItemsView
     {
         private readonly ControlCollection _controls;
         private readonly Item _item;
-        List<Color> colors = new List<Color>()
-        {
-            Color.BlueViolet,
-            Color.YellowGreen,
-            Color.Coral,
-            Color.Magenta
-        };
 
 
         public ItemSelectedControl(ControlCollection controls, Item item)
         {
             InitializeComponent();
             Random r = new Random();
-            this.BackColor = colors[r.Next(0, colors.Count)];
+            this.BackColor = Color.FromArgb(26, 161, 155);
             this._controls = controls;
             this._item = item;
             this.lblName.Text = item.Name;
