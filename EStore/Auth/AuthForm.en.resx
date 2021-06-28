@@ -126,17 +126,38 @@
     <value>Tile</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 641</value>
-  </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 641</value>
+    <value>327, 704</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 3</value>
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 698</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>655, 704</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>327, 704</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 664</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 31</value>
   </data>
   <data name="btnShqip.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
@@ -162,11 +183,56 @@
   <data name="btnEnglish.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 601</value>
+  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 46</value>
   </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 31</value>
+  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 573</value>
+  </data>
+  <data name="resource.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="resource.Text1" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="resource.Text2" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 622</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 36</value>
+  </data>
+  <data name="btnGoBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 0</value>
+  </data>
+  <data name="btnGoBack.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="resource.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="btnSignUp.Text" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="resource.Text1" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="btnLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 0</value>
+  </data>
+  <data name="btnLogin.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="resource.Text2" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 3</value>
+  </data>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 40</value>
   </data>
   <data name="btnClose.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Tile</value>
@@ -239,7 +305,7 @@
 </value>
   </data>
   <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 0</value>
+    <value>115, 3</value>
   </data>
   <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 37</value>
@@ -358,64 +424,19 @@
 </value>
   </data>
   <data name="btnMinimize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 0</value>
+    <value>81, 5</value>
   </data>
   <data name="btnMinimize.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
   <data name="btnMinimize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 37</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>258, 0</value>
-  </data>
-  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 37</value>
-  </data>
-  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 37</value>
-  </data>
-  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 519</value>
-  </data>
-  <data name="btnGoBack.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 0</value>
-  </data>
-  <data name="btnLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 0</value>
-  </data>
-  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 559</value>
-  </data>
-  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>308, 36</value>
-  </data>
-  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 3</value>
-  </data>
-  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 635</value>
-  </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>639, 641</value>
+    <value>26, 33</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>639, 641</value>
+    <value>655, 704</value>
   </data>
   <data name="$this.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>WindowsDefaultLocation</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>AuthMainForm</value>

@@ -267,6 +267,9 @@
     <EmbeddedResource Include="ItemsView\ItemView.resx">
       <DependentUpon>ItemView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Main\MainForm.en.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -286,6 +289,9 @@
       <DependentUpon>OrderEditControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrdersView\OrdersMainControl.resx">
+      <DependentUpon>OrdersMainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersView\OrdersMainControl.sq.resx">
       <DependentUpon>OrdersMainControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -311,6 +317,7 @@
     <None Include="EStoreDataSet1.xss">
       <DependentUpon>EStoreDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="EStoreHelp.chm" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -364,6 +371,7 @@
     <None Include="Resources\cancel.png" />
     <None Include="Resources\albania.png" />
     <None Include="Resources\englisht.png" />
+    <Content Include="Mainform.htm" />
     <Content Include="Resources\test1.png" />
     <None Include="Resources\X.png" />
     <None Include="Resources\x-symbol.png" />

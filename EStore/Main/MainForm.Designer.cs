@@ -31,8 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblUser = new Telerik.WinControls.UI.RadButton();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblUser = new Telerik.WinControls.UI.RadButton();
             this.btnDashBoard = new Telerik.WinControls.UI.RadButton();
             this.btnItems = new Telerik.WinControls.UI.RadButton();
             this.btnUsers = new Telerik.WinControls.UI.RadButton();
@@ -43,6 +44,7 @@
             this.radPanelTop = new Telerik.WinControls.UI.RadPanel();
             this.flowLayoutTopMid = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutTopRight = new System.Windows.Forms.FlowLayoutPanel();
+            this.helper = new System.Windows.Forms.PictureBox();
             this.flowLayoutTopLeft = new System.Windows.Forms.FlowLayoutPanel();
             this.btnGoBack = new System.Windows.Forms.PictureBox();
             this.lblTitle = new Telerik.WinControls.UI.RadLabel();
@@ -62,8 +64,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lblUser)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDashBoard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUsers)).BeginInit();
@@ -74,6 +77,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanelTop)).BeginInit();
             this.radPanelTop.SuspendLayout();
+            this.flowLayoutTopRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.helper)).BeginInit();
             this.flowLayoutTopLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnGoBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblTitle)).BeginInit();
@@ -101,14 +106,26 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.lblUser);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.btnDashBoard);
-            this.panel1.Controls.Add(this.btnItems);
-            this.panel1.Controls.Add(this.btnUsers);
-            this.panel1.Controls.Add(this.btnOrders);
+            this.panel1.Controls.Add(this.flowLayoutPanel1);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox2);
+            this.flowLayoutPanel1.Controls.Add(this.lblUser);
+            this.flowLayoutPanel1.Controls.Add(this.btnDashBoard);
+            this.flowLayoutPanel1.Controls.Add(this.btnItems);
+            this.flowLayoutPanel1.Controls.Add(this.btnUsers);
+            this.flowLayoutPanel1.Controls.Add(this.btnOrders);
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // pictureBox2
+            // 
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
             // 
             // lblUser
             // 
@@ -127,12 +144,6 @@
             ((Telerik.WinControls.Primitives.TextPrimitive)(this.lblUser.GetChildAt(0).GetChildAt(1).GetChildAt(1))).Alignment = ((System.Drawing.ContentAlignment)(resources.GetObject("resource.Alignment")));
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.lblUser.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             ((Telerik.WinControls.Primitives.FocusPrimitive)(this.lblUser.GetChildAt(0).GetChildAt(3))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
-            // 
-            // pictureBox2
-            // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
             // 
             // btnDashBoard
             // 
@@ -229,8 +240,16 @@
             // 
             // flowLayoutTopRight
             // 
+            this.flowLayoutTopRight.Controls.Add(this.helper);
             resources.ApplyResources(this.flowLayoutTopRight, "flowLayoutTopRight");
             this.flowLayoutTopRight.Name = "flowLayoutTopRight";
+            // 
+            // helper
+            // 
+            resources.ApplyResources(this.helper, "helper");
+            this.helper.Name = "helper";
+            this.helper.TabStop = false;
+            this.helper.Click += new System.EventHandler(this.helper_Click);
             // 
             // flowLayoutTopLeft
             // 
@@ -377,8 +396,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.radPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.lblUser)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDashBoard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnItems)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUsers)).EndInit();
@@ -389,6 +409,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanelTop)).EndInit();
             this.radPanelTop.ResumeLayout(false);
+            this.flowLayoutTopRight.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.helper)).EndInit();
             this.flowLayoutTopLeft.ResumeLayout(false);
             this.flowLayoutTopLeft.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnGoBack)).EndInit();
@@ -441,5 +463,7 @@
         private Telerik.WinControls.UI.RadButton btnMakeOrder;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.PictureBox helper;
     }
 }

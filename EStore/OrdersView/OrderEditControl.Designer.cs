@@ -38,9 +38,9 @@ namespace EStore_Temp.OrdersView
             this.lblOrderDate = new Telerik.WinControls.UI.RadLabel();
             this.txtOrderDate = new Telerik.WinControls.UI.RadTextBox();
             this.lblAddress = new Telerik.WinControls.UI.RadLabel();
-            this.txtAddress = new Telerik.WinControls.UI.RadTextBox();
-            this.lblIsPaid = new Telerik.WinControls.UI.RadLabel();
-            this.txtIsPaid = new Telerik.WinControls.UI.RadTextBox();
+            this.btnEdit = new Telerik.WinControls.UI.RadButton();
+            this.radioCity = new System.Windows.Forms.RadioButton();
+            this.cmbCities = new Telerik.WinControls.UI.RadDropDownList();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lblOrderId)).BeginInit();
@@ -50,15 +50,14 @@ namespace EStore_Temp.OrdersView
             ((System.ComponentModel.ISupportInitialize)(this.lblOrderDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOrderDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblAddress)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAddress)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblIsPaid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIsPaid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbCities)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(245, 326);
+            this.btnCancel.Location = new System.Drawing.Point(131, 316);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(92, 36);
             this.btnCancel.TabIndex = 11;
@@ -80,9 +79,8 @@ namespace EStore_Temp.OrdersView
             this.flowLayoutPanel1.Controls.Add(this.lblOrderDate);
             this.flowLayoutPanel1.Controls.Add(this.txtOrderDate);
             this.flowLayoutPanel1.Controls.Add(this.lblAddress);
-            this.flowLayoutPanel1.Controls.Add(this.txtAddress);
-            this.flowLayoutPanel1.Controls.Add(this.lblIsPaid);
-            this.flowLayoutPanel1.Controls.Add(this.txtIsPaid);
+            this.flowLayoutPanel1.Controls.Add(this.cmbCities);
+            this.flowLayoutPanel1.Controls.Add(this.radioCity);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(128, 34);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -110,9 +108,9 @@ namespace EStore_Temp.OrdersView
             // 
             this.lblUserId.Location = new System.Drawing.Point(3, 57);
             this.lblUserId.Name = "lblUserId";
-            this.lblUserId.Size = new System.Drawing.Size(41, 18);
+            this.lblUserId.Size = new System.Drawing.Size(62, 18);
             this.lblUserId.TabIndex = 0;
-            this.lblUserId.Text = "User Id";
+            this.lblUserId.Text = "User Name";
             // 
             // txtUserId
             // 
@@ -144,41 +142,51 @@ namespace EStore_Temp.OrdersView
             // 
             this.lblAddress.Location = new System.Drawing.Point(3, 165);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(46, 18);
+            this.lblAddress.Size = new System.Drawing.Size(25, 18);
             this.lblAddress.TabIndex = 0;
-            this.lblAddress.Text = "Address";
+            this.lblAddress.Text = "City";
             // 
-            // txtAddress
+            // btnEdit
             // 
-            this.txtAddress.Enabled = false;
-            this.txtAddress.Location = new System.Drawing.Point(3, 189);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.ReadOnly = true;
-            this.txtAddress.Size = new System.Drawing.Size(206, 24);
-            this.txtAddress.TabIndex = 2;
+            this.btnEdit.Location = new System.Drawing.Point(245, 316);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(92, 36);
+            this.btnEdit.TabIndex = 12;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnEdit.GetChildAt(0))).Text = "Edit";
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnEdit.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(53)))), ((int)(((byte)(64)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnEdit.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
+            ((Telerik.WinControls.Primitives.TextPrimitive)(this.btnEdit.GetChildAt(0).GetChildAt(1).GetChildAt(1))).LineLimit = false;
+            ((Telerik.WinControls.Primitives.TextPrimitive)(this.btnEdit.GetChildAt(0).GetChildAt(1).GetChildAt(1))).ForeColor = System.Drawing.Color.White;
+            ((Telerik.WinControls.Primitives.TextPrimitive)(this.btnEdit.GetChildAt(0).GetChildAt(1).GetChildAt(1))).Alignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblIsPaid
+            // radioCity
             // 
-            this.lblIsPaid.Location = new System.Drawing.Point(3, 219);
-            this.lblIsPaid.Name = "lblIsPaid";
-            this.lblIsPaid.Size = new System.Drawing.Size(39, 18);
-            this.lblIsPaid.TabIndex = 0;
-            this.lblIsPaid.Text = "Is paid";
+            this.radioCity.AutoSize = true;
+            this.radioCity.Location = new System.Drawing.Point(3, 215);
+            this.radioCity.Name = "radioCity";
+            this.radioCity.Size = new System.Drawing.Size(58, 17);
+            this.radioCity.TabIndex = 0;
+            this.radioCity.TabStop = true;
+            this.radioCity.Text = "Is Paid";
+            this.radioCity.UseVisualStyleBackColor = true;
             // 
-            // txtIsPaid
+            // cmbCities
             // 
-            this.txtIsPaid.Enabled = false;
-            this.txtIsPaid.Location = new System.Drawing.Point(3, 243);
-            this.txtIsPaid.Name = "txtIsPaid";
-            this.txtIsPaid.ReadOnly = true;
-            this.txtIsPaid.Size = new System.Drawing.Size(206, 24);
-            this.txtIsPaid.TabIndex = 10;
+            this.cmbCities.DropDownAnimationEnabled = true;
+            this.cmbCities.Location = new System.Drawing.Point(3, 189);
+            this.cmbCities.Name = "cmbCities";
+            this.cmbCities.Size = new System.Drawing.Size(206, 20);
+            this.cmbCities.TabIndex = 2;
+            this.cmbCities.Text = "Choose City";
             // 
             // OrderEditForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(494, 403);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "OrderEditForm";
@@ -187,7 +195,7 @@ namespace EStore_Temp.OrdersView
             // 
             this.RootElement.ApplyShapeToControl = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.OrderEditForm_Load);
+        
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
@@ -198,9 +206,8 @@ namespace EStore_Temp.OrdersView
             ((System.ComponentModel.ISupportInitialize)(this.lblOrderDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOrderDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblAddress)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAddress)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblIsPaid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIsPaid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbCities)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -217,8 +224,8 @@ namespace EStore_Temp.OrdersView
         private Telerik.WinControls.UI.RadLabel lblOrderDate;
         private Telerik.WinControls.UI.RadTextBox txtOrderDate;
         private Telerik.WinControls.UI.RadLabel lblAddress;
-        private Telerik.WinControls.UI.RadTextBox txtAddress;
-        private Telerik.WinControls.UI.RadLabel lblIsPaid;
-        private Telerik.WinControls.UI.RadTextBox txtIsPaid;
+        private Telerik.WinControls.UI.RadButton btnEdit;
+        private System.Windows.Forms.RadioButton radioCity;
+        private Telerik.WinControls.UI.RadDropDownList cmbCities;
     }
 }

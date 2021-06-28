@@ -1,4 +1,5 @@
-﻿using EStoreBusinessObjects;
+﻿using EStoreBusinessLogicLayer;
+using EStoreBusinessObjects;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,25 +16,59 @@ namespace EStore_Temp.OrdersView
     {
         private readonly Order _order;
 
+        private readonly List<City> _cities;
+
         public OrderEditForm(Order order)
         {
             InitializeComponent();
             this._order = order;
+            this._cities = EStoreContext.Cities.Read();
 
-        }
+            foreach (var item in _cities)
+            {
+                cmbCities.Items.Add(item.Name);
+            }
 
-        private void OrderEditForm_Load(object sender, EventArgs e)
-        {
             txtOrderId.Text = _order.Id.ToString();
             txtUserId.Text = _order.User.Id.ToString();
             txtOrderDate.Text = _order.OrderDate.ToString();
-            txtIsPaid.Text = _order.IsPaid.ToString();
-            txtAddress.Text = _order.City.Name + " " + _order.Street;
+
+            cmbCities.SelectedItem = cmbCities.Items.FirstOrDefault(i => i.Text == _order.City.Name);
+            cmbCities.SelectedIndex = cmbCities.Items.IndexOf(cmbCities.SelectedItem);
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            Order order = new Order()
+            {
+                User = _order.User,
+                City = new City()
+                {
+
+                    Id = cmbCities.SelectedIndex,
+                },
+                Street = _order.Street,
+                IsPaid = radioCity.Checked,
+                OrderDate = _order.OrderDate
+            };
+
+            bool id = EStoreContext.Orders.Update(order);
+
+            if (id)
+            {
+                MessageBox.Show("Order created succesfully");
+            }
+            else
+            {
+
+                MessageBox.Show("Order could not be created");
+            }
         }
     }
 }

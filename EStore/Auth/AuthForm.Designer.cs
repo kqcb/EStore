@@ -61,209 +61,136 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(644, 633);
-            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(322, 633);
-            this.panel1.TabIndex = 4;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Image = global::EStore.Properties.Resources.test1;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(322, 633);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.panelMain, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.panel4, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel1, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(325, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.572815F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.42719F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(316, 627);
-            this.tableLayoutPanel2.TabIndex = 1;
             // 
             // panel3
             // 
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Controls.Add(this.btnShqip);
             this.panel3.Controls.Add(this.btnEnglish);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(225, 593);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(88, 31);
-            this.panel3.TabIndex = 12;
             // 
             // btnShqip
             // 
-            this.btnShqip.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.btnShqip, "btnShqip");
             this.btnShqip.BackgroundImage = global::EStore.Properties.Resources.albania;
-            this.btnShqip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnShqip.FlatAppearance.BorderSize = 0;
             this.btnShqip.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.btnShqip.Location = new System.Drawing.Point(12, 4);
             this.btnShqip.Name = "btnShqip";
-            this.btnShqip.Size = new System.Drawing.Size(37, 23);
-            this.btnShqip.TabIndex = 5;
             this.btnShqip.UseVisualStyleBackColor = true;
             this.btnShqip.Click += new System.EventHandler(this.btnShqip_Click);
             // 
             // btnEnglish
             // 
+            resources.ApplyResources(this.btnEnglish, "btnEnglish");
             this.btnEnglish.BackgroundImage = global::EStore.Properties.Resources.englisht;
-            this.btnEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEnglish.FlatAppearance.BorderSize = 0;
-            this.btnEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnglish.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.btnEnglish.Location = new System.Drawing.Point(55, 5);
             this.btnEnglish.Name = "btnEnglish";
-            this.btnEnglish.Size = new System.Drawing.Size(30, 20);
-            this.btnEnglish.TabIndex = 4;
             this.btnEnglish.UseVisualStyleBackColor = true;
             this.btnEnglish.Click += new System.EventHandler(this.btnEnglish_Click);
             // 
             // panelMain
             // 
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(0, 41);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(0);
+            resources.ApplyResources(this.panelMain, "panelMain");
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(316, 507);
-            this.panelMain.TabIndex = 13;
             // 
             // panel4
             // 
+            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Controls.Add(this.btnGoBack);
             this.panel4.Controls.Add(this.btnSignUp);
             this.panel4.Controls.Add(this.btnLogin);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(3, 551);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(310, 36);
-            this.panel4.TabIndex = 14;
             // 
             // btnGoBack
             // 
-            this.btnGoBack.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnGoBack.Location = new System.Drawing.Point(90, 0);
+            resources.ApplyResources(this.btnGoBack, "btnGoBack");
             this.btnGoBack.Name = "btnGoBack";
-            this.btnGoBack.Size = new System.Drawing.Size(110, 36);
-            this.btnGoBack.TabIndex = 2;
-            this.btnGoBack.Text = "Back";
             this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnGoBack.GetChildAt(0))).Text = "Back";
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnGoBack.GetChildAt(0))).Text = resources.GetString("resource.Text");
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnGoBack.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnGoBack.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             // 
             // btnSignUp
             // 
-            this.btnSignUp.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnSignUp.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.btnSignUp, "btnSignUp");
             this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(110, 36);
-            this.btnSignUp.TabIndex = 1;
-            this.btnSignUp.Text = "Register";
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnSignUp.GetChildAt(0))).Text = "Register";
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnSignUp.GetChildAt(0))).Text = resources.GetString("resource.Text1");
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnSignUp.GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(103)))), ((int)(((byte)(250)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSignUp.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(247)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSignUp.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             // 
             // btnLogin
             // 
+            resources.ApplyResources(this.btnLogin, "btnLogin");
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(87)))), ((int)(((byte)(18)))));
-            this.btnLogin.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnLogin.Location = new System.Drawing.Point(200, 0);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(110, 36);
-            this.btnLogin.TabIndex = 3;
-            this.btnLogin.Text = "Login";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnLogin.GetChildAt(0))).Text = "Login";
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnLogin.GetChildAt(0))).Text = resources.GetString("resource.Text2");
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnLogin.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(151)))), ((int)(((byte)(41)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnLogin.GetChildAt(0).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             ((Telerik.WinControls.Primitives.ImagePrimitive)(this.btnLogin.GetChildAt(0).GetChildAt(1).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(106)))), ((int)(((byte)(25)))));
             // 
             // flowLayoutPanel1
             // 
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Controls.Add(this.btnClose);
             this.flowLayoutPanel1.Controls.Add(this.btnMinimize);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(169, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(144, 35);
-            this.flowLayoutPanel1.TabIndex = 15;
             // 
             // btnClose
             // 
-            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnClose.Location = new System.Drawing.Point(121, 3);
+            resources.ApplyResources(this.btnClose, "btnClose");
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(20, 34);
-            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnClose.TabIndex = 3;
             this.btnClose.TabStop = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnMinimize
             // 
-            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
-            this.btnMinimize.Location = new System.Drawing.Point(96, 3);
+            resources.ApplyResources(this.btnMinimize, "btnMinimize");
             this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(19, 34);
-            this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimize.TabIndex = 2;
             this.btnMinimize.TabStop = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // AuthForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(644, 633);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "AuthForm";
             // 
             // 
             // 
             this.RootElement.ApplyShapeToControl = true;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AuthForm";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

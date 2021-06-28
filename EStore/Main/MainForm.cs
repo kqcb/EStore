@@ -164,5 +164,30 @@ namespace EStore.Main
 
             flowLayoutSelectedList.Controls.Clear();
         }
+
+        private void helper_Click(object sender, EventArgs e)
+        {
+            //GetHelpProvider(this, "Mainform.htm");
+            Help.ShowHelp(this, @"F:\Apps\EStore\EStore\EStoreHelp.chm", HelpNavigator.Topic, "Mainform.htm");
+        }
+
+        //public static void GetHelpProvider(Form frm, string topic)
+        //{
+        //    //HelpProvider hp = new HelpProvider();
+        //    //hp.SetHelpNavigator(frm, HelpNavigator.Topic);
+        //    //hp.SetHelpKeyword(frm, topic);
+        //    //hp.HelpNamespace = Application.StartupPath + @"\EStoreHelp.chm";
+        //    //hp.SetShowHelp(frm, true);
+
+
+
+        //    ////Help.ShowHelp(frm, Application.StartupPath + @"\Fixed Assets.chm", HelpNavigator.TopicId, "rev_journal.htm");
+
+        //    //Help.ShowHelp(frm, "EStoreHelp.chm", HelpNavigator.Topic, topic);// "Second_topic.htm");
+
+        //    Help.ShowHelp(frm, "EStoreHelp.chm");
+
+
+        //}
     }
 }

@@ -55,9 +55,9 @@ namespace EStore_Temp.ItemsView
             // 
             // radPanel4
             // 
+            resources.ApplyResources(this.radPanel4, "radPanel4");
             this.radPanel4.Controls.Add(this.panelMain);
             this.radPanel4.Controls.Add(this.panelMainTop);
-            resources.ApplyResources(this.radPanel4, "radPanel4");
             this.radPanel4.Name = "radPanel4";
             // 
             // panelMain
@@ -67,16 +67,16 @@ namespace EStore_Temp.ItemsView
             // 
             // panelMainTop
             // 
+            resources.ApplyResources(this.panelMainTop, "panelMainTop");
             this.panelMainTop.Controls.Add(this.btnNew);
             this.panelMainTop.Controls.Add(this.btnToExcel);
-            resources.ApplyResources(this.panelMainTop, "panelMainTop");
             this.panelMainTop.Name = "panelMainTop";
             // 
             // btnToExcel
             // 
+            resources.ApplyResources(this.btnToExcel, "btnToExcel");
             this.btnToExcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.btnToExcel.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.btnToExcel, "btnToExcel");
             this.btnToExcel.Name = "btnToExcel";
             this.btnToExcel.Click += new System.EventHandler(this.btnToExcel_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnToExcel.GetChildAt(0))).Text = resources.GetString("resource.Text");

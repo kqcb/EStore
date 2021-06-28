@@ -63,7 +63,7 @@ namespace EStore.Auth
                     },
                     Role = new Role()
                     {
-                        Id = 1
+                        Id = 2
                     },
                     Image = Common.ToByteArray(image)
                 };

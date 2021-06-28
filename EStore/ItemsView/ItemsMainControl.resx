@@ -117,184 +117,184 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnNew.Location" type="System.Drawing.Point, System.Drawing">
-    <value>386, 8</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnNew.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnToExcel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="btnNew.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 23</value>
+  <data name="&gt;&gt;panelMainTop.Parent" xml:space="preserve">
+    <value>radPanel4</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnNew.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="btnToExcel.Text" xml:space="preserve">
+    <value>To Excel</value>
   </data>
-  <data name="btnNew.Text" xml:space="preserve">
-    <value>Create New</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="radPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>512, 471</value>
   </data>
   <data name="&gt;&gt;btnNew.Name" xml:space="preserve">
     <value>btnNew</value>
   </data>
-  <data name="&gt;&gt;btnNew.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
   <data name="&gt;&gt;btnNew.Parent" xml:space="preserve">
     <value>panelMainTop</value>
   </data>
-  <data name="&gt;&gt;btnNew.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;btnToExcel.Name" xml:space="preserve">
+    <value>btnToExcel</value>
   </data>
-  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 45</value>
+  <data name="&gt;&gt;btnToExcel.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="panelMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="panelMainTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>512, 45</value>
   </data>
   <data name="panelMain.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>27, 26, 27, 26</value>
   </data>
+  <data name="&gt;&gt;uspItemReadBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="radPanel4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 45</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ItemsMainControl</value>
+  </data>
+  <data name="&gt;&gt;radPanel4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="panelMainTop.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>RightToLeft</value>
+  </data>
   <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
     <value>484, 398</value>
+  </data>
+  <data name="radPanel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;uspItemReadBindingSource.Name" xml:space="preserve">
+    <value>uspItemReadBindingSource</value>
+  </data>
+  <data name="&gt;&gt;btnNew.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="radPanel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
-    <value>panelMain</value>
+  <data name="&gt;&gt;eStoreDataSetBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnNew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 23</value>
+  </data>
+  <data name="&gt;&gt;panelMainTop.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnNew.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 478</value>
   </data>
   <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
     <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
-    <value>radPanel4</value>
-  </data>
-  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="btnToExcel.Location" type="System.Drawing.Point, System.Drawing">
     <value>272, 8</value>
   </data>
-  <data name="btnToExcel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="panelMainTop.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnNew.Text" xml:space="preserve">
+    <value>Create New</value>
+  </data>
+  <data name="&gt;&gt;btnToExcel.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="panelMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;eStoreDataSetBindingSource.Name" xml:space="preserve">
+    <value>eStoreDataSetBindingSource</value>
+  </data>
+  <data name="panelMainTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;radPanel4.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPanel, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="panelMainTop.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
+  </data>
+  <data name="btnNew.Location" type="System.Drawing.Point, System.Drawing">
+    <value>386, 8</value>
+  </data>
+  <data name="panelMainTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="btnToExcel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
+    <value>radPanel4</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="btnToExcel.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 24</value>
   </data>
-  <data name="btnToExcel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="btnNew.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
-  <data name="btnToExcel.Text" xml:space="preserve">
-    <value>To Excel</value>
-  </data>
-  <data name="&gt;&gt;btnToExcel.Name" xml:space="preserve">
-    <value>btnToExcel</value>
-  </data>
-  <data name="&gt;&gt;btnToExcel.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  <data name="&gt;&gt;radPanel4.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;btnToExcel.Parent" xml:space="preserve">
     <value>panelMainTop</value>
   </data>
-  <data name="&gt;&gt;btnToExcel.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
+    <value>panelMain</value>
   </data>
-  <data name="resource.Text" xml:space="preserve">
-    <value>To Excel</value>
-  </data>
-  <data name="panelMainTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panelMainTop.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>RightToLeft</value>
-  </data>
-  <data name="panelMainTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="panelMainTop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="panelMainTop.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 6, 7, 6</value>
+  <data name="&gt;&gt;radPanel4.Name" xml:space="preserve">
+    <value>radPanel4</value>
   </data>
-  <data name="panelMainTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>512, 45</value>
-  </data>
-  <data name="panelMainTop.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelMainTop.Name" xml:space="preserve">
-    <value>panelMainTop</value>
+  <data name="resource.Text" xml:space="preserve">
+    <value>To Excel</value>
   </data>
   <data name="&gt;&gt;panelMainTop.Type" xml:space="preserve">
     <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panelMainTop.Parent" xml:space="preserve">
-    <value>radPanel4</value>
+  <data name="&gt;&gt;panelMainTop.Name" xml:space="preserve">
+    <value>panelMainTop</value>
   </data>
-  <data name="&gt;&gt;panelMainTop.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="radPanel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="radPanel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="radPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>512, 471</value>
-  </data>
-  <data name="radPanel4.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;radPanel4.Name" xml:space="preserve">
-    <value>radPanel4</value>
-  </data>
-  <data name="&gt;&gt;radPanel4.Type" xml:space="preserve">
-    <value>Telerik.WinControls.UI.RadPanel, Telerik.WinControls.UI, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
-  </data>
-  <data name="&gt;&gt;radPanel4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;radPanel4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnNew.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="uspItemReadBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>680, 17</value>
   </metadata>
-  <metadata name="eStoreDataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>195, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>534, 478</value>
-  </data>
-  <data name="&gt;&gt;uspItemReadBindingSource.Name" xml:space="preserve">
-    <value>uspItemReadBindingSource</value>
-  </data>
-  <data name="&gt;&gt;uspItemReadBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;eStoreDataSetBindingSource.Name" xml:space="preserve">
-    <value>eStoreDataSetBindingSource</value>
-  </data>
-  <data name="&gt;&gt;eStoreDataSetBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ItemsMainControl</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
+  <metadata name="eStoreDataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>195, 17</value>
+  </metadata>
 </root>

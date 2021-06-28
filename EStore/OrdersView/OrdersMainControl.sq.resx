@@ -117,39 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnNew.Location" type="System.Drawing.Point, System.Drawing">
-    <value>408, 8</value>
+  <data name="radLabel6.Text" xml:space="preserve">
+    <value>Totali</value>
   </data>
-  <data name="btnNew.Text" xml:space="preserve">
-    <value>Krijo te ri</value>
+  <data name="radLabel5.Text" xml:space="preserve">
+    <value>Data Dergeses</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panelMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="radLabel4.Text" xml:space="preserve">
+    <value>Data</value>
   </data>
-  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 69</value>
+  <data name="radLabel3.Text" xml:space="preserve">
+    <value>Klienti</value>
   </data>
-  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>534, 409</value>
-  </data>
-  <data name="btnToExcel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>294, 8</value>
-  </data>
-  <data name="btnToExcel.Text" xml:space="preserve">
-    <value>Ne Excel</value>
-  </data>
-  <data name="resource.Text" xml:space="preserve">
-    <value>Ne Excel</value>
-  </data>
-  <data name="panelMainTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>534, 69</value>
-  </data>
-  <data name="radPanel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="radPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>534, 478</value>
+  <data name="radLabel2.Text" xml:space="preserve">
+    <value>Statusi</value>
   </data>
 </root>
